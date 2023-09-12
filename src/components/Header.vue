@@ -2,7 +2,7 @@
   <div class="header">
     <header>
       <div class="menu-icon">
-        <i class="material-symbols-outlined" @click="onBtnClick">menu</i>      
+        <i class="material-symbols-outlined" @click="onBtnClick" id="menu">menu</i>      
       </div>
       <div class="title-logo">
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
@@ -250,10 +250,14 @@ export default class Header extends Vue {
 
   public onBtnClick() {
     const btnClicked = document.getElementById('nav');
+    let menu = document.getElementById('menu') as HTMLElement;
+
     if(btnClicked?.classList.contains("on")){
       btnClicked.classList.remove("on");
+      menu.innerHTML = '<i class="material-symbols-outlined" @click="onBtnClick" id="menu">menu</i>';
     } else {
       btnClicked?.classList.add("on");
+      menu.innerHTML = '<i class="material-symbols-outlined" @click="onBtnClick" id="menu">close</i>';
     }
   }
 }
