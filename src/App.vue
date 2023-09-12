@@ -1,13 +1,24 @@
 <template>
+  <Header></Header>
   <router-view/>
 </template>
+
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+import Header from '@/components/Header.vue'; // @ is an alias to /src
+
+@Options({
+  components: {
+    Header,
+  },
+})
+export default class HomeView extends Vue {}
+</script>
 
 <style lang="less">
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
 :root {
-  margin: 0;
-  padding: 0;
   font-family: 'Rubik', sans-serif;
   background-color: #FFF8F8;
   p, i, a{
@@ -16,15 +27,13 @@
   h1,h2{
       color: #2B9747;
   }
-  nav{
+  nav, footer{
     background-color: #F0E7E7;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    margin: 0;
-    padding: 0;
     font-family: 'Rubik', sans-serif;
     background-color: #1C1A1F;
     p, i, a{
@@ -35,11 +44,10 @@
       color: #7ABCB4;
       font-weight: 300;
     }
-    nav{
+    nav, footer{
     background-color: #2A272E;
     }
   }
 }
-
 
 </style>
