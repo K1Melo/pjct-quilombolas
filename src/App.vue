@@ -1,30 +1,45 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #FFF8F8;
+  p, i, a{
+    color: #2A3046;
+  }
+  h1,h2{
+      color: #2B9747;
+  }
+  nav{
+    background-color: #F0E7E7;
+  }
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+@media (prefers-color-scheme: dark) {
+  :root {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #1C1A1F;
+    p, i, a{
+      color: #C5B7B6;
+      font-weight: 400;
+    }
+    h1,h2{
+      color: #7ABCB4;
+      font-weight: 300;
+    }
+    nav{
+    background-color: #2A272E;
     }
   }
 }
+
+
 </style>
