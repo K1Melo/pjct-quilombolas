@@ -25,7 +25,9 @@ export default class HomeView extends Vue {}
     color: #2A3046;
   }
   h1,h2{
-      color: #2B9747;
+      color: #358379;
+      font-weight: 300;
+
   }
   nav, footer{
     background-color: #F0E7E7;
@@ -42,7 +44,6 @@ export default class HomeView extends Vue {}
     }
     h1,h2{
       color: #7ABCB4;
-      font-weight: 300;
     }
     nav, footer{
     background-color: #2A272E;
