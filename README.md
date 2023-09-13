@@ -2,7 +2,7 @@
 
 ## View Project
 
-<https://admirable-kataifi-f86279.netlify.app/>
+<https://quilombolas.netlify.app/>
 
 ## Project setup
 ```
