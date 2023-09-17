@@ -232,8 +232,10 @@
       </div>
     </div>
     <nav id="nav" class="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Sobre</router-link>
+      <router-link to="/locations">Lugares</router-link>
+      <router-link to="/production">Produção</router-link>
+      <router-link to="/culture">Cultura</router-link>
     </nav>
   </div>
 </template>
@@ -266,14 +268,11 @@ export default class Header extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 
-.header-nav{
+.header{
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 1;
-}
-
-.header{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -283,10 +282,11 @@ export default class Header extends Vue {
 .menu-icon:hover, .github-icon:hover{
   transform: scale(1.5);
   transition: 0.5s;
+  cursor: pointer;
 }
 .menu-icon:active, .github-icon:active{
   transform: scale(1);
-  transition: opacity 0.3s;
+  transition: 0.3s;
 }
 
 .title-logo{
@@ -334,13 +334,16 @@ export default class Header extends Vue {
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   padding: 10px;
   display: none;
   align-items: center;
-  justify-content: space-around;
-
+  justify-content: space-evenly;
   a {
     text-decoration: none;
+    margin-right: 15px;
     &.router-link-exact-active {
       color: #358379;
     }
@@ -349,6 +352,15 @@ export default class Header extends Vue {
         color: #7ABCB4;
       }
   }
+  }
+
+  a:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+  a:active{
+    transform: scale(1.0);
+    transition: 0.2s;
   }
 }
 
