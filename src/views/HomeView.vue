@@ -7,5 +7,7 @@
 </template>
 
 <style scoped lang="less">
-  
+  img{
+    width: 100000px;
+  }
 </style>
