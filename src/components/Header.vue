@@ -264,11 +264,11 @@ export default class Header extends Vue {
     const btnClicked = document.getElementById('nav');
     let menu = document.getElementById('menu') as HTMLElement;
 
-    if(btnClicked?.classList.contains("on")){
-      btnClicked.classList.remove("on");
+    if(btnClicked?.classList.contains("active-nav")){
+      btnClicked.classList.remove("active-nav");
       menu.innerHTML = '<i class="material-symbols-outlined" @click="onBtnClick" id="menu">menu</i>';
     } else {
-      btnClicked?.classList.add("on");
+      btnClicked?.classList.add("active-nav");
       menu.innerHTML = '<i class="material-symbols-outlined" @click="onBtnClick" id="menu">close</i>';
     }
   }
@@ -278,7 +278,7 @@ export default class Header extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 .header-nav{
-
+  
   position: sticky;
   width: 100%;
   top: 0;
@@ -290,7 +290,7 @@ export default class Header extends Vue {
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid #2A3046;
-  background-color: #00000028;
+  background-color: #ffffff28;
 }
 
 .social{
@@ -322,7 +322,7 @@ export default class Header extends Vue {
 .title-logo{
   display: flex;
   align-items: center;
-  fill: #358379;
+  fill: #000000;
   font-size: 10px
 }
 
@@ -338,9 +338,11 @@ export default class Header extends Vue {
 
 
 
-@media (prefers-color-scheme: dark) {
+.on {
   .header{
     border-bottom: 1px solid #C5B7B6;
+    background-color: #00000028;
+
   }
   .title-logo{
     fill: #ffffff;
@@ -390,7 +392,7 @@ export default class Header extends Vue {
   }
 }
 
-.on{
+.active-nav{
   display: flex;
 }
 
