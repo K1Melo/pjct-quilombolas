@@ -293,20 +293,14 @@ export default class Header extends Vue {
 .header{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   border-bottom: 1px solid #2A3046;
   background-color: #ffffff28;
 }
 
 #change-theme{
-  display: inline;
+  display: flex;
   border-radius: 10px;
-
-  margin-right: 15px;
-  svg{
-    width: 70.375px;
-    height: 62.5px;
-  }
 }
 
 .social{
@@ -317,6 +311,7 @@ export default class Header extends Vue {
 .github svg{
   fill: #000000;
 }
+
 .github, .menu{
   transition: 0.5s;
 }
