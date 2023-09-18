@@ -91,4 +91,10 @@ i:active{
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .change{
+        transform: scale(0.8);
+    }
+}
+
 </style>
