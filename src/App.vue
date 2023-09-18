@@ -1,7 +1,6 @@
 <template>
   <Header></Header>
   <router-view/>
-  <button @click="webSiteTheme">Mudar tema</button>
 </template>
 
 <script lang="ts">
@@ -14,16 +13,7 @@ import Header from '@/components/Header.vue'; // @ is an alias to /src
   },
 })
 export default class HomeView extends Vue {
-  webSiteTheme(){
-    const body = document.querySelector("body");
-    if(body?.classList.contains("on")){
-      body.classList.remove("on");
-      console.log(body.classList)
-    } else {
-      body?.classList.add("on");
-      console.log(body?.classList)
-    }
-  }
+  
 }
 </script>
 
