@@ -310,6 +310,7 @@ export default class Header extends Vue {
 
 .github svg{
   fill: #000000;
+  margin: 10px;
 }
 
 .github, .menu{
