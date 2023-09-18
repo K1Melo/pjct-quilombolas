@@ -323,10 +323,6 @@ export default class Header extends Vue {
   margin: 10px;
 }
 
-.menu{
-  margin-left: 30px;
-}
-
 .menu:hover, .twiter:hover, .instagram:hover, .github:hover{
   transform: scale(1.3);
   transition: 0.2s;
@@ -342,10 +338,6 @@ export default class Header extends Vue {
   align-items: center;
   fill: #000000;
   font-size: 10px  
-}
-
-#midle{
-  margin: 1vw;
 }
 
 .icons{
@@ -389,9 +381,6 @@ export default class Header extends Vue {
     display: none;
   }
 
-  .menu{
-    margin-right: 30px;
-  }
 }
 
 .nav {
