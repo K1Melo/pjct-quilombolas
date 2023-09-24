@@ -27,7 +27,7 @@ body {
   p, i, a{
     color: #2A3046;
   }
-  h1,h2{
+  h1,h2,h3{
       color: #000000;
       font-weight: 300;
 
@@ -44,7 +44,7 @@ body {
     color: #C5B7B6;
     font-weight: 400;
   }
-  h1,h2{
+  h1,h2,h3{
     color: #ffffff;
   }
   nav, footer{
