@@ -105,6 +105,8 @@ changeSlideLeft: ((payload: MouseEvent) => void) | undefined;
 
     #left, #rigth{
         font-size: 50px;
+        z-index: 200;
+        cursor: pointer;
     }
 
     .slider {
@@ -128,7 +130,7 @@ changeSlideLeft: ((payload: MouseEvent) => void) | undefined;
         }
 
         .two{
-            transform: translate(-100.5%);
+            transform: translate(-100.8%);
         }
 
         .three {
