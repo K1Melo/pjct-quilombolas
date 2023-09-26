@@ -81,7 +81,7 @@ changeSlideLeft: ((payload: MouseEvent) => void) | undefined;
 
 <style scoped lang="less">
     .home {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         min-height: 100vh;

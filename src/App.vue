@@ -39,7 +39,7 @@ body {
 
 .on{
   font-family: 'Rubik', sans-serif;
-  background-color: #1C1A1F;
+  // background-color: #1C1A1F;
   p, i, a{
     color: #C5B7B6;
     font-weight: 400;
