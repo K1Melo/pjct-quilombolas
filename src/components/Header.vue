@@ -287,7 +287,7 @@ export default class Header extends Vue {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 200;
 }
 
 .header{
