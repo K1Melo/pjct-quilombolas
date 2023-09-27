@@ -2,7 +2,7 @@
 
 ## View Project
 
-<https://quilombolas.netlify.app/>
+[PJCT-QUILOMBOLAS](https://pjct-quilombolas.vercel.app/)
 
 ## Project setup
 ```
