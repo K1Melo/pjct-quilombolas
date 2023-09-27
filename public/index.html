@@ -18,13 +18,35 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        transition: background 1s linear;
+      }
+
+      body::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      body::-webkit-scrollbar-track {
+        background: #bdb8b8;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: rgba(44, 44, 44, 0.692);
+      }
+
+      .on::-webkit-scrollbar-track {
+        background: #302f2f;
+      }
+
+      .on::-webkit-scrollbar-thumb {
+        background-color: rgba(87, 87, 87, 0.692);
       }
 
       .bg-container{
-        height: 100vh;
-        width: 100vw;
+        min-height: 100vh;
+        /* width: 100vw; */
         background-size: 600% 600%;
         background-image: linear-gradient(60deg, #FFF8F8 ,rgb(206, 175, 175), rgba(156, 123, 123, 0.9) );
+        transition: background 1s linear;  
         animation: bgAnimatedGradient 15s infinite linear;
       }
 

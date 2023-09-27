@@ -296,6 +296,7 @@ export default class Header extends Vue {
   justify-content: space-around;
   border-bottom: 1px solid #2A3046;
   background-color: #ffffff28;
+  transition: all 1s;
 }
 
 #change-theme{
@@ -309,16 +310,13 @@ export default class Header extends Vue {
 }
 
 .github svg{
+  transition: fill 1s;
   fill: #000000;
   margin: 10px;
 }
 
 .github, .menu{
   transition: 0.5s;
-}
-
-.instagram{
-  margin: 10px;
 }
 
 .menu:hover, .github:hover{
@@ -332,21 +330,28 @@ export default class Header extends Vue {
 }
 
 .title-logo{
+  width: 33.3333334%;
   display: flex;
   align-items: center;
+  justify-content: center;
   fill: #000000;
-  font-size: 10px  
+  font-size: 10px;
+  transition: all 1s;
 }
 
 .icons{
+  width: 33.3333333%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .menu{
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 33.3333333%;
+
 }
 
 
@@ -382,6 +387,17 @@ export default class Header extends Vue {
     display: none;
   }
 
+  .icons{
+    width: auto;
+  }
+
+  .menu{
+    width: auto;
+  }
+
+  .title-logo {
+    width: auto;
+  }
 }
 
 .nav {
@@ -397,6 +413,7 @@ export default class Header extends Vue {
     margin-right: 15px;
     &.router-link-exact-active {
       color: #358379;
+      transform: scale(1.2);
     }
     @media (prefers-color-scheme: dark) {
       &.router-link-exact-active {

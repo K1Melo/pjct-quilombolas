@@ -1,6 +1,8 @@
 <template>
-  <Header></Header>
-  <router-view/>
+  <div class="bg-container">
+    <Header></Header>
+    <router-view/>
+  </div>
 </template>
 
 <script lang="ts">
@@ -13,7 +15,7 @@ import Header from '@/components/Header.vue'; // @ is an alias to /src
   },
 })
 export default class HomeView extends Vue {
-  
+
 }
 </script>
 
@@ -22,23 +24,26 @@ export default class HomeView extends Vue {
 
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: #C5B7B6;
+  // background-color: #FFF8F8;
   p, i, a{
     color: #2A3046;
+    transition: all 1s;
   }
   h1,h2,h3{
-      color: #000000;
-      font-weight: 300;
-
+    color: #000000;
+    font-weight: 300;
+    transition: all 1s;
+    
   }
   nav, footer{
     background-color: #f0e7e78b;
+    transition: all 1s;
   }
 }
 
 .on{
   font-family: 'Rubik', sans-serif;
-  background-color: #a8a8a8;
+  // background-color: #1C1A1F;
   p, i, a{
     color: #C5B7B6;
     font-weight: 400;

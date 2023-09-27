@@ -3,9 +3,9 @@
         <i class="material-icons" id="left" @click="changeSlideLeft">arrow_back_ios</i>
         <div class="wrapper">
             <div class="slider snap-inline">
-                <div class="slides">1</div>
-                <div class="slides" style="margin-left: -15px;">2</div>
-                <div class="slides" style="margin-left: -15px;">3</div>
+                <div class="slides"><p>1</p></div>
+                <div class="slides" style="margin-left: -15px;"><p>2</p></div>
+                <div class="slides" style="margin-left: -15px;"><p>3</p></div>
             </div>
         </div>
         <i class="material-icons" id="rigth" @click="changeSlideRigth">arrow_forward_ios</i>
@@ -68,6 +68,7 @@ import { Options, Vue } from 'vue-class-component';
                 this.index = 1;
             }
         },
+        
         
     }
 })
