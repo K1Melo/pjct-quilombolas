@@ -1,8 +1,8 @@
 <template>
-    <div class="slider">
+    <div class="sliderView">
         <i class="material-icons" id="left" @click="changeSlideLeft">arrow_back_ios</i>
         <div class="wrapper">
-            <div class="slider">
+            <div class="slider snap-inline">
                 <div class="slides">1</div>
                 <div class="slides" style="margin-left: -15px;">2</div>
                 <div class="slides" style="margin-left: -15px;">3</div>
@@ -80,7 +80,7 @@ changeSlideLeft: ((payload: MouseEvent) => void) | undefined;
 </script>
 
 <style scoped lang="less">
-    .home {
+    .sliderView {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -106,7 +106,6 @@ changeSlideLeft: ((payload: MouseEvent) => void) | undefined;
     #left, #rigth{
         font-size: 50px;
         z-index: 200;
-        top: 50%;
         cursor: pointer;
     }
 
@@ -116,13 +115,11 @@ changeSlideLeft: ((payload: MouseEvent) => void) | undefined;
         width: 100%;
         height: 100vh;
         overflow-x: hidden;
-        scroll-snap-type: x mandatory;
 
         .slides {
             min-width: 100%;
             height: 100%;
             display: flex;
-            background-color: aliceblue;
             justify-content: center;
             align-items: center;
             color: #000000;
@@ -139,6 +136,13 @@ changeSlideLeft: ((payload: MouseEvent) => void) | undefined;
         }
     }
 
+    .snap-inline{
+        scroll-snap-type: inline mandatory;
+    }
+
+    .snap-inline > * {
+        scroll-snap-align: start;
+    }
 
     @media only screen and (max-width: 800px) {
             .slider {

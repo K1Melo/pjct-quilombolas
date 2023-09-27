@@ -20,10 +20,9 @@ export default class HomeView extends Vue {
 <style lang="less">
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
-
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: #FFF8F8;
+  background-color: #C5B7B6;
   p, i, a{
     color: #2A3046;
   }
@@ -39,7 +38,7 @@ body {
 
 .on{
   font-family: 'Rubik', sans-serif;
-  // background-color: #1C1A1F;
+  background-color: #a8a8a8;
   p, i, a{
     color: #C5B7B6;
     font-weight: 400;
@@ -51,5 +50,7 @@ body {
   background-color: #2a272e73;
   }
 }
+
+
 
 </style>
