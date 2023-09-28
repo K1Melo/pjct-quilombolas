@@ -1,12 +1,8 @@
 <template>
     <div class="change">
-        <input type="checkbox" class="checkbox" id="chk">
-
         <label class="label" for="chk" @click="changeTheme">
             <i id="dark" class="material-icons" >dark_mode</i>
             <i id="ligth" class="material-icons" >sunny</i>
-            <div class="ball">
-            </div>
         </label>
     </div>
 </template>
@@ -36,10 +32,7 @@ export default class ChangeTheme extends Vue {
 
 <style scoped lang="less">
 
-.checkbox{
-    opacity: 0;
-    position: absolute;
-}
+
 i{
     transform: scale(0.95);
     color:  #1C1A1F;

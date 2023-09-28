@@ -86,7 +86,7 @@ changeSlideLeft: ((payload: MouseEvent) => void) | undefined;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-    } 
+    }
 
     .wrapper{
         width: 100vw;

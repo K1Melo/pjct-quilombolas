@@ -18,62 +18,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        transition: background 1s linear;
-      }
-
-      body::-webkit-scrollbar {
-        width: 5px;
-      }
-
-      body::-webkit-scrollbar-track {
-        background: #bdb8b8;
-      }
-
-      body::-webkit-scrollbar-thumb {
-        background-color: rgba(44, 44, 44, 0.692);
-      }
-
-      .on::-webkit-scrollbar-track {
-        background: #302f2f;
-      }
-
-      .on::-webkit-scrollbar-thumb {
-        background-color: rgba(87, 87, 87, 0.692);
-      }
-
-      .bg-container{
-        min-height: 100vh;
-        /* width: 100vw; */
-        background-size: 600% 600%;
-        background-image: linear-gradient(60deg, #FFF8F8 ,rgb(206, 175, 175), rgba(156, 123, 123, 0.9) );
-        transition: background 1s linear;  
-        animation: bgAnimatedGradient 15s infinite linear;
-      }
-
-      .on{
-        .bg-container{
-          background-image: linear-gradient(60deg, #1f1a1a ,#1b1414 ,#2e1f1f);
-
-        }
-        @media only screen and (max-width: 800px) {
-          .bg-container{
-            background-image: linear-gradient(60deg, #1f1a1a ,#1d1717 ,rgb(24, 18, 18));
-          }
-        }
-
-      }
-
-      @keyframes bgAnimatedGradient{
-        0% {
-          background-position: 0 85%;
-        }
-        50%{
-          background-position: 100% 20%;
-        }
-        100%{
-          background-position: 0% 85%;
-        }
-
       }
     </style>
   </head>
