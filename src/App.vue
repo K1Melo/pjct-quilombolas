@@ -47,21 +47,22 @@ body::-webkit-scrollbar-thumb {
 .bg-container{
   min-height: 100vh;
   background-size: 600% 600%;
-  background-image: linear-gradient(60deg, #FFF8F8 ,rgb(206, 175, 175), rgba(156, 123, 123, 0.9) );
+  // background-image: linear-gradient(60deg, #FFF8F8 ,rgb(206, 175, 175), rgba(156, 123, 123, 0.9) );
+  background-image: linear-gradient(60deg, #2E0F0F -80.88%, #e0dfdf 100% );
   transition: background 1s linear;  
   animation: bgAnimatedGradient 15s infinite linear;
 }
 
 .on{
   .bg-container{
-    background-image: linear-gradient(60deg, #1f1a1a ,#1b1414 ,#2e1f1f);
+    background-image: linear-gradient(60deg, #2E0F0F -80.88%, #0f0f0f 100%);
   }
   
-  @media only screen and (max-width: 800px) {
-    .bg-container{
-      background-image: linear-gradient(60deg, #1f1a1a ,#1d1717 ,rgb(24, 18, 18));
-    }
-  }
+  // @media only screen and (max-width: 800px) {
+  //   .bg-container{
+  //     background-image: linear-gradient(60deg, #1f1a1a ,#1d1717 ,rgb(24, 18, 18));
+  //   }
+  // }
 }
 
 @keyframes bgAnimatedGradient{
