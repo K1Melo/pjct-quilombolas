@@ -358,11 +358,11 @@ a {
     &.router-link-exact-active {
       transform: scale(1.2);
       color: #000000;
-      text-shadow: 0 0 1px #000000,
+      text-shadow: 0 0 5px #000000,
       0 0 1px #000000,
       0 0 1px #000000,
       0 0 1px #000000,
-      0 0 5px #000000;
+      0 0 1px #000000;
     }
     &.router-link-exact-active:hover {
       opacity: 0.5;
@@ -377,7 +377,7 @@ a {
       0 0 1px #000000,
       0 0 1px #000000,
       0 0 1px #000000,
-      0 0 5px #000000;
+      0 0 1px #000000;
   }
 
 
@@ -400,11 +400,11 @@ a {
   a {
     &.router-link-exact-active {
       color: #ffffff;
-      text-shadow: 0 0 1px #ffffff,
+      text-shadow: 0 0 5px #ffffff,
       0 0 1px #ffffff,
       0 0 1px #ffffff,
       0 0 1px #ffffff,
-      0 0 5px #ffffff;
+      0 0 1px #ffffff;
     }
     &.router-link-exact-active:hover {
       opacity: 0.5;
