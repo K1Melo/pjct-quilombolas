@@ -335,7 +335,7 @@ export default class Header extends Vue {
   align-items: center;
   justify-content: center;
   fill: #000000;
-  font-size: 10px;
+  font-size: 0.6em;
   transition: all 1s;
 }
 
@@ -354,6 +354,32 @@ export default class Header extends Vue {
 
 }
 
+a {
+    &.router-link-exact-active {
+      transform: scale(1.2);
+      color: #000000;
+      text-shadow: 0 0 1px #000000,
+      0 0 1px #000000,
+      0 0 1px #000000,
+      0 0 1px #000000,
+      0 0 5px #000000;
+    }
+    &.router-link-exact-active:hover {
+      opacity: 0.5;
+    }
+  }
+
+  a:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+    color: #000000;
+      text-shadow: 0 0 1px #000000,
+      0 0 1px #000000,
+      0 0 1px #000000,
+      0 0 1px #000000,
+      0 0 5px #000000;
+  }
+
 
 .on {
   .header{
@@ -371,6 +397,28 @@ export default class Header extends Vue {
     color: white;
   }
 
+  a {
+    &.router-link-exact-active {
+      color: #ffffff;
+      text-shadow: 0 0 1px #ffffff,
+      0 0 1px #ffffff,
+      0 0 1px #ffffff,
+      0 0 1px #ffffff,
+      0 0 5px #ffffff;
+    }
+    &.router-link-exact-active:hover {
+      opacity: 0.5;
+    }
+  }
+
+  a:hover{
+    color: #ffffff;
+      text-shadow: 0 0 1px #ffffff,
+      0 0 1px #ffffff,
+      0 0 1px #ffffff,
+      0 0 1px #ffffff,
+      0 0 5px #ffffff;
+  }
 }
 
 
@@ -405,27 +453,27 @@ export default class Header extends Vue {
   width: 100vw;
   z-index: 1;
   padding: 10px;
-  display: none;
+  display: flex;
+  opacity: 0;
+  transition: opacity .5s linear 0.2s;
   align-items: center;
   justify-content: space-evenly;
   a {
     text-decoration: none;
     margin-right: 15px;
     &.router-link-exact-active {
-      color: #358379;
       transform: scale(1.2);
     }
-    @media (prefers-color-scheme: dark) {
-      &.router-link-exact-active {
-        color: #7ABCB4;
-      }
+    &.router-link-exact-active:hover {
+      opacity: 0.5;
+    }
   }
-  }
-
+  
   a:hover{
     transform: scale(1.2);
     transition: 0.2s;
   }
+
   a:active{
     transform: scale(1.0);
     transition: 0.2s;
@@ -433,7 +481,8 @@ export default class Header extends Vue {
 }
 
 .active-nav{
-  display: flex;
+  opacity: 1;
 }
+
 
 </style>

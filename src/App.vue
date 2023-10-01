@@ -57,12 +57,7 @@ body::-webkit-scrollbar-thumb {
   .bg-container{
     background-image: linear-gradient(60deg, #2E0F0F -80.88%, #0f0f0f 100%);
   }
-  
-  // @media only screen and (max-width: 800px) {
-  //   .bg-container{
-  //     background-image: linear-gradient(60deg, #1f1a1a ,#1d1717 ,rgb(24, 18, 18));
-  //   }
-  // }
+
 }
 
 @keyframes bgAnimatedGradient{
