@@ -319,12 +319,12 @@ export default class Header extends Vue {
   transition: 0.5s;
 }
 
-.menu:hover, .github:hover{
+#menu:hover, .github:hover{
   transform: scale(1.3);
   transition: 0.2s;
   cursor: pointer;
 }
-.menu:active, .github:active{
+#menu:active, .github:active{
   transform: scale(1);
   transition: 0.3s;
 }
@@ -351,35 +351,55 @@ export default class Header extends Vue {
   align-items: center;
   justify-content: center;
   width: 33.3333333%;
-
 }
 
-a {
+.nav {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  padding: 10px;
+  display: flex;
+  opacity: 0;
+  transition: opacity .5s linear 0.2s;
+  align-items: center;
+  justify-content: space-evenly;
+  a {
+    text-decoration: none;
+    // margin-right: 15px;
+    width: auto auto;
     &.router-link-exact-active {
       transform: scale(1.2);
-      color: #000000;
-      text-shadow: 0 0 5px #000000,
-      0 0 1px #000000,
-      0 0 1px #000000,
-      0 0 1px #000000,
-      0 0 1px #000000;
+      color: #1c1616;
+      text-shadow: 0 0 5px #1c1616,
+      0 0 1px #1c1616,
+      0 0 1px #1c1616,
+      0 0 1px #1c1616,
+      0 0 1px #1c1616;
     }
     &.router-link-exact-active:hover {
       opacity: 0.5;
     }
   }
-
+  
   a:hover{
     transform: scale(1.2);
     transition: 0.2s;
-    color: #000000;
-      text-shadow: 0 0 1px #000000,
-      0 0 1px #000000,
-      0 0 1px #000000,
-      0 0 1px #000000,
-      0 0 1px #000000;
+      text-shadow: 0 0 1px#1c1616,
+      0 0 1px #1c1616,
+      0 0 1px #1c1616,
+      0 0 1px #1c1616,
+      0 0 1px #1c1616;
   }
 
+  a:active{
+    transform: scale(1.0);
+    transition: 0.2s;
+  }
+}
+
+.active-nav{
+  opacity: 1;
+}
 
 .on {
   .header{
@@ -412,7 +432,6 @@ a {
   }
 
   a:hover{
-    color: #ffffff;
       text-shadow: 0 0 1px #ffffff,
       0 0 1px #ffffff,
       0 0 1px #ffffff,
@@ -421,68 +440,23 @@ a {
   }
 }
 
-
-@media only screen and (max-width: 480px) {
-
-  .social{
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 800px) {
 
-  .social{
-    display: none;
-  }
-
-  .icons{
-    width: auto;
-  }
-
-  .menu{
-    width: auto;
-  }
-
-  .title-logo {
-    width: auto;
-  }
+.social{
+  display: none;
 }
 
-.nav {
-  position: fixed;
-  width: 100vw;
-  z-index: 1;
-  padding: 10px;
-  display: flex;
-  opacity: 0;
-  transition: opacity .5s linear 0.2s;
-  align-items: center;
-  justify-content: space-evenly;
-  a {
-    text-decoration: none;
-    margin-right: 15px;
-    &.router-link-exact-active {
-      transform: scale(1.2);
-    }
-    &.router-link-exact-active:hover {
-      opacity: 0.5;
-    }
-  }
-  
-  a:hover{
-    transform: scale(1.2);
-    transition: 0.2s;
-  }
-
-  a:active{
-    transform: scale(1.0);
-    transition: 0.2s;
-  }
+.icons{
+  width: auto;
 }
 
-.active-nav{
-  opacity: 1;
+.menu{
+  width: auto;
 }
 
+.title-logo {
+  width: auto;
+}
+}
 
 </style>

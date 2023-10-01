@@ -80,6 +80,10 @@ body {
   p, i, a{
     color: #2A3046;
     transition: all 1s;
+    
+    // background: -webkit-linear-gradient(#eee, #333);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   h1,h2,h3{
