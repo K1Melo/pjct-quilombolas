@@ -47,7 +47,6 @@ body::-webkit-scrollbar-thumb {
 .bg-container{
   min-height: 100vh;
   background-size: 600% 600%;
-  // background-image: linear-gradient(60deg, #FFF8F8 ,rgb(206, 175, 175), rgba(156, 123, 123, 0.9) );
   background-image: linear-gradient(60deg, #2E0F0F -80.88%, #e0dfdf 100% );
   transition: background 1s linear;  
   animation: bgAnimatedGradient 15s infinite linear;
@@ -88,8 +87,17 @@ body {
 
   h1,h2,h3{
     color: #000000;
-    font-weight: 300;
     transition: all 1s;  
+  }
+  
+  h1{
+    font-weight: 300;
+    
+  }
+  
+  h2, h3{
+    font-weight: 800;
+
   }
 
   nav, footer{

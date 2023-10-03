@@ -358,37 +358,22 @@ export default class Header extends Vue {
   width: 100vw;
   z-index: 1;
   padding: 10px;
-  display: flex;
-  opacity: 0;
-  transition: opacity .5s linear 0.2s;
+  display: none;
   align-items: center;
   justify-content: space-evenly;
   a {
     text-decoration: none;
-    // margin-right: 15px;
     width: auto auto;
     &.router-link-exact-active {
       transform: scale(1.2);
       color: #1c1616;
-      text-shadow: 0 0 5px #1c1616,
-      0 0 1px #1c1616,
-      0 0 1px #1c1616,
-      0 0 1px #1c1616,
-      0 0 1px #1c1616;
-    }
-    &.router-link-exact-active:hover {
-      opacity: 0.5;
+      text-shadow: 0 0 5px #1c1616;
     }
   }
   
   a:hover{
     transform: scale(1.2);
     transition: 0.2s;
-      text-shadow: 0 0 1px#1c1616,
-      0 0 1px #1c1616,
-      0 0 1px #1c1616,
-      0 0 1px #1c1616,
-      0 0 1px #1c1616;
   }
 
   a:active{
@@ -398,7 +383,7 @@ export default class Header extends Vue {
 }
 
 .active-nav{
-  opacity: 1;
+  display: flex;
 }
 
 .on {
@@ -420,23 +405,8 @@ export default class Header extends Vue {
   a {
     &.router-link-exact-active {
       color: #ffffff;
-      text-shadow: 0 0 5px #ffffff,
-      0 0 1px #ffffff,
-      0 0 1px #ffffff,
-      0 0 1px #ffffff,
-      0 0 1px #ffffff;
+      text-shadow: 0 0 5px #ffffff;
     }
-    &.router-link-exact-active:hover {
-      opacity: 0.5;
-    }
-  }
-
-  a:hover{
-      text-shadow: 0 0 1px #ffffff,
-      0 0 1px #ffffff,
-      0 0 1px #ffffff,
-      0 0 1px #ffffff,
-      0 0 5px #ffffff;
   }
 }
 
