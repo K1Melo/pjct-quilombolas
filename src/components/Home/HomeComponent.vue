@@ -6,7 +6,7 @@
           </div>
           <div class="sub-title">
               <h3>Povos Originários</h3>
-              <h3>do <span style="color: rgb(82, 38, 38);">Brasil</span></h3>
+              <h3>do <span class="brasil">Brasil</span></h3>
           </div>
           <div class="text">
               <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
@@ -52,7 +52,7 @@
 .homeComp{
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     justify-content: space-around;
 }
@@ -81,6 +81,10 @@
 
             color: #000;
             font-size: 2em;
+        }
+
+        .brasil {
+            color: rgb(92, 35, 35);
         }
     }
 
@@ -111,8 +115,6 @@
         box-shadow: 1px 1px 10px 1px #000;
         transition: all 1s linear;
 
-
-        position: relative;
         overflow: hidden;
         cursor: pointer;
         i{  
@@ -215,8 +217,11 @@
 
     .sub-title{
         h3{
-
+            
             color: #ffffff;
+        }
+        .brasil {
+            color: rgb(116, 64, 64);
         }
     }
 

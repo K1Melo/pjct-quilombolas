@@ -30,7 +30,7 @@
     i {
 
         transform: scale(0.95);
-        color: #2A3046;
+        color: #000000;
         width: 50%;
 
         border-radius: 50%;
@@ -60,7 +60,7 @@
 
     .themes {
 
-        border: #2A3046 solid 1px;
+        border: #000000 solid 1px;
         border-radius: 50px;
         cursor: pointer;
 
@@ -81,7 +81,7 @@
 
     #moon {
 
-        background-color: #2A3046;
+        background-color: #000000;
     }
 
     .dark #sun {
