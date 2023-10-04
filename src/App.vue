@@ -1,63 +1,62 @@
 <template>
-  <div class="bg-container">
-    <Header></Header>
-    <router-view/>
-  </div>
+  <TheHeader></TheHeader>
+  <router-view/>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import Header from '@/components/Header.vue'; // @ is an alias to /src
+<script>
+// @ is an alias to /src
+import TheHeader from '@/components/TheHeader.vue'
 
-@Options({
+export default {
+  name: 'AppVue',
   components: {
-    Header,
-  },
-})
-export default class App extends Vue {
-
+    TheHeader
+  }
 }
 </script>
 
-<style lang="less">
+<style>
+
+/* FONT STYLE */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
-//SCROLL
-body::-webkit-scrollbar {
-  width: 5px;
+
+/* GENRAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body::-webkit-scrollbar-track {
-  background: #bdb8b8;
-}
+body {
 
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(44, 44, 44, 0.692);
-}
+  /* FONT STYLE DEFINITION */
 
-.on::-webkit-scrollbar-track {
-  background: #302f2f;
-}
+  font-family: 'Rubik', sans-serif;
 
-.on::-webkit-scrollbar-thumb {
-  background-color: rgba(87, 87, 87, 0.692);
-}
-
-//ANIMATED BACKGROUND
-.bg-container{
+  /* BACKGROUND AND ANIMATION - LIGTH */
+  
   min-height: 100vh;
   background-size: 600% 600%;
   background-image: linear-gradient(60deg, #2E0F0F -80.88%, #e0dfdf 100% );
-  transition: background 1s linear;  
   animation: bgAnimatedGradient 15s infinite linear;
+
+  /* BEAUTIFUL TRANSITIONS */
+
+  transition: all 1s;
+  
 }
 
-.on{
-  .bg-container{
-    background-image: linear-gradient(60deg, #2E0F0F -80.88%, #0f0f0f 100%);
-  }
+.dark {
+
+  /* BACKGROUND AND ANIMATION - DARK */
+
+  background-image: linear-gradient(60deg, #2E0F0F -80.88%, #0f0f0f 100%);
 
 }
+
+/* ANIMATION BACKGROUND */
 
 @keyframes bgAnimatedGradient{
   0% {
@@ -70,59 +69,46 @@ body::-webkit-scrollbar-thumb {
     background-position: 0% 85%;
   }
 }
-  
-//GENERAL STYLES
-body {
-  font-family: 'Rubik', sans-serif;
-  // background-color: #FFF8F8;
 
-  p, i, a{
-    color: #2A3046;
-    transition: all 1s;
-    
-    // background: -webkit-linear-gradient(#eee, #333);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-  }
+p, i, a, svg {
 
-  h1,h2,h3{
-    color: #000000;
-    transition: all 1s;  
-  }
-  
-  h1{
-    font-weight: 300;
-    
-  }
-  
-  h2, h3{
-    font-weight: 800;
+  transition: all 1s;
 
-  }
-
-  nav, footer{
-    background-color: #f0e7e78b;
-  }
 }
 
-.on{
-  font-family: 'Rubik', sans-serif;
-  // background-color: #1C1A1F;
+/* GENERAL TITLES STYLE */
 
-  p, i, a{
-    color: #C5B7B6;
-    font-weight: 400;
-  }
+h1, h2, h3 {
 
-  h1,h2,h3{
-    color: #ffffff;
-  }
-  
-  nav, footer{
-  background-color: #2a272e73;
-  }
+  color: #000000;
+  opacity: 0.8;
+
+  transition: all 1s;
+
 }
 
+.dark h1, h2, h3 {
 
+  color: #ffffff;
+
+}
+
+h1 {
+
+  font-weight: 300;
+
+}
+
+h2, h3 {
+
+  font-weight: 800;
+
+}
+
+header {
+
+  transition: all 1s linear;
+
+}
 
 </style>

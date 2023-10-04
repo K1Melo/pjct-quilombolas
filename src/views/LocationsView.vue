@@ -1,23 +1,9 @@
 <template>
-  <div class="about">
-    
+  <div class="location">
+
   </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-
-
-@Options({
-    components: {
-
-    }
-})
-
-export default class Locations extends Vue {
-}
-</script>
-
-<style scoped lang="less">
+<style scoped>
 
 </style>

@@ -1,8 +1,4 @@
-# QUILOMBOLAS
-
-## View Project
-
-[PJCT-QUILOMBOLAS](https://pjct-quilombolas.vercel.app/)
+# grupo-quilombolas
 
 ## Project setup
 ```

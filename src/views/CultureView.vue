@@ -1,23 +1,9 @@
 <template>
     <div class="culture">
-
+        <h1>This is a culture page</h1>
     </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-
-
-@Options({
-    components: {
-
-    }
-})
-
-export default class Culture extends Vue {
-}
-</script>
-
-<style scoped lang="less">
+<style scoped>
 
 </style>

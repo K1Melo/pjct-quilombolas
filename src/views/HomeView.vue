@@ -1,28 +1,23 @@
 <template>
-    <div class="home">
-        <HomeComp></HomeComp>
-        <Slider></Slider>
-        <CultureComp></CultureComp>
-    </div>
+  <div class="home">
+    <HomeComponent></HomeComponent>
+  </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HomeComp from '@/components/Home/HomeComponent.vue';
-import Slider from '@/components/Home/Slider.vue';
-import CultureComp from '@/components/Home/CultureComp.vue';
+<script>
 
-@Options({
-    components: {
-        HomeComp,
-        Slider,
-        CultureComp
-    }
-})
+import HomeComponent from '@/components/Home/HomeComponent.vue';
 
-export default class HomeView extends Vue {
+export default {
+  name: 'HomeView',
+  components: {
+    HomeComponent
+  }
 }
 </script>
 
-<style scoped lang="less">
+<style scoped>
+
+
+
 </style>

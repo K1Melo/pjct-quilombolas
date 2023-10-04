@@ -1,93 +1,95 @@
 <template>
-    <div class="change">
-        <label class="label" for="chk" @click="changeTheme">
-            <i id="dark" class="material-icons" >dark_mode</i>
-            <i id="ligth" class="material-icons" >sunny</i>
-        </label>
+    <div class="changer">
+        <div class="themes" @click="changeTheme">
+            <i id="moon" class="material-icons">dark_mode</i>
+            <i id="sun" class="material-icons" >sunny</i>
+        </div>
     </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+<script>
+    export default {
+        name: 'ChangeTheme',
+        methods: {
+            changeTheme(){
+                const body = document.querySelector("body");
 
-@Options({
+                if(body.classList.contains("dark")){
+                    body.classList.remove("dark");
+                } else {
+                    body.classList.add("dark");
 
-})
-
-
-export default class ChangeTheme extends Vue {
-
-    public changeTheme(){
-        const body = document.querySelector("body");
-
-        if(!body?.classList.contains("on")){
-            body?.classList.add("on");
-        } else {
-            body?.classList.remove("on");
-
+                }
+            }
         }
     }
-}
 </script>
 
-<style scoped lang="less">
+<style scoped>
 
+    i {
 
-i{
-    transform: scale(0.95);
-    color:  #1C1A1F;
-    width: 50%;
-}
+        transform: scale(0.95);
+        color: #2A3046;
+        width: 50%;
 
-i:hover{
-    transform: scale(1.1);
-    transition: 1s;
-    opacity: 0.8;
-}
-
-i:active{
-    transform: scale(0.8);
-    transition: 1s;
-}
-
-.label{
-    border: #1C1A1F solid 1px;
-    border-radius: 50px;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 5px;
-    position: relative;
-    width: 50px;
-}
-
-
-#dark{
-    background-color: #1C1A1F;
-    border-radius: 50%;
-}
-
-.on{
-    .label{
-        border: #C5B7B6 solid 1px;
-    }
-    i{
-        color:  #C5B7B6;
-    }
-
-    #ligth{
-        background-color: #C5B7B6;
         border-radius: 50%;
-    }
-}
 
-@media only screen and (max-width: 480px) {
-    .change{
-        transform: scale(0.8);
     }
-}
+
+    .dark i {
+
+        color: #C5B7B6;
+
+    }
+
+    i:hover {
+
+        transform: scale(1.1);
+        transition: 1s;
+        opacity: 0.8;
+
+    }
+
+    i:active {
+
+        transform: scale(0.8);
+        transition: 1s;
+
+    }
+
+    .themes {
+
+        border: #2A3046 solid 1px;
+        border-radius: 50px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 5px;
+        position: relative;
+
+    }
+
+    .dark .themes {
+
+        border: #C5B7B6 solid 1px;
+
+    }
+
+    #moon {
+
+        background-color: #2A3046;
+    }
+
+    .dark #sun {
+        background-color: #C5B7B6;
+    }
+
+    .dark #moon {
+        background-color: #c5b7b600;
+    }
 
 </style>

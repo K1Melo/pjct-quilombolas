@@ -1,75 +1,74 @@
 <template>
     <div class="homeComp">
-        <div class="text-home">
-            <div class="title">
-                <h2>Quilombolas</h2>
-            </div>
-            <div class="sub-title">
-                <h3>Povos Originários</h3>
-                <h3>do <span style="color: rgb(82, 38, 38);">Brasil</span></h3>
-            </div>
-            <div class="text">
-                <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
-            </div>
-            <div class="down-button">
-                <p>Saiba Mais</p>
-                <i class="material-symbols-outlined ">expand_more</i>
-            </div>
-        </div>
-        <div class="img-home">
-            <img src="../../assets/home/mulher-quilombola.svg" alt="Mulher Quilombola">
-        </div>
-
-        <div class="circulos">
-            <div class="circulo2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="147" height="147" viewBox="0 0 147 147" fill="none">
-                    <circle cx="73.5" cy="73.5" r="73.5" fill="#4A2F2F"/>
-                </svg>
-            </div>
-            <div class="circulo1">
-        
-            </div>
-            <div class="circulo3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 147 147" fill="none">
-                    <circle cx="73.5" cy="73.5" r="73.5" fill="#4A2F2F"/>
-                </svg> 
-            </div>
-        </div>
+      <div class="text-home">
+          <div class="title">
+              <h2>Quilombolas</h2>
+          </div>
+          <div class="sub-title">
+              <h3>Povos Originários</h3>
+              <h3>do <span style="color: rgb(82, 38, 38);">Brasil</span></h3>
+          </div>
+          <div class="text">
+              <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
+          </div>
+          <a href="#slide"><div class="down-button">
+              <a href="#slide"><p>Saiba Mais</p></a>
+              <a href="#slide"><i class="material-symbols-outlined ">expand_more</i></a>
+          </div></a>
+      </div>
+      <div class="img-home">
+          <img src="../../assets/mulher-quilombola.svg" alt="Mulher Quilombola">
+      </div>
+      
+      <div class="circulos">
+          <div class="circulo2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="147" height="147" viewBox="0 0 147 147" fill="none">
+                  <circle cx="73.5" cy="73.5" r="73.5" fill="#4A2F2F"/>
+              </svg>
+          </div>
+          <div class="circulo1">
+      
+          </div>
+          <div class="circulo3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 147 147" fill="none">
+                  <circle cx="73.5" cy="73.5" r="73.5" fill="#4A2F2F"/>
+              </svg> 
+          </div>
+      </div>
     </div>
 </template>
-
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-
-
-@Options({
-})
-
-
-export default class HomeComp extends Vue {
-
-}
-</script>
-
+  
+<script>
+  
+  export default {
+    name: 'HomeComponent',
+    components: {
+    }
+  }
+  </script>
+  
 <style scoped lang="less">
+  
 .homeComp{
     display: flex;
     align-items: center;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
     justify-content: space-around;
 }
 
 .text-home{
     width: 60%;
-    height: 90vh;
+    height: 70vh;
     display: inline;
     z-index: 1;
 
     .title{
         
         h2{
+
+            color: #000;
+
             margin-bottom: 2vh;
             font-size: calc(5em + 1vw);
             opacity: 0.8;
@@ -77,18 +76,27 @@ export default class HomeComp extends Vue {
     }
 
     .sub-title{
+        margin-bottom: 20px;
         h3{
-            margin: 0;
+
+            color: #000;
             font-size: 2em;
         }
     }
 
     .text{
         width: 60%;
-        p{
+        margin-bottom:20px;
+        p {
+
             color: #000;
-            font-size: 20px;
+            font-size: 28px;
         }
+    
+    }
+
+    a{
+        text-decoration: none;
     }
 
     .down-button{
@@ -97,7 +105,7 @@ export default class HomeComp extends Vue {
         justify-content: center;
         width: fit-content;
 
-        padding: 0px 5px 0px 10px;
+        padding: 10px;
         border-radius: 30px;
         border: 1px solid #000000;
         box-shadow: 1px 1px 10px 1px #000;
@@ -191,10 +199,24 @@ export default class HomeComp extends Vue {
     }
 }
 
-.on{
+.dark{
     .img-home{
         img{
             opacity: 0.9;
+        }
+    }
+    .title{
+        
+        h2{
+
+            color: #ffffff;
+        }
+    }
+
+    .sub-title{
+        h3{
+
+            color: #ffffff;
         }
     }
 
@@ -238,31 +260,31 @@ export default class HomeComp extends Vue {
         height: 85vh;
         .title{
             h2{
-                font-size: calc(4em + 2vw);
+                font-size: calc(3em + 2vw);
             }
         }
 
         .sub-title{
             h3{
-                font-size: 2em;
+                font-size: 1.5em;
             }
         }
 
         .text{
             width: 70%;
             p{
-                font-size: 30px;
+                font-size: 25px;
             }
         }
     }
 
     .down-button{
         i{  
-            font-size: 30px;
+            font-size: 20px;
         }
         
         p{
-            font-size: 20px;
+            font-size: 15px;
         }
     }
 }    
@@ -322,11 +344,11 @@ export default class HomeComp extends Vue {
 
     .down-button{
         i{  
-            font-size: 20px;
+            font-size: 18px;
         }
         
         p{
-            font-size: 15px;
+            font-size: 12px;
         }
     }
 }    
@@ -369,4 +391,5 @@ export default class HomeComp extends Vue {
         }
     }
 }    
-</style>
+  
+  </style>

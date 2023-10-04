@@ -1,23 +1,9 @@
 <template>
     <div class="production">
-
+        <h1>This is a production page</h1>
     </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-
-
-@Options({
-    components: {
-
-    }
-})
-
-export default class Production extends Vue {
-}
-</script>
-
-<style scoped lang="less">
+<style scoped>
 
 </style>

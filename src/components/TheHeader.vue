@@ -1,11 +1,16 @@
 <template>
-  <div class="header-nav">
-    <div class="header">
-        <div class="menu">
-          <i class="material-symbols-outlined" @click="onBtnClick" id="menu">menu</i>      
-        </div>
-      <div class="title-logo">
-        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+    <div class="the-header">
+        <header>
+            <!-- MENU -->
+
+            <div class="menu">
+                <i class="material-symbols-outlined" id="menu" @click="showNavigation">menu</i>      
+            </div>
+
+            <!-- LOGO -->
+
+            <div class="title-logo">
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
                 "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="45pt" height="45pt" viewBox="0 0 1024.000000 1024.000000"
@@ -226,207 +231,231 @@
                 </g>
                 </svg>
                 <h1>Quilombolas</h1>
-      </div>
-      
-      <div class="icons">
-        <div id="change-theme">
-          <ChangeTheme></ChangeTheme>
-        </div>
-        <div class="social">
-          <div class="github" @click="openGitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav id="nav" class="nav">
-      <router-link to="/">Sobre</router-link>
-      <router-link to="/locations">Lugares</router-link>
-      <router-link to="/production">Produção</router-link>
-      <router-link to="/culture">Cultura</router-link>
-    </nav>
+            </div>
 
-  </div>
+            <!-- GIT HUB AND CHANGE THEAME -->
+
+            <div class="features">
+                <div class="change-theme">
+                    <ChangeTheme></ChangeTheme>
+                </div>
+                <div class="github">
+                    <svg id="github"  @click="openGitHub" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                </div>
+            </div>
+
+        </header>
+        <nav v-show="showNav">
+            <router-link to="/">Home</router-link>
+            <router-link to="/lugares">Lugares</router-link>
+            <router-link to="/producao">Produção</router-link>
+            <router-link to="/cultura">Cultura</router-link>
+        </nav>
+    </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import ChangeTheme from '@/components/ChangeTheme.vue'; 
+<script>
+    import ChangeTheme from './ChangeTheme.vue';
 
-@Options({
-  components: {
-    ChangeTheme,
-  },
-})
-
-
-export default class Header extends Vue {
-
-  public openGitHub(){
-    window.open("https://github.com/K1Melo/pjct-quilombolas");
-  }
-
-  public onBtnClick() {
-    const btnClicked = document.getElementById('nav');
-    let menu = document.getElementById('menu') as HTMLElement;
-
-    if(btnClicked?.classList.contains("active-nav")){
-      btnClicked.classList.remove("active-nav");
-      menu.innerHTML = '<i class="material-symbols-outlined" @click="onBtnClick" id="menu">menu</i>';
-    } else {
-      btnClicked?.classList.add("active-nav");
-      menu.innerHTML = '<i class="material-symbols-outlined" @click="onBtnClick" id="menu">close</i>';
+    export default {
+        name: 'TheHeader',
+        components: {
+            ChangeTheme
+        },
+        data() {
+            return {
+                showNav: false
+            }
+        }, methods: {
+            showNavigation() {
+                let menuIcon = document.getElementById("menu")
+                console.log(menuIcon)
+                if(this.showNav == true) {
+                    this.showNav = false;
+                    menuIcon.innerHTML = '<i class="material-symbols-outlined" id="menu" @click="showNavigation">menu</i>';
+                } else {
+                    this.showNav = true;
+                    menuIcon.innerHTML = '<i class="material-symbols-outlined" id="menu" @click="showNavigation">close</i>';
+                }
+            }, 
+            openGitHub() {
+                window.open("https://github.com/K1Melo/pjct-quilombolas");
+            }
+        }
     }
-  }
-}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="less">
-.header-nav{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 200;
+<style scoped>
+
+.the-header {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+
 }
 
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid #2A3046;
-  background-color: #ffffff28;
-  transition: all 1s;
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #2A3046;
+    background-color: #ffffff28;
+
 }
 
-#change-theme{
-  display: flex;
-  border-radius: 10px;
-}
+.dark header {
 
-.social{
-  display: flex;
-  align-items: center;
-}
-
-.github svg{
-  transition: fill 1s;
-  fill: #000000;
-  margin: 10px;
-}
-
-.github, .menu{
-  transition: 0.5s;
-}
-
-#menu:hover, .github:hover{
-  transform: scale(1.3);
-  transition: 0.2s;
-  cursor: pointer;
-}
-#menu:active, .github:active{
-  transform: scale(1);
-  transition: 0.3s;
-}
-
-.title-logo{
-  width: 33.3333334%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #000000;
-  font-size: 0.6em;
-  transition: all 1s;
-}
-
-.icons{
-  width: 33.3333333%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 33.3333333%;
-}
-
-.nav {
-  position: fixed;
-  width: 100vw;
-  z-index: 1;
-  padding: 10px;
-  display: none;
-  align-items: center;
-  justify-content: space-evenly;
-  a {
-    text-decoration: none;
-    width: auto auto;
-    &.router-link-exact-active {
-      transform: scale(1.2);
-      color: #1c1616;
-      text-shadow: 0 0 5px #1c1616;
-    }
-  }
-  
-  a:hover{
-    transform: scale(1.2);
-    transition: 0.2s;
-  }
-
-  a:active{
-    transform: scale(1.0);
-    transition: 0.2s;
-  }
-}
-
-.active-nav{
-  display: flex;
-}
-
-.on {
-  .header{
     border-bottom: 1px solid #C5B7B6;
     background-color: #00000028;
 
-  }
-  .github svg{
-    fill: #C5B7B6;
-  }
-  .title-logo{
-    fill: #ffffff;
-  }
-  i{
-    color: white;
-  }
+}
 
-  a {
-    &.router-link-exact-active {
-      color: #ffffff;
-      text-shadow: 0 0 5px #ffffff;
-    }
-  }
+#menu, #github {
+
+    cursor: pointer;
+
+}
+
+.menu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 33.3333333%;
+
+}
+
+.menu i {
+
+    color: #000000;
+}
+
+.dark .menu i {
+    color: #C5B7B6;
+}
+
+.title-logo{
+
+    width: 33.3333334%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fill: #000000;
+
+    font-size: 0.6em;
+
+}
+
+.dark .title-logo {
+
+    fill: #ffffff;
+
+}
+
+.features {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 33.3333333%;
+
+}
+
+.github svg {
+
+    margin-left: 10px;
+
+    fill: #000000;
+
+}
+
+.dark .github svg {
+
+    fill: #C5B7B6;
+
+}
+
+nav {
+
+    width: 100%;
+    z-index: 199;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #f0e7e78b;
+
+}
+
+nav a {
+
+    color: #2A3046;
+    text-decoration: none;
+
+}
+
+.dark nav {
+
+    background-color: #2a272e73;
+
+}
+.dark nav a {
+
+    color: #C5B7B6;
+
 }
 
 @media only screen and (max-width: 800px) {
 
-.social{
-  display: none;
+    .github {
+        display: none;
+    }
+
+    .features {
+        width: auto;
+    }
+
+    .menu{
+        width: auto;
+    }
+
+    .title-logo {
+        width: auto;
+    }
 }
 
-.icons{
-  width: auto;
+a:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+
+a:active{
+    transform: scale(1.0);
+    transition: 0.2s;
 }
 
-.menu{
-  width: auto;
+#menu:hover, #github:hover{
+  transform: scale(1.3);
+  transition: 0.2s;
+}
+#menu:active, #github:active{
+  transform: scale(1);
+  transition: 0.3s;
 }
 
-.title-logo {
-  width: auto;
-}
+#menu:active{
+    transform: rotate(0.5turn);
+
 }
 
 </style>
