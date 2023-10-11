@@ -4,10 +4,17 @@
         <div class="wrapper">
             <div class="slider snap-inline">
                 <div class="slides">
-                    <div class="slide-img">
+                    <div class="img-slide">
                         <img src="../../assets/slide1-img.svg" alt="">
                     </div>
-                    <div class="slide-text"><h2>OIIII</h2></div>
+                    <div class="text-slide">
+                        <div class="title">
+                            <h2>Teste</h2>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempora inventore ipsum blanditiis quidem suscipit earum voluptate soluta repellat possimus, voluptates neque dicta commodi sed consectetur quisquam omnis fuga accusantium.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="slides" style="margin-left: -15px;">
                     <p>2</p>
@@ -142,27 +149,6 @@ export default {
 }
 
 
-.slide-text {
-    width: 50%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-}
-.slide-img {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    width: 50%;
-    height: 100%;
-
-    img{
-        width: 75vh;
-        height: auto;
-        position: relative;
-        bottom: 1;
-        left: 0%;
-    }
-}
 
 .snap-inline {
     scroll-snap-type: inline mandatory;
@@ -172,13 +158,59 @@ export default {
     scroll-snap-align: start;
 }
 
+.img-slide {
+    display: flex;
+    justify-content: center;
+    background-image: url(../../assets/background-slide1.jpg);
+    background-position: 0%;
+    background-size: cover;
+    width: 50%;
+    img {
+        width: 75vh;
+    }
+}
+
+.text-slide {
+    width: 50%;
+    padding-left: 5%;
+    .title {
+        // width: 50%;
+        color: #000;
+
+        // margin-bottom: 2vh;
+        font-size: 2em;
+        opacity: 0.8;
+    }
+
+    .text {
+        width: 80%;
+        height: 50%;
+    }
+}
+
+
+
 @media only screen and (max-width: 1000px) {
-    .slide-img {
-        display: block;
-        img{
-            width: 45vh;
+    .slider {
+        
+        .slides{
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
         }
     }
+
+    .img-slide {
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    img {
+        width: 40vh;
+    }
+}
+
 }
 @media only screen and (max-width: 800px) {
     .slider {

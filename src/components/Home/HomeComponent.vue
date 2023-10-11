@@ -1,8 +1,8 @@
 <template>
-    <div class="homeComp">
-      <div class="text-home">
+    <div class="homeComp flex items-center min-h-screen	w-full justify-around ">
+      <div class="text-home w-3/5 h-[75vh] inline z-10">
           <div class="title">
-              <h2>Quilombolas</h2>
+              <h2 class="text-black/[0.95] text-9xl">Quilombolas</h2>
           </div>
           <div class="sub-title">
               <h3>Povos Originários</h3>
@@ -11,6 +11,7 @@
           <div class="text">
               <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
           </div>
+          
           <a href="#slide"><div class="down-button">
               <a href="#slide"><p>Saiba Mais</p></a>
               <a href="#slide"><i class="material-symbols-outlined ">expand_more</i></a>
@@ -42,41 +43,17 @@
   
   export default {
     name: 'HomeComponent',
-    components: {
+    methods: {
+
     }
   }
   </script>
   
 <style scoped lang="less">
-  
-.homeComp{
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    justify-content: space-around;
-}
 
 .text-home{
-    width: 60%;
-    height: 70vh;
-    display: inline;
-    z-index: 1;
-
-    .title{
-        
-        h2{
-
-            color: #000;
-
-            margin-bottom: 2vh;
-            font-size: calc(5em + 1vw);
-            opacity: 0.8;
-        }
-    }
-
     .sub-title{
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         h3{
 
             color: #000;
