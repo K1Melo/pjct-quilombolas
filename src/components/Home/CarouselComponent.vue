@@ -196,9 +196,9 @@ export default {
         h2{
             color: #000;
             line-height: 1;
+            font-size: 2em;
         }
         margin: 0;
-        font-size: 2em;
         opacity: 0.8;
     }
 
@@ -266,7 +266,9 @@ export default {
         padding: 5%;
         .title {
             margin-top: 1vh;
-            font-size: calc(2em + 2vw);
+            h2{
+                font-size: calc(2em + 2vw);
+            }
         }
 
         .text {
@@ -316,7 +318,9 @@ export default {
         .title {
             color: #000;
             margin-top: 1vh;
-            font-size: calc(2em + 2vw);
+            h2{
+                font-size: calc(2em + 2vw);
+            }
             opacity: 0.8;
 
             h2 {
@@ -361,7 +365,9 @@ export default {
         
         height: 50%;
         .title {
-            font-size: calc(1.2em + 2vw);
+            h2{
+                font-size: calc(1.2em + 2vw);
+            }
         }
     
         .text {
@@ -381,7 +387,9 @@ export default {
         
         height: 50%;
         .title {
-            font-size: calc(1em + 2vw);
+            h2{
+                font-size: calc(1em + 2vw);
+            }
         }
     
         .text {

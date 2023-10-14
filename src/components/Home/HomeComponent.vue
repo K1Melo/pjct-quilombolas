@@ -11,10 +11,10 @@
           <div class="text">
               <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
           </div>
-          <a href="#slide"><div class="down-button">
-              <a href="#slide"><p>Saiba Mais</p></a>
-              <a href="#slide"><i class="material-symbols-outlined ">expand_more</i></a>
-          </div></a>
+          <button class="down-button btn">
+            <p class="m-0">Saiba Main</p>
+            <i class="material-symbols-outlined ">expand_more</i>
+          </button>
       </div>
       <div class="img-home">
           <img src="../../assets/mulher-quilombola.svg" alt="Mulher Quilombola">
@@ -104,6 +104,8 @@
     }
 
     .down-button{
+        background-color: transparent;
+
         display: flex;
         align-items: center;
         justify-content: center;

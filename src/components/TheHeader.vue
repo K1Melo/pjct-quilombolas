@@ -230,7 +230,7 @@
                 26 c-22 35 -53 44 -113 32z"/>
                 </g>
                 </svg>
-                <h1>Quilombolas</h1>
+                <h1 class="m-0" style="font-size: 20px;">Quilombolas</h1>
             </div>
 
             <!-- GIT HUB AND CHANGE THEAME -->
@@ -371,7 +371,7 @@ header {
 
 .github svg {
 
-    margin-left: 10px;
+    margin-left: 15px;
 
     fill: #000000;
 
