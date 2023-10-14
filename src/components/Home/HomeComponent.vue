@@ -255,7 +255,7 @@
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1025px){
 
     .img-home{
         img{
@@ -266,6 +266,7 @@
     .text-home{
         height: 85vh;
         .title{
+            margin: 20px 0;
             h2{
                 font-size: calc(3em + 2vw);
             }
@@ -368,6 +369,7 @@
     
     .text-home{
         .title{
+            margin: 10px 0;
             h2{
                 text-align: center;
                 font-size: calc(2em + 2vw);
@@ -375,6 +377,7 @@
         }
 
         .sub-title{
+            margin-bottom: 10px;
             h3{
                 font-size: 1em;
             }
