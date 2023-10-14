@@ -1,15 +1,15 @@
 <template>
-    <div class="homeComp flex items-center min-h-screen	w-full justify-around ">
-      <div class="text-home w-3/5 h-[80vh] inline z-10">
+    <div class="homeComp">
+      <div class="text-home">
           <div class="title">
-              <h2 class="text-black/[0.95]" >Quilombolas</h2>
+              <h2>Quilombolas</h2>
           </div>
           <div class="sub-title">
-              <h3 class="text-black">Povos Originários</h3>
-              <h3 class="text-black">do <span class="brasil text-orange-950">Brasil</span></h3>
+              <h3>Povos Originários</h3>
+              <h3>do <span class="brasil">Brasil</span></h3>
           </div>
-          <div class="text w-3/5 my-5">
-              <p class="text-black">Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
+          <div class="text">
+              <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
           </div>
           <button class="down-button btn">
             <p class="m-0">Saiba Main</p>
@@ -42,31 +42,59 @@
   
   export default {
     name: 'HomeComponent',
-    methods: {
-
+    components: {
     }
   }
   </script>
   
 <style scoped lang="less">
+  
+.homeComp{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+}
 
 .text-home{
+    width: 60%;
+    height: 70vh;
+    display: inline;
+    z-index: 1;
 
-    .title {
-        h2 {
-            font-size: calc(5em + 2vw);
+    .title{
+        
+        h2{
+
+            color: #000;
+
+            margin-bottom: 2vh;
+            font-size: calc(5em + 1vw);
+            opacity: 0.8;
         }
     }
+
     .sub-title{
+        margin-bottom: 20px;
         h3{
+
+            color: #000;
             font-size: 2em;
         }
 
+        .brasil {
+            color: rgb(92, 35, 35);
+        }
     }
 
     .text{
+        width: 60%;
+        margin-bottom:20px;
         p {
-            font-size: 24px;
+
+            color: #000;
+            font-size: 28px;
         }
     
     }
@@ -99,7 +127,7 @@
             animation-iteration-count: infinite;
         }
 
-        span{
+        p{
             color: #000;
         }
     }
@@ -212,7 +240,7 @@
             color: #ffffff;
         }
 
-        span{
+        p{
             color: #ffffff;
         }
     }
@@ -263,7 +291,7 @@
             font-size: 20px;
         }
         
-        span{
+        p{
             font-size: 15px;
         }
     }
@@ -291,11 +319,11 @@
     .text-home{
         height: 80vh;
         margin-left: 10px;
-        justify-content: flex-start;
+        justify-content: start;
         .title{
             h2{
                 text-align: center;
-               font-size: calc(3em + 2vw);
+                font-size: calc(3em + 2vw);
             }
         }
 
@@ -327,7 +355,7 @@
             font-size: 18px;
         }
         
-        span{
+        p{
             font-size: 12px;
         }
     }
@@ -344,7 +372,7 @@
             margin: 10px 0;
             h2{
                 text-align: center;
-               font-size: calc(2em + 2vw);
+                font-size: calc(2em + 2vw);
             }
         }
 
@@ -368,7 +396,7 @@
             font-size: 15px;
         }
         
-        span{
+        p{
             font-size: 10px;
         }
     }
