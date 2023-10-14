@@ -1,8 +1,8 @@
 <template>
     <div class="changer">
-        <div class="themes relative transition-all duration-100 ease-out border border-current rounded-[50px] cursor-pointer flex items-center justify-center p-[5px]" @click="changeTheme">
-            <i id="moon" class="material-icons w-1/2 rounded-full hover:scale-[1.1] active:scale-[0.8] bg-black">dark_mode</i>
-            <i id="sun" class="material-icons w-1/2 rounded-full hover:scale-[1.1] active:scale-[0.8]" >sunny</i>
+        <div class="themes" @click="changeTheme">
+            <i id="moon" class="material-icons">dark_mode</i>
+            <i id="sun" class="material-icons" >sunny</i>
         </div>
     </div>
 </template>
@@ -26,14 +26,62 @@
 </script>
 
 <style scoped>
+
+    i {
+
+        transform: scale(0.95);
+        color: #000000;
+        width: 50%;
+
+        border-radius: 50%;
+
+    }
+
     .dark i {
+
         color: #C5B7B6;
+
+    }
+
+    i:hover {
+
+        transform: scale(1.1);
+        transition: 1s;
+        opacity: 0.8;
+
+    }
+
+    i:active {
+
+        transform: scale(0.8);
+        transition: 1s;
+
+    }
+
+    .themes {
+
+        border: #000000 solid 1px;
+        border-radius: 50px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 5px;
+        position: relative;
+
     }
 
     .dark .themes {
 
-        border-color: #C5B7B6;
+        border: #C5B7B6 solid 1px;
 
+    }
+
+    #moon {
+
+        background-color: #000000;
     }
 
     .dark #sun {
