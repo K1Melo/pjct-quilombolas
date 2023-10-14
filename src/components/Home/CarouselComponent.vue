@@ -321,7 +321,6 @@ export default {
             h2{
                 font-size: calc(2em + 2vw);
             }
-
             opacity: 0.8;
 
             h2 {
@@ -388,11 +387,9 @@ export default {
         
         height: 50%;
         .title {
-
             h2{
                 font-size: calc(1em + 2vw);
             }
-
         }
     
         .text {
