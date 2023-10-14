@@ -1,15 +1,15 @@
 <template>
-    <div class="fixed top-0 w-full z-50">
-        <header class="flex justify-around items-center border-b border-current border-solid bg-white/[.1]">
+    <div class="the-header">
+        <header>
             <!-- MENU -->
 
-            <div class="flex justify-center items-center w-1/3 max-md:w-auto">
-                <i class="material-symbols-outlined cursor-pointer hover:scale-[1.27] active:scale-100 active:rotate-180" id="menu" @click="showNavigation">menu</i>      
+            <div class="menu">
+                <i class="material-symbols-outlined" id="menu" @click="showNavigation">menu</i>      
             </div>
 
             <!-- LOGO -->
 
-            <div class="title-logo w-1/3 flex justify-center items-center max-md:w-auto">
+            <div class="title-logo">
                 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
                 "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -235,21 +235,21 @@
 
             <!-- GIT HUB AND CHANGE THEAME -->
 
-            <div class="flex justify-center items-center w-1/3 max-md:w-auto">
-                <div class="change-theme max-sm:scale-[0.8]">
+            <div class="features">
+                <div class="change-theme">
                     <ChangeTheme></ChangeTheme>
                 </div>
-                <div class="github max-md:hidden">
-                    <svg class="cursor-pointer ml-[10px] scale-[1.15] hover:scale-[1.27] active:scale-100" id="github"  @click="openGitHub" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                <div class="github">
+                    <svg id="github"  @click="openGitHub" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
                 </div>
             </div>
 
         </header>
-        <nav v-show="showNav" class="w-full z-49 p-[10px] flex justify-evenly items-center bg-slate-100/[0.3] text-[#2A3046] font-semibold">
-            <router-link class="active:scale-100 hover:scale-125 max-md:text-sm" to="/">Home</router-link>
-            <router-link class="active:scale-100 hover:scale-125 max-md:text-sm" to="/lugares">Lugares</router-link>
-            <router-link class="active:scale-100 hover:scale-125 max-md:text-sm" to="/producao">Produção</router-link>
-            <router-link class="active:scale-100 hover:scale-125 max-md:text-sm" to="/cultura">Cultura</router-link>
+        <nav v-show="showNav">
+            <router-link to="/">Home</router-link>
+            <router-link to="/lugares">Lugares</router-link>
+            <router-link to="/producao">Produção</router-link>
+            <router-link to="/cultura">Cultura</router-link>
         </nav>
     </div>
 </template>
@@ -287,16 +287,74 @@
 
 <style scoped>
 
-.dark header {
-    border-color: #C5B7B6;
-    background-color: #00000028;
+.the-header {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+
 }
 
-.dark #menu {
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #2A3046;
+    background-color: #ffffff28;
+
+}
+
+.dark header {
+
+    border-bottom: 1px solid #C5B7B6;
+    background-color: #00000028;
+
+}
+
+#menu, #github {
+
+    cursor: pointer;
+
+}
+
+.menu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 33.3333333%;
+
+}
+
+.menu i {
+
+    color: #000000;
+}
+
+.dark .menu i {
     color: #C5B7B6;
 }
 
+.title-logo{
+
+    width: 33.3333334%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fill: #000000;
+
+    font-size: 0.6em;
+
+}
+
 .dark .title-logo {
+
     fill: #ffffff;
 
 }
@@ -316,11 +374,33 @@
     margin-left: 15px;
 
     fill: #000000;
+
 }
 
 .dark .github svg {
 
     fill: #C5B7B6;
+
+}
+
+nav {
+
+    width: 100%;
+    z-index: 199;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #f0e7e78b;
+
+}
+
+nav a {
+
+    color: #2A3046;
+    text-decoration: none;
 
 }
 
@@ -337,6 +417,10 @@
 
 @media only screen and (max-width: 800px) {
 
+    .github {
+        display: none;
+    }
+
     .features {
         width: auto;
     }
@@ -351,19 +435,27 @@
 }
 
 a:hover{
+    transform: scale(1.2);
     transition: 0.2s;
   }
 
 a:active{
+    transform: scale(1.0);
     transition: 0.2s;
 }
 
 #menu:hover, #github:hover{
+  transform: scale(1.3);
   transition: 0.2s;
 }
 #menu:active, #github:active{
+  transform: scale(1);
   transition: 0.3s;
 }
 
+#menu:active{
+    transform: rotate(0.5turn);
+
+}
 
 </style>
