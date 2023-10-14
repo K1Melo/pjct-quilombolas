@@ -1,21 +1,20 @@
 <template>
     <div class="homeComp flex items-center min-h-screen	w-full justify-around ">
-      <div class="text-home w-3/5 h-[75vh] inline z-10">
+      <div class="text-home w-3/5 h-[80vh] inline z-10">
           <div class="title">
-              <h2 class="text-black/[0.95] text-9xl">Quilombolas</h2>
+              <h2 class="text-black/[0.95]" >Quilombolas</h2>
           </div>
           <div class="sub-title">
-              <h3>Povos Originários</h3>
-              <h3>do <span class="brasil">Brasil</span></h3>
+              <h3 class="text-black">Povos Originários</h3>
+              <h3 class="text-black">do <span class="brasil text-orange-950">Brasil</span></h3>
           </div>
-          <div class="text">
-              <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
+          <div class="text w-3/5 my-5">
+              <p class="text-black">Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
           </div>
-          
-          <a href="#slide"><div class="down-button">
-              <a href="#slide"><p>Saiba Mais</p></a>
-              <a href="#slide"><i class="material-symbols-outlined ">expand_more</i></a>
-          </div></a>
+          <button class="down-button hover:bg-gray-400 text-black font-bold py-2 px-4 rounded inline-flex items-center">
+              <span>Saiba Mais</span>
+              <i class="material-symbols-outlined ">expand_more</i>            
+          </button>
       </div>
       <div class="img-home">
           <img src="../../assets/mulher-quilombola.svg" alt="Mulher Quilombola">
@@ -52,26 +51,22 @@
 <style scoped lang="less">
 
 .text-home{
-    .sub-title{
-        // margin-bottom: 20px;
-        h3{
 
-            color: #000;
+    .title {
+        h2 {
+            font-size: calc(5em + 2vw);
+        }
+    }
+    .sub-title{
+        h3{
             font-size: 2em;
         }
 
-        .brasil {
-            color: rgb(92, 35, 35);
-        }
     }
 
     .text{
-        width: 60%;
-        margin-bottom:20px;
         p {
-
-            color: #000;
-            font-size: 28px;
+            font-size: 24px;
         }
     
     }
@@ -102,7 +97,7 @@
             animation-iteration-count: infinite;
         }
 
-        p{
+        span{
             color: #000;
         }
     }
@@ -215,7 +210,7 @@
             color: #ffffff;
         }
 
-        p{
+        span{
             color: #ffffff;
         }
     }
@@ -265,7 +260,7 @@
             font-size: 20px;
         }
         
-        p{
+        span{
             font-size: 15px;
         }
     }
@@ -293,11 +288,11 @@
     .text-home{
         height: 80vh;
         margin-left: 10px;
-        justify-content: start;
+        justify-content: flex-start;
         .title{
             h2{
                 text-align: center;
-                font-size: calc(3em + 2vw);
+               font-size: calc(3em + 2vw);
             }
         }
 
@@ -329,7 +324,7 @@
             font-size: 18px;
         }
         
-        p{
+        span{
             font-size: 12px;
         }
     }
@@ -345,7 +340,7 @@
         .title{
             h2{
                 text-align: center;
-                font-size: calc(2em + 2vw);
+               font-size: calc(2em + 2vw);
             }
         }
 
@@ -368,7 +363,7 @@
             font-size: 15px;
         }
         
-        p{
+        span{
             font-size: 10px;
         }
     }
