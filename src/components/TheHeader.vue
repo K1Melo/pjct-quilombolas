@@ -230,7 +230,7 @@
                 26 c-22 35 -53 44 -113 32z"/>
                 </g>
                 </svg>
-                <h1 class="text-xl m-0 max-md:text-lg">Quilombolas</h1>
+                <h1 class="m-0" style="font-size: 20px;">Quilombolas</h1>
             </div>
 
             <!-- GIT HUB AND CHANGE THEAME -->
@@ -298,6 +298,24 @@
 
 .dark .title-logo {
     fill: #ffffff;
+
+}
+
+.features {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 33.3333333%;
+
+}
+
+.github svg {
+
+    margin-left: 15px;
+
+    fill: #000000;
 }
 
 .dark .github svg {

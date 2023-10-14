@@ -11,9 +11,9 @@
           <div class="text w-3/5 my-5">
               <p class="text-black">Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
           </div>
-          <button class="down-button hover:bg-gray-400 text-black font-bold py-2 px-4 rounded inline-flex items-center">
-              <span>Saiba Mais</span>
-              <i class="material-symbols-outlined ">expand_more</i>            
+          <button class="down-button btn">
+            <p class="m-0">Saiba Main</p>
+            <i class="material-symbols-outlined ">expand_more</i>
           </button>
       </div>
       <div class="img-home">
@@ -76,6 +76,8 @@
     }
 
     .down-button{
+        background-color: transparent;
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -225,7 +227,7 @@
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1025px){
 
     .img-home{
         img{
@@ -236,6 +238,7 @@
     .text-home{
         height: 85vh;
         .title{
+            margin: 20px 0;
             h2{
                 font-size: calc(3em + 2vw);
             }
@@ -338,6 +341,7 @@
     
     .text-home{
         .title{
+            margin: 10px 0;
             h2{
                 text-align: center;
                font-size: calc(2em + 2vw);
@@ -345,6 +349,7 @@
         }
 
         .sub-title{
+            margin-bottom: 10px;
             h3{
                 font-size: 1em;
             }
