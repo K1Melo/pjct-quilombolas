@@ -54,6 +54,7 @@
     flex-wrap: wrap;
     align-items: center;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     justify-content: space-around;
     margin: 0;
