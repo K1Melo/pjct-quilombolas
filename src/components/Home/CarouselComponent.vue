@@ -1,5 +1,5 @@
 <template>
-    <div class="sliderView">
+    <div class="sliderView m-0 p-0">
         <i class="material-icons" id="left" @click="changeSlideLeft">arrow_back_ios</i>
         <div class="wrapper">
             <div class="slider snap-inline">
@@ -114,12 +114,11 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .wrapper {
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
 }
 
 #left {
@@ -143,14 +142,14 @@ export default {
 .slider {
     display: flex;
     grid-gap: 1rem;
-    width: 100%;
-    height: 100vh;
+    // width: 100%;
+    // height: 100vh;
     overflow-x: hidden;
 
     .slides {
         overflow: hidden;
         min-width: 100%;
-        height: 100%;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -188,7 +187,6 @@ export default {
     background-size: cover;
     width: 50%;
     height: 50vh;
-    height: 100%;
     img {
         z-index: 1;
 
