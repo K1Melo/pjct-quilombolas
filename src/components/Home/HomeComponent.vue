@@ -57,6 +57,7 @@
     justify-content: space-around;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
 }
 
 .text-home{

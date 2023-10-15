@@ -118,7 +118,7 @@ export default {
 
 .wrapper {
     // width: 100vw;
-    height: calc(100vh - 120px);
+    // height: 100vh;
 }
 
 #left {
@@ -149,7 +149,7 @@ export default {
     .slides {
         overflow: hidden;
         min-width: 100%;
-        height: 100%;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,7 +186,7 @@ export default {
     background-position: 0%;
     background-size: cover;
     width: 50%;
-    height: 50vh;
+    height: 100%;
     img {
         z-index: 1;
 
