@@ -109,6 +109,7 @@ export default {
 
 <style scoped lang="less">
 .sliderView {
+    background-color: aqua;
     margin: 0;
     padding: 0;
     display: flex;
