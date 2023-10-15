@@ -142,7 +142,6 @@ export default {
 
 .slider {
     display: flex;
-    grid-gap: 1rem;
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -306,7 +305,6 @@ export default {
     .slider {
         
         .slides{
-            margin-top: -50px;
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
