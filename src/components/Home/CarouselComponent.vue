@@ -15,7 +15,7 @@
                             <p>Originados da resistência africana contra a escravidão, escravizados fugitivos de suas fazendas buscaram liberdade nas áreas isoladas, onde formaram comunidades independentes, se organizando de acordo com suas próprias tradições culturais e sociais.</p>
                         </div>
                     </div>
-                    <div class="circulos">
+                    <!-- <div class="circulos">
                         <div class="circulo2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="550" height="550" viewBox="0 0 147 147" fill="none">
                                 <circle cx="73.5" cy="73.5" r="73.5" fill="#4A2F2F"/>
@@ -26,10 +26,15 @@
                                 <circle cx="73.5" cy="73.5" r="73.5" fill="#4A2F2F"/>
                             </svg> 
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="slides" style="margin-left: -15px;">
-                    <p>2</p>
+                    <div class="img-slide ">
+                        <h2>Oi</h2>
+                    </div>
+                    <div class="text-slide">
+                         
+                    </div>                
                 </div>
                 <div class="slides" style="margin-left: -15px;">
                     <p>3</p>
@@ -37,6 +42,7 @@
             </div>
         </div>
         <i class="material-icons" id="rigth" @click="changeSlideRigth">arrow_forward_ios</i>
+        
     </div>
 </template>
 
@@ -106,7 +112,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .wrapper {
@@ -174,7 +180,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(../../assets/background-slide1.jpg);
+    background-image: url(../../assets/background-test.jpeg);
+    transition: all 1s ease-out;
     background-position: 0%;
     background-size: cover;
     width: 50%;
@@ -187,12 +194,18 @@ export default {
     }
 }
 
+.dark .img-slide {
+    background-image: url(../../assets/background-slide1.jpg);
+}
+
 .text-slide {
     width: 50%;
     padding-left: 5%;
     z-index: 1;
 
     .title {
+        width: 90%;
+
         h2{
             color: #000;
             line-height: 1;
@@ -205,7 +218,7 @@ export default {
     .text {
         margin-top: 2vh;
 
-        width: 80%;
+        width: 90%;
         font-size: 30px;
         font-weight: 100;
     }
@@ -231,7 +244,7 @@ export default {
 .circulo3
 {
     left: 40%;
-    top: 10%;
+    bottom: 0%;
     animation: moveUpDown 2.5s ease-in-out infinite;
     position: relative;
 

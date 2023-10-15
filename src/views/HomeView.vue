@@ -4,8 +4,7 @@
         {{ estado.name}}
     
     </div> -->
-    <HomeComponent></HomeComponent>
-    <TheSlider></TheSlider>
+    <HomeComponent class="m-0"></HomeComponent><TheSlider class="m-0"></TheSlider>
   </div>
 </template>
 

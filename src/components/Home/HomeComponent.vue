@@ -52,7 +52,7 @@
 .homeComp{
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     justify-content: space-around;
 }
