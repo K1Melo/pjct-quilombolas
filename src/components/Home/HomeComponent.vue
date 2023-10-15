@@ -55,6 +55,8 @@
     height: 100vh;
     width: 100%;
     justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
 
 .text-home{

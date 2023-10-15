@@ -109,7 +109,8 @@ export default {
 
 <style scoped lang="less">
 .sliderView {
-    margin-top: -40px;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
