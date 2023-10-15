@@ -265,6 +265,7 @@
 
     .text-home{
         height: 85vh;
+
         .title{
             margin: 20px 0;
             h2{

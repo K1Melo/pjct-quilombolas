@@ -4,7 +4,8 @@
         {{ estado.name}}
     
     </div> -->
-    <HomeComponent class="m-0"></HomeComponent><TheSlider class="m-0"></TheSlider>
+    <HomeComponent></HomeComponent>
+    <TheSlider></TheSlider>
   </div>
 </template>
 
@@ -23,7 +24,5 @@ export default {
 </script>
 
 <style scoped>
-
-
 
 </style>

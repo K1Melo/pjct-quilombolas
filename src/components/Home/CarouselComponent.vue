@@ -109,6 +109,7 @@ export default {
 
 <style scoped lang="less">
 .sliderView {
+    margin-top: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,6 +186,7 @@ export default {
     background-position: 0%;
     background-size: cover;
     width: 50%;
+    height: 50vh;
     height: 100%;
     img {
         z-index: 1;
