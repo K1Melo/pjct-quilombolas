@@ -12,7 +12,7 @@
               <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
           </div>
           <button class="down-button btn">
-            <p class="m-0">Saiba Main</p>
+            <p class="m-0">Saiba Mais</p>
             <i class="material-symbols-outlined ">expand_more</i>
           </button>
       </div>
@@ -59,7 +59,6 @@
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
 }
 
 .text-home{
