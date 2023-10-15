@@ -51,6 +51,7 @@
   
 .homeComp{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 100vh;
     width: 100%;
