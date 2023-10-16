@@ -118,12 +118,12 @@ export default {
     transition: all 0.5s;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1025px) {
 
     .dif_2 {
         width: 25vh;
         height: 25vh;
-        font-size: 25px;
+        font-size: 22px;
 
         letter-spacing: 8px;
     }
@@ -132,13 +132,13 @@ export default {
 
         width: 25vh;
         height: 25vh;
-        font-size: 25px;
+        font-size: 22px;
 
         letter-spacing: 8px;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 920px) {
     .title_3 {
         /* font-size: 40px; */
         font-weight: 700;
@@ -206,4 +206,54 @@ export default {
         grid-row-start: 4;
         grid-row-end: 4;
     }
-}</style>
+}
+
+@media only screen and (max-width: 600px) {
+    .title_3 {
+        /* font-size: 40px; */
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .dificuldades {
+        text-align: center;
+        width: 90%;
+    }
+
+    .dif_2 {
+        margin-right: 4vw;
+        width: 18vh;
+        height: 18vh;
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .dif_1 {
+        margin-left: 4vw;
+        width: 18vh;
+        height: 18vh;
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .dif_2 {
+        margin-right: 4vw;
+        width: 15vh;
+        height: 15vh;
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+
+    .dif_1 {
+        margin-left: 4vw;
+        width: 15vh;
+        height: 15vh;
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+}
+
+</style>
