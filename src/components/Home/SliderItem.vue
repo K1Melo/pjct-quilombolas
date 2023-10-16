@@ -5,16 +5,16 @@
         </div>
         <div class="dificuldades">
             <div class="one">
-                <h2 class="dif_1">Infra<br>estru<br>tura</h2>
+                <h2 class="dif_1 unselectable">Infra<br>estru<br>tura</h2>
             </div>
             <div class="two">
-                <h2 class="dif_2">Educa<br>ção</h2>
+                <h2 class="dif_2 unselectable">Educa<br>ção</h2>
             </div>
             <div class="three">
-                <h2 class="dif_1">Saúde</h2>
+                <h2 class="dif_1 unselectable">Saúde</h2>
             </div>
             <div class="four">
-                <h2 class="dif_2">Terras</h2>
+                <h2 class="dif_2 unselectable">Terras</h2>
             </div>
         </div>
     </div>
@@ -116,6 +116,14 @@ export default {
     color: #651e1e;
     /*Manipulations stuff*/
     transition: all 0.5s;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @media only screen and (max-width: 1025px) {
