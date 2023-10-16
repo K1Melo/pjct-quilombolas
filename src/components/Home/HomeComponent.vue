@@ -13,7 +13,7 @@
           </div>
           <button class="down-button btn">
             <p class="m-0">Saiba Mais</p>
-            <i class="material-symbols-outlined ">expand_more</i>
+            <i class="material-symbols-outlined">expand_more</i>
           </button>
       </div>
       <div class="img-home">
@@ -124,7 +124,6 @@
         overflow: hidden;
         cursor: pointer;
         i{  
-
             color: #000;
             animation: heartBeat;
             animation-duration: 2s;

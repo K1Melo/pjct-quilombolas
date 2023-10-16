@@ -3,7 +3,7 @@
         <i class="material-icons" id="left" @click="changeSlideLeft">arrow_back_ios</i>
         <div class="wrapper">
             <div class="slider snap-inline">
-                <div class="slides">
+                <div class="slides slides-above">
                     <div class="img-slide ">
                         <img src="../../assets/slide1-img.svg" alt="">
                     </div>
@@ -28,16 +28,21 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="slides" style="margin-left: -15px;">
+                <div class="slides slides-above" style="margin-left: -15px;">
                     <div class="img-slide ">
-                        <h2>Oi</h2>
+                        <img src="../../assets/slide1-img.svg" alt="">
                     </div>
                     <div class="text-slide">
-                         
-                    </div>                
+                        <div class="title">
+                            <h2>Como eles surgiram</h2>
+                        </div>
+                        <div class="text">
+                            <p>Originados da resistência africana contra a escravidão, escravizados fugitivos de suas fazendas buscaram liberdade nas áreas isoladas, onde formaram comunidades independentes, se organizando de acordo com suas próprias tradições culturais e sociais.</p>
+                        </div>
+                    </div>               
                 </div>
                 <div class="slides" style="margin-left: -15px;">
-                    <p>3</p>
+                    <SliderItem></SliderItem>
                 </div>
             </div>
         </div>
@@ -48,7 +53,12 @@
 
 <script>
 
+import SliderItem from './SliderItem.vue';
+
 export default {
+    components: {
+        SliderItem
+    },
     data(){
         return {
             index: 0
@@ -108,6 +118,7 @@ export default {
 </script>
 
 <style scoped lang="less">
+
 .sliderView {
     margin: 0;
     padding: 0;
@@ -117,8 +128,10 @@ export default {
 }
 
 .wrapper {
-    // width: 100vw;
-    // height: 100vh;
+    width: 100%;
+    height: 100vh;
+    // overflow: hidden;
+
 }
 
 #left {
@@ -260,6 +273,8 @@ export default {
     }
 }
 
+
+
 .dark {
     .text-slide {
         .title {
@@ -303,7 +318,7 @@ export default {
 @media only screen and (max-width: 1000px) {
     .slider {
         
-        .slides{
+        .slides-above{
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
