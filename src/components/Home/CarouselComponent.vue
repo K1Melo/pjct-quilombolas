@@ -29,15 +29,15 @@
                     </div> -->
                 </div>
                 <div class="slides slides-above" style="margin-left: -15px;">
-                    <div class="img-slide ">
-                        <img src="../../assets/slide1-img.svg" alt="">
+                    <div class="img-slide2">
+                        <img src="../../assets/slide2-img.svg" alt="">
                     </div>
                     <div class="text-slide">
                         <div class="title">
-                            <h2>Como eles surgiram</h2>
+                            <h2>Quem são eles</h2>
                         </div>
                         <div class="text">
-                            <p>Originados da resistência africana contra a escravidão, escravizados fugitivos de suas fazendas buscaram liberdade nas áreas isoladas, onde formaram comunidades independentes, se organizando de acordo com suas próprias tradições culturais e sociais.</p>
+                            <p>Resumidamente, quilombolas são os habitantes de um quilombo, um local onde buscaram um refúgio das condições cruéis aos que passavam.</p>
                         </div>
                     </div>               
                 </div>
@@ -207,6 +207,24 @@ export default {
         bottom: 0%;
     }
 }
+.img-slide2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../../assets/background-slide2.jpg);
+    transition: all 1s ease-out;
+    background-position: 0%;
+    background-size: cover;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    img {
+        z-index: 1;
+
+        width: 120vh;
+        bottom: 0%;
+    }
+}
 
 .dark .img-slide {
     background-image: url(../../assets/background-slide1.jpg);
@@ -332,12 +350,19 @@ export default {
         justify-content: center;
         width: 100%;
         height: 50vh;
-    img {
-        width: 40vh;
+        img {
+            width: 40vh;
+        }
     }
+    .img-slide2 {
 
-    
-    
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 40vh;
+        img {
+            width: 45vh;
+        }
     }
     .text-slide {
         height: 70vh;

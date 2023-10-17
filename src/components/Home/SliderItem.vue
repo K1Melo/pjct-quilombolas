@@ -146,10 +146,9 @@ export default {
     }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1000px) {
     .title_3 {
-        /* font-size: 40px; */
-        font-weight: 700;
+        font-size: 6vw;
         text-transform: uppercase;
         color: #fff;
     }

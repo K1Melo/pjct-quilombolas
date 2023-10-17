@@ -6,6 +6,7 @@
     </div> -->
     <HomeComponent></HomeComponent>
     <TheSlider></TheSlider>
+    <DifficultiesComponent></DifficultiesComponent>
   </div>
 </template>
 
@@ -13,12 +14,14 @@
 
 import HomeComponent from '@/components/Home/HomeComponent.vue';
 import TheSlider from '@/components/Home/CarouselComponent.vue';
+import DifficultiesComponent from '@/components/Home/DifficultiesComponent.vue';
 
 export default {
   name: 'HomeView',
   components: {
     HomeComponent,
-    TheSlider
+    TheSlider,
+    DifficultiesComponent
   }
 }
 </script>

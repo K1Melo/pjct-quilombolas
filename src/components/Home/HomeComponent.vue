@@ -54,7 +54,6 @@
     flex-wrap: wrap;
     align-items: center;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     justify-content: space-around;
     margin: 0;
@@ -119,7 +118,7 @@
         border-radius: 30px;
         border: 1px solid #000000;
         box-shadow: 1px 1px 10px 1px #000;
-        transition: all 1s linear;
+        transition: all .5s linear;
 
         overflow: hidden;
         cursor: pointer;
@@ -257,8 +256,14 @@
         }
     }
 }
+@media screen and (max-width: 1000px){
+    .homeComp {
+        height: calc(var(--vh, 1vh) * 100);
+    }
 
+}
 @media screen and (max-width: 1025px){
+
 
     .img-home{
         img{
