@@ -4,16 +4,16 @@
             <h1 class="title_3">Dificuldades - Gerais</h1>
         </div>
         <div class="dificuldades">
-            <div class="one">
+            <div class="one" @click="toFirst">
                 <h2 class="dif_1 unselectable">Infra<br>estru<br>tura</h2>
             </div>
-            <div class="two">
+            <div class="two" @click="toSecond">
                 <h2 class="dif_2 unselectable">Educa<br>ção</h2>
             </div>
-            <div class="three">
+            <div class="three" @click="toThird">
                 <h2 class="dif_1 unselectable">Saúde</h2>
             </div>
-            <div class="four">
+            <div class="four" @click="toFourth">
                 <h2 class="dif_2 unselectable">Terras</h2>
             </div>
         </div>
@@ -24,7 +24,28 @@
 
 export default {
     name: 'SlideItemThree',
-
+    methods: {
+        toFirst() {
+            const firstAcord = document.getElementById("first");
+            firstAcord.setAttribute('checked', 'checked');
+            window.scroll({top: window.innerHeight*2, behavior: "smooth"});
+        },
+        toSecond() {
+            const secondAcord = document.getElementById("second");
+            secondAcord.setAttribute('checked', 'checked');
+            window.scroll({top: window.innerHeight*2, behavior: "smooth"});
+        },
+        toThird() {
+            const thirdAcord = document.getElementById("third");
+            thirdAcord.setAttribute('checked', 'checked');
+            window.scroll({top: window.innerHeight*2, behavior: "smooth"});
+        },
+        toFourth() {
+            const fourthAcord = document.getElementById("fourth");
+            fourthAcord.setAttribute('checked', 'checked');
+            window.scroll({top: window.innerHeight*2, behavior: "smooth"});
+        }
+    }
 }
 
 </script>
@@ -46,7 +67,7 @@ export default {
     font-size: 5vw;
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: #000000;
 }
 
 .dificuldades {
@@ -125,6 +146,11 @@ export default {
     -ms-user-select: none;
     user-select: none;
 }
+
+.dark .title_3 {
+    color: #fff;
+}
+
 
 @media only screen and (max-width: 1025px) {
 

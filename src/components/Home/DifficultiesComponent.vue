@@ -31,7 +31,7 @@
                         Explicabo repellendus optio necessitatibus!</p>
                 </div>
             </li>
-            <li>
+            <li style="border: none;">
                 <input type="radio" name="accordion" id="fourth">
                 <label for="fourth">Terras</label>
                 <div class="content">
@@ -75,7 +75,7 @@ export default {
         padding-right: 50%;
         width: 100%;
         height: 25%;
-        background-color: #5555556c;
+        background-color: #100404d7;
     }
 }
 .accordion {
@@ -85,15 +85,16 @@ export default {
     background-color: #555;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.15);
 
     li {
         list-style: none;
         width: 100%;
         padding: 30px;
         border-bottom: #555 1px solid;
-        background-color: #d8c6c6;
+        background-color: #F0DBDB;
         opacity: 0.88;
-        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+        
 
         label {
             display: flex;
@@ -137,6 +138,17 @@ export default {
         content: '-';
     }
 
+}
+
+.dark {
+    .title{ 
+        h2 {
+            background-color: #4c2626d7;
+        }
+    }
+    .accordion {
+        box-shadow: 6px 6px 10px 5px rgba(255, 255, 255, 0.15);
+    }
 }
 
 @media screen and (max-height: 800px){
