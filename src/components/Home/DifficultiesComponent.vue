@@ -1,12 +1,44 @@
 <template>
     <div class="dif">
-        <ul class="wrapper">
-            <li v-for="(item, index) in list" :key="'item'+index">
-                <i class="material-icons " :class="{'open':item.open}">expand_more</i>
-                <div class="title" @click="item.open = !item.open">
-                    {{ item.title }}
+        <div class="title">
+            <h2>Dificuldades</h2>
+        </div>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">Infraestrutura</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nam? Ratione molestias excepturi at
+                        necessitatibus officia, facere ullam laudantium maiores unde illo, expedita quod, nobis praesentium!
+                        Explicabo repellendus optio necessitatibus!</p>
                 </div>
-                <DifficultyItem :list="item"></DifficultyItem>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">Educação</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nam? Ratione molestias excepturi at
+                        necessitatibus officia, facere ullam laudantium maiores unde illo, expedita quod, nobis praesentium!
+                        Explicabo repellendus optio necessitatibus!</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">Saúde</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nam? Ratione molestias excepturi at
+                        necessitatibus officia, facere ullam laudantium maiores unde illo, expedita quod, nobis praesentium!
+                        Explicabo repellendus optio necessitatibus!</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">Terras</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nam? Ratione molestias excepturi at
+                        necessitatibus officia, facere ullam laudantium maiores unde illo, expedita quod, nobis praesentium!
+                        Explicabo repellendus optio necessitatibus!</p>
+                </div>
             </li>
         </ul>
     </div>
@@ -14,81 +46,358 @@
 
 <script>
 
-import DifficultyItem from './DifficultyItem.vue';
-
 export default {
     name: 'DifficultiesComp',
-    data: () => {
-        return {
-            list: [
-                {
-                    title: "Infraestrutura",
-                    open: false,
-                    text: ["Loren Ipsun"]
-                },
-                {
-                    title: "Educação",
-                    open: false,
-                    text: ["Loren Ipsun"]
-                },
-                {
-                    title: "Saúde",
-                    open: false,
-                    text: ["Loren Ipsun"]
-                },
-                {
-                    title: "Terras",
-                    open: false,
-                    text: ["Loren Ipsun"]
-                }
-            ]
-        }
-    },
-    components: {
-        DifficultyItem
-    }
+
 }
 
 </script>
 
 <style lang="less" scoped>
 
-.dif{
+.dif {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     height: 100vh;
+    width: 100%;
 }
 
-.wrapper {
-    list-style: none;
-    background-color: #fefefe;
-    box-shadow: 0 2px #000000ca;
-    border-radius: 4px;
+.title{
+    width: 40%;
+    height: 50vh;
+    h2 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        font-size: calc(4em + 1vw);
+        padding-right: 50%;
+        width: 100%;
+        height: 25%;
+        background-color: #5555556c;
+    }
+}
+.accordion {
+    z-index: 1;
+    margin: 60px auto;
+    width: calc(40vw + 10vh);
+    background-color: #555;
+    border-radius: 20px;
     overflow: hidden;
 
     li {
-        position: relative;
-        color: #555;
-        border-top: 1px solid #dedede;
-        cursor: pointer;
+        list-style: none;
+        width: 100%;
+        padding: 30px;
+        border-bottom: #555 1px solid;
+        background-color: #d8c6c6;
+        opacity: 0.88;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
 
-        .title {
-            padding: 10px 0;
-            text-indent: 20px;
+        label {
+            display: flex;
+            align-items: center;
+            
+            padding: 10px;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
         }
 
-        i {
-            position: absolute;
-            top: 14px;
-            right: 10px;
-            transition: transform .5s ease-in-out;
+        label::before {
+            content: '+';
+            margin-right: 10px;
+            font-size: 24px;
+            ;
+        }
 
-        }
-        .open {
-            transform: rotateZ(180deg);
-        }
-        .title:hover {
-            color: #4f7351;
-            background-color: #DFEEE0;
+        input[type="radio"] {
+            display: none;
         }
     }
+
+    .content {
+        color: #555;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height 1s ease-in-out, padding 1s ease-in-out;
+    }
+
+    input[type="radio"]:checked + label + .content{
+        max-height: 300px;
+        padding: 10px 10px 20px;
+    }
+
+    input[type="radio"]:checked + label::before {
+        content: '-';
+    }
+
+}
+
+@media screen and (max-height: 800px){
+    
+.title{
+    width: 40%;
+    height: 70vh;
+    h2 {
+        font-size: calc(3em + 1vw);
+    }
+}
+.accordion {
+    z-index: 1;
+    margin: 60px auto;
+    width: calc(40vw + 10vh);
+    background-color: #555;
+    border-radius: 20px;
+    overflow: hidden;
+
+    li {
+        list-style: none;
+        width: 100%;
+        padding: 20px;
+        border-bottom: #555 1px solid;
+        background-color: #d8c6c6;
+        opacity: 0.88;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+
+        label {
+            display: flex;
+            align-items: center;
+            
+            padding: 5px;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        label::before {
+            content: '+';
+            margin-right: 5px;
+            font-size: 18px;
+            ;
+        }
+    }
+
+    .content {
+        color: #555;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+    }
+
+    input[type="radio"]:checked + label + .content{
+        max-height: 300px;
+        padding: 5px 5px 10px;
+    }
+
+}
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .dif {
+        flex-direction: column;
+    }
+
+    .title{
+    width: 100%;
+    height: 20vh;
+    h2 {
+        padding-right: 0%;
+
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        font-size: calc(3em + 1vw);
+    }
+}
+.accordion {
+    z-index: 1;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #555;
+    border-radius: 20px;
+    overflow: hidden;
+
+    li {
+        list-style: none;
+        width: 100%;
+        padding: 30px;
+        border-bottom: #555 1px solid;
+        background-color: #d8c6c6;
+        opacity: 0.88;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+
+        label {
+            display: flex;
+            align-items: center;
+            
+            padding: 8px;
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        label::before {
+            content: '+';
+            margin-right: 5px;
+            font-size: 18px;
+            ;
+        }
+    }
+
+    .content {
+        color: #555;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+    }
+
+    input[type="radio"]:checked + label + .content{
+        max-height: 300px;
+        padding: 5px 5px 10px;
+    }
+
+}
+}
+@media screen and (max-width: 600px){
+
+    .dif {
+        flex-direction: column;
+    }
+
+    .title{
+    width: 100%;
+    height: 18vh;
+    h2 {
+        padding-right: 0%;
+
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        font-size: calc(2em + 1vw);
+    }
+}
+.accordion {
+    z-index: 1;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #555;
+    border-radius: 20px;
+    overflow: hidden;
+
+    li {
+        list-style: none;
+        width: 100%;
+        padding: 20px;
+        border-bottom: #555 1px solid;
+        background-color: #d8c6c6;
+        opacity: 0.88;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+
+        label {
+            display: flex;
+            align-items: center;
+            
+            padding: 8px;
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        label::before {
+            margin-right: 5px;
+            font-size: 15px;
+            ;
+        }
+    }
+
+    .content {
+        color: #555;
+        padding: 0 7px;
+        line-height: 23px;
+        max-height: 0;
+        font-size: 13px;
+    }
+
+    input[type="radio"]:checked + label + .content{
+        max-height: 200px;
+        padding: 3px 3px 7px;
+    }
+
+}
+}
+@media screen and (max-width: 300px){
+
+    .dif {
+        flex-direction: column;
+    }
+
+    .title{
+    width: 100%;
+    height: 18vh;
+    h2 {
+        padding-right: 0%;
+
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        font-size: calc(2em + 1vw);
+    }
+}
+.accordion {
+    z-index: 1;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #555;
+    border-radius: 20px;
+    overflow: hidden;
+
+    li {
+        list-style: none;
+        width: 100%;
+        padding: 20px;
+        border-bottom: #555 1px solid;
+        background-color: #d8c6c6;
+        opacity: 0.88;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+
+        label {
+            display: flex;
+            align-items: center;
+            
+            padding: 8px;
+            margin: 0;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        label::before {
+            margin-right: 5px;
+            font-size: 13px;
+            ;
+        }
+    }
+
+    .content {
+        color: #555;
+        padding: 0 5px;
+        line-height: 15px;
+        max-height: 0;
+        font-size: 10px;
+    }
+
+    input[type="radio"]:checked + label + .content{
+        max-height: 200px;
+        padding: 2px 2px 5px;
+    }
+
+}
 }
 </style>

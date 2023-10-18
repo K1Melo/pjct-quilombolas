@@ -11,7 +11,7 @@
           <div class="text">
               <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
           </div>
-          <button class="down-button btn">
+          <button class="down-button btn" @click="scrollBehavior">
             <p class="m-0">Saiba Mais</p>
             <i class="material-symbols-outlined">expand_more</i>
           </button>
@@ -42,7 +42,10 @@
   
   export default {
     name: 'HomeComponent',
-    components: {
+    methods: {
+        scrollBehavior() {
+            window.scroll({top: window.innerHeight, behavior: "smooth"})
+        }
     }
   }
   </script>
