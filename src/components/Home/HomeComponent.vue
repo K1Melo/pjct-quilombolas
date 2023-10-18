@@ -111,6 +111,7 @@
 
     .down-button{
         background-color: transparent;
+        z-index: 100;
 
         display: flex;
         align-items: center;
