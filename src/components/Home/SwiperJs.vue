@@ -1,15 +1,25 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { Pagination, Navigation } from "swiper/modules";
 
+import 'swiper/css/navigation';
 import "swiper/css";
+import "swiper/css/pagination";
+import "./Swiper.css";
 </script>
 
 <template>
     <div class="sliderView m-0 p-0">
-        <Swiper class="slider">
+        <Swiper 
+            :modules="[Pagination, Navigation]"
+            :lazy="true"
+            :navigation="true"
+            :pagination="true"
+            class="slider"
+        >
             <SwiperSlide class="slides slides-above">
                 <div class="img-slide ">
-                    <img src="../../assets/slide1-img.svg" alt="">
+                    <img src="../../assets/slide1-img.svg" loading="lazy" alt="">
                 </div>
                 <div class="text-slide">
                     <div class="title">
@@ -23,19 +33,17 @@ import "swiper/css";
                 </div>
             </SwiperSlide>
             <SwiperSlide class="slides slides-above">
-                <div class="img-slide ">
-                    <img src="../../assets/slide1-img.svg" alt="">
-                </div>
-                <div class="text-slide">
-                    <div class="title">
-                        <h2>Como eles surgiram</h2>
+                <div class="img-slide2">
+                        <img src="../../assets/slide2-img.svg" loading="lazy" alt="">
                     </div>
-                    <div class="text">
-                        <p>Originados da resistência africana contra a escravidão, escravizados fugitivos de suas fazendas
-                            buscaram liberdade nas áreas isoladas, onde formaram comunidades independentes, se organizando
-                            de acordo com suas próprias tradições culturais e sociais.</p>
-                    </div>
-                </div>
+                    <div class="text-slide">
+                        <div class="title">
+                            <h2>Quem são eles</h2>
+                        </div>
+                        <div class="text">
+                            <p>Resumidamente, quilombolas são os habitantes de um quilombo, um local onde buscaram um refúgio das condições cruéis aos que passavam.</p>
+                        </div>
+                    </div> 
             </SwiperSlide>
             <SwiperSlide class="slides">
                 <SliderItem></SliderItem>
@@ -373,4 +381,7 @@ export default {
             font-size: 14px;
         }
     }
-}</style>
+}
+
+
+</style>

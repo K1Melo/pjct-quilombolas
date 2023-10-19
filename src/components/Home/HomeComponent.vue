@@ -151,7 +151,7 @@
 .img-home{
     display: flex;
     align-items: flex-end;
-    z-index: 1;
+    z-index: 0;
     img{
         width: 75vh;
         height: auto;
@@ -163,7 +163,7 @@
 
 .circulos
 {   
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -174,6 +174,7 @@
 }
 .circulo1
 {
+    z-index: -1;
 
     position: absolute;
     left: 50%;
@@ -187,6 +188,8 @@
 }
 .circulo2
 {
+    z-index: -1;
+
     position: absolute;
     left: 40%;
     top: 60%;
@@ -194,6 +197,8 @@
 }
 .circulo3
 {
+    z-index: -1;
+
     animation: moveUpDown 2.5s ease-in-out infinite;
     position: absolute;
     left: 0;

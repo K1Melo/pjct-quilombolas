@@ -4,16 +4,16 @@
             <h1 class="title_3">Dificuldades - Gerais</h1>
         </div>
         <div class="dificuldades">
-            <div class="one" @click="toFirst">
+            <div class="one ball" @click="toFirst">
                 <h2 class="dif_1 unselectable">Infra<br>estru<br>tura</h2>
             </div>
-            <div class="two" @click="toSecond">
+            <div class="two ball" @click="toSecond">
                 <h2 class="dif_2 unselectable">Educa<br>ção</h2>
             </div>
-            <div class="three" @click="toThird">
+            <div class="three ball" @click="toThird">
                 <h2 class="dif_1 unselectable">Saúde</h2>
             </div>
-            <div class="four" @click="toFourth">
+            <div class="four ball" @click="toFourth">
                 <h2 class="dif_2 unselectable">Terras</h2>
             </div>
         </div>
