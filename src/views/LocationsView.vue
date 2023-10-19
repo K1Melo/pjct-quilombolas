@@ -1,7 +1,7 @@
 <template>
   <div class="location">
     <LocationsComp></LocationsComp>
-    <SpreadComp></SpreadComp>
+    <SpreadComp>  </SpreadComp>
   </div>
 </template>
 

@@ -27,21 +27,56 @@ export default {
     methods: {
         toFirst() {
             const firstAcord = document.getElementById("first");
+            const secondAcord = document.getElementById("second");
+            const thirdAcord = document.getElementById("third");
+            const fourthAcord = document.getElementById("fourth");
+            firstAcord.removeAttribute('checked');
+            secondAcord.removeAttribute('checked');
+            thirdAcord.removeAttribute('checked');
+            fourthAcord.removeAttribute('checked');
+            
+
+
             firstAcord.setAttribute('checked', 'checked');
             window.scroll({top: window.innerHeight*2, behavior: "smooth"});
         },
         toSecond() {
+            const firstAcord = document.getElementById("first");
             const secondAcord = document.getElementById("second");
+            const thirdAcord = document.getElementById("third");
+            const fourthAcord = document.getElementById("fourth");
+            firstAcord.removeAttribute('checked');
+            secondAcord.removeAttribute('checked');
+            thirdAcord.removeAttribute('checked');
+            fourthAcord.removeAttribute('checked');
+            
             secondAcord.setAttribute('checked', 'checked');
             window.scroll({top: window.innerHeight*2, behavior: "smooth"});
         },
         toThird() {
+            const firstAcord = document.getElementById("first");
+            const secondAcord = document.getElementById("second");
             const thirdAcord = document.getElementById("third");
+            const fourthAcord = document.getElementById("fourth");
+            firstAcord.removeAttribute('checked');
+            secondAcord.removeAttribute('checked');
+            thirdAcord.removeAttribute('checked');
+            fourthAcord.removeAttribute('checked');
+            
             thirdAcord.setAttribute('checked', 'checked');
             window.scroll({top: window.innerHeight*2, behavior: "smooth"});
         },
         toFourth() {
+            
+            const firstAcord = document.getElementById("first");
+            const secondAcord = document.getElementById("second");
+            const thirdAcord = document.getElementById("third");
             const fourthAcord = document.getElementById("fourth");
+            firstAcord.removeAttribute('checked');
+            secondAcord.removeAttribute('checked');
+            thirdAcord.removeAttribute('checked');
+            fourthAcord.removeAttribute('checked');
+
             fourthAcord.setAttribute('checked', 'checked');
             window.scroll({top: window.innerHeight*2, behavior: "smooth"});
         }
