@@ -2,6 +2,7 @@
 .swiper-pagination-bullet {
     background-color:#000000 !important;
     opacity: 0.5 !important;
+    margin-bottom: 2vh !important;
 }
 
 .swiper-pagination-bullet-active {

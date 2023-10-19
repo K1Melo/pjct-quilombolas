@@ -44,7 +44,7 @@
     name: 'HomeComponent',
     methods: {
         scrollBehavior() {
-            window.scroll({top: window.innerHeight*1.01, behavior: "smooth"})
+            window.scroll({top: window.innerHeight, behavior: "smooth"})
         }
     }
   }
