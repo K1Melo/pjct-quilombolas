@@ -303,14 +303,14 @@ header {
     justify-content: space-around;
 
     border-bottom: 1px solid #2A3046;
-    background-color: #ffffff28;
+    background-color: #ffffff7e;
 
 }
 
 .dark header {
 
     border-bottom: 1px solid #C5B7B6;
-    background-color: #00000028;
+    background-color: #000000a7;
 
 }
 
@@ -432,6 +432,11 @@ nav a {
     .title-logo {
         width: auto;
     }
+
+    nav a {
+
+        font-size: 15px;
+}
 }
 
 a:hover{

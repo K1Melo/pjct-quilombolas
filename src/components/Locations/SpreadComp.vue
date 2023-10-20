@@ -1,6 +1,10 @@
 <template>
     <div class="spred">
-
+        <div class="container">
+            <div class="title">
+                <h2>Como se espalharam</h2>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -8,5 +12,60 @@
 .spred {
     height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.container {
+    width: 60%;
+    height: 80%;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba(147, 147, 147, 0.37);
+
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: -1;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    border-bottom: 1px solid #0000008f;
+}
+
+.title h2 {
+    color: #000000;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 820px) {
+    
+    
+    .container {
+        width: 80%;
+        height: 80%
+    }
+    .title h2 {
+        color: #000000;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    
+    .title h2 {
+        color: #000000;
+        font-size: 18px;
+    }
+}
+
 </style>
