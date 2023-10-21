@@ -29,6 +29,12 @@
 
     i {
 
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
         transform: scale(0.95);
         color: #000000;
         width: 50%;

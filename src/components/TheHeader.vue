@@ -322,6 +322,12 @@ header {
 
 .menu {
 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,6 +346,12 @@ header {
 }
 
 .title-logo{
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     width: 33.3333334%;
 

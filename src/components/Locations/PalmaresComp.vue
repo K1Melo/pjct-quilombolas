@@ -72,6 +72,7 @@ m1913 -235 c11 -27 40 -91 63 -144 75 -164 88 -229 90 -424 2 -175 14 -264 45
 
 <style scoped>
 .palmares {
+    overflow: hidden;
     width: 100%;
     height: 100vh;
 }

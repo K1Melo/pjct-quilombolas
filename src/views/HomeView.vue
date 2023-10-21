@@ -1,9 +1,6 @@
 <template>
   <div class="home">
-    <!-- <div class="states" v-for="estado in $store.state.estados" :key="estado.name">
-        {{ estado.name}}
-    
-    </div> -->
+
     <HomeComponent></HomeComponent>
     <SwiperJs></SwiperJs>
     <!-- <TheSlider></TheSlider> -->

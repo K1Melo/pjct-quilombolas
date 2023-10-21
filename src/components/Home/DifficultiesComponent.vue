@@ -18,7 +18,7 @@
                 <input type="radio" name="accordion" id="second">
                 <label for="second">Educação</label>
                 <div class="content">
-                    <p>LUm dos principais desafios sociais esfrentado pelos
+                    <p>Um dos principais desafios sociais esfrentado pelos
                         quilombolas, já que a maioria das estruturas educacionais
                         apresenta falta de docentes qualificados para a formação
                         de uma boa grade curricular.</p>

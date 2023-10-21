@@ -1,7 +1,88 @@
+
+
 <template>
   <div class="locationComp">
     <!-- <dotlottie-player src="https://lottie.host/839939c7-2444-4b8d-bb0e-a26a902f01a1/PR7fWX0l8y.json"
       background="transparent" speed="1" loop autoplay></dotlottie-player> -->
+    <!-- <vue-particles
+            id="tsparticles"
+            :particlesInit="particlesInit"
+            :particlesLoaded="particlesLoaded"
+            url="http://foo.bar/particles.json"
+        /> -->
+      <vue-particles id="tsparticles" :particlesInit="particlesInit" :particlesLoaded="particlesLoaded" :options="{
+        fullScreen: {
+          enable: true,
+          zIndex: 0
+        },
+        fpsLimit: 120,
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: 'repulse'
+            },
+            onHover: {
+              enable: true,
+              mode: 'repulse'
+            },
+            resize: true
+          },
+          modes: {
+            bubble: {
+              distance: 150,
+              duration: 2,
+              opacity: 0.5,
+              size: 40
+            },
+            push: {
+              quantity: 4
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4
+            }
+          }
+        },
+        particles: {
+          color: {
+            value: '#ffffff'
+          },
+          links: {
+            color: '#ffffff',
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1
+          },
+          move: {
+            direction: 'none',
+            enable: true,
+            outMode: 'bounce',
+            random: false,
+            speed: 2,
+            straight: false
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800
+            },
+            value: 5
+          },
+          opacity: {
+            value: 0.5
+          },
+          shape: {
+            type: 'circle'
+          },
+          size: {
+            random: true,
+            value: 5
+          }
+        },
+        detectRetina: true
+      }" />
     <img src="../../assets/globe.png" class="globe" alt="">
     <div class="title-location">
       <h2>LUGARES</h2>
@@ -10,23 +91,39 @@
       <p class="quilombo">PALMARES</p>
       <p class="state">- ALAGOAS</p>
     </div>
-    <i class="material-icons" @click="scrollBehavior">expand_more</i>
-</div>
+    <i style="z-index: 1;" class="material-icons" @click="scrollBehavior">expand_more</i>
+  </div>
 </template>
 
+<script setup>
+
+//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+
+const particlesInit = async engine => {
+  //await loadFull(engine);
+  await loadSlim(engine);
+};
+
+const particlesLoaded = async container => {
+  console.log("Particles container loaded", container);
+};
+
+</script>
+
 <script>
-  
-  export default {
-    name: 'LocationsComp',
-    methods: {
-        scrollBehavior() {
-            window.scroll({top: window.innerHeight, behavior: "smooth"})
-        }
+export default {
+  methods: {
+    scrollBehavior() {
+      window.scroll({top: window.innerHeight, behavior: "smooth"})
     }
   }
+}
+
 </script>
   
 <style lang="less" scoped>
+
 .locationComp {
   background-image: url(../../assets/background-locations.png);
   background-size: cover;
@@ -51,21 +148,31 @@
 
 .globe {
   position: absolute;
-  // width: 40vw;
-  height: 40vw;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  animation: moveUpDown 4s ease-in-out infinite;
 
+  // width: 50vw;
+  height: 50vw;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+  animation: moveUpDown 2s ease-in-out infinite;
 }
 
 @keyframes moveUpDown {
-    0%, 100% {
-      transform: translateY(0); /* Inicial e estado final: sem deslocamento vertical */
-    }
-    50% {
-      transform: translateY(-0.5rem); /* Estado intermediário: desloca 20px para cima */
-    }
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Inicial e estado final: sem deslocamento vertical */
+  }
+
+  50% {
+    transform: translateY(-0.5rem);
+    /* Estado intermediário: desloca 20px para cima */
+  }
 }
 
 .title-location {
@@ -98,10 +205,8 @@
 
 @media screen and (max-width: 1024px) {
   .globe {
-    // width: 50vw;
     height: 50vw;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    // width: 50vw;
   }
 
   .title-location {
@@ -126,8 +231,6 @@
   .globe {
     // width: 50vw;
     height: 50vw;
-    filter: blur(2.5px);
-    -webkit-filter: blur(2.5px);
   }
 
   .title-location {
@@ -148,13 +251,8 @@
   }
 
 }
+
 @media screen and (max-width: 600px) {
-  .globe {
-    // width: 60vw;
-    height: 60vw;
-    filter: blur(1.5px);
-    -webkit-filter: blur(1.5px);
-  }
 
   .title-location {
     h2 {
@@ -173,12 +271,11 @@
   }
 
 }
+
 @media screen and (max-width: 300px) {
   .globe {
-    // width: 70vw;
-    height: 70vw;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    // width: 50vw;
+    height: 60vw;
   }
 
   .title-location {
