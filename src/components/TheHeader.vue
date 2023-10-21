@@ -269,7 +269,6 @@
         }, methods: {
             showNavigation() {
                 let menuIcon = document.getElementById("menu")
-                console.log(menuIcon)
                 if(this.showNav == true) {
                     this.showNav = false;
                     menuIcon.innerHTML = '<i class="material-symbols-outlined" id="menu" @click="showNavigation">menu</i>';

@@ -1,12 +1,12 @@
-<script setup>
+<!-- <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination, Navigation } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
-import 'swiper/css/navigation';
 import "swiper/css";
+import 'swiper/css/effect-coverflow';
 import "swiper/css/pagination";
 import "../Home/Swiper.css";
-</script>
+</script> -->
 
 <template>
     <div class="map-comp">
@@ -70,7 +70,7 @@ import "../Home/Swiper.css";
 		c0,0-7.8,3.9-13.5,2.1c-5.7-1.8-5.2,2.1-5.2,2.1s-0.8,1.8,1,4.2s3.1,5.5-5.2,4.2c-8.3-1.3-10.4,0-10.4,0s1.3,1.8-5.2-1
 		c-6.5-2.9-9.4,2.1-9.4,2.1s0,4.4-6.2,3.1c-4.2-0.8-6.2,4.2-6.2,4.2s-4.7-1-6.2,1c-1.6,2.1-1,5.2-1,5.2S316.2,104.7,314.9,107.3z" />
 	
-					<path class="mapa-svg-estados state-mt-class" id="state-mt" d="M262.9,306c0,0-1.8,11.2,1,16.6s-2.1,12.5-2.1,12.5s3.6,8.3,1,13.5c3.6,2.9,25,2.1,25,2.1s10.7,2.3,2.1,11.4
+					<path  @click="mostrarStado('Mato Grosso')" class="mapa-svg-estados state-mt-class" id="state-mt" d="M262.9,306c0,0-1.8,11.2,1,16.6s-2.1,12.5-2.1,12.5s3.6,8.3,1,13.5c3.6,2.9,25,2.1,25,2.1s10.7,2.3,2.1,11.4
 		c-1.6,2.1-0.5,7.5,5.2,12.5c5.7,4.9-3.1,8.3-3.1,8.3s-8.6,1-6.2,12.5c0.5,6-7.3,9.4-7.3,9.4s7.8,0,4.2,8.3c-0.5,3.9,3.1,9.4,3.1,9.4
 		s2.1,8.3,1,11.4c-1.7-0.1-3.5-0.1-5.2,0l6.2,7.3l1,17.7h36.4v3.1c0,0-3.4,4.9-1,10.4c2.3,5.5-2.3,4.7,6.2,8.3s8.3,5.7,8.3,7.3
 		s7,2.1,7.3,1s5.2-3.1,5.2-3.1l5.2-7.3c0,0,7,0.3,11.4-3.1c2.6-2.6,17.7,7.3,17.7,7.3s8.1,3.4,10.4,0s10.4,1,10.4,1s5.5,1.8,7.3-4.9
@@ -136,7 +136,7 @@ import "../Home/Swiper.css";
 		l5.2-8.3c0,0,3.6-9.6,7.3-11.4c3.6-1.8-6.2-5.2-6.2-5.2s18.7-4.4,18.7,8.3s-4.4,26,1,34.3c5.5,8.3,8.8,11.2,14.6,7.3
 		c2.3,4.7,3.4,5.5-2.1,9.4c-5.5,3.9-6,10.7,0,16.6c3.6,6.5,6,9.9,7.3,15.6C563.8,335.6,574,336.1,574,336.1z" />
 	
-					<path class="mapa-svg-estados state-ba-class" id="state-ba" d="M740.4,363.2c0,0-10.9,22.6-18.7,26c-7.8,3.4-12.5,5.7-10.4,9.4s1.6,10.9,0,14.6s-5.2,25.5,0,32.3
+					<path  @click="mostrarStado('Bahia')" class="mapa-svg-estados state-ba-class" id="state-ba" d="M740.4,363.2c0,0-10.9,22.6-18.7,26c-7.8,3.4-12.5,5.7-10.4,9.4s1.6,10.9,0,14.6s-5.2,25.5,0,32.3
 		c3.6,6.5-1,10.4-1,10.4s-4.7,16.6-3.1,26c1,6.5-5.2,9.4-5.2,9.4s-4.7,2.6-5.2,7.3c-2.3-2.3-9.4-6.2-9.4-6.2s1.3-4.9-3.1-7.3
 		c-4.4-2.3-3.1-11.4-3.1-11.4s1-4.4,8.3-10.4c7.3-6,5.7-13-1-14.6c-6.8-1.6-12.5-3.1-12.5-3.1s-6.5-2.6-9.4,0
 		c-1.8-3.9-9.4-11.4-9.4-11.4s-2.1-4.2-6.2-1c-1.8,1-5.5,1.6-11.4-3.1c-10.1-6.5-13-6-16.6-5.2c-2.8,0.7-5.8,0.3-8.3-1
@@ -223,49 +223,82 @@ import "../Home/Swiper.css";
 				</g>
 			</svg>
 		</div>
-		<Swiper 
-            :modules="[Pagination, Navigation]"
-            :lazy="true"
-            :navigation="false"
-            :pagination="true"
-            class="slider-map"
-        >
-			<SwiperSlide  v-for="estado in $store.state.estados" :key="estado.name">
+		<div class="slider-map">
+			<div  v-for="estado in $store.state.estados" 
+			class="swiper-slide" :key="estado.name" :id="estado.name">
 				<h2>{{ estado.name}}</h2>
+				<h2>{{ estado.currentSlide}}</h2>
 				<p>{{ estado.description }}</p>
 				
-			</SwiperSlide>
-
-		</Swiper>
+			</div>
+		</div>
     </div>
 </template>
 
 <script>
 
 export default {
+	methods: {
+		mostrarStado(name) {
+			
+			if(!document.getElementById(name).classList.contains('swiper-slide-active')) {
 
+				document.getElementById(name).classList.add('swiper-slide-active');
+			} else {
+				document.getElementById(name).classList.remove('swiper-slide-active');
+
+			}
+			
+		}
+	}
 }
 
 </script>
 
 <style scoped>
 
+.map {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
 .slider-map {
 	height: 50%;
-	width: 50%;
-	background-color: #373737;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide {
+	position: absolute;
+	background-color: #000000;
+	background-position: center;
+	background-size: cover;
+	width: 40%;
+	height: 50%;
+
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+.swiper-slide-active {
+	opacity: 1;
+	display: inline;
+	background-color: #000000;
 }
 .map-comp {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-	
+    justify-content: space-evenly;
+	overflow: hidden;
 }
 
 svg {
-    width: 700px;
+    width: 70vh;
 }
 
 .mapa-svg-estados {
@@ -355,6 +388,8 @@ svg {
 
 }
 
+@media screen and (max-width: 1000px){
 
+}
 
 </style>
