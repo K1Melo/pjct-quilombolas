@@ -214,12 +214,12 @@
 			</svg>
 		</div>
 		<div class="slider-map">
-			<div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.name" :id="estado.acronym">
+			<div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index"
+				:id="estado.acronym">
 				<div class="title-map">
 					<h2>{{ index + 1 }}° {{ estado.name }}</h2>
 				</div>
 				<p>População quilombola: {{ estado.population }}</p>
-
 			</div>
 		</div>
 	</div>
@@ -232,21 +232,29 @@ export default {
 		mostrarStado(id) {
 			const estados = document.querySelectorAll(".swiper-slide");
 			const maps = document.querySelectorAll(".mapa-svg-estados");
+
 			estados.forEach(estado => {
+
 				let toLowerId = estado.id.toLowerCase();
-				estado.classList.remove("swiper-slide-active")
 				let stateId = 'state-' + toLowerId;
+
+				estado.classList.remove("swiper-slide-active")
+
 				if (estado.id == id) {
+
 					maps.forEach(map => {
+
 						map.classList.remove("mapa-svg-estados-active")
 						if (map.id == stateId) {
+
 							map.classList.add("mapa-svg-estados-active")
 						}
+
 					})
+
 					estado.classList.add("swiper-slide-active")
-					estado.classList.add("mapa-svg-estados-active")
 				}
-			})
+			});
 		}
 	}
 }
@@ -316,8 +324,6 @@ export default {
 svg {
 	width: 70vh;
 }
-
-
 
 .mapa-svg-estados:hover {
 
