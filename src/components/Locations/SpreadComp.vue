@@ -4,6 +4,14 @@
             <div class="title">
                 <h2>Como se espalharam</h2>
             </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
+            </div>
         </div>
     </div>
 </template>
@@ -31,7 +39,8 @@
     overflow: hidden;
 
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title {

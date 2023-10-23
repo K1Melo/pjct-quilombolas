@@ -219,7 +219,19 @@
 				<div class="title-map">
 					<h2>{{ index + 1 }}° {{ estado.name }}</h2>
 				</div>
-				<p>População quilombola: {{ estado.population }}</p>
+				<p>População: {{ estado.population }}</p>
+				<p>Porcentagem de quilombolas: </p>
+			</div>
+			<div class="box">
+				<div class="box-circle">
+					<svg>
+						<circle cx="70" cy="70" r="70"></circle>
+						<circle cx="70" cy="70" r="70" id="porcentageCircle"></circle>
+					</svg>
+					<div class="number">
+						<h2>{{ actualPorcentage }}%</h2>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -227,13 +239,20 @@
 
 <script>
 
+
 export default {
+	data() {
+		return {
+			actualPorcentage: 0
+		}
+	},
 	methods: {
 		mostrarStado(id) {
 			const estados = document.querySelectorAll(".swiper-slide");
 			const maps = document.querySelectorAll(".mapa-svg-estados");
+			const porcentageCircle = document.getElementById("porcentageCircle");
 
-			estados.forEach(estado => {
+			estados.forEach((estado, index) => {
 
 				let toLowerId = estado.id.toLowerCase();
 				let stateId = 'state-' + toLowerId;
@@ -241,6 +260,9 @@ export default {
 				estado.classList.remove("swiper-slide-active")
 
 				if (estado.id == id) {
+
+					this.actualPorcentage = this.$store.state.estados[index].porcentage
+					porcentageCircle.style.strokeDashoffset = 440 - (440 * this.actualPorcentage / 100)
 
 					maps.forEach(map => {
 
@@ -256,13 +278,49 @@ export default {
 				}
 			});
 		}
+	},
+	mounted() {
+		const estados = document.querySelectorAll(".swiper-slide");
+		const porcentageCircle = document.getElementById("porcentageCircle");
+		const maps = document.querySelectorAll(".mapa-svg-estados");
+
+
+		estados.forEach((estado, index) => {
+
+			let toLowerId = estado.id.toLowerCase();
+			let stateId = 'state-' + toLowerId;
+
+			
+			if (estado.id == 'BA') {
+				estado.classList.add("swiper-slide-active")
+				this.actualPorcentage = this.$store.state.estados[index].porcentage
+				porcentageCircle.style.strokeDashoffset = 440 - (440 * this.actualPorcentage / 100)
+				maps.forEach(map => {
+	
+					map.classList.remove("mapa-svg-estados-active")
+					if (map.id == stateId) {
+	
+						map.classList.add("mapa-svg-estados-active")
+					}
+	
+				})
+			}
+		})
+
 	}
 }
 
 </script>
 
 <style lang="less" scoped>
+.map-comp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .map {
+	z-index: 1;
 	width: 50%;
 	display: flex;
 	justify-content: center;
@@ -271,11 +329,52 @@ export default {
 }
 
 .slider-map {
-	height: 50%;
+	height: 40%;
 	width: 50%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	flex-direction: column;
+}
+
+.box {
+	position: relative;
+	top: 50%;
+	right: 5%;
+}
+
+.box-circle {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+circle {
+	width: 150px;
+	height: 150px;
+	stroke: aqua;
+	stroke-width: 3px;
+	fill: none;
+	transform: translate(5px, 5px);
+	transition: all 1s;
+	stroke-dasharray: 440;
+	stroke-dashoffset: 440;
+}
+
+circle:nth-child(1) {
+	stroke-dashoffset: 0;
+	stroke: gray;
+}
+
+circle:nth-child(2) {
+	stroke: dodgerblue;
+}
+
+.number {
+	position: absolute;
 }
 
 .mapa-svg-estados {
@@ -295,9 +394,7 @@ export default {
 
 .swiper-slide {
 	position: absolute;
-	background-color: #000000;
-	background-position: center;
-	background-size: cover;
+	background-color: rgb(0, 0, 0);
 	padding: 2%;
 	width: 20%;
 	height: 50%;
@@ -309,7 +406,7 @@ export default {
 .swiper-slide-active {
 	opacity: 1;
 	display: inline;
-	background-color: #969696;
+	// background-color: #969696;
 }
 
 .map-comp {

@@ -7,18 +7,18 @@ export default createStore({
         acronym: 'BA',
         name: 'Bahia',
         population: 397.059,
-        porcentage: 10
+        porcentage: 30
       },
       {
         acronym: 'MA',
         name: 'Maranhão',
         population: 269.074,
-        porcentage: 30
+        porcentage: 20.26
       },
       {
         acronym: 'MG',
         name: 'Minas Gerais',
-        population: 135.310,
+        population: 135.311,
         porcentage: 10
       },
       {
