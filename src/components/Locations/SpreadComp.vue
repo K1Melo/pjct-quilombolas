@@ -1,6 +1,6 @@
 <template>
     <div class="spred">
-        <div class="container">
+        <div class="container" data-aos="fade-left"  data-aos-duration="1500">
             <div class="title">
                 <h2>Como se espalharam</h2>
             </div>
@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .container {
@@ -51,6 +52,10 @@
 .title h2 {
     color: #000000;
     font-size: 40px;
+}
+
+.text {
+    width: 90%;
 }
 
 @media only screen and (max-width: 820px) {

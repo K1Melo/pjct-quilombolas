@@ -1,5 +1,5 @@
 <template>
-  <div class="location">
+  <div class="location" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">
     <LocationsComp></LocationsComp>
     <SpreadComp></SpreadComp>
     <MapComp></MapComp>

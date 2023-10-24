@@ -1,7 +1,7 @@
 <template>
     <div class="homeComp m-0 p-0">
       <div class="text-home">
-          <div class="title">
+          <div class="title" data-aos="fade-left" data-aos-duration="1500">
               <h2>Quilombolas</h2>
           </div>
           <div class="sub-title">

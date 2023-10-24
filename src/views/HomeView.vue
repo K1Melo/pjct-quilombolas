@@ -1,9 +1,8 @@
 <template>
-  <div class="home">
+  <div class="home" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">
 
     <HomeComponent></HomeComponent>
     <SwiperJs></SwiperJs>
-    <!-- <TheSlider></TheSlider> -->
     <DifficultiesComponent></DifficultiesComponent>
   </div>
 </template>

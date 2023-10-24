@@ -215,7 +215,7 @@
 		</div>
 		<div class="slider-map">
 			<div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index"
-				:id="estado.acronym">
+				:id="estado.acronym" >
 				<div class="title-map">
 					<h2>{{ index + 1 }}° {{ estado.name }}</h2>
 				</div>

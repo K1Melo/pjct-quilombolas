@@ -84,7 +84,7 @@
         detectRetina: true
       }" />
     <img src="../../assets/globe.png" class="globe" alt="">
-    <div class="title-location">
+    <div class="title-location"  data-aos="fade-up-left" data-aos-duration="1500">
       <h2>LUGARES</h2>
     </div>
     <div class="subtitle">
