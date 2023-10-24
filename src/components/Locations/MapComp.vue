@@ -225,8 +225,8 @@
 			<div class="box">
 				<div class="box-circle">
 					<svg>
-						<circle cx="70" cy="70" r="70"></circle>
-						<circle cx="70" cy="70" r="70" id="porcentageCircle"></circle>
+						<circle cx="70" cy="70"></circle>
+						<circle cx="70" cy="70" id="porcentageCircle"></circle>
 					</svg>
 					<div class="number">
 						<h2>{{ actualPorcentage }}%</h2>
@@ -290,19 +290,19 @@ export default {
 			let toLowerId = estado.id.toLowerCase();
 			let stateId = 'state-' + toLowerId;
 
-			
+
 			if (estado.id == 'BA') {
 				estado.classList.add("swiper-slide-active")
 				this.actualPorcentage = this.$store.state.estados[index].porcentage
 				porcentageCircle.style.strokeDashoffset = 440 - (440 * this.actualPorcentage / 100)
 				maps.forEach(map => {
-	
+
 					map.classList.remove("mapa-svg-estados-active")
 					if (map.id == stateId) {
-	
+
 						map.classList.add("mapa-svg-estados-active")
 					}
-	
+
 				})
 			}
 		})
@@ -339,8 +339,9 @@ export default {
 
 .box {
 	position: relative;
+	overflow: hidden;
 	top: 50%;
-	right: 5%;
+	right: 10%;
 }
 
 .box-circle {
@@ -353,6 +354,7 @@ export default {
 }
 
 circle {
+	r: 70;
 	width: 150px;
 	height: 150px;
 	stroke: aqua;
@@ -375,6 +377,10 @@ circle:nth-child(2) {
 
 .number {
 	position: absolute;
+
+	h2 {
+		font-size: 30px;
+	}
 }
 
 .mapa-svg-estados {
@@ -396,11 +402,19 @@ circle:nth-child(2) {
 	position: absolute;
 	background-color: rgb(0, 0, 0);
 	padding: 2%;
-	width: 20%;
+	width: 30%;
 	height: 50%;
 
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
+
+	h2 {
+		font-size: 30px;
+	}
+
+	p {
+		font-size: 18px;
+	}
 }
 
 .swiper-slide-active {
@@ -459,5 +473,254 @@ svg {
 
 }
 
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 1025px) {
+	.swiper-slide {
+
+		h2 {
+			font-size: 22px;
+		}
+
+		p {
+			margin-bottom: 5px;
+			font-size: 15px;
+		}
+	}
+}
+@media screen and (max-width: 913px) {
+	.map-comp {
+		flex-direction: column;
+	}
+
+	.map {
+		width: 40%;
+	}
+
+	.swiper-slide {
+		padding: 3%;
+		width: 40%;
+		height: 40%;
+
+		h2 {
+			font-size: 25px;
+		}
+
+		p {
+			font-size: 15px;
+		}
+	}
+
+	.swiper-slide-active {
+		opacity: 1;
+	}
+
+	.box {
+		top: 40%;
+		right: 15%;
+		height: 50%;
+
+	}
+
+	.box-circle {
+		width: 150px;
+		height: 150px;
+	}
+
+	circle {
+		r: 55;
+		width: 100px;
+		height: 150px;
+		stroke-width: 2px;
+	}
+
+	.number {
+		position: absolute;
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+}
+@media screen and (min-height: 1368px) {
+
+	.map {
+		width: 40%;
+	}
+
+	.swiper-slide {
+		padding: 3%;
+		width: 40%;
+		height: 30%;
+
+		h2 {
+			margin-bottom: 15px;
+			font-size: 25px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}
+
+	.swiper-slide-active {
+		opacity: 1;
+	}
+
+	.box {
+		top: 30%;
+		right: 15%;
+		height: 50%;
+
+	}
+
+	.box-circle {
+		width: 150px;
+		height: 150px;
+	}
+
+	circle {
+		r: 55;
+		width: 100px;
+		height: 150px;
+		stroke-width: 2px;
+	}
+
+	.number {
+		position: absolute;
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+}
+@media screen and (max-width: 613px) {
+
+	.map {
+		width: 45%;
+	}
+
+	.swiper-slide {
+		padding: 4%;
+		width: 40%;
+
+		h2 {
+			font-size: 23px;
+		}
+
+		p {
+			font-size: 13px;
+		}
+	}
+
+	.swiper-slide-active {
+		opacity: 1;
+	}
+
+	.box {
+		top: 40%;
+		right: 10%;
+		height: 50%;
+
+	}
+
+	circle {
+		r: 50;
+		stroke-width: 2px;
+	}
+
+	.number {
+		position: absolute;
+
+		h2 {
+			font-size: 17px;
+		}
+	}
+}
+@media screen and (max-width: 503px) {
+
+	.map {
+		width: 50%;
+	}
+
+	.swiper-slide {
+		width: 45%;
+		height: 32%;
+
+		h2 {
+			font-size: 21px;
+		}
+
+		p {
+			margin-bottom: 8px;
+			font-size: 12px;
+		}
+	}
+
+	.swiper-slide-active {
+		opacity: 1;
+	}
+
+	.box {
+		top: 35%;
+		right: 10%;
+		height: 50%;
+
+	}
+
+	circle {
+		r: 45;
+		stroke-width: 2px;
+	}
+
+	.number {
+		position: absolute;
+
+		h2 {
+			font-size: 15px;
+		}
+	}
+}
+@media screen and (max-width: 403px) {
+
+	.map {
+		width: 50%;
+	}
+
+	.swiper-slide {
+		width: 45%;
+		height: 35%;
+
+		h2 {
+			font-size: 21px;
+		}
+
+		p {
+			margin-bottom: 8px;
+			font-size: 12px;
+		}
+	}
+
+	.swiper-slide-active {
+		opacity: 1;
+	}
+
+	.box {
+		top: 35%;
+		right: 10%;
+		height: 50%;
+
+	}
+
+	circle {
+		r: 45;
+		stroke-width: 2px;
+	}
+
+	.number {
+		position: absolute;
+
+		h2 {
+			font-size: 15px;
+		}
+	}
+}
 </style>
