@@ -341,7 +341,7 @@ export default {
 	position: relative;
 	overflow: hidden;
 	top: 50%;
-	right: 15%;
+	right: 18%;
 }
 
 .box-circle {
@@ -529,7 +529,7 @@ svg {
 	}
 
 	.map {
-		width: 40%;
+		width: 50%;
 	}
 
 	.swiper-slide {
@@ -635,7 +635,7 @@ svg {
 @media screen and (max-width: 613px) {
 
 	.map {
-		width: 50%;
+		width: 60%;
 	}
 
 	.swiper-slide {
@@ -680,7 +680,7 @@ svg {
 @media screen and (max-width: 503px) {
 
 	.map {
-		width: 60%;
+		width: 70%;
 	}
 
 	.swiper-slide {
@@ -726,7 +726,7 @@ svg {
 @media screen and (max-width: 403px) {
 
 	.map {
-		width: 70%;
+		width: 80%;
 	}
 
 	.swiper-slide {
@@ -772,7 +772,7 @@ svg {
 @media screen and (max-width: 300px) {
 
 	.map {
-		width: 80%;
+		width: 90%;
 	}
 
 	.swiper-slide {
