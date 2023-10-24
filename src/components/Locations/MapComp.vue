@@ -321,7 +321,7 @@ export default {
 
 .map {
 	z-index: 1;
-	width: 50%;
+	width: 35%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -330,7 +330,7 @@ export default {
 
 .slider-map {
 	height: 40%;
-	width: 50%;
+	width: 35%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -368,7 +368,7 @@ circle {
 
 circle:nth-child(1) {
 	stroke-dashoffset: 0;
-	stroke: gray;
+	stroke: rgb(142, 142, 142);
 }
 
 circle:nth-child(2) {
@@ -379,13 +379,18 @@ circle:nth-child(2) {
 	position: absolute;
 
 	h2 {
+		color: rgb(30, 30, 30);
 		font-size: 30px;
 	}
 }
 
+.dark .number h2 {
+	color: rgb(236, 236, 236);
+}
+
 .mapa-svg-estados {
 
-	fill: #373737;
+	fill: #1b1b1b;
 	-webkit-transition: .8s ease;
 	-moz-transition: .8s ease;
 	-ms-transition: .8s ease;
@@ -399,9 +404,9 @@ circle:nth-child(2) {
 }
 
 .swiper-slide {
+	background: rgba(255, 255, 255, 0.35);
 	border-radius: 20px;
 	position: absolute;
-	background-color: rgb(0, 0, 0);
 	padding: 2%;
 	width: 30%;
 	height: 50%;
@@ -410,12 +415,13 @@ circle:nth-child(2) {
 	transition: opacity 1s ease-in-out;
 
 	h2 {
-		font-size: 30px;
+		font-size: 50px;
+		color: rgb(0, 0, 0);
 	}
 
 	p {
-		color: white;
-		font-size: 18px;
+		color: rgb(0, 0, 0);
+		font-size: 20px;
 	}
 }
 
@@ -442,11 +448,12 @@ svg {
 
 	/*opacity: 0.6;*/
 	cursor: pointer;
-	stroke: #e19c9c;
-	fill: #525252;
+	stroke: #854242;
+	fill: #272727;
 	stroke-dashoffset: 0%;
 
 }
+
 
 .dark .mapa-svg-estados:hover {
 	stroke: #d78080;
@@ -456,9 +463,38 @@ svg {
 .mapa-svg-estados-active {
 
 	cursor: pointer;
-	stroke: #d78080;
-	fill: #525252;
+	stroke: #854242;
+	fill: rgb(58, 58, 58);
 	stroke-dashoffset: 0%;
+
+}
+
+.dark {
+	.mapa-svg-estados-active {
+		stroke: #d78080;
+	}
+
+	.swiper-slide {
+
+		h2 {
+			font-size: 50px;
+			color: rgba(255, 255, 255, 0.795);
+		}
+
+		p {
+			color: rgb(255, 255, 255);
+			font-size: 20px;
+		}
+	}
+
+	circle:nth-child(1) {
+		stroke-dashoffset: 0;
+		stroke: rgb(179, 179, 179);
+	}
+
+	circle:nth-child(2) {
+		stroke: dodgerblue;
+	}
 
 }
 
@@ -488,6 +524,7 @@ svg {
 		}
 	}
 }
+
 @media screen and (max-width: 913px) {
 	.map-comp {
 		flex-direction: column;
@@ -498,6 +535,7 @@ svg {
 	}
 
 	.swiper-slide {
+		border-radius: 15px;
 		padding: 3%;
 		width: 40%;
 		height: 40%;
@@ -542,6 +580,7 @@ svg {
 		}
 	}
 }
+
 @media screen and (min-height: 1368px) {
 
 	.map {
@@ -594,13 +633,15 @@ svg {
 		}
 	}
 }
+
 @media screen and (max-width: 613px) {
 
 	.map {
-		width: 45%;
+		width: 50%;
 	}
 
 	.swiper-slide {
+		border-radius: 13px;
 		padding: 4%;
 		width: 40%;
 
@@ -637,13 +678,15 @@ svg {
 		}
 	}
 }
+
 @media screen and (max-width: 503px) {
 
 	.map {
-		width: 50%;
+		width: 60%;
 	}
 
 	.swiper-slide {
+		border-radius: 10px;
 		width: 45%;
 		height: 32%;
 
@@ -681,13 +724,15 @@ svg {
 		}
 	}
 }
+
 @media screen and (max-width: 403px) {
 
 	.map {
-		width: 60%;
+		width: 70%;
 	}
 
 	.swiper-slide {
+		border-radius: 8px;
 		width: 45%;
 		height: 35%;
 
@@ -722,6 +767,52 @@ svg {
 
 		h2 {
 			font-size: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 300px) {
+
+	.map {
+		width: 80%;
+	}
+
+	.swiper-slide {
+		border-radius: 8px;
+		width: 60%;
+		height: 35%;
+
+		h2 {
+			font-size: 20px;
+		}
+
+		p {
+			margin-bottom: 8px;
+			font-size: 10px;
+		}
+	}
+
+	.swiper-slide-active {
+		opacity: 1;
+	}
+
+	.box {
+		top: 28%;
+		right: 8%;
+		height: 50%;
+
+	}
+
+	circle {
+		r: 40;
+		stroke-width: 2px;
+	}
+
+	.number {
+		position: absolute;
+
+		h2 {
+			font-size: 12px;
 		}
 	}
 }
