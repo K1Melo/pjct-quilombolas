@@ -341,7 +341,7 @@ export default {
 	position: relative;
 	overflow: hidden;
 	top: 50%;
-	right: 10%;
+	right: 15%;
 }
 
 .box-circle {
@@ -399,6 +399,7 @@ circle:nth-child(2) {
 }
 
 .swiper-slide {
+	border-radius: 20px;
 	position: absolute;
 	background-color: rgb(0, 0, 0);
 	padding: 2%;
@@ -413,6 +414,7 @@ circle:nth-child(2) {
 	}
 
 	p {
+		color: white;
 		font-size: 18px;
 	}
 }
@@ -682,7 +684,7 @@ svg {
 @media screen and (max-width: 403px) {
 
 	.map {
-		width: 50%;
+		width: 60%;
 	}
 
 	.swiper-slide {
