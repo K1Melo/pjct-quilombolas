@@ -477,13 +477,11 @@ svg {
 	.swiper-slide {
 
 		h2 {
-			font-size: 50px;
 			color: rgba(255, 255, 255, 0.795);
 		}
 
 		p {
 			color: rgb(255, 255, 255);
-			font-size: 20px;
 		}
 	}
 
