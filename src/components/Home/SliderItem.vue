@@ -187,7 +187,7 @@ export default {
 }
 
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1250px) {
 
     .dif_2 {
         width: 25vh;
@@ -230,7 +230,7 @@ export default {
         margin-right: 4vw;
         width: 20vh;
         height: 20vh;
-        font-size: 25px;
+        font-size: 20px;
 
         letter-spacing: 8px;
     }
@@ -239,7 +239,7 @@ export default {
         margin-left: 4vw;
         width: 20vh;
         height: 20vh;
-        font-size: 25px;
+        font-size: 20px;
 
         letter-spacing: 8px;
     }
@@ -293,7 +293,7 @@ export default {
         margin-right: 4vw;
         width: 18vh;
         height: 18vh;
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: 4px;
     }
 
@@ -301,7 +301,7 @@ export default {
         margin-left: 4vw;
         width: 18vh;
         height: 18vh;
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: 4px;
     }
 }

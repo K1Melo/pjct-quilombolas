@@ -246,10 +246,10 @@
 
         </header>
         <nav v-show="showNav">
-            <router-link to="/">Home</router-link>
-            <router-link to="/lugares">Lugares</router-link>
-            <router-link to="/producao">Produção</router-link>
-            <router-link to="/cultura">Cultura</router-link>
+            <router-link to="/" @click="goTop">Início</router-link>
+            <router-link to="/lugares" @click="goTop">Lugares</router-link>
+            <router-link to="/producao" @click="goTop">Produção</router-link>
+            <router-link to="/cultura" @click="goTop">Cultura</router-link>
         </nav>
     </div>
 </template>
@@ -279,6 +279,9 @@
             }, 
             openGitHub() {
                 window.open("https://github.com/K1Melo/pjct-quilombolas");
+            },
+            goTop() {
+                window.scroll({top: 0, behavior: "smooth"})
             }
         }
     }

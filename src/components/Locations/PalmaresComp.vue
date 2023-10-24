@@ -90,7 +90,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .zumbi {
@@ -204,8 +204,8 @@
         width: 100%;
         height: 100vh;
         display: flex;
-        align-items: start;
-        justify-content: end;
+        align-items: flex-start;
+        justify-content: flex-end;
     }
 
     .zumbi {
@@ -255,4 +255,5 @@
             font-size: 18px;
         }
     }
-}</style>
+}
+</style>

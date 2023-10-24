@@ -215,7 +215,7 @@
 		</div>
 		<div class="slider-map">
 			<div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index"
-				:id="estado.acronym" >
+				:id="estado.acronym">
 				<div class="title-map">
 					<h2>{{ index + 1 }}° {{ estado.name }}</h2>
 				</div>
@@ -328,6 +328,10 @@ export default {
 	overflow: hidden;
 }
 
+svg {
+	fill: #ffffff;
+}
+
 .slider-map {
 	height: 40%;
 	width: 35%;
@@ -340,7 +344,7 @@ export default {
 .box {
 	position: relative;
 	overflow: hidden;
-	top: 55%;
+	top: 60%;
 	right: 18%;
 }
 
@@ -354,7 +358,7 @@ export default {
 }
 
 circle {
-	r: 70;
+	r: 68;
 	width: 150px;
 	height: 150px;
 	stroke: aqua;
@@ -384,10 +388,6 @@ circle:nth-child(2) {
 	}
 }
 
-.dark .number h2 {
-	color: rgb(236, 236, 236);
-}
-
 .mapa-svg-estados {
 
 	fill: #1b1b1b;
@@ -401,6 +401,9 @@ circle:nth-child(2) {
 	stroke-dashoffset: -120%;
 	stroke-width: 2px;
 
+}
+.dark .mapa-svg-estados {
+	fill: #707070;
 }
 
 .swiper-slide {
@@ -422,6 +425,7 @@ circle:nth-child(2) {
 	p {
 		color: rgb(0, 0, 0);
 		font-size: 20px;
+		margin: 0;
 	}
 }
 
@@ -448,7 +452,7 @@ svg {
 
 	/*opacity: 0.6;*/
 	cursor: pointer;
-	stroke: #854242;
+	stroke: dodgerblue;
 	fill: #272727;
 	stroke-dashoffset: 0%;
 
@@ -456,14 +460,15 @@ svg {
 
 
 .dark .mapa-svg-estados:hover {
-	stroke: #d78080;
+	fill: #aaaaaa;
+	stroke: rgb(140, 128, 215)lue;
 
 }
 
 .mapa-svg-estados-active {
 
 	cursor: pointer;
-	stroke: #854242;
+	stroke: dodgerblue;
 	fill: rgb(58, 58, 58);
 	stroke-dashoffset: 0%;
 
@@ -471,7 +476,8 @@ svg {
 
 .dark {
 	.mapa-svg-estados-active {
-		stroke: #d78080;
+		fill: #aaaaaa;
+		stroke: rgb(140, 128, 215)lue;
 	}
 
 	.swiper-slide {
@@ -520,6 +526,13 @@ svg {
 			margin-bottom: 5px;
 			font-size: 15px;
 		}
+	}
+
+	circle {
+		r: 55;
+		width: 100px;
+		height: 150px;
+		stroke-width: 2px;
 	}
 }
 
@@ -630,6 +643,29 @@ svg {
 			font-size: 20px;
 		}
 	}
+}
+@media screen and (max-height: 650px) {
+
+	.map {
+		width: 40%;
+	}
+
+	.swiper-slide {
+		padding: 3%;
+		width: 40%;
+		height: 50%;
+
+		h2 {
+			margin-bottom: 15px;
+			font-size: 25px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}
+
+
 }
 
 @media screen and (max-width: 613px) {
