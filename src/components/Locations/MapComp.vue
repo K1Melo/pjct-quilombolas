@@ -340,7 +340,7 @@ export default {
 .box {
 	position: relative;
 	overflow: hidden;
-	top: 50%;
+	top: 55%;
 	right: 18%;
 }
 
@@ -641,7 +641,7 @@ svg {
 	.swiper-slide {
 		border-radius: 13px;
 		padding: 4%;
-		width: 40%;
+		width: 50%;
 
 		h2 {
 			font-size: 23px;
@@ -685,7 +685,7 @@ svg {
 
 	.swiper-slide {
 		border-radius: 10px;
-		width: 45%;
+		width: 55%;
 		height: 32%;
 
 		h2 {
@@ -731,7 +731,7 @@ svg {
 
 	.swiper-slide {
 		border-radius: 8px;
-		width: 45%;
+		width: 55%;
 		height: 35%;
 
 		h2 {
@@ -749,7 +749,7 @@ svg {
 	}
 
 	.box {
-		top: 35%;
+		top: 30%;
 		right: 10%;
 		height: 50%;
 

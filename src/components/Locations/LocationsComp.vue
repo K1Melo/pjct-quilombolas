@@ -68,10 +68,10 @@
               enable: true,
               area: 800
             },
-            value: 5
+            value: 3
           },
           opacity: {
-            value: 0.5
+            value: 0.1
           },
           shape: {
             type: 'circle'

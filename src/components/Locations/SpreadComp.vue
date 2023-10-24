@@ -6,11 +6,6 @@
             </div>
             <div class="text">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolor maxime quidem beatae necessitatibus minima rem, vitae, deleniti culpa esse tempora sint, fuga nobis cum unde dolorum impedit quas ratione.</p>
             </div>
         </div>
     </div>
@@ -47,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
     height: 15%;
     width: 100%;
     border-bottom: 1px solid #0000008f;
@@ -71,7 +67,6 @@
 }
 
 @media only screen and (max-width: 820px) {
-    
     .title h2 {
         color: #000000;
         font-size: 18px;
