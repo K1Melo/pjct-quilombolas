@@ -345,7 +345,7 @@ svg {
 	position: relative;
 	overflow: hidden;
 	top: 60%;
-	right: 18%;
+	right: 23%;
 }
 
 .box-circle {
@@ -358,7 +358,7 @@ svg {
 }
 
 circle {
-	r: 68;
+	r: 70;
 	width: 150px;
 	height: 150px;
 	stroke: aqua;
@@ -402,6 +402,7 @@ circle:nth-child(2) {
 	stroke-width: 2px;
 
 }
+
 .dark .mapa-svg-estados {
 	fill: #707070;
 }
@@ -418,14 +419,13 @@ circle:nth-child(2) {
 	transition: opacity 1s ease-in-out;
 
 	h2 {
-		font-size: 50px;
+		font-size: 60px;
 		color: rgb(0, 0, 0);
 	}
 
 	p {
 		color: rgb(0, 0, 0);
 		font-size: 20px;
-		margin: 0;
 	}
 }
 
@@ -644,16 +644,23 @@ svg {
 		}
 	}
 }
+
 @media screen and (max-height: 650px) {
 
 	.map {
+		display: flex;
+		align-items: center;
 		width: 40%;
+	}
+
+	.box {
+		top: 70%;
 	}
 
 	.swiper-slide {
 		padding: 3%;
 		width: 40%;
-		height: 50%;
+		height: 60%;
 
 		h2 {
 			margin-bottom: 15px;

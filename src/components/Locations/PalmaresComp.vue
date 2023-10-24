@@ -75,9 +75,12 @@
                 <h2>Palmares</h2>
             </div>
             <div class="palmares-description">
-                <p>Originados da resistência africana contra a escravidão, escravizados fugitivos de suas fazendas buscaram
-                    liberdade nas áreas isoladas, onde formaram comunidades independentes, se organizando de acordo com suas
-                    próprias tradições culturais e sociais.</p>
+                <p>Se desenvolveu na região da capitania de pernambuco, mais precisamente na região onde atualmente está
+                    localizado o estado de alagoas.
+                </p>
+                <p>Ficou conhecido como maior quilombo que existiu na história da colonizaçao do brasil pelos portugueses,
+                    além de maior quilombo de toda a América Latina e, no auge, concentrou a população de cerca de 20 mil
+                    pessoas.</p>
             </div>
         </div>
     </div>
@@ -117,9 +120,10 @@
         h2 {
             color: #000;
             line-height: 1;
-            font-size: 4em;
+            font-size: 5em;
         }
 
+        
         margin: 0;
         opacity: 0.8;
     }
@@ -193,7 +197,7 @@
             margin-top: 2vh;
 
             width: 90%;
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 }
@@ -252,8 +256,23 @@
 
         .palmares-description {
             width: 90%;
-            font-size: 18px;
+            font-size: 15px;
         }
     }
 }
+@media only screen and (max-width: 300px) {
+    .text-zumbi {
+        .title-palmares {
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        .palmares-description {
+            width: 90%;
+            font-size: 13px;
+        }
+    }
+}
+
 </style>
