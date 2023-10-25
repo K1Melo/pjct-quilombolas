@@ -593,88 +593,88 @@ svg {
 	}
 }
 
-@media screen and (min-height: 1368px) {
+// @media screen and (min-height: 1368px) {
 
-	.map {
-		width: 40%;
-	}
+// 	.map {
+// 		width: 40%;
+// 	}
 
-	.swiper-slide {
-		padding: 3%;
-		width: 40%;
-		height: 30%;
+// 	.swiper-slide {
+// 		padding: 3%;
+// 		width: 40%;
+// 		height: 30%;
 
-		h2 {
-			margin-bottom: 15px;
-			font-size: 25px;
-		}
+// 		h2 {
+// 			margin-bottom: 15px;
+// 			font-size: 25px;
+// 		}
 
-		p {
-			font-size: 20px;
-		}
-	}
+// 		p {
+// 			font-size: 20px;
+// 		}
+// 	}
 
-	.swiper-slide-active {
-		opacity: 1;
-	}
+// 	.swiper-slide-active {
+// 		opacity: 1;
+// 	}
 
-	.box {
-		top: 30%;
-		right: 15%;
-		height: 50%;
+// 	.box {
+// 		top: 30%;
+// 		right: 15%;
+// 		height: 50%;
 
-	}
+// 	}
 
-	.box-circle {
-		width: 150px;
-		height: 150px;
-	}
+// 	.box-circle {
+// 		width: 150px;
+// 		height: 150px;
+// 	}
 
-	circle {
-		r: 55;
-		width: 100px;
-		height: 150px;
-		stroke-width: 2px;
-	}
+// 	circle {
+// 		r: 55;
+// 		width: 100px;
+// 		height: 150px;
+// 		stroke-width: 2px;
+// 	}
 
-	.number {
-		position: absolute;
+// 	.number {
+// 		position: absolute;
 
-		h2 {
-			font-size: 20px;
-		}
-	}
-}
+// 		h2 {
+// 			font-size: 20px;
+// 		}
+// 	}
+// }
 
-@media screen and (max-height: 650px) {
+// @media screen and (max-height: 650px) {
 
-	.map {
-		display: flex;
-		align-items: center;
-		width: 40%;
-	}
+// 	.map {
+// 		display: flex;
+// 		align-items: center;
+// 		width: 40%;
+// 	}
 
-	.box {
-		top: 70%;
-	}
+// 	.box {
+// 		top: 70%;
+// 	}
 
-	.swiper-slide {
-		padding: 3%;
-		width: 40%;
-		height: 60%;
+// 	.swiper-slide {
+// 		padding: 3%;
+// 		width: 40%;
+// 		height: 60%;
 
-		h2 {
-			margin-bottom: 15px;
-			font-size: 25px;
-		}
+// 		h2 {
+// 			margin-bottom: 15px;
+// 			font-size: 25px;
+// 		}
 
-		p {
-			font-size: 20px;
-		}
-	}
+// 		p {
+// 			font-size: 20px;
+// 		}
+// 	}
 
 
-}
+// }
 
 @media screen and (max-width: 613px) {
 
