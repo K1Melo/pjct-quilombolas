@@ -3,7 +3,7 @@
         <div class="title">
             <h2>Dificuldades</h2>
         </div>
-        <ul class="accordion">
+        <ul class="accordion" data-aos="fade-left" data-aos-duration="500">
             <li>
                 <input type="radio" name="accordion" id="first">
                 <label for="first">Infraestrutura</label>

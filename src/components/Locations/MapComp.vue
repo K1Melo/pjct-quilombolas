@@ -233,6 +233,7 @@
 					</div>
 				</div>
 			</div>
+			<p class="down">Fonte: Censo Demográfico 2022: Quilombolas (IBGE)</p>
 		</div>
 	</div>
 </template>
@@ -313,7 +314,21 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.map-comp {
+.down {
+	position: absolute;
+	right: 10%;
+	top: 290%;
+	color: #000000;
+}
+
+.dark {
+
+	.down {
+		color: #ffffff;
+	}
+}
+
+rgb(255, 255, 255).map-comp {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -412,7 +427,7 @@ circle:nth-child(2) {
 	border-radius: 20px;
 	position: absolute;
 	padding: 2%;
-	width:40%;
+	width: 40%;
 	height: 50%;
 
 	opacity: 0;

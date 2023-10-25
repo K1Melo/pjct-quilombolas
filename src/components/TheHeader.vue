@@ -1,5 +1,5 @@
 <template>
-    <div class="the-header">
+    <div class="the-header" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">
         <header>
             <!-- MENU -->
 
