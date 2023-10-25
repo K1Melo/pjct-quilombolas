@@ -290,7 +290,7 @@
 <style scoped>
 
 .the-header {
-
+    overflow: hidden;
     position: fixed;
     width: 100%;
     top: 0;
