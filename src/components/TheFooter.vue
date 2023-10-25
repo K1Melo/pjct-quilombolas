@@ -292,6 +292,7 @@ footer {
     padding-bottom: 4%;
     background-color: rgb(0, 0, 0);
     display: flex;
+    overflow: hidden;
 }
 
 .us {
@@ -336,6 +337,8 @@ nav {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+
+    margin-bottom: 50px;
 }
 
 .subtitle {
@@ -363,6 +366,41 @@ nav {
 }
 
 @media only screen and (max-width: 1000px) {
-    
+    footer {
+        flex-direction: column-reverse;
+        padding-top: 10%;
+    }
+
+    .us {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: 30px;
+
+        a {
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .options {
+        width: 40%;
+    }
+
+    .us {
+        width: 100%;
+    }
 }
 </style>
