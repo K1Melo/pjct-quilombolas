@@ -1,30 +1,52 @@
-
 .swiper-pagination-bullet {
-    background-color:#000000 !important;
+    background-color: #000000 !important;
     opacity: 0.5 !important;
     margin-bottom: 2vh !important;
 }
 
 .swiper-pagination-bullet-active {
     opacity: 1 !important;
-} 
-
-.dark .swiper-pagination-bullet {
-    background-color:#ffffff !important;
 }
 
-.swiper-button-disabled, .swiper-button-next, .swiper-button-prev {
+.dark .swiper-pagination-bullet {
+    background-color: #ffffff !important;
+}
+
+.swiper-button-disabled,
+.swiper-button-next,
+.swiper-button-prev {
     color: #000000 !important;
 
 }
 
-.dark .swiper-button-next, .dark .swiper-button-prev {
+.dark .swiper-button-next,
+.dark .swiper-button-prev {
     color: #ffffff !important;
 }
 
+.famous-quilombos {
+
+    .swiper-pagination-bullet {
+        background-color: #000000 !important;
+        opacity: 0.5 !important;
+        margin-top: 2vh !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+    }
+
+    .dark .swiper-pagination-bullet {
+        background-color: #000000 !important;
+    }
+}
+
+
 @media only screen and (max-width: 900px) {
 
-    .swiper-button-disabled::after, .swiper-button-next::after, .swiper-button-prev::after {
+    .swiper-button-disabled::after,
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
         font-size: 7vw;
     }
 }

@@ -345,7 +345,7 @@ svg {
 	position: relative;
 	overflow: hidden;
 	top: 60%;
-	right: 23%;
+	right: 33%;
 }
 
 .box-circle {
@@ -412,7 +412,7 @@ circle:nth-child(2) {
 	border-radius: 20px;
 	position: absolute;
 	padding: 2%;
-	width: 30%;
+	width:40%;
 	height: 50%;
 
 	opacity: 0;

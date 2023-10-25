@@ -19,7 +19,7 @@ export default {
     LocationsComp,
     SpreadComp,
     MapComp,
-    PalmaresComp
+    PalmaresComp,
   }
 }
 
