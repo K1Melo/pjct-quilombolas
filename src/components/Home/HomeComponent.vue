@@ -61,6 +61,7 @@
     justify-content: space-around;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .text-home{

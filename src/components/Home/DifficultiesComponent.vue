@@ -60,6 +60,7 @@ export default {
 
 <style lang="less" scoped>
 .dif {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-start;
