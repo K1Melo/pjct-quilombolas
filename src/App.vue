@@ -47,9 +47,7 @@ body {
 
   /* BEAUTIFUL TRANSITIONS */
 
-  transition: all 1s;
-  overflow: hidden;
-  
+  transition: all 1s;  
 }
 
 .dark {
