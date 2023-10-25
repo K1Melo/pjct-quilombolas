@@ -317,8 +317,9 @@ export default {
 .down {
 	position: absolute;
 	right: 10%;
-	top: 290%;
+	top: 295%;
 	color: #000000;
+	font-size: 12px;
 }
 
 .dark {

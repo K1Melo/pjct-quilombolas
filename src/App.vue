@@ -1,19 +1,19 @@
 <template>
   <TheHeader></TheHeader>
   <router-view/>
-  <TheFooter></TheFooter>
+  <!-- <TheFooter></TheFooter> -->
 </template>
 
 <script>
 // @ is an alias to /src
 import TheHeader from '@/components/TheHeader.vue'
-import TheFooter from './components/TheFooter.vue';
+// import TheFooter from './components/TheFooter.vue';
 
 export default {
   name: 'AppVue',
   components: {
     TheHeader,
-    TheFooter
+    // TheFooter
   }
 }
 </script>
