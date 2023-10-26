@@ -251,6 +251,7 @@
             </div>
             <div class="options" id="optionThree">
                 <router-link to="/producao" @click="goTop">Produção</router-link>
+                <router-link to="/producao" @click="goSecond" class="subtitle">Produção Predominante</router-link>
             </div>
             <div class="options" id="optionFour">
                 <router-link to="/cultura" @click="goTop">Cultura</router-link>

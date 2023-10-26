@@ -3,8 +3,21 @@
         <div class="title">
             <h2>PRODUÇÃO</h2>
         </div>
+        <i style="z-index: 1;" class="material-icons" @click="scrollBehavior">expand_more</i>
     </div>
 </template>
+
+<script>
+
+export default {
+    methods: {
+        scrollBehavior() {
+            window.scroll({ top: window.innerHeight, behavior: "smooth" })
+        }
+    }
+}
+
+</script>
 
 <style lang="less" scoped>
 .production-comp {
@@ -17,10 +30,12 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .title {
     height: 70vh;
+    width: 100%;
 
     h2 {
         display: flex;
@@ -35,6 +50,27 @@
     }
 }
 
+.material-icons {
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    font-size: 50px;
+    bottom: 5%;
+    animation: moveUpDown 1s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.5rem);
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .title {
         height: 70vh;
@@ -44,6 +80,7 @@
         }
     }
 }
+
 @media screen and (max-width: 600px) {
     .title {
         height: 70vh;
@@ -57,12 +94,11 @@
 @media screen and (max-width: 300px) {
     .title {
         height: 70vh;
-    
+
         h2 {
             font-size: calc(2em + 1vw);
         }
     }
 
 }
-
 </style>
