@@ -1,7 +1,6 @@
 <template>
     <div class="predominant">
         <div class="img-predominant" data-aos="fade-in" data-aos-easing="linear">
-            <p>Fonte: Microsoft Bing</p>
         </div>
         <div class="text-predominant" data-aos="fade-left">
             <div class="title-predominant">
@@ -41,13 +40,6 @@ export default {
     background-repeat: no-repeat;
     width: 50%;
     height: 100vh;
-
-    p {
-        position: absolute;
-        top: 195%;
-        left: 2%;
-        color: rgba(255, 255, 255, 0.647);
-    }
 }
 
 .text-predominant {
@@ -106,12 +98,6 @@ export default {
         background-repeat: no-repeat;
         width: 100%;
         height: 50vh;
-
-        p {
-            position: absolute;
-            top: 145%;
-            left: 2%;
-        }
     }
 
     .text-predominant {
@@ -155,12 +141,6 @@ export default {
         background-repeat: no-repeat;
         width: 100%;
         height: 40vh;
-
-        p {
-            position: absolute;
-            top: 135%;
-            left: 2%;
-        }
     }
 
     .text-predominant {
