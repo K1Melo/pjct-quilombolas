@@ -323,7 +323,7 @@ nav {
     width: 70%;
     display: flex;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: flex-start;
 
     a {
         margin-bottom: 10px;

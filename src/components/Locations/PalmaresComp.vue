@@ -120,7 +120,7 @@
         h2 {
             color: #000;
             line-height: 1;
-            font-size: 5em;
+            font-size: 3em;
         }
 
         
@@ -132,7 +132,7 @@
         margin-top: 2vh;
 
         width: 80%;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 100;
     }
 }

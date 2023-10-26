@@ -317,6 +317,8 @@ export default {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
+	width: 100%;
 }
 
 .map {
@@ -645,35 +647,6 @@ svg {
 	}
 }
 
-@media screen and (max-height: 650px) {
-
-	.map {
-		display: flex;
-		align-items: center;
-		width: 40%;
-	}
-
-	.box {
-		top: 70%;
-	}
-
-	.swiper-slide {
-		padding: 3%;
-		width: 40%;
-		height: 60%;
-
-		h2 {
-			margin-bottom: 15px;
-			font-size: 25px;
-		}
-
-		p {
-			font-size: 20px;
-		}
-	}
-
-
-}
 
 @media screen and (max-width: 613px) {
 
@@ -857,4 +830,35 @@ svg {
 		}
 	}
 }
+
+@media screen and (max-height: 500px) {
+
+.map {
+	display: flex;
+	align-items: center;
+	width: 40%;
+}
+
+.box {
+	top: 90%;
+}
+
+.swiper-slide {
+	padding: 3%;
+	width: 40%;
+	height: 70%;
+
+	h2 {
+		margin-bottom: 15px;
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+}
+
+
+}
+
 </style>

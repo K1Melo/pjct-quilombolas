@@ -60,15 +60,15 @@
 
 .title h2 {
     color: #000000;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .text {
     width: 90%;
-    font-size: 22px;
+    font-size: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1366px) {
 
 
     .container {
@@ -81,7 +81,7 @@
     }
 
     .text {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -96,11 +96,11 @@
     }
 
     .title h2 {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .text {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
