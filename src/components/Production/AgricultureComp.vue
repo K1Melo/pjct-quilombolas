@@ -151,7 +151,7 @@ h2 {
     }
 
     .agricultura {
-        height: calc(30vw);
+        height: calc(35vw);
     }
 
     .familiar {
@@ -172,7 +172,7 @@ h2 {
     }
 
     .agricultura {
-        height: calc(30vw);
+        height: calc(33vw);
     }
 
     .familiar {
