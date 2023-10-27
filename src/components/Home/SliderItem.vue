@@ -211,7 +211,6 @@ export default {
     .title_3 {
         font-size: 6vw;
         text-transform: uppercase;
-        color: #fff;
     }
 
     .dificuldades {
