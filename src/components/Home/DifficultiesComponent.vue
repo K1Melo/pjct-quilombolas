@@ -9,7 +9,7 @@
                 <label for="first">Infraestrutura</label>
                 <div class="content">
                     <p>Como base para todos outros problemas,
-                        a insfraestrutura se entende como insfraetrutura
+                        a insfraestrutura se entende como
                         servios fundamentais para o desenvolvimento do povo
                         em questões fisicas de acessibilidade.</p>
                 </div>
