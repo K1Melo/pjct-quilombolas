@@ -132,7 +132,7 @@ export default {
   mounted() {
     const canvas = document.getElementById('canvas3d');
     const app = new Application(canvas);
-    app.load('https://prod.spline.design/xU0dnTDQvcXgePAX/scene.splinecode');
+    app.load('https://prod.spline.design/w7Rslvvqr4BNvAtR/scene.splinecode');
 
   }
 }
@@ -163,8 +163,8 @@ export default {
 }
 
 .globe {
-  z-index: 0;
   position: absolute;
+  z-index: 0;
   width: 60vw;
   height: 60vw;
   -webkit-touch-callout: none;
