@@ -10,83 +10,85 @@
             :particlesLoaded="particlesLoaded"
             url="http://foo.bar/particles.json"
         /> -->
-      <vue-particles id="tsparticles" :particlesInit="particlesInit" :particlesLoaded="particlesLoaded" :options="{
-        fullScreen: {
-          enable: true,
-          zIndex: 0
-        },
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onClick: {
-              enable: true,
-              mode: 'repulse'
-            },
-            onHover: {
-              enable: true,
-              mode: 'repulse'
-            },
-            resize: true
+    <vue-particles id="tsparticles" :particlesInit="particlesInit" :particlesLoaded="particlesLoaded" :options="{
+      fullScreen: {
+        enable: true,
+        zIndex: 0
+      },
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+          onClick: {
+            enable: true,
+            mode: 'repulse'
           },
-          modes: {
-            bubble: {
-              distance: 150,
-              duration: 2,
-              opacity: 0.4,
-              size: 40
-            },
-            push: {
-              quantity: 4
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4
-            }
-          }
-        },
-        particles: {
-          color: {
-            value: '#ffffff'
+          onHover: {
+            enable: true,
+            mode: 'repulse'
           },
-          links: {
-            color: '#ffffff',
+          resize: true
+        },
+        modes: {
+          bubble: {
             distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1
+            duration: 2,
+            opacity: 0.4,
+            size: 40
           },
-          move: {
-            direction: 'none',
-            enable: true,
-            outMode: 'bounce',
-            random: false,
-            speed: 2,
-            straight: false
+          push: {
+            quantity: 4
           },
-          number: {
-            density: {
-              enable: true,
-              area: 800
-            },
-            value: 5
-          },
-          opacity: {
-            value: 0.1
-          },
-          shape: {
-            type: 'circle'
-          },
-          size: {
-            random: true,
-            value: 5
+          repulse: {
+            distance: 200,
+            duration: 0.4
           }
+        }
+      },
+      particles: {
+        color: {
+          value: '#ffffff'
         },
-        detectRetina: true
-      }" />
-<iframe src='https://my.spline.design/photorealearth-febb64decf3986698e88eb49a8d9d84d/' frameborder='0' width='100%' height='100%' class="globe"></iframe>
-<!-- <iframe src='https://my.spline.design/rrworld-9a8de1d9186e704256f6873e3b347394/' frameborder='0' class="globe"></iframe> -->
+        links: {
+          color: '#ffffff',
+          distance: 150,
+          enable: true,
+          opacity: 0.5,
+          width: 1
+        },
+        move: {
+          direction: 'none',
+          enable: true,
+          outMode: 'bounce',
+          random: false,
+          speed: 2,
+          straight: false
+        },
+        number: {
+          density: {
+            enable: true,
+            area: 800
+          },
+          value: 5
+        },
+        opacity: {
+          value: 0.1
+        },
+        shape: {
+          type: 'circle'
+        },
+        size: {
+          random: true,
+          value: 5
+        }
+      },
+      detectRetina: true
+    }" />
+
+    <canvas id="canvas3d" class="globe"></canvas>
+    <!-- <iframe src='https://my.spline.design/photorealearth-febb64decf3986698e88eb49a8d9d84d/' frameborder='0' width='100%' height='100%' class="globe"></iframe>     -->
+    <!-- <iframe src='https://my.spline.design/rrworld-9a8de1d9186e704256f6873e3b347394/' frameborder='0' class="globe"></iframe> -->
     <!-- <img src="../../assets/globe.png" class="globe" alt=""> -->
-    <div class="title-location"  data-aos="fade-up-left" data-aos-duration="1500">
+    <div class="title-location" data-aos="fade-up-left" data-aos-duration="1500">
       <h2>LUGARES</h2>
     </div>
     <div class="subtitle">
@@ -111,21 +113,30 @@ const particlesLoaded = async container => {
   console.log("Particles container loaded", container);
 };
 
+
+
+
 </script>
 
 <script>
+import { Application } from '@splinetool/runtime';
 export default {
   methods: {
     scrollBehavior() {
-      window.scroll({top: window.innerHeight, behavior: "smooth"})
+      window.scroll({ top: window.innerHeight, behavior: "smooth" })
     }
+  },
+  mounted() {
+
+    const canvas = document.getElementById('canvas3d');
+    const app = new Application(canvas);
+    app.load('https://prod.spline.design/SH6eg2AKQ9wL4OYL/scene.splinecode');
   }
 }
 
 </script>
   
 <style lang="less" scoped>
-
 .locationComp {
   background-image: url(../../assets/background-locations.png);
   background-size: cover;
@@ -155,12 +166,12 @@ export default {
   height: 50vw;
 
   -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-  // animation: moveUpDown 2s ease-in-out infinite;
+  animation: moveUpDown 2s ease-in-out infinite;
 }
 
 @keyframes moveUpDown {

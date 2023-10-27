@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@splinetool/runtime": "^0.9.489",
     "core-js": "^3.8.3",
     "swiper": "^10.3.1",
     "tsparticles-slim": "^2.12.0",
