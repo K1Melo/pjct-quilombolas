@@ -38,7 +38,7 @@
                 <input type="radio" name="accordion" id="fourth">
                 <label for="fourth">Terras</label>
                 <div class="content">
-                    <p>Juntamento com os projetos governamentais, a pavimentação se torna
+                    <p>Juntamente com os projetos governamentais, a pavimentação se torna
                         um grande prejuiso para os quilombolas, já que ela muitas vezes força a
                         saida dos moradores desses povos do seu lugar de origem, parecido com isso
                         temos a demarcação de terras, que da mesma forma, tira moradores de suas terras

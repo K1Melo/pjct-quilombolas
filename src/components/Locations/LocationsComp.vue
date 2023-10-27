@@ -130,10 +130,10 @@ export default {
     }
   },
   mounted() {
-
     const canvas = document.getElementById('canvas3d');
     const app = new Application(canvas);
-    app.load('https://prod.spline.design/SH6eg2AKQ9wL4OYL/scene.splinecode');
+    app.load('https://prod.spline.design/xU0dnTDQvcXgePAX/scene.splinecode');
+
   }
 }
 
@@ -167,7 +167,6 @@ export default {
   position: absolute;
   width: 60vw;
   height: 60vw;
-
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -193,6 +192,12 @@ export default {
 }
 
 .title-location {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   h2 {
     font-size: calc(9em + 1vw);
     letter-spacing: 10px;
