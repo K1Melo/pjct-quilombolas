@@ -84,7 +84,7 @@
       detectRetina: true
     }" />
 
-    <div class="globe">
+    <div class="globe" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000">
 
       <canvas id="canvas3d"></canvas>
     </div>
@@ -163,6 +163,7 @@ export default {
 }
 
 .globe {
+  z-index: 0;
   position: absolute;
   width: 60vw;
   height: 60vw;
@@ -175,6 +176,7 @@ export default {
 
   animation: moveUpDown 2s ease-in-out infinite;
 }
+
 
 @keyframes moveUpDown {
 
