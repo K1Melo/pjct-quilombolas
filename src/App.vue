@@ -85,7 +85,7 @@ p, i, a, svg {
 h1, h2, h3 {
 
   color: #000000;
-  opacity: 0.8;
+  opacity: 0.99;
 
   transition: all 1s;
 

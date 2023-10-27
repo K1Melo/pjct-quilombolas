@@ -164,9 +164,8 @@ export default {
 
 .globe {
   position: absolute;
-
-  width: 50vw;
-  height: 50vw;
+  width: 60vw;
+  height: 60vw;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -195,7 +194,7 @@ export default {
   h2 {
     font-size: calc(9em + 1vw);
     letter-spacing: 10px;
-
+    color: #f5f5f5;
   }
 }
 
@@ -221,8 +220,8 @@ export default {
 
 @media screen and (max-width: 1024px) {
   .globe {
-    height: 50vw;
-    width: 50vw;
+    height: 90vw;
+    width: 90vw;
   }
 
   .title-location {
@@ -245,8 +244,8 @@ export default {
 
 @media screen and (max-width: 800px) {
   .globe {
-    width: 50vw;
-    height: 50vw;
+    width: 90vw;
+    height: 90vw;
   }
 
   .title-location {
@@ -290,8 +289,8 @@ export default {
 
 @media screen and (max-width: 300px) {
   .globe {
-    width: 60vw;
-    height: 60vw;
+    width: 70vw;
+    height: 70vw;
   }
 
   .title-location {
