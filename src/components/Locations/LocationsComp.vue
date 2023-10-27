@@ -84,7 +84,10 @@
       detectRetina: true
     }" />
 
-    <canvas id="canvas3d" class="globe"></canvas>
+    <div class="globe">
+
+      <canvas id="canvas3d"></canvas>
+    </div>
     <!-- <iframe src='https://my.spline.design/photorealearth-febb64decf3986698e88eb49a8d9d84d/' frameborder='0' width='100%' height='100%' class="globe"></iframe>     -->
     <!-- <iframe src='https://my.spline.design/rrworld-9a8de1d9186e704256f6873e3b347394/' frameborder='0' class="globe"></iframe> -->
     <!-- <img src="../../assets/globe.png" class="globe" alt=""> -->
@@ -219,7 +222,7 @@ export default {
 @media screen and (max-width: 1024px) {
   .globe {
     height: 50vw;
-    // width: 50vw;
+    width: 50vw;
   }
 
   .title-location {
@@ -242,7 +245,7 @@ export default {
 
 @media screen and (max-width: 800px) {
   .globe {
-    // width: 50vw;
+    width: 50vw;
     height: 50vw;
   }
 
@@ -287,7 +290,7 @@ export default {
 
 @media screen and (max-width: 300px) {
   .globe {
-    // width: 50vw;
+    width: 60vw;
     height: 60vw;
   }
 
