@@ -18,7 +18,7 @@
                 <input type="radio" name="accordion" id="second">
                 <label for="second">Educação</label>
                 <div class="content">
-                    <p>Um dos principais desafios sociais esfrentado pelos
+                    <p>Um dos principais desafios sociais enfrentados pelos
                         quilombolas, já que a maioria das estruturas educacionais
                         apresenta falta de docentes qualificados para a formação
                         de uma boa grade curricular.</p>
@@ -31,7 +31,7 @@
                     <p>Assim como na educação, no contexto dos quilombolas é muito
                         importante falar da saúde, por vários fatores, tanto a sua localidade
                         desprivilegiada, seus fatores raciais e aceso as estruturas que deviam
-                        ter por direito, no geral.</p>
+                        ter por direito.</p>
                 </div>
             </li>
             <li style="border: none;">
