@@ -83,7 +83,9 @@
         },
         detectRetina: true
       }" />
-    <img src="../../assets/globe.png" class="globe" alt="">
+<iframe src='https://my.spline.design/photorealearth-febb64decf3986698e88eb49a8d9d84d/' frameborder='0' width='100%' height='100%' class="globe"></iframe>
+<!-- <iframe src='https://my.spline.design/rrworld-9a8de1d9186e704256f6873e3b347394/' frameborder='0' class="globe"></iframe> -->
+    <!-- <img src="../../assets/globe.png" class="globe" alt=""> -->
     <div class="title-location"  data-aos="fade-up-left" data-aos-duration="1500">
       <h2>LUGARES</h2>
     </div>
@@ -149,7 +151,7 @@ export default {
 .globe {
   position: absolute;
 
-  // width: 50vw;
+  width: 50vw;
   height: 50vw;
 
   -webkit-touch-callout: none;
@@ -158,7 +160,7 @@ export default {
     -ms-user-select: none;
     user-select: none;
 
-  animation: moveUpDown 2s ease-in-out infinite;
+  // animation: moveUpDown 2s ease-in-out infinite;
 }
 
 @keyframes moveUpDown {
