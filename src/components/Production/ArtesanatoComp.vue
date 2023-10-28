@@ -16,7 +16,7 @@ export default {
 .artesanato {
     height: 100vh;
     width: 100%;
-    background-image: url(../../assets/background-artesanato.png);
+    background-image: url(../../assets/background-artesanato.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

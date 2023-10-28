@@ -34,7 +34,7 @@ export default {
 }
 
 .img-predominant {
-    background-image: url(../../assets/background-production-predominant.png);
+    background-image: url(../../assets/background-production-predominant.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ export default {
     }
 
     .img-predominant {
-        background-image: url(../../assets/background-production-predominant.png);
+        background-image: url(../../assets/background-production-predominant.webp);
         background-size: cover;
         background-position: center 60%;
         background-repeat: no-repeat;
@@ -135,7 +135,7 @@ export default {
 @media only screen and (max-width: 600px) {
 
     .img-predominant {
-        background-image: url(../../assets/background-production-predominant.png);
+        background-image: url(../../assets/background-production-predominant.webp);
         background-size: cover;
         background-position: center 60%;
         background-repeat: no-repeat;

@@ -141,7 +141,7 @@ export default {
   
 <style lang="less" scoped>
 .locationComp {
-  background-image: url(../../assets/background-locations.png);
+  background-image: url(../../assets/background-locations.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
