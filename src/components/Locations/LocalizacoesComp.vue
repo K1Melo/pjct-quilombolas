@@ -15,13 +15,13 @@ import { EffectCards, Pagination } from 'swiper/modules';
 
 <template>
     <div class="slider-locations">
-        <div class="title">
+        <div class="title" data-aos="fade-in">
             <h2>Conheça outros:</h2>
         </div>
         <swiper :effect="'cards'" :pagination="{
             dynamicBullets: true,
-        }" :grabCursor="true" :modules="[EffectCards, Pagination]" class="mySwiper">
-            <swiper-slide id="grotao">
+        }" :grabCursor="true" :modules="[EffectCards, Pagination]" class="mySwiper" data-aos="fade-left">
+            <swiper-slide id="grotao" class="swiper-slide-active">
                 <div class="name">
                     <h3 class="state-card">Niterói - RJ</h3>
                     <h3>Quilombo do Grotão</h3>
@@ -35,44 +35,14 @@ import { EffectCards, Pagination } from 'swiper/modules';
             </swiper-slide>
             <swiper-slide id="mimbo">
                 <div class="name">
-                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3 class="state-card">Amarante - PI</h3>
                     <h3>Quilombo Mimbó</h3>
                 </div>
             </swiper-slide>
-            <swiper-slide>
+            <swiper-slide id="alcantara">
                 <div class="name">
-                    <h3 class="state-card">Niterói - RJ</h3>
-                    <h3>Quilombo do Grotão</h3>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="name">
-                    <h3 class="state-card">Niterói - RJ</h3>
-                    <h3>Quilombo do Grotão</h3>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="name">
-                    <h3 class="state-card">Niterói - RJ</h3>
-                    <h3>Quilombo do Grotão</h3>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="name">
-                    <h3 class="state-card">Niterói - RJ</h3>
-                    <h3>Quilombo do Grotão</h3>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="name">
-                    <h3 class="state-card">Niterói - RJ</h3>
-                    <h3>Quilombo do Grotão</h3>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="name">
-                    <h3 class="state-card">Niterói - RJ</h3>
-                    <h3>Quilombo do Grotão</h3>
+                    <h3 class="state-card">Alcântara - MA</h3>
+                    <h3>Quilombo de Alcântara</h3>
                 </div>
             </swiper-slide>
         </swiper>
@@ -128,11 +98,11 @@ export default {
 
 .swiper-slide {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.5;
     transition: all 1s ease-in-out;
 
 }
@@ -170,7 +140,13 @@ export default {
 }
 
 #mimbo {
+    background-position: right;
     background-image: url(../../assets/quilombos/quilombo-mimbo.png);
+}
+
+#alcantara {
+    background-image: url(../../assets/quilombos/quilombo-alcantara.png);
+
 }
 
 @media screen and (max-height: 800px) {

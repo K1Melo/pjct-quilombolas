@@ -122,7 +122,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(../../assets/background-slide2.jpg);
+    background-image: url(../../assets/background-slide2.webp);
     transition: all 1s ease-out;
     background-position: 0%;
     background-size: cover;
@@ -139,7 +139,7 @@ export default {
 }
 
 .dark .img-slide {
-    background-image: url(../../assets/background-slide1.jpg);
+    background-image: url(../../assets/background-slide1.webp);
 }
 
 .text-slide {

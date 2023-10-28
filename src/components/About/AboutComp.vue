@@ -1,24 +1,17 @@
 <template>
-    <div class="the-header" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">
-        <header>
-            <!-- MENU -->
-
-            <div class="menu">
-                <i class="material-symbols-outlined" id="menu" @click="showNavigation">menu</i>
-            </div>
-
-            <!-- LOGO -->
-
-            <div class="title-logo">
-                <!DOCTYPE svg
-                    PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="45pt" height="45pt"
-                    viewBox="0 0 1024.000000 1024.000000" preserveAspectRatio="xMidYMid meet">
-                    <metadata>
-                        Created by potrace 1.16, written by Peter Selinger 2001-2019
-                    </metadata>
-                    <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)" stroke="none">
-                        <path d="M3288 8770 c-24 -13 -47 -38 -69 -77 -32 -56 -33 -62 -37 -199 -3
+    <div class="about-comp">
+        <div class="title-about">
+            <h2>Projeto - Quilombolas</h2>
+        </div>
+        <div class="logo-about">
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1024.000000 1024.000000" preserveAspectRatio="xMidYMid meet">
+                <metadata>
+                    Created by potrace 1.16, written by Peter Selinger 2001-2019
+                </metadata>
+                <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)" stroke="none">
+                    <path d="M3288 8770 c-24 -13 -47 -38 -69 -77 -32 -56 -33 -62 -37 -199 -3
                 -119 -1 -143 12 -157 9 -8 16 -18 16 -21 0 -7 -51 -58 -55 -54 -1 2 -10 17
                 -18 34 -30 59 -117 144 -181 175 -51 26 -70 30 -116 26 -49 -4 -58 -8 -91 -46
                 -24 -27 -40 -56 -44 -82 -8 -49 4 -217 16 -225 5 -3 9 -18 9 -33 0 -15 6 -36
@@ -219,275 +212,48 @@
                 35 3 0 21 -9 40 -21z m2039 -59 l53 0 -92 -118 c-51 -66 -108 -142 -127 -170
                 -19 -28 -39 -50 -45 -49 -7 3 -112 320 -115 346 0 2 61 1 137 -2 75 -4 160 -7
                 189 -7z" />
-                        <path d="M4633 6963 c-15 -3 -20 -9 -16 -19 3 -9 -4 -28 -16 -44 -11 -16 -21
+                    <path d="M4633 6963 c-15 -3 -20 -9 -16 -19 3 -9 -4 -28 -16 -44 -11 -16 -21
                 -35 -20 -42 0 -7 3 -6 7 4 6 15 10 15 32 3 19 -11 21 -14 7 -15 -21 0 -19 -37
                 14 -280 20 -147 26 -177 34 -168 7 7 23 94 46 243 10 72 22 142 25 158 l6 27
                 -68 0 c-60 0 -66 2 -49 14 10 7 27 11 37 8 10 -2 25 2 34 9 11 9 17 10 23 1 4
                 -7 11 -4 20 11 13 20 13 21 -1 9 -13 -10 -17 -10 -22 3 -3 9 -2 13 4 10 6 -3
                 10 -2 10 4 0 5 -4 13 -10 16 -5 3 -10 11 -10 17 0 6 10 3 22 -8 l21 -19 -17
                 26 c-22 35 -53 44 -113 32z" />
-                    </g>
-                </svg>
-                <h1 class="m-0" style="font-size: 20px;">Quilombolas</h1>
-            </div>
-
-            <!-- GIT HUB AND CHANGE THEAME -->
-
-            <div class="features">
-                <div class="change-theme">
-                    <ChangeTheme></ChangeTheme>
-                </div>
-                <div class="github">
-                    <svg id="github" @click="openGitHub" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                    </svg>
-                </div>
-            </div>
-
-        </header>
-        <nav v-show="showNav">
-            <router-link to="/" @click="goTop">Início</router-link>
-            <router-link to="/lugares" @click="goTop">Lugares</router-link>
-            <router-link to="/producao" @click="goTop">Produção</router-link>
-            <router-link to="/cultura" @click="goTop">Cultura</router-link>
-            <router-link to="/sobre" @click="goTop">Sobre</router-link>
-        </nav>
+                </g>
+            </svg>
+        </div>
     </div>
 </template>
 
-<script>
-import ChangeTheme from './ChangeTheme.vue';
-
-export default {
-    name: 'TheHeader',
-    components: {
-        ChangeTheme
-    },
-    data() {
-        return {
-            showNav: false
-        }
-    }, methods: {
-        showNavigation() {
-            let menuIcon = document.getElementById("menu")
-            if (this.showNav == true) {
-                this.showNav = false;
-                menuIcon.innerHTML = '<i class="material-symbols-outlined" id="menu" @click="showNavigation">menu</i>';
-            } else {
-                this.showNav = true;
-                menuIcon.innerHTML = '<i class="material-symbols-outlined" id="menu" @click="showNavigation">close</i>';
-            }
-        },
-        openGitHub() {
-            window.open("https://github.com/K1Melo/pjct-quilombolas");
-        },
-        goTop() {
-            window.scroll({ top: 0, behavior: "smooth" })
-        }
-    }
-}
-</script>
-
-<style scoped>
-.the-header {
-    overflow: hidden;
-    position: fixed;
+<style lang="less" scoped>
+.about-comp {
+    height: 100vh;
     width: 100%;
-    top: 0;
-    z-index: 200;
-
-}
-
-header {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    border-bottom: 1px solid #2A3046;
-    background-color: #ffffff7e;
-
-}
-
-.dark header {
-
-    border-bottom: 1px solid #C5B7B6;
-    background-color: #000000a7;
-
-}
-
-#menu,
-#github {
-
-    cursor: pointer;
-
-}
-
-.menu {
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 33.3333333%;
-
 }
 
-.menu i {
-
-    color: #000000;
-}
-
-.dark .menu i {
-    color: #C5B7B6;
-}
-
-.title-logo {
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    width: 33.3333334%;
-
+.title-about {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    fill: #000000;
-
-    font-size: 0.6em;
-
+    width: 50%;
 }
 
-.dark .title-logo {
+.logo-about {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 
+svg {
+    width: 100%; 
+    height:auto;
+}
+
+.dark svg {
     fill: #ffffff;
-
 }
 
-.features {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 33.3333333%;
-
-}
-
-.github svg {
-
-    margin-left: 15px;
-
-    fill: #000000;
-
-}
-
-.dark .github svg {
-
-    fill: #C5B7B6;
-
-}
-
-nav {
-
-    width: 100%;
-    z-index: 199;
-    padding: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background-color: #f0e7e78b;
-
-}
-
-nav a {
-
-    color: #2A3046;
-    text-decoration: none;
-
-}
-
-.dark nav {
-
-    background-color: #2a272e73;
-
-}
-
-.dark nav a {
-
-    color: #C5B7B6;
-
-}
-
-@media only screen and (max-width: 800px) {
-
-    .github {
-        display: none;
-    }
-
-    .features {
-        width: auto;
-    }
-
-    .menu {
-        width: auto;
-    }
-
-    .title-logo {
-        width: auto;
-    }
-
-    nav a {
-
-        font-size: 15px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    nav a {
-
-        font-size: 12px;
-    }
-}
-
-a:hover {
-    transform: scale(1.2);
-    transition: 0.2s;
-}
-
-a:active {
-    transform: scale(1.0);
-    transition: 0.2s;
-}
-
-#menu:hover,
-#github:hover {
-    transform: scale(1.3);
-    transition: 0.2s;
-}
-
-#menu:active,
-#github:active {
-    transform: scale(1);
-    transition: 0.3s;
-}
-
-#menu:active {
-    transform: rotate(0.5turn);
-
-}</style>
+</style>

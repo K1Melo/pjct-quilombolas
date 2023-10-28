@@ -286,7 +286,7 @@ export default {
 
 <style lang="less" scoped>
 footer {
-    background-image: url(../assets/footer-background.jpg);
+    background-image: url(../assets/footer-background.webp);
     background-size: cover;
     background-position: center;
     padding-top: 2%;

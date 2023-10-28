@@ -21,7 +21,13 @@ const routes = [
     path: '/cultura',
     name: 'cultura',
     component: () => import('../views/CultureView.vue')
-  }
+  },
+  {
+    path: '/sobre',
+    name: 'sobre',
+    component: () => import('../views/AboutUs.vue')
+  },
+
 ]
 
 const router = createRouter({
