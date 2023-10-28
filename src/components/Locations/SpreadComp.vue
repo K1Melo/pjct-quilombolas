@@ -64,8 +64,11 @@
 }
 
 .text {
+    color: #000000;
+
     width: 90%;
     font-size: 20px;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 1366px) {

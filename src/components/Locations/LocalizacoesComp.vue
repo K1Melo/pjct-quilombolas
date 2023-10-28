@@ -6,6 +6,8 @@ import 'swiper/css';
 
 import 'swiper/css/effect-cards';
 
+import './LocationSwiper.css'
+
 // import required modules
 import { EffectCards, Pagination } from 'swiper/modules';
 
@@ -19,15 +21,60 @@ import { EffectCards, Pagination } from 'swiper/modules';
         <swiper :effect="'cards'" :pagination="{
             dynamicBullets: true,
         }" :grabCursor="true" :modules="[EffectCards, Pagination]" class="mySwiper">
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide 4</swiper-slide>
-            <swiper-slide>Slide 5</swiper-slide>
-            <swiper-slide>Slide 6</swiper-slide>
-            <swiper-slide>Slide 7</swiper-slide>
-            <swiper-slide>Slide 8</swiper-slide>
-            <swiper-slide>Slide 9</swiper-slide>
+            <swiper-slide id="grotao">
+                <div class="name">
+                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3>Quilombo do Grotão</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide id="tapera">
+                <div class="name">
+                    <h3 class="state-card">Petrópolis - RJ</h3>
+                    <h3>Quilombo da Tapera</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide id="mimbo">
+                <div class="name">
+                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3>Quilombo Mimbó</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="name">
+                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3>Quilombo do Grotão</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="name">
+                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3>Quilombo do Grotão</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="name">
+                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3>Quilombo do Grotão</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="name">
+                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3>Quilombo do Grotão</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="name">
+                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3>Quilombo do Grotão</h3>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="name">
+                    <h3 class="state-card">Niterói - RJ</h3>
+                    <h3>Quilombo do Grotão</h3>
+                </div>
+            </swiper-slide>
         </swiper>
     </div>
 </template>
@@ -75,14 +122,55 @@ export default {
     width: 30%;
 }
 
-.swiper-slide-active {
-    background-color: rgb(152, 150, 150) !important;
-    transition: all 1s ease-in-out;
+.name {
+    display: none;
 }
 
 .swiper-slide {
-    background-color: rgb(65, 65, 65);
+    display: flex;
+    align-items: end;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
 
+}
+
+.swiper-slide-active {
+    background-color: rgb(152, 150, 150) !important;
+    transition: all 1s ease-in-out;
+    opacity: 1;
+
+    .name {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 1s;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 50%;
+
+        padding-left: 5%;
+        background-color: #100404e9;
+
+        .state-card {
+            color: rgb(179, 179, 179);
+        }
+    }
+}
+
+#grotao {
+    background-image: url(../../assets/quilombos/quilombo-grotao.png);
+}
+
+#tapera {
+    background-image: url(../../assets/quilombos/quilombo-tapera.png);
+}
+
+#mimbo {
+    background-image: url(../../assets/quilombos/quilombo-mimbo.png);
 }
 
 @media screen and (max-height: 800px) {
