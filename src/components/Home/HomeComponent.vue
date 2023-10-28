@@ -129,7 +129,8 @@
         cursor: pointer;
         i{  
             color: #000;
-            animation: heartBeat;
+            
+            animation: moveUpDownArrow;
             animation-duration: 2s;
             animation-iteration-count: infinite;
         }
@@ -212,6 +213,14 @@
     }
     50% {
       transform: translateY(-1.25rem); /* Estado intermediário: desloca 20px para cima */
+    }
+}
+@keyframes moveUpDownArrow {
+    0%, 100% {
+      transform: translateY(0.1rem); /* Inicial e estado final: sem deslocamento vertical */
+    }
+    50% {
+      transform: translateY(-0.2rem); /* Estado intermediário: desloca 20px para cima */
     }
 }
 
