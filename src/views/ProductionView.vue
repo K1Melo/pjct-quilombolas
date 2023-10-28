@@ -3,6 +3,7 @@
         <ProductionComp></ProductionComp>
         <PredominantComp></PredominantComp>
         <AgricultureComp></AgricultureComp>
+        <ArtesanatoComp></ArtesanatoComp>
     </div>
 </template>
 
@@ -11,12 +12,14 @@
 import ProductionComp from "@/components/Production/ProductionComp.vue"
 import PredominantComp from "@/components/Production/PredominantComp.vue";
 import AgricultureComp from "@/components/Production/AgricultureComp.vue";
+import ArtesanatoComp from "@/components/Production/ArtesanatoComp.vue";
 
 export default {
     components: {
         ProductionComp,
         PredominantComp,
-        AgricultureComp
+        AgricultureComp,
+        ArtesanatoComp
     }
 }
 

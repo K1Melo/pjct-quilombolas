@@ -165,8 +165,8 @@ export default {
 .globe {
   position: absolute;
   z-index: 0;
-  width: 60vw;
-  height: 60vw;
+  width: 50vw;
+  height: 50vw;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -227,8 +227,8 @@ export default {
 
 @media screen and (max-width: 1024px) {
   .globe {
-    height: 90vw;
-    width: 90vw;
+    height: 80vw;
+    width: 80vw;
   }
 
   .title-location {
@@ -251,8 +251,8 @@ export default {
 
 @media screen and (max-width: 800px) {
   .globe {
-    width: 90vw;
-    height: 90vw;
+    width: 80vw;
+    height: 80vw;
   }
 
   .title-location {
@@ -296,8 +296,8 @@ export default {
 
 @media screen and (max-width: 300px) {
   .globe {
-    width: 70vw;
-    height: 70vw;
+    width: 60vw;
+    height: 60vw;
   }
 
   .title-location {
