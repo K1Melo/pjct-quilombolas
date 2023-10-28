@@ -23,7 +23,7 @@ export default {
 .production-comp {
     width: 100%;
     height: 100vh;
-    background-image: url("../../assets/background-production.webp");
+    background-image: url("../../assets/background-production.png");
     background-position: bottom right;
     // background-position: center;
     background-repeat: no-repeat;

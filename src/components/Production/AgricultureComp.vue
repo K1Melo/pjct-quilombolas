@@ -18,7 +18,7 @@ export default {
 <style lang="less" scoped>
 .agriculture-comp {
     overflow: hidden;
-    background-image: url(../../assets/background-armando.webp);
+    background-image: url(../../assets/background-armando.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
