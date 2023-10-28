@@ -81,7 +81,7 @@
     }
 
     .text {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -100,7 +100,7 @@
     }
 
     .text {
-        font-size: 13px;
+        font-size: 16px;
     }
 }
 
@@ -111,15 +111,15 @@
     }
 
     .title {
-        height: 12%;
+        height: 10%;
     }
 
     .title h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .text {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
@@ -138,7 +138,7 @@
     }
 
     .text {
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 </style>
