@@ -248,6 +248,7 @@
                 <router-link to="/lugares" @click="goSecond" class="subtitle">Como se espalharam</router-link>
                 <router-link to="/lugares" @click="goThird" class="subtitle">Localizações</router-link>
                 <router-link to="/lugares" @click="goFourth" class="subtitle">Palmares</router-link>
+                <router-link to="/lugares" @click="goFifth" class="subtitle">Conheça outros</router-link>
             </div>
             <div class="options" id="optionThree">
                 <router-link to="/producao" @click="goTop">Produção</router-link>
@@ -275,6 +276,9 @@ export default {
         },
         goFourth() {
             window.scroll({ top: innerHeight * 3, behavior: "smooth" })
+        },
+        goFifth() {
+            window.scroll({ top: innerHeight * 4, behavior: "smooth" })
         },
         openGitHub() {
             window.open("https://github.com/K1Melo/pjct-quilombolas");

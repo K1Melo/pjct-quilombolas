@@ -17,12 +17,19 @@
                     tradições, contribuindo para a diversidade cultural e histórica do Brasil.</p>
             </div>
         </div>
+        <div class="circulos">
+            <div class="circulo1">
+
+            </div>
+            <div class="circulo3">
+
+            </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
 .spred {
-    z-index: 1;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -34,12 +41,12 @@
 .container {
     width: 60%;
     height: 80%;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.687);
     box-shadow: 0 8px 32px 0 rgba(147, 147, 147, 0.37);
 
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    z-index: -1;
+    z-index: 0;
 
     overflow: hidden;
 
@@ -65,10 +72,61 @@
 
 .text {
     color: #000000;
+    text-align: justify;
 
     width: 90%;
     font-size: 20px;
     font-weight: 500;
+}
+
+.circulos {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.circulo1 {
+    z-index: -1;
+
+    position: absolute;
+    right: 0;
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    background: #4A2F2F;
+    animation: moveUpDown 4s ease-in-out infinite;
+
+}
+
+.circulo3 {
+    z-index: -1;
+    width: 40vh;
+    height: 40vh;
+    background: #4A2F2F;
+    border-radius: 50%;
+
+    animation: moveUpDown 3s ease-in-out infinite;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Inicial e estado final: sem deslocamento vertical */
+    }
+
+    50% {
+        transform: translateY(-1.25rem);
+        /* Estado intermediário: desloca 20px para cima */
+    }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -84,8 +142,50 @@
     }
 
     .text {
+
         font-size: 18px;
     }
+
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .circulos {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .circulo1 {
+        z-index: -1;
+
+        position: absolute;
+        right: 0;
+        width: 40vh;
+        height: 40vh;
+        border-radius: 50%;
+        background: #4A2F2F;
+        animation: moveUpDown 4s ease-in-out infinite;
+
+    }
+
+    .circulo3 {
+        z-index: -1;
+        width: 20vh;
+        height: 20vh;
+        background: #4A2F2F;
+        border-radius: 50%;
+
+        animation: moveUpDown 3s ease-in-out infinite;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+    }
+
 }
 
 @media only screen and (max-width: 820px) {
@@ -103,7 +203,45 @@
     }
 
     .text {
+        text-align: justify;
+
         font-size: 16px;
+    }
+
+    .circulos {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .circulo1 {
+        z-index: -1;
+
+        position: absolute;
+        right: 0;
+        width: 30vh;
+        height: 30vh;
+        border-radius: 50%;
+        background: #4A2F2F;
+        animation: moveUpDown 4s ease-in-out infinite;
+
+    }
+
+    .circulo3 {
+        z-index: -1;
+        width: 20vh;
+        height: 20vh;
+        background: #4A2F2F;
+        border-radius: 50%;
+
+        animation: moveUpDown 3s ease-in-out infinite;
+        position: absolute;
+        left: 2%;
+        bottom: 2%;
     }
 }
 

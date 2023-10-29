@@ -313,6 +313,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
 .map-comp {
 	display: flex;
 	align-items: center;
@@ -558,6 +559,7 @@ svg {
 }
 
 @media screen and (max-width: 913px) {
+
 	.map-comp {
 		flex-direction: column;
 	}
@@ -768,6 +770,7 @@ svg {
 		}
 
 	}
+
 	.swiper-slide-active {
 		opacity: 1;
 	}
