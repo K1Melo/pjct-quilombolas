@@ -1,5 +1,5 @@
 <template>
-    <div class="about-view">
+    <div class="about-view" >
         <AboutComp></AboutComp>
         <CreationComp></CreationComp>
     </div>

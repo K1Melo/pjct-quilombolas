@@ -10,15 +10,16 @@
             <!-- LOGO -->
 
             <div class="title-logo">
-                <!DOCTYPE svg
-                    PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="45pt" height="45pt"
-                    viewBox="0 0 1024.000000 1024.000000" preserveAspectRatio="xMidYMid meet">
-                    <metadata>
-                        Created by potrace 1.16, written by Peter Selinger 2001-2019
-                    </metadata>
-                    <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)" stroke="none">
-                        <path d="M3288 8770 c-24 -13 -47 -38 -69 -77 -32 -56 -33 -62 -37 -199 -3
+                <router-link to="/" @click="goTop">
+                    <!DOCTYPE svg
+                        PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="45pt" height="45pt"
+                        viewBox="0 0 1024.000000 1024.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                            Created by potrace 1.16, written by Peter Selinger 2001-2019
+                        </metadata>
+                        <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path d="M3288 8770 c-24 -13 -47 -38 -69 -77 -32 -56 -33 -62 -37 -199 -3
                 -119 -1 -143 12 -157 9 -8 16 -18 16 -21 0 -7 -51 -58 -55 -54 -1 2 -10 17
                 -18 34 -30 59 -117 144 -181 175 -51 26 -70 30 -116 26 -49 -4 -58 -8 -91 -46
                 -24 -27 -40 -56 -44 -82 -8 -49 4 -217 16 -225 5 -3 9 -18 9 -33 0 -15 6 -36
@@ -219,16 +220,21 @@
                 35 3 0 21 -9 40 -21z m2039 -59 l53 0 -92 -118 c-51 -66 -108 -142 -127 -170
                 -19 -28 -39 -50 -45 -49 -7 3 -112 320 -115 346 0 2 61 1 137 -2 75 -4 160 -7
                 189 -7z" />
-                        <path d="M4633 6963 c-15 -3 -20 -9 -16 -19 3 -9 -4 -28 -16 -44 -11 -16 -21
+                            <path d="M4633 6963 c-15 -3 -20 -9 -16 -19 3 -9 -4 -28 -16 -44 -11 -16 -21
                 -35 -20 -42 0 -7 3 -6 7 4 6 15 10 15 32 3 19 -11 21 -14 7 -15 -21 0 -19 -37
                 14 -280 20 -147 26 -177 34 -168 7 7 23 94 46 243 10 72 22 142 25 158 l6 27
                 -68 0 c-60 0 -66 2 -49 14 10 7 27 11 37 8 10 -2 25 2 34 9 11 9 17 10 23 1 4
                 -7 11 -4 20 11 13 20 13 21 -1 9 -13 -10 -17 -10 -22 3 -3 9 -2 13 4 10 6 -3
                 10 -2 10 4 0 5 -4 13 -10 16 -5 3 -10 11 -10 17 0 6 10 3 22 -8 l21 -19 -17
                 26 c-22 35 -53 44 -113 32z" />
-                    </g>
-                </svg>
-                <h1 class="m-0" style="font-size: 20px;">Quilombolas</h1>
+                        </g>
+                    </svg>
+                </router-link>
+                <router-link to="/" @click="goTop">
+
+                    <h1 class="m-0" style="font-size: 20px;">Quilombolas</h1>
+
+                </router-link>
             </div>
 
             <!-- GIT HUB AND CHANGE THEAME -->
@@ -290,7 +296,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .the-header {
     overflow: hidden;
     position: fixed;
@@ -364,10 +370,12 @@ header {
     align-items: center;
     justify-content: center;
 
-    fill: #000000;
-
     font-size: 0.6em;
 
+}
+
+.router-link-active {
+    fill: white;
 }
 
 .dark .title-logo {
@@ -465,12 +473,16 @@ nav a {
     }
 }
 
-a:hover {
+a {
+    text-decoration: none;
+}
+
+nav a:hover {
     transform: scale(1.2);
     transition: 0.2s;
 }
 
-a:active {
+nav a:active {
     transform: scale(1.0);
     transition: 0.2s;
 }
@@ -490,4 +502,5 @@ a:active {
 #menu:active {
     transform: rotate(0.5turn);
 
-}</style>
+}
+</style>

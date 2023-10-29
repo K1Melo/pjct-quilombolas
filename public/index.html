@@ -52,14 +52,14 @@
         justify-content: center;
       }
 
-      .content {
+      .content-page {
         display: none;
       }
     </style>
     <script>
       function loading() {
         document.getElementsByClassName("box-load")[0].style.display = "none";
-        document.getElementsByClassName("content")[0].style.display = "block";
+        document.getElementsByClassName("content-page")[0].style.display = "block";
       }
     </script>
   </head>
@@ -67,9 +67,7 @@
     <div class="box-load">
       <div class="pre"></div>
     </div>
-    <div class="content">
-      <div id="app"></div>
-    </div>
+    <div id="app"></div>
 
     <!-- built files will be auto injected -->
 
