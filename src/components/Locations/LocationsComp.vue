@@ -1,8 +1,6 @@
-
-
 <template>
   <div class="locationComp" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000">
-    <div class="globe" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000">
+    <div class="globe" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000" >
 
       <canvas id="canvas3d"></canvas>
     </div>
@@ -29,7 +27,6 @@ export default {
     const canvas = document.getElementById('canvas3d');
     const app = new Application(canvas);
     app.load('https://prod.spline.design/w7Rslvvqr4BNvAtR/scene.splinecode');
-
   }
 }
 

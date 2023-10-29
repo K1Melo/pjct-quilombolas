@@ -10,7 +10,7 @@
             <!-- LOGO -->
 
             <div class="title-logo">
-                <router-link to="/" @click="goTop">
+                <router-link to="/" @click="goTop" id="title">
                     <!DOCTYPE svg
                         PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="45pt" height="45pt"
@@ -374,11 +374,7 @@ header {
 
 }
 
-.router-link-active {
-    fill: white;
-}
-
-.dark .title-logo {
+.dark .title-logo #title {
 
     fill: #ffffff;
 

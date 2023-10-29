@@ -1,27 +1,30 @@
 <template>
-  <div class="content-page">
+    <ThePreloader></ThePreloader>
     <TheHeader></TheHeader>
-    <router-view/>
+    <main>
+      <router-view />
+    </main>
     <TheFooter></TheFooter>
-  </div>
+
 </template>
 
 <script>
 // @ is an alias to /src
 import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue';
+import ThePreloader from './components/ThePreloader.vue';
 
 export default {
   name: 'AppVue',
   components: {
     TheHeader,
-    TheFooter
+    TheFooter,
+    ThePreloader
   }
 }
 </script>
 
 <style>
-
 /* FONT STYLE */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
@@ -41,15 +44,15 @@ body {
   font-family: 'Rubik', sans-serif;
 
   /* BACKGROUND AND ANIMATION - LIGTH */
-  
+
   min-height: 100vh;
   background-size: 600% 600%;
-  background-image: linear-gradient(60deg, #2E0F0F -80.88%, #e0dfdf 100% );
+  background-image: linear-gradient(60deg, #2E0F0F -80.88%, #e0dfdf 100%);
   animation: bgAnimatedGradient 15s infinite linear;
 
   /* BEAUTIFUL TRANSITIONS */
 
-  transition: all 1s;  
+  transition: all 1s;
 }
 
 .dark {
@@ -62,21 +65,26 @@ body {
 
 /* ANIMATION BACKGROUND */
 
-@keyframes bgAnimatedGradient{
+@keyframes bgAnimatedGradient {
   0% {
     background-position: 0 85%;
   }
-  50%{
+
+  50% {
     background-position: 100% 20%;
   }
-  100%{
+
+  100% {
     background-position: 0% 85%;
   }
 }
 
 
 
-p, i, a, svg {
+p,
+i,
+a,
+svg {
 
   transition: all 1s;
 
@@ -84,7 +92,9 @@ p, i, a, svg {
 
 /* GENERAL TITLES STYLE */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 
   color: #000000;
   opacity: 0.99;
@@ -93,7 +103,9 @@ h1, h2, h3 {
 
 }
 
-.dark h1, h2, h3 {
+.dark h1,
+h2,
+h3 {
 
   color: #ffffff;
 
@@ -105,7 +117,8 @@ h1 {
 
 }
 
-h2, h3 {
+h2,
+h3 {
 
   font-weight: 800;
 
@@ -116,5 +129,4 @@ header {
   transition: all 1s linear;
 
 }
-
 </style>
