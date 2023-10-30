@@ -371,7 +371,6 @@ header {
     justify-content: center;
 
     font-size: 0.6em;
-
 }
 
 .dark .title-logo #title {

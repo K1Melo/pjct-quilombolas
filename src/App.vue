@@ -52,7 +52,7 @@ body {
 
   /* BEAUTIFUL TRANSITIONS */
 
-  transition: all 1s;
+  transition: all 1s linear;
 }
 
 .dark {
@@ -86,7 +86,7 @@ i,
 a,
 svg {
 
-  transition: all 1s;
+  transition: all 1s linear;
 
 }
 
@@ -99,7 +99,7 @@ h3 {
   color: #000000;
   opacity: 0.99;
 
-  transition: all 1s;
+  transition: all 1s linear;
 
 }
 

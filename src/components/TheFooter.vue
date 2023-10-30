@@ -239,23 +239,23 @@
         </div>
         <nav>
             <div class="options" id="optionOne">
-                <router-link to="/" @click="goTop">Início</router-link>
-                <router-link to="/" @click="goSecond" class="subtitle">Surgimento</router-link>
-                <router-link to="/" @click="goThird" class="subtitle">Dificuldades</router-link>
+                <router-link to="/" @click="goTo(0)">Início</router-link>
+                <router-link to="/" @click="goTo(1)" class="subtitle">Surgimento</router-link>
+                <router-link to="/" @click="goTo(2)" class="subtitle">Dificuldades</router-link>
             </div>
             <div class="options" id="optionTwo">
-                <router-link to="/lugares" @click="goTop">Lugares</router-link>
-                <router-link to="/lugares" @click="goSecond" class="subtitle">Como se espalharam</router-link>
-                <router-link to="/lugares" @click="goThird" class="subtitle">Localizações</router-link>
-                <router-link to="/lugares" @click="goFourth" class="subtitle">Palmares</router-link>
-                <router-link to="/lugares" @click="goFifth" class="subtitle">Conheça outros</router-link>
+                <router-link to="/lugares" @click="goTo(0)">Lugares</router-link>
+                <router-link to="/lugares" @click="goTo(1)" class="subtitle">Como se espalharam</router-link>
+                <router-link to="/lugares" @click="goTo(2)" class="subtitle">Localizações</router-link>
+                <router-link to="/lugares" @click="goTo(3)" class="subtitle">Palmares</router-link>
+                <router-link to="/lugares" @click="goTo(4)" class="subtitle">Conheça outros</router-link>
             </div>
             <div class="options" id="optionThree">
-                <router-link to="/producao" @click="goTop">Produção</router-link>
-                <router-link to="/producao" @click="goSecond" class="subtitle">Produção Predominante</router-link>
+                <router-link to="/producao" @click="goTo(0)">Produção</router-link>
+                <router-link to="/producao" @click="goTo(1)" class="subtitle">Produção Predominante</router-link>
             </div>
             <div class="options" id="optionFour">
-                <router-link to="/cultura" @click="goTop">Cultura</router-link>
+                <router-link to="/cultura" @click="goTo(0)">Cultura</router-link>
             </div>
         </nav>
     </footer>
@@ -265,20 +265,8 @@
 
 export default {
     methods: {
-        goTop() {
-            window.scroll({ top: 0, behavior: "smooth" })
-        },
-        goSecond() {
-            window.scroll({ top: innerHeight, behavior: "smooth" })
-        },
-        goThird() {
-            window.scroll({ top: innerHeight * 2, behavior: "smooth" })
-        },
-        goFourth() {
-            window.scroll({ top: innerHeight * 3, behavior: "smooth" })
-        },
-        goFifth() {
-            window.scroll({ top: innerHeight * 4, behavior: "smooth" })
+        goTo(int) {
+            window.scroll({ top: innerHeight * int, behavior: "smooth" })
         },
         openGitHub() {
             window.open("https://github.com/K1Melo/pjct-quilombolas");
