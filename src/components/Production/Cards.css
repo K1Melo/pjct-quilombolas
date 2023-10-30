@@ -1,0 +1,104 @@
+.card-container {
+    width: 20%;
+    height: 30vw;
+    perspective: 800px;
+}
+
+.card {
+    background-color: transparent;
+    border: transparent;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover>.card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgb(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.front {
+    background-image: url(https://source.unsplash.com/random/350x500);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+
+.back {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1300px) {
+    .card-container {
+        width: 25%;
+        height: 40vw;
+    }
+
+    .front,
+    .back {
+        border-radius: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card-container {
+        width: 28%;
+        height: 45vw;
+    }
+
+    .front,
+    .back {
+        border-radius: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .card-container {
+        width: 28%;
+        height: 45vw;
+    }
+
+    .front,
+    .back {
+        border-radius: .5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        width: 30%;
+        height: 50vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card-container {
+        width: 30%;
+        height: 60vw;
+    }
+
+    .front,
+    .back {
+        border-radius: .2rem;
+    }
+}

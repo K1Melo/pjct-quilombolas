@@ -424,11 +424,13 @@ circle:nth-child(2) {
 	h2 {
 		font-size: 60px;
 		color: rgb(0, 0, 0);
+		margin: 0;
 	}
 
 	p {
 		color: rgb(0, 0, 0);
 		font-size: 20px;
+		margin: 0;
 	}
 }
 

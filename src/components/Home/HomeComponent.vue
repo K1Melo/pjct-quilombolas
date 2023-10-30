@@ -201,10 +201,10 @@
 {
     z-index: -1;
 
-    animation: moveUpDown 2.5s ease-in-out infinite;
     position: absolute;
     left: 0;
     bottom: 0;
+    animation: moveUpDown 2.5s ease-in-out infinite;
 }
 
 @keyframes moveUpDown {

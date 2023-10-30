@@ -83,6 +83,14 @@
                     pessoas.</p>
             </div>
         </div>
+        <div class="circulos">
+            <div class="circulo1">
+
+            </div>
+            <div class="circulo3">
+
+            </div>
+        </div>
     </div>
 </template>
 
@@ -123,7 +131,7 @@
             font-size: 3em;
         }
 
-        
+
         margin: 0;
         opacity: 0.8;
     }
@@ -162,6 +170,62 @@
         }
     }
 
+}
+
+.circulos {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    opacity: 0.8;
+
+}
+
+.circulo1 {
+    z-index: -1;
+
+    position: absolute;
+    left: 0;
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    background: #4A2F2F;
+    animation: moveUpDown 4s ease-in-out infinite;
+
+}
+
+.circulo3 {
+    z-index: -1;
+    width: 40vh;
+    height: 40vh;
+    background: #4A2F2F;
+    border-radius: 50%;
+
+    animation: moveUpDown 3s ease-in-out infinite;
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+}
+
+.dark .circulos {
+    opacity: 1;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Inicial e estado final: sem deslocamento vertical */
+    }
+
+    50% {
+        transform: translateY(-1.25rem);
+        /* Estado intermediário: desloca 20px para cima */
+    }
 }
 
 @media only screen and (max-width: 1025px) {
@@ -244,6 +308,44 @@
             font-size: 23px;
         }
     }
+
+    .circulos {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .circulo1 {
+        z-index: -1;
+
+        position: absolute;
+        left: 2%;
+        bottom: 0;
+
+        width: 40vh;
+        height: 40vh;
+        border-radius: 50%;
+        background: #4A2F2F;
+        animation: moveUpDown 4s ease-in-out infinite;
+
+    }
+
+    .circulo3 {
+        z-index: -1;
+        width: 20vh;
+        height: 20vh;
+        background: #4A2F2F;
+        border-radius: 50%;
+
+        animation: moveUpDown 3s ease-in-out infinite;
+        position: absolute;
+        right: 5%;
+        top: 2%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -260,6 +362,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 300px) {
     .text-zumbi {
         .title-palmares {
@@ -274,5 +377,4 @@
         }
     }
 }
-
 </style>

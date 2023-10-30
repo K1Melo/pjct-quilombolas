@@ -93,6 +93,7 @@
     z-index: -1;
 
     position: absolute;
+    top: 5%;
     right: 0;
     width: 60vh;
     height: 60vh;
