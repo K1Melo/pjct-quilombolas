@@ -1,6 +1,6 @@
 <template>
-    <div class="agriculture-card">
-        <div class="card-container" data-aos="fade-right"  data-aos-duration="3000">
+    <div class="artesanato-card">
+        <div class="card-container" data-aos="fade-left"  data-aos-duration="750">
             <div class="card">
                 <div class="front">
                     <h2 class="food-name">Name</h2>
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-container" data-aos="fade-right" data-aos-duration="1500">
+        <div class="card-container" data-aos="fade-left" data-aos-duration="1500">
             <div class="card">
                 <div class="front">
                     <h2 class="food-name">Name</h2>
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-container" data-aos="fade-right" data-aos-duration="750">
+        <div class="card-container" data-aos="fade-left" data-aos-duration="3000">
             <div class="card">
                 <div class="front">
                     <h2 class="food-name">Name</h2>
@@ -51,7 +51,7 @@ export default {
 <style scoped>
 @import url(./Cards.css);
 
-.agriculture-card {
+.artesanato-card {
     padding-top: 10%;
     padding-bottom: 10%;
     width: 100%;

@@ -1,7 +1,7 @@
 <template>
     <div class="creation-comp">
         <div class="cell-phone">
-            <canvas id="phoneMokup"></canvas>
+            <!-- <canvas id="phoneMokup"></canvas> -->
         </div>
         <div class="text-creation">
             <h2>Teste</h2>
@@ -10,14 +10,14 @@
 </template>
 
 <script>
-import { Application } from '@splinetool/runtime';
+// import { Application } from '@splinetool/runtime';
 
 export default {
     mounted() {
 
-        const canvas = document.getElementById('phoneMokup');
-        const app = new Application(canvas);
-        app.load('https://prod.spline.design/5ZeLWfjcnXbITjyx/scene.splinecode');
+        // const canvas = document.getElementById('phoneMokup');
+        // const app = new Application(canvas);
+        // app.load('https://prod.spline.design/5ZeLWfjcnXbITjyx/scene.splinecode');
 
     }
 }

@@ -6,6 +6,8 @@
         <WhatIsAgriculture></WhatIsAgriculture>
         <AgricultureCard></AgricultureCard>
         <ArtesanatoComp></ArtesanatoComp>
+        <WhatIsArtesanato></WhatIsArtesanato>
+        <ArtesanatoCard></ArtesanatoCard>
     </div>
 </template>
 
@@ -16,7 +18,9 @@ import PredominantComp from "@/components/Production/PredominantComp.vue";
 import AgricultureComp from "@/components/Production/AgricultureComp.vue";
 import ArtesanatoComp from "@/components/Production/ArtesanatoComp.vue";
 import WhatIsAgriculture from "@/components/Production/WhatIsAgriculture.vue";
+import WhatIsArtesanato from "@/components/Production/WhatIsArtesanato.vue";
 import AgricultureCard from "@/components/Production/AgricultureCard.vue";
+import ArtesanatoCard from "@/components/Production/ArtesanatoCard.vue";
 
 export default {
     components: {
@@ -25,7 +29,9 @@ export default {
         AgricultureComp,
         WhatIsAgriculture,
         AgricultureCard,
-        ArtesanatoComp
+        ArtesanatoComp,
+        WhatIsArtesanato,
+        ArtesanatoCard
     }
 }
 

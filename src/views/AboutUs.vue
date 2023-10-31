@@ -3,6 +3,7 @@
         <AboutComp></AboutComp>
         <CreationComp></CreationComp>
         <TheParticipants></TheParticipants>
+        <FeedbackComp></FeedbackComp>
     </div>
 </template>
 
@@ -11,12 +12,14 @@
 import AboutComp from '../components/About/AboutComp.vue'
 import CreationComp from '@/components/About/CreationComp.vue';
 import TheParticipants from '@/components/About/TheParticipants.vue';
+import FeedbackComp from '@/components/About/FeedbackComp.vue';
 
 export default {
     components: {
         AboutComp,
         CreationComp,
-        TheParticipants
+        TheParticipants,
+        FeedbackComp
     }
 }
 
