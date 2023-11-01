@@ -1,19 +1,13 @@
 <template>
     <div class="feedback">
-        <div class="container-get">
-            <h2>{{ formData.name }}</h2>
-        </div>
-        <div class="container-post">
-            <div class="your-post">
-                <h2 for="name">{{ formData.name }}</h2>
-                <p>{{ formData.feedback }} </p>
-            </div>
-            <form @submit.prevent="createPost">
-                <div class="name">
-                    <input type="text" id="name" placeholder="Seu nome:" v-model="formData.name"> <br>
-                    <input type="text" id="name" placeholder="Seu feedback:" v-model="formData.feedback">
-                </div>
-            </form>
+        <form @submit.prevent="postMessage" method="post">
+            <input type="text" name="author" placeholder="nome" v-model="posts.name" id="name"> <br>
+            <input type="text" name="feedback" placeholder="comentarios" v-model="posts.feedback" id="feedback"> <br>
+            <button type="submit" class="btn btn-ligth">Post</button>
+        </form>
+        <div class="teste">
+            {{ posts.name }}
+            {{ posts.feedback }}
         </div>
     </div>
 </template>
@@ -23,23 +17,32 @@
 export default {
     data() {
         return {
-            formData: {
+            posts: {
                 name: '',
-                feedback: '',
+                feedback: ''
             }
         }
     },
-
     methods: {
-        createPost() {
-        }   
+        postMessage() {
+            console.log(JSON.stringify(this.posts))
+            
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(this.posts)
+            };
+
+            fetch('https://quilombolas-backend.onrender.com/', options)
+        }
     }
 }
 
 </script>
 
 <style scoped>
-
 .feedback {
     width: 100%;
     height: 100vh;
@@ -77,5 +80,4 @@ export default {
     border-radius: 50px;
     background-color: aquamarine;
 }
-
 </style>
