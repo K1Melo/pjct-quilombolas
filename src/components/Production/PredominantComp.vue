@@ -7,9 +7,9 @@
                 <h2>Produção Predominante</h2>
             </div>
             <div class="p-predominant">
-                <p>Originados da resistência africana contra a escravidão, escravizados fugitivos de suas fazendas
-                    buscaram liberdade nas áreas isoladas, onde formaram comunidades independentes, se organizando
-                    de acordo com suas próprias tradições culturais e sociais.</p>
+                <p>A arte de criar objetos por meio da transformação da matéria-prima e um sistema que permite não apenas
+                    uma alimentação balanceada e sustentável, como também o sustento dos habitantes, os principais meios de
+                    produção de renda quilombola são agricultura e o artesanato.</p>
             </div>
         </div>
     </div>

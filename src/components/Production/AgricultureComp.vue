@@ -109,7 +109,7 @@ h2 {
     }
 
     .agricultura {
-        height: calc(7% + 20vw);
+        height: calc(15% + 20vw);
     }
 
     .familiar {
@@ -130,7 +130,7 @@ h2 {
     }
 
     .agricultura {
-        height: calc(10% + 20vw);
+        height: calc(13% + 20vw);
     }
 
     .familiar {

@@ -87,6 +87,14 @@ export default {
     }
 }
 
+.dark {
+    .title {
+        h2 {
+            background-color: #4c2626d7;
+        }
+    }
+}
+
 .mySwiper {
     height: 60%;
     width: 30%;
@@ -102,7 +110,6 @@ export default {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
     transition: all 1s ease-in-out;
 
 }

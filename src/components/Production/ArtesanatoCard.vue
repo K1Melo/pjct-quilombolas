@@ -7,7 +7,6 @@
                     <div class="space"></div>
                 </div>
                 <div class="back">
-                    <h2>Back of Card</h2>
                     <p>Addition info on the back</p>
                 </div>
             </div>
@@ -19,7 +18,6 @@
                     <div class="space"></div>
                 </div>
                 <div class="back">
-                    <h2>Back of Card</h2>
                     <p>Addition info on the back</p>
                 </div>
             </div>
@@ -31,7 +29,6 @@
                     <div class="space"></div>
                 </div>
                 <div class="back">
-                    <h2>Back of Card</h2>
                     <p>Addition info on the back</p>
                 </div>
             </div>
@@ -84,7 +81,7 @@ export default {
     height: 30%;
     width: 100%;
 
-    background-color: rgba(0, 0, 0, 0.653);
+    background-color: rgba(0, 0, 0, 0.915);
 }
 
 @media only screen and (max-width: 600px) {

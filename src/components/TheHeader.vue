@@ -325,11 +325,7 @@ header {
 }
 
 #menu,
-#github {
-
-    cursor: pointer;
-
-}
+ 
 
 .menu {
 

@@ -10,13 +10,7 @@ import "./Swiper.css";
 
 <template>
     <div class="sliderView m-0 p-0">
-        <Swiper 
-            :modules="[Pagination, Navigation]"
-            :lazy="true"
-            :navigation="true"
-            :pagination="true"
-            class="slider"
-        >
+        <Swiper :modules="[Pagination, Navigation]" :lazy="true" :navigation="true" :pagination="true" class="slider">
             <SwiperSlide class="slides slides-above">
                 <div class="img-slide ">
                     <img src="../../assets/slide1-img.svg" loading="lazy" alt="">
@@ -34,16 +28,18 @@ import "./Swiper.css";
             </SwiperSlide>
             <SwiperSlide class="slides slides-above">
                 <div class="img-slide2">
-                        <img src="../../assets/slide2-img.svg" loading="lazy" alt="">
+                    <img src="../../assets/slide2-img.svg" loading="lazy" alt="">
+                </div>
+                <div class="text-slide">
+                    <div class="title">
+                        <h2>Quem são eles</h2>
                     </div>
-                    <div class="text-slide">
-                        <div class="title">
-                            <h2>Quem são eles</h2>
-                        </div>
-                        <div class="text">
-                            <p>Resumidamente, quilombolas são os habitantes de um quilombo, um local onde buscaram um refúgio das condições cruéis aos que passavam.</p>
-                        </div>
-                    </div> 
+                    <div class="text">
+                        <p>Quilombolas, são pessoas autodeclaradas e que têm identificação com a cultura e tradições com as
+                            comunidades de quilombos, além de relação territorial com as comunidades de quilombos,
+                            descendentes e remanescentes de escravizados fugitivos que formaram essas comunidades.</p>
+                    </div>
+                </div>
             </SwiperSlide>
             <SwiperSlide class="slides">
                 <SliderItem></SliderItem>
@@ -279,15 +275,15 @@ export default {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
 
         img {
-            width: 45vh;
+            width: 50vh;
         }
     }
 
     .text-slide {
-        height: 70vh;
+        height: 50vh;
         width: 90%;
         margin: auto;
         padding: 0;
@@ -342,6 +338,14 @@ export default {
         }
     }
 
+    .img-slide2 {
+        height: 40vh;
+
+        img {
+            width: 50vh;
+        }
+    }
+
     .text-slide {
 
         height: 50%;
@@ -367,6 +371,14 @@ export default {
         }
     }
 
+    .img-slide2 {
+        height: 40vh;
+
+        img {
+            width: 40vh;
+        }
+    }
+
     .text-slide {
 
         height: 50%;
@@ -382,6 +394,4 @@ export default {
         }
     }
 }
-
-
 </style>

@@ -31,7 +31,6 @@
 }
 
 .front {
-    background-image: url(https://source.unsplash.com/random/350x500);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -45,7 +44,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    
+    font-size: calc(5px + 1vw);
+}
+
+.back p{
+    width: 80%;
+    color: white;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -57,6 +62,10 @@
     .front,
     .back {
         border-radius: 1.5rem;
+    }
+
+    .back p {
+        font-size: calc(8px + 1vw);
     }
 }
 
@@ -70,6 +79,10 @@
     .back {
         border-radius: 1rem;
     }
+    
+    .back p {
+        font-size: calc(7px + 1vw);
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -82,6 +95,10 @@
     .back {
         border-radius: .5rem;
     }
+
+    .back p {
+        font-size: calc(6px + 1vw);
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -89,6 +106,16 @@
         width: 30%;
         height: 50vw;
     }
+
+    .front h2 {
+        font-size: 18px;
+        bottom: 8%;
+    }
+
+    .back p {
+        font-size: calc(5px + 1vw);
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -100,5 +127,9 @@
     .front,
     .back {
         border-radius: .2rem;
+    }
+
+    .back p {
+        font-size: calc(4px + 1vw);
     }
 }

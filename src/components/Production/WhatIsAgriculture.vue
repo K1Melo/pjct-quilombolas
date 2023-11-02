@@ -6,9 +6,10 @@
                 <h2>O que é ?</h2>
             </div>
             <div class="p-what">
-                <p>Originados da resistência africana contra a escravidão, escravizados fugitivos de suas fazendas
-                    buscaram liberdade nas áreas isoladas, onde formaram comunidades independentes, se organizando
-                    de acordo com suas próprias tradições culturais e sociais.</p>
+                <p>Um meio de cultivo da terra realizado por pequenos proprietários rurais, os quilombolas utilizam esse
+                    modo de produção, onde mantém seu solo de plantação sempre saudável, com o conhecimento tradicional
+                    de seus antecessores garantindo um entendimento dinâmico do território e das culturas referentes ao
+                    plantio.</p>
             </div>
         </div>
         <div class="what-container">
