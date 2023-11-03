@@ -8,8 +8,8 @@
                 </div>
                 <div class="back">
                     <p>Antes da chegada dos portugueses, era cultivado pelos tupis nos alagados próximos ao litoral, mas com
-                        a chegada, também foi descoberto seu uso pelos africanos, sendo um dos principais alimentos usados nos
-                        navios negreiros</p>
+                        a chegada, também foi descoberto seu uso pelos africanos, sendo um dos principais alimentos usados
+                        nos navios negreiros.</p>
                 </div>
             </div>
         </div>
@@ -20,8 +20,8 @@
                     <div class="space"></div>
                 </div>
                 <div class="back">
-                    <p>Esse tubérculo chegou ao brasil por meio dos navios portugueses que traziam pessoas escravisadas, e
-                        por fazer parte da culinária africana chegou ao Brasil e que por consequencia se disseminou pelos
+                    <p>Esse tubérculo chegou ao Brasil por meio dos navios portugueses que traziam pessoas escravizadas, e
+                        por fazer parte da culinária africana chegou ao Brasil e que por consequência se disseminou pelos
                         quilombos.</p>
                 </div>
             </div>
@@ -33,9 +33,9 @@
                     <div class="space"></div>
                 </div>
                 <div class="back">
-                    <p>Esse tubérculo chegou ao brasil por meio dos navios portugueses que traziam pessoas escravisadas, e
-                        por fazer parte da culinária africana chegou ao Brasil e que por consequencia se disseminou pelos
-                        quilombos.</p>
+                    <p>O cultivo do milho vem desde antes da chegada dos europeus, os indígenas tinham o cereal como
+                        principal ingrediente de sua dieta, mas com a chegada dos portugueses, o consumo aumentou e produtos
+                        a base de milho foram incorporados aos hábitos alimentares dos brasileiros.</p>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@ export default {
     height: 30%;
     width: 100%;
 
-    background-color: rgba(0, 0, 0, 0.915);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #arroz {
