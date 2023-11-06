@@ -1,12 +1,15 @@
 <template>
     <div class="about-comp">
         <div class="title-about">
-            <h2>Projeto - Quilombolas</h2>
+            <div>
+                <h2>Projeto -</h2>
+                <h2>Quilombolas</h2>
+            </div>
         </div>
         <div class="logo-about">
             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1024.000000 1024.000000" preserveAspectRatio="xMidYMid meet">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.000000 1024.000000"
+                preserveAspectRatio="xMidYMid meet">
                 <metadata>
                     Created by potrace 1.16, written by Peter Selinger 2001-2019
                 </metadata>
@@ -237,23 +240,87 @@
 .title-about {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    h2 {
+        text-align: center;
+        font-size: calc(4.5em + 1vw);
+        color: #000;
+    }
 }
 
 .logo-about {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 svg {
-    width: 100%; 
-    height:auto;
+    width: 100%;
+    height: auto;
 }
 
-.dark svg {
-    fill: #ffffff;
+.dark {
+    svg {
+        fill: #ffffff;
+    }
+
+
+    .title-about h2 {
+        color: #ffffff;
+    }
 }
 
+@media only screen and (max-width: 1000px) {
+    .title-about {
+
+        h2 {
+            font-size: calc(3em + 1vw);
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-comp {
+        flex-direction: column-reverse;
+    }
+
+    .title-about {
+        width: 100%;
+        height: 50%;
+    }
+
+    .logo-about {
+        align-items: flex-start;
+        width: 100%;
+        height: 50%;
+    }
+
+    svg {
+        width: auto;
+        height: 130%;
+        fill: #ffffff;
+    }
+
+    .title-about {
+
+        h2 {
+            font-size: calc(2.8em + 1vw);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title-about {
+
+        h2 {
+            font-size: calc(2.5em + 1vw);
+        }
+    }
+}
 </style>

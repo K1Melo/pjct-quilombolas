@@ -192,4 +192,33 @@ export default {
     height: 100%;
 }
 
+@media only screen and (max-width: 800px) {
+    .creation {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card1 {
+        width: calc(100px + 5vw);
+        height: calc(100px + 5vw);
+        border-radius: calc(100px + 5vw) 5px 5px 5px;
+    }
+    .card2 {
+        width: calc(100px + 5vw);
+        height: calc(100px + 5vw);
+        border-radius: 5px calc(100px + 5vw) 5px 5px;
+    }
+    .card3 {
+        width: calc(100px + 5vw);
+        height: calc(100px + 5vw);
+        border-radius: 5px 5px 5px calc(100px + 5vw);
+    }
+    .card4 {
+        width: calc(100px + 5vw);
+        height: calc(100px + 5vw);
+        border-radius: 5px 5px calc(100px + 5vw) 5px;
+    }
+
+}
 </style>
