@@ -4,6 +4,7 @@
     <main>
       <router-view />
     </main>
+    <ButtonTop></ButtonTop>
     <TheFooter></TheFooter>
 
 </template>
@@ -13,13 +14,15 @@
 import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue';
 import ThePreloader from './components/ThePreloader.vue';
+import ButtonTop from './components/Production/ButtonTop.vue';
 
 export default {
   name: 'AppVue',
   components: {
     TheHeader,
     TheFooter,
-    ThePreloader
+    ThePreloader,
+    ButtonTop
   }
 }
 </script>

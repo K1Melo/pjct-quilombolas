@@ -1,5 +1,5 @@
 <template>
-    <div class="participants">
+    <div class="participants-out">
         <div class="participants-container">
             <div class="tools">
                 <div class="participants">
@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.participants {
+.participants-out {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -117,16 +117,8 @@ export default {
         background-color: aqua;
         border: 1px solid black;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         align-items: center;
-
-        img {
-            width: 10%;
-        }
-
-        p {
-            margin: 0;
-        }
     }
 }
 
@@ -148,6 +140,22 @@ export default {
 
     img {
         width: 30%;
+    }
+}
+
+.name-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 30%;
+    
+    img {
+        width: 30px;
+    }
+
+    p {
+        margin: 0;
+        margin-left: 20px;
     }
 }
 
