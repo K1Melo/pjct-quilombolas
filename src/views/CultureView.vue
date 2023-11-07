@@ -1,17 +1,6 @@
 <template>
     <div class="culture" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">
-        <div class="container">
-            <div class="texts">
-                <h1 id="title">Culturas</h1>
-                <p id="text-1">
-                    Apesar de muitas vezes ser confundido apenas com a ideia de monumentos e com
-                    conceitos de patrimônio material, o patrimônio cultural é mais que isso, ele está ligado
-                    à produção da identidade e da territorialidade, o patrimônio cultural está fundamentado
-                    na referência de processos culturais.
-                </p>
-            </div>
-            <div class="retang"></div>
-        </div>
+        <CultureComp></CultureComp>
         <div class="container2">
             <div class="img-1">
                 <img id="woman"
@@ -112,14 +101,24 @@
     </div>
 </template>
 
+<script>
+import CultureComp from "../components/Culture/CultureComp.vue"
+
+export default {
+    components: {
+        CultureComp
+    }
+}
+
+</script>
+
 <style scoped>
 .culture {
     width: 100%;
 }
-
 /*Desenvolvi Primeiro Pro Moba e dps Desktop*/
 
-@media(min-width:375px) and (max-width:530px) {
+@media(max-width:530px) {
     body {
         margin: 0px;
         padding: 0px;
@@ -154,7 +153,7 @@
     .container {
         background-color: #440a13;
         height: 700px;
-        width: 100%;
+
         display: flex;
         flex-direction: row;
     }
@@ -190,6 +189,7 @@
     /*Parte 2 Movimentos Sociais*/
 
     .container2 {
+        overflow: hidden;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -398,7 +398,6 @@
     .container {
         background-color: #440a13;
         height: 700px;
-        width: 100%;
         display: flex;
         flex-direction: row;
     }
