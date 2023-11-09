@@ -74,6 +74,7 @@
     .culture-comp {
         height: 70vh;
     }
+
     .texts {
         width: 90%;
         position: absolute;
@@ -95,6 +96,27 @@
         height: 25%;
         background-color: #6d212b;
         right: 20%;
+    }
+}
+
+@media(max-width:300px) {
+    .culture-comp {
+        height: 80vh;
+    }
+
+    .texts {
+        width: 90%;
+        position: absolute;
+        top: 10%;
+    }
+
+    #title {
+        font-size: calc(3.5em + 1vw);
+    }
+
+    #text-1 {
+        font-size: 14px;
+        margin-top: 9%;
     }
 }
 </style>

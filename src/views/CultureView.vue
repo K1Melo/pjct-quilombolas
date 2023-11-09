@@ -1,37 +1,7 @@
 <template>
     <div class="culture" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">
         <CultureComp></CultureComp>
-        <div class="container2">
-            <div class="img-1">
-                <img id="woman"
-                    src="../assets/retrato-de-mulher-africana-usando-acessorios-tradicionais-e-posando-PhotoRoom.png-PhotoRoom.png"
-                    alt="">
-            </div>
-            <div class="texts2">
-                <div class="titulo2">
-                    <h1 id="title2">Movimentos Sociais</h1>
-                </div>
-                <p id="text-2">
-                    Antes de começar a apresentar os patrimônios culturais dos quilombolas, é fundamental
-                    destacar a relevância dos movimentos negros. Esses movimentos, que podem ser sucintamente descritos
-                    como iniciativas de natureza social voltadas para a transformação da mentalidade da sociedade,
-                    desempenham um papel crucial tanto em épocas passadas quanto nos dias atuais. <br> <br> Um exemplo
-                    contemporâneo emblemático desse fenômeno é o movimento "Black Lives Matter" ou "Vidas Negras
-                    Importam". Isso demonstra a vigência e a importância dessas iniciativas, que não se limitam ao
-                    passado, mas continuam a moldar e impactar a nossa sociedade no presente.
-                    Portanto, ao explorar e celebrar os patrimônios culturais dos quilombolas, é fundamental reconhecer
-                    a interligação entre os movimentos negros, a luta por igualdade e a preservação das tradições
-                    culturais dessas comunidades.
-                </p>
-                <a href="https://www.brasilparalelo.com.br/artigos/black-lives-matter" target="_blank"><button
-                        class="learn-more">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">Saiba Mais</span>
-                    </button></a>
-            </div>
-        </div>
+        <SocialMovements></SocialMovements>
         <div class="container3">
             <div class="text3">
                 <h1 id="cul">Culinária</h1>
@@ -103,10 +73,12 @@
 
 <script>
 import CultureComp from "../components/Culture/CultureComp.vue"
+import SocialMovements from "@/components/Culture/SocialMovements.vue";
 
 export default {
     components: {
-        CultureComp
+        CultureComp,
+        SocialMovements
     }
 }
 
@@ -115,6 +87,7 @@ export default {
 <style scoped>
 .culture {
     width: 100%;
+    overflow: hidden;
 }
 /*Desenvolvi Primeiro Pro Moba e dps Desktop*/
 
@@ -147,45 +120,6 @@ export default {
     h3 {
         margin: 0px;
     }
-
-    /*Parte 1 "Home*/
-
-    .container {
-        background-color: #440a13;
-        height: 700px;
-
-        display: flex;
-        flex-direction: row;
-    }
-
-    .texts {
-        height: 100%;
-        width: 90%;
-        position: absolute;
-        margin-left: 4%;
-    }
-
-    #title {
-        font-size: 80px;
-        color: aliceblue;
-        margin-top: 70px;
-        margin-left: 10px;
-    }
-
-    #text-1 {
-        font-size: 19px;
-        color: aliceblue;
-        margin-top: 90px;
-        margin-left: 15px;
-    }
-
-    .retang {
-        width: 22%;
-        height: 32%;
-        background-color: #6d212b;
-        margin-left: 250px;
-    }
-
     /*Parte 2 Movimentos Sociais*/
 
     .container2 {
@@ -395,84 +329,6 @@ export default {
 
 
 @media (min-width:900px) {
-    .container {
-        background-color: #440a13;
-        height: 700px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .texts {
-        height: 100%;
-        width: 60%;
-        position: absolute;
-        margin-left: 4%;
-    }
-
-    #title {
-        font-size: 110px;
-        color: aliceblue;
-        margin-top: 70px;
-        margin-left: 10px;
-    }
-
-    #text-1 {
-        font-size: 26px;
-        color: aliceblue;
-        margin-top: 90px;
-        margin-left: 15px;
-    }
-
-    .retang {
-        width: 22%;
-        height: 82%;
-        background-color: #6d212b;
-        margin-left: 700px;
-    }
-
-    .container2 {
-        height: 700px;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .img-1 {
-        height: 100%;
-        width: 40%;
-        background-color: #ffffff;
-
-    }
-
-    #woman {
-        height: 700px;
-        margin-left: 2rem;
-
-    }
-
-    .texts2 {
-        background-color: #6d212b;
-        height: 100%;
-        width: 60%;
-    }
-
-
-
-    #title2 {
-        color: aliceblue;
-        margin-top: 50px;
-        margin-left: 20px;
-        font-size: 60px;
-
-    }
-
-    #text-2 {
-        color: aliceblue;
-        font-size: 21px;
-        margin-top: 50px;
-        margin-left: 20px;
-
-    }
 
     .container3 {
         display: flex;
