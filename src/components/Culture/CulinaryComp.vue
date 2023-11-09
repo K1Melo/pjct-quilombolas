@@ -88,10 +88,14 @@
 
 
     #cul {
+        width: 100%;
+
         font-size: 50px;
     }
 
     .textesculs {
+        width: 100%;
+
         font-size: 14px;
     }
 
@@ -125,7 +129,7 @@
     }
 
     .textesculs {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -143,18 +147,18 @@
     }
 
     .textesculs {
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
 
     #cul {
         font-size: 25px;
     }
 
     .textesculs {
-        font-size: 8px;
+        font-size: 9px;
     }
 }
 </style>
