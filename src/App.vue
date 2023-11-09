@@ -14,7 +14,7 @@
 import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue';
 import ThePreloader from './components/ThePreloader.vue';
-import ButtonTop from './components/Production/ButtonTop.vue';
+import ButtonTop from './components/ButtonTop.vue';
 
 export default {
   name: 'AppVue',

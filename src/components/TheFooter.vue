@@ -253,9 +253,12 @@
             <div class="options" id="optionThree">
                 <router-link to="/producao" @click="goTo(0)">Produção</router-link>
                 <router-link to="/producao" @click="goTo(1)" class="subtitle">Produção Predominante</router-link>
+                <router-link to="/producao" @click="goTo(2)" class="subtitle">Agricultura Familiar</router-link>
+                <router-link to="/producao" @click="goTo(5)" class="subtitle">Artesanato</router-link>
             </div>
             <div class="options" id="optionFour">
                 <router-link to="/cultura" @click="goTo(0)">Cultura</router-link>
+                <router-link to="/cultura" @click="goTo(0.8)" class="subtitle">Movimentos Sociais</router-link>
             </div>
         </nav>
     </footer>
