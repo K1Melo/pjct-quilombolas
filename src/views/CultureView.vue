@@ -2,31 +2,7 @@
     <div class="culture" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1500">
         <CultureComp></CultureComp>
         <SocialMovements></SocialMovements>
-        <div class="container3">
-            <div class="text3">
-                <h1 id="cul">Culinária</h1>
-                <div class="textesculs">
-                    <p class="textcul">Para entender a rica cultura quilombola, que é um reflexo da história e das tradições
-                        das comunidades afrodescendentes no Brasil. A culinária quilombola é muito mais do que uma mera
-                        expressão gastronômica; ela é um portal para a herança cultural, uma fusão de influências africanas,
-                        indígenas e europeias que nos levam a uma viagem através do tempo e das experiências das comunidades
-                        quilombolas.
-                    </p>
-                    <br>
-                    <p id="donts">Os quilombolas costumam usar ingredientes locais e sazonais em suas preferências. Raízes
-                        como a mandioca, inhame e batata-doce, bem como feijão, milho, frutas, peixes, aves e carnes de caça
-                        são componentes fundamentais de suas receitas. A mandioca desempenha um papel central na dieta,
-                        sendo utilizada para fazer a farinha de mandioca, principal ingrediente na produção de pratos como a
-                        tapioca e a maniçoba. <br>
-                        A técnica de defumação é uma característica marcante da culinária quilombola, conferindo um sabor
-                        distintivo aos pratos. A carne de porco, muitas vezes, é defumada e usada em diversas
-                        especialidades, como a feijoada quilombola.</p>
-                    <p id="tipo">Conheça alguns Pratos Típicos: </p>
-                </div>
-
-            </div>
-            <div id="div-imagem"></div>
-        </div>
+        <CulinaryComp></CulinaryComp>
         <div class="container4">
             <div class="retangss">
                 <img id="capos" src="../assets/CapoeiraEarle.png" alt="">
@@ -74,11 +50,13 @@
 <script>
 import CultureComp from "../components/Culture/CultureComp.vue"
 import SocialMovements from "@/components/Culture/SocialMovements.vue";
+import CulinaryComp from "@/components/Culture/CulinaryComp.vue";
 
 export default {
     components: {
         CultureComp,
-        SocialMovements
+        SocialMovements,
+        CulinaryComp
     }
 }
 
@@ -120,52 +98,6 @@ export default {
     h3 {
         margin: 0px;
     }
-    /*Parte 2 Movimentos Sociais*/
-
-    .container2 {
-        overflow: hidden;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .img-1 {
-        height: 500px;
-    }
-
-    #woman {
-        height: 500px;
-        margin-left: 4rem;
-    }
-
-    .texts2 {
-        background-color: #6d212b;
-        height: 800px;
-        width: 100%;
-
-    }
-
-    .titulo2 {
-        width: 100px;
-        height: 90px;
-
-    }
-
-    #title2 {
-        color: aliceblue;
-        margin-top: 40px;
-        margin-left: 20px;
-        font-size: 50px;
-
-    }
-
-    #text-2 {
-        color: aliceblue;
-        font-size: 18px;
-        margin-top: 50px;
-        margin-left: 20px;
-    }
-
     /*Parte 3 da Culinária*/
 
     .container3 {

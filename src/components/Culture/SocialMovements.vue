@@ -173,6 +173,8 @@ button:hover .button-text {
     }
 
     .texts2 {
+        justify-content: flex-start;
+        padding-top: 2%;
         height: 50%;
         width: 100%;
     }
@@ -213,6 +215,7 @@ button:hover .button-text {
 
     .texts2 {
         justify-content: flex-start;
+        /* align-items: flex-start; */
         padding-top: 1%;
         height: 60%;
         width: 100%;
