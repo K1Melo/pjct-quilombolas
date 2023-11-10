@@ -78,25 +78,27 @@
     }
 
     .text3 {
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 5%;
         width: 100%;
         height: 60%;
         background-color: #6C1522;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 
 
     #cul {
         width: 100%;
-
         font-size: 50px;
     }
 
     .textesculs {
         width: 100%;
-
+        
         font-size: 14px;
     }
 
@@ -120,7 +122,7 @@
         background-color: #6C1522;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 

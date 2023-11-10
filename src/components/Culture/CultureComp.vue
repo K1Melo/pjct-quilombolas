@@ -23,6 +23,7 @@
 }
 
 .texts {
+    
     z-index: 1;
     width: 60%;
     position: absolute;

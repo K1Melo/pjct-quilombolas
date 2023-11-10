@@ -3,8 +3,8 @@
     <TheHeader></TheHeader>
     <main>
       <router-view />
+      <ButtonTop></ButtonTop>
     </main>
-    <ButtonTop></ButtonTop>
     <TheFooter></TheFooter>
 
 </template>

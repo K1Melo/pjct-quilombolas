@@ -25,22 +25,22 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 }" class="mySwiper" :modules="[EffectCoverflow, Pagination]" data-aos="fade-left">
             <swiper-slide id="grotao" class="swiper-slide-active">
                 <div class="name">
-                    <h3>Quilombo do Grotão</h3>
+                    <h3>Feijoada</h3>
                 </div>
             </swiper-slide>
             <swiper-slide id="tapera">
                 <div class="name">
-                    <h3>Quilombo da Tapera</h3>
+                    <h3>Tapioca</h3>
                 </div>
             </swiper-slide>
             <swiper-slide id="mimbo">
                 <div class="name">
-                    <h3>Quilombo Mimbó</h3>
+                    <h3>Maniçoba</h3>
                 </div>
             </swiper-slide>
             <swiper-slide id="alcantara">
                 <div class="name">
-                    <h3>Quilombo de Alcântara</h3>
+                    <h3>Acarajé</h3>
                 </div>
             </swiper-slide>
         </swiper>
