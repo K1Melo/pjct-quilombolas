@@ -6,15 +6,16 @@ import 'swiper/css';
 
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 </script>
 
 <template>
     <div class="aliments">
-        <swiper :effect="'coverflow'" :grabCursor="true" :centeredSlides="true" :slidesPerView="'auto'" :coverflowEffect="{
+        <swiper :effect="'coverflow'" :navigation="true" :grabCursor="true" :centeredSlides="true" :slidesPerView="'auto'" :coverflowEffect="{
             rotate: 50,
             stretch: 0,
             depth: 100,
@@ -22,7 +23,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
             slideShadows: true,
         }" :pagination="{
     dynamicBullets: true,
-}" class="mySwiper" :modules="[EffectCoverflow, Pagination]" data-aos="fade-left">
+}" class="mySwiper" :modules="[EffectCoverflow, Pagination, Navigation]" data-aos="fade-left">
             <swiper-slide id="grotao" class="swiper-slide-active">
                 <div class="name">
                     <h3>Feijoada</h3>
