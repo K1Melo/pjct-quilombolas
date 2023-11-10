@@ -3,6 +3,7 @@
         <CultureComp></CultureComp>
         <SocialMovements></SocialMovements>
         <CulinaryComp></CulinaryComp>
+        <AlimentsCulinary></AlimentsCulinary>
         <div class="container4">
             <div class="retangss">
                 <img id="capos" src="../assets/CapoeiraEarle.png" alt="">
@@ -51,12 +52,14 @@
 import CultureComp from "../components/Culture/CultureComp.vue"
 import SocialMovements from "@/components/Culture/SocialMovements.vue";
 import CulinaryComp from "@/components/Culture/CulinaryComp.vue";
+import AlimentsCulinary from "@/components/Culture/AlimentsCulinary.vue";
 
 export default {
     components: {
         CultureComp,
         SocialMovements,
-        CulinaryComp
+        CulinaryComp,
+        AlimentsCulinary
     }
 }
 

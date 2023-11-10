@@ -35,9 +35,10 @@
 #div-imagem {
     width: 40%;
     height: 100%;
-    background-image: url(../../assets/arranjo-de-comida-brasileira-de-alto-angulo_23-2148725054.png);
+    background-image: url(../../assets/Culinary.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .text3 {
