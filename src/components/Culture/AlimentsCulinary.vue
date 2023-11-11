@@ -24,22 +24,22 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
         }" :pagination="{
     dynamicBullets: true,
 }" class="mySwiper" :modules="[EffectCoverflow, Pagination, Navigation]" data-aos="fade-left">
-            <swiper-slide id="grotao" class="swiper-slide-active">
+            <swiper-slide id="feijoada" class="swiper-slide-active">
                 <div class="name">
                     <h3>Feijoada</h3>
                 </div>
             </swiper-slide>
-            <swiper-slide id="tapera">
+            <swiper-slide id="tapioca">
                 <div class="name">
                     <h3>Tapioca</h3>
                 </div>
             </swiper-slide>
-            <swiper-slide id="mimbo">
+            <swiper-slide id="manicoba">
                 <div class="name">
                     <h3>Maniçoba</h3>
                 </div>
             </swiper-slide>
-            <swiper-slide id="alcantara">
+            <swiper-slide id="acaraje">
                 <div class="name">
                     <h3>Acarajé</h3>
                 </div>
@@ -82,6 +82,9 @@ export default {
     height: 40vh;
     display: flex;
     align-items: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .name {
         width: 100%;
@@ -91,11 +94,29 @@ export default {
         flex-direction: column;
 
         padding-left: 5%;
-        background-color: rgba(0, 0, 0, 0.603);
+        background-color: rgba(0, 0, 0, 0.8);
 
         .state-card {
             color: rgb(179, 179, 179);
         }
     }
 }
+
+#feijoada {
+    background-image: url(../../assets/feijoada-aliments.jpg);
+}
+
+#tapioca {
+    background-image: url(../../assets/tapioca-aliments.jpg);
+}
+
+#manicoba {
+    background-image: url(../../assets/manicoba-aliments.jpg);
+}
+
+#acaraje {
+    
+    background-image: url(../../assets/acaraje-aliments.jpg);
+}
+
 </style>

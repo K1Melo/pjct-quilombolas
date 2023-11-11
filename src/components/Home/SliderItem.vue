@@ -117,6 +117,7 @@ export default {
 }
 
 .dif_2 {
+    cursor: pointer;
     /*Display stuff*/
     display: inline-flex;
     align-items: center;
@@ -148,6 +149,8 @@ export default {
 }
 
 .dif_1 {
+    cursor: pointer;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;

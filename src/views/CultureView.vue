@@ -4,47 +4,7 @@
         <SocialMovements></SocialMovements>
         <CulinaryComp></CulinaryComp>
         <AlimentsCulinary></AlimentsCulinary>
-        <div class="container4">
-            <div class="retangss">
-                <img id="capos" src="../assets/CapoeiraEarle.png" alt="">
-            </div>
-
-            <div class="textscapo">
-                <h1 id="capoeira">Capoeira</h1>
-                <div class="capi">
-                    <p id="text4">Assim como foi dito antes sobre movimentos negros, uma arte marcial muito
-                        importante para diversos movimentos foi a capoeira, apesar de não se ter muita
-                        certeza de sua origem acreditasse que ele surgiu na angola e foi difundido no brasil
-                        no quilombo dos palmares, mas isso foi dado como uma prática de risco para os donos
-                        das fazendas e acabou sendo considerada uma prática que promovia a desordem,
-                        violência e a baderna, assim sendo proibido. <br>
-                        A história da Capoeira Quilombola é uma história de resistência e perseverança. Ela é um testemunho
-                        da força e da resiliência dos escravos negros no Brasil, que lutaram para preservar sua cultura e
-                        identidade em face da opressão e da injustiça. A Capoeira Quilombola é uma parte importante da
-                        história do Brasil e um símbolo da luta pela liberdade e pela igualdade.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container5">
-            <div class="imgjongo">
-                <img id="jong" src="../assets/diesad.png" alt="">
-            </div>
-
-            <div class="textjong">
-
-                <h1 id="titlej">Jongo</h1>
-
-                <div class="textjongo-1">
-                    <p id="jongo">E não podemos falar de cultura quilombola sem falar sobre o jongo, essa dança
-                        chegou ao brasil por meio dos escravos africados de origem bantu, vindos do Congo
-
-                        e de Angola, diferente da capoeira o jongo não era uma dança proibida, os
-                        proprietários das fazendas permitiam que seus escravos dançassem jongo nos dias
-                        dos santos católicos e ele era dançado por um casal ao som dos sagrados tambores
-                        e a voz de outros escravos.</p>
-                </div>
-            </div>
-        </div>
+        <DancesComp></DancesComp>
     </div>
 </template>
 
@@ -53,13 +13,15 @@ import CultureComp from "../components/Culture/CultureComp.vue"
 import SocialMovements from "@/components/Culture/SocialMovements.vue";
 import CulinaryComp from "@/components/Culture/CulinaryComp.vue";
 import AlimentsCulinary from "@/components/Culture/AlimentsCulinary.vue";
+import DancesComp from "@/components/Culture/DancesComp.vue";
 
 export default {
     components: {
         CultureComp,
         SocialMovements,
         CulinaryComp,
-        AlimentsCulinary
+        AlimentsCulinary,
+        DancesComp
     }
 }
 

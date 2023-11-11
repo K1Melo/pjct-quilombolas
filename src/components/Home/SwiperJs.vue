@@ -10,7 +10,7 @@ import "./Swiper.css";
 
 <template>
     <div class="sliderView m-0 p-0">
-        <Swiper :modules="[Pagination, Navigation]" :lazy="true" :navigation="true" :pagination="true" class="slider">
+        <Swiper :modules="[Pagination, Navigation]" :grabCursor="true" :lazy="true" :navigation="true" :pagination="true" class="slider">
             <SwiperSlide class="slides slides-above">
                 <div class="img-slide ">
                     <img src="../../assets/slide1-img.svg" loading="lazy" alt="">
