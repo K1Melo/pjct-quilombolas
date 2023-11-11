@@ -11,11 +11,11 @@ import "./Swiper.css";
 <template>
     <div class="sliderView m-0 p-0">
         <Swiper :modules="[Pagination, Navigation]" :grabCursor="true" :lazy="true" :navigation="true" :pagination="true" class="slider">
-            <SwiperSlide class="slides slides-above">
-                <div class="img-slide ">
-                    <img src="../../assets/slide1-img.svg" loading="lazy" alt="">
+            <SwiperSlide class="slides slides-above" data-aos-duration="1500">
+                <div class="img-slide">
+                    <img src="../../assets/slide1-img.svg" loading="lazy" alt="" data-aos="fade-up">
                 </div>
-                <div class="text-slide">
+                <div class="text-slide" data-aos="fade-left">
                     <div class="title">
                         <h2>Como eles surgiram</h2>
                     </div>
@@ -28,9 +28,9 @@ import "./Swiper.css";
             </SwiperSlide>
             <SwiperSlide class="slides slides-above">
                 <div class="img-slide2">
-                    <img src="../../assets/slide2-img.svg" loading="lazy" alt="">
+                    <img src="../../assets/slide2-img.svg" loading="lazy" alt="" data-aos="fade-up"> 
                 </div>
-                <div class="text-slide">
+                <div class="text-slide" data-aos="fade-left">
                     <div class="title">
                         <h2>Quem são eles</h2>
                     </div>

@@ -2,7 +2,7 @@
     <footer>
         <div class="us">
             <div class="title-logo-footer">
-                <div class="logo">
+                <div class="logo" data-aos="fade-up" data-aos-duration="750">
                     <!DOCTYPE svg
                         PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="45pt" height="45pt"
@@ -223,7 +223,7 @@
                     </svg>
                     <h2 class="m-0" style="font-size: 20px;">Quilombolas</h2>
                 </div>
-                <div class="github-button">
+                <div class="github-button"  data-aos="fade-up" data-aos-duration="900">
                     <button class="btn btn-outline-secondary">Git Hub <svg id="github" @click="openGitHub"
                             style="transform: scale(0.8); fill: #afafaf;" xmlns="http://www.w3.org/2000/svg" width="30"
                             height="30" viewBox="0 0 16 16">
@@ -232,31 +232,31 @@
                         </svg>
                     </button>
                 </div>
-                <div class="copyrigth">
+                <div class="copyrigth"  data-aos="fade-up" data-aos-duration="1050">
                     <p>© 2023 GRUPO QUILOMBOLAS</p>
                 </div>
             </div>
         </div>
         <nav>
-            <div class="options" id="optionOne">
+            <div class="options" id="optionOne" data-aos="fade-up">
                 <router-link to="/" @click="goTo(0)">Início</router-link>
                 <router-link to="/" @click="goTo(1)" class="subtitle">Surgimento</router-link>
                 <router-link to="/" @click="goTo(2)" class="subtitle">Dificuldades</router-link>
             </div>
-            <div class="options" id="optionTwo">
+            <div class="options" id="optionTwo" data-aos="fade-up">
                 <router-link to="/lugares" @click="goTo(0)">Lugares</router-link>
                 <router-link to="/lugares" @click="goTo(1)" class="subtitle">Como se espalharam</router-link>
                 <router-link to="/lugares" @click="goTo(2)" class="subtitle">Localizações</router-link>
                 <router-link to="/lugares" @click="goTo(3)" class="subtitle">Palmares</router-link>
                 <router-link to="/lugares" @click="goTo(4)" class="subtitle">Conheça outros</router-link>
             </div>
-            <div class="options" id="optionThree">
+            <div class="options" id="optionThree" data-aos="fade-up">
                 <router-link to="/producao" @click="goTo(0)">Produção</router-link>
                 <router-link to="/producao" @click="goTo(1)" class="subtitle">Produção Predominante</router-link>
                 <router-link to="/producao" @click="goTo(2)" class="subtitle">Agricultura Familiar</router-link>
                 <router-link to="/producao" @click="goTo(5)" class="subtitle">Artesanato</router-link>
             </div>
-            <div class="options" id="optionFour">
+            <div class="options" id="optionFour" data-aos="fade-up">
                 <router-link to="/cultura" @click="goTo(0)">Cultura</router-link>
                 <router-link to="/cultura" @click="goTo(0.8)" class="subtitle">Movimentos Sociais</router-link>
             </div>

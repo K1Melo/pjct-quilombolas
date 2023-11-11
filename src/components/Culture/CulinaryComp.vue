@@ -1,8 +1,8 @@
 <template>
     <div class="culinary-comp">
         <div class="text3">
-            <h1 id="cul">Culinária</h1>
-            <div class="textesculs">
+            <h1 id="cul" data-aos="fade-right">Culinária</h1>
+            <div class="textesculs" data-aos="fade-right">
                 <p class="textcul">Para entender a rica cultura quilombola, que é um reflexo da história e das tradições
                     das comunidades afrodescendentes no Brasil. A culinária quilombola é muito mais do que uma mera
                     expressão gastronômica; ela é um portal para a herança cultural, uma fusão de influências africanas,
