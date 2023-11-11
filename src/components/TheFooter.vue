@@ -232,7 +232,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="copyrigth"  data-aos="fade-up" data-aos-duration="1050">
+                <div class="copyrigth">
                     <p>© 2023 GRUPO QUILOMBOLAS</p>
                 </div>
             </div>

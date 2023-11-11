@@ -17,10 +17,11 @@ import "swiper/css/pagination";
                 </div>
                 <div class="text-dance">
                     <div class="title">
-                        <h2>Capoeira</h2>
+                        <h2 class="capoeira">Capoeira</h2>
                     </div>
                     <div class="text">
-                        <p>Assim como foi dito antes sobre movimentos negros, uma arte marcial muito importante para
+                        <p class="capoeira">Assim como foi dito antes sobre movimentos negros, uma arte marcial muito
+                            importante para
                             diversos movimentos foi a capoeira, apesar de não se ter muita certeza de sua origem acreditasse
                             que ele surgiu na angola e foi difundido no brasil no quilombo dos palmares, mas isso foi dado
                             como uma prática de risco para os donos das fazendas e acabou sendo considerada uma prática que
@@ -104,12 +105,19 @@ export default {
             font-size: 50px;
         }
     }
+
+    .text {
+        p {
+            font-size: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .dance {
         flex-direction: column;
     }
+
     .img-dance {
         width: 100%;
         height: 50%;
@@ -119,6 +127,92 @@ export default {
         padding: 2%;
         width: 100%;
         height: 50%;
+    }
+
+    .text-dance {
+        .title {
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .text {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-dance {
+        .title {
+            h2 {
+                font-size: 35px;
+            }
+        }
+
+        .text {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-dance {
+        .title {
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .text {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text-dance {
+        .title {
+            h2 {
+                font-size: 24px;
+
+            }
+            .capoeira {
+                font-size: 22px;
+            }
+        }
+
+        .text {
+            p {
+                font-size: 12px;
+
+            }
+            .capoeira {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .text-dance {
+        .title {
+            .capoeira {
+                font-size: 20px;
+            }
+        }
+
+        .text {
+            .capoeira {
+                font-size: 9px;
+            }
+        }
     }
 }
 </style>
