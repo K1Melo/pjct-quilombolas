@@ -13,7 +13,7 @@ import "swiper/css/pagination";
         <Swiper :modules="[Pagination, Navigation]" :grabCursor="true" :lazy="true" :navigation="true" :pagination="true"
             class="slider">
             <SwiperSlide class="dance">
-                <div class="img-dance">
+                <div class="img-dance" id="capo">
                 </div>
                 <div class="text-dance">
                     <div class="title">
@@ -34,11 +34,43 @@ import "swiper/css/pagination";
                 </div>
             </SwiperSlide>
             <SwiperSlide class="dance">
-                <div class="img-dance">
+                <div class="img-dance" id="jong">
                 </div>
                 <div class="text-dance">
                     <div class="title">
                         <h2>Jongo</h2>
+                    </div>
+                    <div class="text">
+                        <p>E não podemos falar de cultura quilombola sem falar sobre o jongo, essa dança chegou ao brasil
+                            por meio dos escravos africados de origem bantu, vindos do Congo e de Angola, diferente da
+                            capoeira o jongo não era uma dança proibida, os proprietários das fazendas permitiam que seus
+                            escravos dançassem jongo nos dias dos santos católicos e ele era dançado por um casal ao som dos
+                            sagrados tambores e a voz de outros escravos.</p>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide class="dance">
+                <div class="img-dance" id="jong">
+                </div>
+                <div class="text-dance">
+                    <div class="title">
+                        <h2>Samba de Roda</h2>
+                    </div>
+                    <div class="text">
+                        <p>E não podemos falar de cultura quilombola sem falar sobre o jongo, essa dança chegou ao brasil
+                            por meio dos escravos africados de origem bantu, vindos do Congo e de Angola, diferente da
+                            capoeira o jongo não era uma dança proibida, os proprietários das fazendas permitiam que seus
+                            escravos dançassem jongo nos dias dos santos católicos e ele era dançado por um casal ao som dos
+                            sagrados tambores e a voz de outros escravos.</p>
+                    </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide class="dance">
+                <div class="img-dance" id="jong">
+                </div>
+                <div class="text-dance">
+                    <div class="title">
+                        <h2>Tambor Crioula</h2>
                     </div>
                     <div class="text">
                         <p>E não podemos falar de cultura quilombola sem falar sobre o jongo, essa dança chegou ao brasil
@@ -78,13 +110,20 @@ export default {
 }
 
 .img-dance {
-    background-image: url(../../assets/CapoeiraEarle.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 50%;
     height: 100%;
     transition: opacity .5s linear;
+}
+
+#capo {
+    background-image: url(../../assets/CapoeiraEarle.jpg);
+}
+
+#jong {
+    background-image: url(../../assets/JongoEarle.jpg);
 }
 
 .img-dance:hover {
