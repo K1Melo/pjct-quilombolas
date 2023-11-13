@@ -10,8 +10,8 @@ import "swiper/css/pagination";
 
 <template>
     <div class="dances-comp">
-        <Swiper :modules="[Pagination, Navigation]" :grabCursor="true" :lazy="true" :navigation="true" :pagination="true"
-            class="slider">
+        <Swiper :modules="[Pagination, Navigation]" :grabCursor="true" :lazy="true" :navigation="true"
+            :pagination="{ dynamicBullets: true, }" class="slider">
             <SwiperSlide class="dance">
                 <div class="img-dance" id="capo">
                 </div>
@@ -50,7 +50,7 @@ import "swiper/css/pagination";
                 </div>
             </SwiperSlide>
             <SwiperSlide class="dance">
-                <div class="img-dance" id="jong">
+                <div class="img-dance" id="samb">
                 </div>
                 <div class="text-dance">
                     <div class="title">
@@ -66,7 +66,7 @@ import "swiper/css/pagination";
                 </div>
             </SwiperSlide>
             <SwiperSlide class="dance">
-                <div class="img-dance" id="jong">
+                <div class="img-dance" id="tamb">
                 </div>
                 <div class="text-dance">
                     <div class="title">
@@ -124,6 +124,14 @@ export default {
 
 #jong {
     background-image: url(../../assets/JongoEarle.jpg);
+}
+
+#samb {
+    background-image: url(../../assets/SambaRoda.jpg);
+}
+
+#tamb {
+    background-image: url(../../assets/TamborCrioula.png);
 }
 
 .img-dance:hover {
@@ -222,6 +230,7 @@ export default {
                 font-size: 24px;
 
             }
+
             .capoeira {
                 font-size: 22px;
             }
@@ -232,6 +241,7 @@ export default {
                 font-size: 12px;
 
             }
+
             .capoeira {
                 font-size: 11px;
             }

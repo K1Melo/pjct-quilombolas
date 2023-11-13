@@ -1,11 +1,17 @@
 <template>
     <div class="feedback">
-        <form @submit.prevent="postMessage" method="post">
-            <input type="text" name="author" placeholder="nome" v-model="posts.name" id="name"> <br>
-            <input type="text" name="feedback" placeholder="comentarios" v-model="posts.feedback" id="feedback"> <br>
-            <button type="submit" class="btn btn-ligth">Post</button>
-        </form>
-        <div class="teste">
+        <div class="post">
+            <form @submit.prevent="postMessage" method="post">
+                <div class="input-name">
+                    <input type="text" name="author" placeholder="Nome" v-model="posts.name" id="name"> <br>
+                </div>
+                <div class="input-feedback">
+                    <input type="text" name="feedback" placeholder="Comentarios" v-model="posts.feedback" id="feedback"> <br>
+                </div>
+                <button type="submit" class="btn btn-ligth">Post</button>
+            </form>
+        </div>
+        <div class="get">
             {{ posts.name }}
             {{ posts.feedback }}
         </div>
@@ -51,33 +57,29 @@ export default {
     justify-content: center;
 }
 
-.container-get {
+.post {
     width: 50%;
-    height: 100%;
-    background-color: rgb(87, 100, 100);
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-post {
-    width: 50%;
-    height: 100%;
-    background-color: rgb(97, 106, 106);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
+input {
+    border: none;
+    background-color: transparent;
+}
+input:focus {
+    outline: none;
 }
 
-.your-post {
-    position: absolute;
-    top: 15%;
-    width: 50%;
-    height: 30%;
-    padding: 2%;
-    border-radius: 50px;
-    background-color: aquamarine;
+.input-name,  .input-feedback{
+    border-bottom: 1px white solid;
 }
+
+.get {
+    width: 50%;
+    height: 50%;
+}
+
 </style>
