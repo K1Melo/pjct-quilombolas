@@ -1,19 +1,21 @@
 <template>
     <div class="feedback">
         <div class="post">
+            <h2>Feedback</h2>
             <form @submit.prevent="postMessage" method="post">
                 <div class="input-name">
                     <input type="text" name="author" placeholder="Nome" v-model="posts.name" id="name"> <br>
                 </div>
                 <div class="input-feedback">
-                    <input type="text" name="feedback" placeholder="Comentarios" v-model="posts.feedback" id="feedback"> <br>
+                    <input type="text" name="feedback" placeholder="Comentarios" v-model="posts.feedback" id="feedback">
+                    <br>
                 </div>
                 <button type="submit" class="btn btn-ligth">Post</button>
             </form>
         </div>
         <div class="get">
-            {{ posts.name }}
-            {{ posts.feedback }}
+            <button class="btn btn-ligth" @click="getMessage">Get</button>
+
         </div>
     </div>
 </template>
@@ -31,8 +33,7 @@ export default {
     },
     methods: {
         postMessage() {
-            console.log(JSON.stringify(this.posts))
-            
+            // console.log(JSON.stringify(this.posts))
             const options = {
                 method: 'POST',
                 headers: {
@@ -42,13 +43,27 @@ export default {
             };
 
             fetch('https://quilombolas-backend.onrender.com/', options)
+            alert("Obrigado pelo comentario " + this.posts.name)
+        },
+        getMessage() {
+            const getClass = document.querySelector(".get");
+            fetch('https://quilombolas-backend.onrender.com/')
+                .then((res) => res.json())
+                .then((data) => 
+                    data.forEach((e, index) => {
+                        getClass.innerHTML = "<p>" + JSON.stringify(data[index]["name"]) + "</p>"
+                        console.log(JSON.stringify(data[index]["name"]), index)
+                    })
+
+                )
+
         }
     }
 }
 
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .feedback {
     width: 100%;
     height: 100vh;
@@ -63,23 +78,43 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 input {
     border: none;
     background-color: transparent;
+    width: 100%;
 }
+
 input:focus {
     outline: none;
 }
 
-.input-name,  .input-feedback{
-    border-bottom: 1px white solid;
+form {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.input-name,
+.input-feedback {
+    width: 150%;
+    border-bottom: 1px white solid;
+
+    input {
+        font-weight: 400;
+        color: white;
+    }
+}
+
+
 
 .get {
     width: 50%;
     height: 50%;
 }
-
 </style>
