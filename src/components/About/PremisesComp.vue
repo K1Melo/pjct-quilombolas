@@ -98,8 +98,8 @@ c99 0 110 9 147 115 18 50 46 118 63 153 16 34 28 71 25 81 -2 10 -27 40 -54
 <style lang="less" scoped>
 .premises {
     width: 100%;
-    padding-top: 10%;
-    padding-bottom: 5%;
+    padding-top: 20%;
+    padding-bottom: 20%;
     display: flex;
 }
 

@@ -91,7 +91,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-right: 2px solid rgb(0, 0, 0);
 
     h2,
     p {
@@ -102,7 +101,6 @@
 
 .dark {
     .txt-inovation {
-        border-right: 2px solid rgba(255, 255, 255, 0.822);
 
         h2 {
             color: #ffffffde;
@@ -152,7 +150,7 @@
 
     .txt-inovation {
         height: 50%;
-        width: 90%;
+        width: 95%;
         border-right: none;
         border-bottom: 2px solid rgb(0, 0, 0);
 

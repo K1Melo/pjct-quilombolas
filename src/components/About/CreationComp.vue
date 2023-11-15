@@ -76,7 +76,7 @@ export default {
         width: 100%;
         padding-top: 10%;
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
 
         p {
