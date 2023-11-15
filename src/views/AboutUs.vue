@@ -3,6 +3,7 @@
         <AboutComp></AboutComp>
         <CreationComp></CreationComp>
         <PremisesComp></PremisesComp>
+        <InovationComp></InovationComp>
         <TheParticipants></TheParticipants>
         <FeedbackComp></FeedbackComp>
     </div>
@@ -13,6 +14,7 @@
 import AboutComp from '../components/About/AboutComp.vue'
 import CreationComp from '@/components/About/CreationComp.vue';
 import PremisesComp from '@/components/About/PremisesComp.vue';
+import InovationComp from '@/components/About/InovationComp.vue';
 import TheParticipants from '@/components/About/TheParticipants.vue';
 import FeedbackComp from '@/components/About/FeedbackComp.vue';
 
@@ -21,6 +23,7 @@ export default {
         AboutComp,
         CreationComp,
         PremisesComp,
+        InovationComp,
         TheParticipants,
         FeedbackComp
     }
