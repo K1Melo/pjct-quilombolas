@@ -2,7 +2,7 @@
     <div class="feedback">
         <div class="post">
             <h2>Feedback</h2>
-            <form @submit.prevent="postMessage" method="post">
+            <form method="post">
                 <div class="input-name">
                     <input type="text" name="author" placeholder="Nome" v-model="posts.name" id="name" required
                         maxlength="20"> <br>
@@ -12,7 +12,7 @@
                         required maxlength="50">
                     <br>
                 </div>
-                <button type="submit" class="btn btn-ligth">Enviar</button>
+                <button type="reset" class="btn btn-ligth" @click="postMessage">Enviar</button>
             </form>
         </div>
         <div class="get"></div>
@@ -49,8 +49,8 @@ export default {
         fetch('https://quilombolas-backend.onrender.com/')
             .then((res) => res.json())
             .then((data) => {
-                data.forEach((element, index) => {
-                    if (index < 5) {
+                data.reverse().forEach((element, index) => {
+                    if (index < 4) {
                         var div = getClass.appendChild(document.createElement('div'));
                         var htres = div.appendChild(document.createElement('h3'));
                         var p = div.appendChild(document.createElement('p'));
@@ -133,7 +133,6 @@ form {
     }
 
     .post {
-        // width: 100%;
         padding-top: 15%;
         height: 70vh;
         justify-content: start;
