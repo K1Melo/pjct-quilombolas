@@ -1,25 +1,12 @@
 <template>
     <div class="creation">
-        <div class="timeline-imgs">
-
+        <div class="programming-img">
+            <img src="../../assets/programer.svg" alt="">
         </div>
-        <div class="timeline-area">
-            <div class="timeline-item">
-                <h2>VUE JS</h2>
-                <p>O Framework JavaScript Progressivo.</p>
-            </div>
-            <div class="timeline-item">
-                <h2>HTML e CSS</h2>
-                <p>Linguagens de marcação.</p>
-            </div>
-            <div class="timeline-item">
-                <h2>JS</h2>
-                <p>Linguagem de programação.</p>
-            </div>
-            <div class="timeline-item">
-                <h2>Node.js</h2>
-                <p>Interpretador (Backend).</p>
-            </div>
+        <div class="programming-txt">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, earum inventore magni laudantium pariatur
+                sequi ut nobis ipsum explicabo reiciendis ipsam ea dignissimos porro nisi mollitia distinctio quisquam
+                maiores vitae.</p>
         </div>
     </div>
 </template>
@@ -38,29 +25,64 @@ export default {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.timeline-area {
-    border-left: 2px solid rgb(255, 255, 255);
-    padding: 0 20px 0 30px;
+.programming-img {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 80%;
+    }
 }
 
-.timeline-item {
-    position: relative;
+.programming-txt {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-.timeline-item:before {
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-    border: 3px solid #ffffff;
-    position: absolute;
-    top: 20px;
-    left: -36px;
+
+.dark {
+    .programming-txt {
+        p {
+            color: #fff;
+        }
+    }
 }
 
+@media only screen and (max-width: 912px) {
+    .creation {
+        flex-direction: column;
+    }
+
+    .programming-img {
+        height: 50%;
+        width: 100%;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .programming-txt {
+        height: 50%;
+        width: 100%;
+        padding-top: 10%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        p {
+            width: 80%;
+        }
+
+    }
+}
 </style>

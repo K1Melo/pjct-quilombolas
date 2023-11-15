@@ -40,7 +40,8 @@
 
 .container {
     width: 60%;
-    height: 80%;
+    /* height: 80%; */
+    padding: 5%;
     background: rgba(255, 255, 255, 0.687);
     box-shadow: 0 8px 32px 0 rgba(147, 147, 147, 0.37);
 
@@ -135,7 +136,7 @@
 
     .container {
         width: 80%;
-        height: 80%
+        /* height: 80% */
     }
 
     .title h2 {
@@ -192,7 +193,7 @@
 @media only screen and (max-width: 820px) {
     .container {
         width: 80%;
-        height: 80%
+        /* height: 80% */
     }
 
     .title {
@@ -249,7 +250,7 @@
 @media only screen and (max-width: 650px) {
     .container {
         width: 80%;
-        height: 80%
+        /* height: 80% */
     }
 
     .title {
@@ -268,7 +269,7 @@
 @media only screen and (max-width: 300px) {
     .container {
         width: 80%;
-        height: 80%
+        /* height: 80% */
     }
 
     .title {
