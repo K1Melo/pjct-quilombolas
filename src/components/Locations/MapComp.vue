@@ -566,9 +566,13 @@ svg {
 		height: 150px;
 		stroke-width: 2px;
 	}
+
+	.container-box {
+		height: 50%;
+	}
 }
 
-@media screen and (max-width: 913px) {
+@media screen and (max-width: 1000px) {
 
 	.map-comp {
 		flex-direction: column;
@@ -676,7 +680,7 @@ svg {
 	}
 
 	.container-box {
-		height: 75%;
+		height: 65%;
 		width: 50%;
 	}
 
@@ -726,7 +730,7 @@ svg {
 	}
 
 	.container-box {
-		height: 75%;
+		height: 60%;
 		width: 55%;
 	}
 
@@ -786,7 +790,7 @@ svg {
 	}
 
 	.container-box {
-		height: 70%;
+		height: 60%;
 		width: 80%;
 	}
 
