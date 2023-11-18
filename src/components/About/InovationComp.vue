@@ -2,9 +2,10 @@
     <div class="inovation-comp">
         <div class="txt-inovation">
             <h2>Inovação</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore totam, expedita fugiat ea iure repellendus
-                illum ipsa sapiente a laborum necessitatibus similique mollitia ratione, non aperiam, laboriosam delectus
-                nobis nemo?</p>
+            <p>Tomando como referência projetos inovadores e modernos, tivemos como um principal objetivo a criação de
+                mostrar como podemos apresentar uma cultura de maneira diferente a sites que vemos comumente, utilizando
+                assim modelos 3Ds, diversas interações do usuário, bibliotecas como SwiperJS para carrosséis e a biblioteca
+                AOS para animações com a rolagem do site.</p>
         </div>
         <div class="cube-inovation">
             <div class="top"></div>
