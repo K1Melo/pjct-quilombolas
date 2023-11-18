@@ -2,7 +2,7 @@
     <div class="feedback">
         <div class="post">
             <h2>Feedback</h2>
-            <form method="post">
+            <form method="post" @submit.prevent="postMessage" id="postMsg">
                 <div class="input-name">
                     <input type="text" name="author" placeholder="Nome" v-model="posts.name" id="name" required
                         maxlength="20"> <br>
@@ -12,7 +12,7 @@
                         required maxlength="50">
                     <br>
                 </div>
-                <button type="reset" class="btn btn-ligth" @click="postMessage">Enviar</button>
+                <button type="submit" class="btn btn-ligth">Enviar</button>
             </form>
         </div>
         <div class="get"></div>
@@ -42,6 +42,7 @@ export default {
 
             fetch('https://quilombolas-backend.onrender.com/', options)
             alert("Obrigado pelo comentario " + this.posts.name)
+            document.getElementById("postMsg").reset();
         },
     },
     mounted() {

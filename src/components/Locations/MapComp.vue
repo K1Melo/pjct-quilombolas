@@ -214,22 +214,24 @@
 			</svg>
 		</div>
 		<div class="slider-map">
-			<div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index"
-				:id="estado.acronym">
-				<div class="title-map">
-					<h2>{{ index + 1 }}° {{ estado.name }}</h2>
+			<div class="container-box">
+				<div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index"
+					:id="estado.acronym">
+					<div class="title-map">
+						<h2>{{ index + 1 }}° {{ estado.name }}</h2>
+					</div>
+					<p>População: {{ estado.population }}</p>
+					<p>Porcentagem de quilombolas: </p>
 				</div>
-				<p>População: {{ estado.population }}</p>
-				<p>Porcentagem de quilombolas: </p>
-			</div>
-			<div class="box">
-				<div class="box-circle">
-					<svg>
-						<circle cx="70" cy="70"></circle>
-						<circle cx="70" cy="70" id="porcentageCircle"></circle>
-					</svg>
-					<div class="number">
-						<h2>{{ actualPorcentage }}%</h2>
+				<div class="box">
+					<div class="box-circle">
+						<svg>
+							<circle cx="70" cy="70"></circle>
+							<circle cx="70" cy="70" id="porcentageCircle"></circle>
+						</svg>
+						<div class="number">
+							<h2>{{ actualPorcentage }}%</h2>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -313,7 +315,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
 .map-comp {
 	display: flex;
 	align-items: center;
@@ -336,19 +337,20 @@ svg {
 }
 
 .slider-map {
-	height: 40%;
-	width: 35%;
+	height: 100%;
+	width: 50%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	// flex-direction: column;
+	// position: relative;
 }
 
 .box {
-	position: relative;
+	position: absolute;
 	overflow: hidden;
-	top: 60%;
-	right: 33%;
+	top: 50%;
+	left: 8%;
 }
 
 .box-circle {
@@ -410,12 +412,18 @@ circle:nth-child(2) {
 	fill: #707070;
 }
 
-.swiper-slide {
+.container-box {
+	height: 40%;
+	width: 70%;
 	background: rgba(255, 255, 255, 0.35);
-	border-radius: 20px;
+	position: relative;
+	border-radius: 10px;
+}
+
+.swiper-slide {
 	position: absolute;
 	padding: 2%;
-	width: 40%;
+	width: 100%;
 	height: 50%;
 
 	opacity: 0;
@@ -534,12 +542,12 @@ svg {
 	.swiper-slide {
 
 		h2 {
-			font-size: 22px;
+			font-size: 35px;
 		}
 
 		p {
-			margin-bottom: 5px;
-			font-size: 15px;
+			// margin-bottom: 5px;
+			font-size: 18px;
 		}
 	}
 
@@ -570,11 +578,14 @@ svg {
 		width: 50%;
 	}
 
+	.slider-map {
+		height: 50%;
+		width: 100%;
+	}
+
+
 	.swiper-slide {
-		border-radius: 15px;
-		padding: 3%;
-		width: 40%;
-		height: 40%;
+		width: 100%;
 
 		h2 {
 			font-size: 25px;
@@ -594,82 +605,22 @@ svg {
 
 	}
 
-	.swiper-slide-active {
-		opacity: 1;
+
+
+	.container-box {
+		height: 70%;
+		width: 50%;
+		border-radius: 15px;
+	}
+
+
+	.box-circle {
+		width: 150px;
+		height: 150px;
 	}
 
 	.box {
 		top: 40%;
-		right: 15%;
-		height: 50%;
-
-	}
-
-	.box-circle {
-		width: 150px;
-		height: 150px;
-	}
-
-	circle {
-		r: 55;
-		width: 100px;
-		height: 150px;
-		stroke-width: 2px;
-	}
-
-	.number {
-		position: absolute;
-
-		h2 {
-			font-size: 20px;
-		}
-	}
-}
-
-@media screen and (min-height: 1368px) {
-
-	.map {
-		width: 40%;
-	}
-
-	.swiper-slide {
-		padding: 3%;
-		width: 40%;
-		height: 30%;
-
-		h2 {
-			margin-bottom: 15px;
-			font-size: 25px;
-		}
-
-		p {
-			font-size: 20px;
-		}
-	}
-
-	#RN,
-	#RS,
-	#MS {
-		h2 {
-			font-size: 22px;
-		}
-
-	}
-
-	.swiper-slide-active {
-		opacity: 1;
-	}
-
-	.box {
-		top: 30%;
-		right: 15%;
-		height: 50%;
-
-	}
-
-	.box-circle {
-		width: 150px;
-		height: 150px;
 	}
 
 	circle {
@@ -695,17 +646,23 @@ svg {
 		width: 60%;
 	}
 
+	.slider-map {
+		height: 50%;
+		width: 100%;
+
+	}
+
 	.swiper-slide {
-		border-radius: 13px;
 		padding: 4%;
-		width: 50%;
+		width: 100%;
 
 		h2 {
-			font-size: 23px;
+			font-size: 28px;
 		}
 
 		p {
-			font-size: 13px;
+			font-size: 16px;
+			margin-bottom: 5px;
 		}
 	}
 
@@ -718,15 +675,13 @@ svg {
 
 	}
 
-	.swiper-slide-active {
-		opacity: 1;
+	.container-box {
+		height: 75%;
+		width: 50%;
 	}
 
 	.box {
 		top: 40%;
-		right: 10%;
-		height: 50%;
-
 	}
 
 	circle {
@@ -743,71 +698,13 @@ svg {
 	}
 }
 
-@media screen and (max-width: 503px) {
-
-	.map {
-		width: 70%;
-	}
-
-	.swiper-slide {
-		border-radius: 10px;
-		width: 55%;
-		height: 32%;
-
-		h2 {
-			font-size: 21px;
-		}
-
-		p {
-			margin-bottom: 8px;
-			font-size: 12px;
-		}
-	}
-
-	#RN,
-	#RS,
-	#MS {
-		h2 {
-			font-size: 18px;
-		}
-
-	}
-
-	.swiper-slide-active {
-		opacity: 1;
-	}
-
-	.box {
-		top: 35%;
-		right: 10%;
-		height: 50%;
-
-	}
-
-	circle {
-		r: 45;
-		stroke-width: 2px;
-	}
-
-	.number {
-		position: absolute;
-
-		h2 {
-			font-size: 15px;
-		}
-	}
-}
-
-@media screen and (max-width: 403px) {
+@media screen and (max-width: 550px) {
 
 	.map {
 		width: 80%;
 	}
 
 	.swiper-slide {
-		border-radius: 8px;
-		width: 55%;
-		height: 35%;
 
 		h2 {
 			font-size: 21px;
@@ -826,6 +723,11 @@ svg {
 			font-size: 18px;
 		}
 
+	}
+
+	.container-box {
+		height: 75%;
+		width: 55%;
 	}
 
 	.swiper-slide-active {
@@ -834,13 +736,11 @@ svg {
 
 	.box {
 		top: 30%;
-		right: 10%;
-		height: 50%;
-
+		left: 3%;
 	}
 
 	circle {
-		r: 45;
+		r: 40;
 		stroke-width: 2px;
 	}
 
@@ -860,9 +760,6 @@ svg {
 	}
 
 	.swiper-slide {
-		border-radius: 8px;
-		width: 60%;
-		height: 35%;
 
 		h2 {
 			font-size: 20px;
@@ -883,15 +780,20 @@ svg {
 
 	}
 
-	.swiper-slide-active {
-		opacity: 1;
+	.slider-map {
+		height: 50%;
+		width: 100%;
 	}
+
+	.container-box {
+		height: 70%;
+		width: 80%;
+	}
+
 
 	.box {
 		top: 28%;
-		right: 8%;
-		height: 50%;
-
+		left: 0;
 	}
 
 	circle {
@@ -908,32 +810,4 @@ svg {
 	}
 }
 
-@media screen and (max-height: 500px) {
-
-	.map {
-		display: flex;
-		align-items: center;
-		width: 40%;
-	}
-
-	.box {
-		top: 90%;
-	}
-
-	.swiper-slide {
-		padding: 3%;
-		width: 40%;
-		height: 70%;
-
-		h2 {
-			margin-bottom: 15px;
-			font-size: 25px;
-		}
-
-		p {
-			font-size: 20px;
-		}
-	}
-
-
-}</style>
+</style>
