@@ -12,7 +12,7 @@
 
 import LocationsComp from "./../components/Locations/LocationsComp.vue";
 import SpreadComp from "./../components/Locations/SpreadComp.vue";
-import MapComp from "@/components/Locations/MapComp.vue";
+import MapComp from "@/components/Locations/MapsComp.vue";
 import PalmaresComp from "@/components/Locations/PalmaresComp.vue";
 import LocalizacoesComp from "@/components/Locations/LocalizacoesComp.vue";
 
