@@ -482,7 +482,14 @@ circle {
 
 circle:nth-child(1) {
     stroke-dashoffset: 0;
-    stroke: rgb(142, 142, 142);
+    stroke: rgb(58, 58, 58);
+}
+
+.dark {
+
+    circle:nth-child(1) {
+        stroke: rgb(142, 142, 142);
+    }
 }
 
 circle:nth-child(2) {
