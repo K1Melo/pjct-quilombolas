@@ -4,9 +4,12 @@
             <img src="../../assets/programer.svg" alt="">
         </div>
         <div class="programming-txt">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, earum inventore magni laudantium pariatur
-                sequi ut nobis ipsum explicabo reiciendis ipsam ea dignissimos porro nisi mollitia distinctio quisquam
-                maiores vitae.</p>
+            <p>A iniciativa do Projeto Quilombolas surgiu na Etec de Carapicuiba pelo curso de Desenvolvimento de Sistemas,
+                onde o principal objetivo era dar a visibilidade dos povos originários do Brasil, os quais muitas vezes não
+                são lembrados na atualidade. <br>
+                Vimos nesse projeto a oportunidade de apresentar a cultura brasileira para jovens de maneira mais moderna, para isso
+                seguimos duas principais premissas:
+            </p>
         </div>
     </div>
 </template>
@@ -21,7 +24,7 @@ export default {
 
 <style lang="less" scoped>
 .creation {
-    // height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -47,6 +50,10 @@ export default {
     align-items: center;
     justify-content: center;
 
+    p {
+        font-size: 20px;
+        width: 80%;
+    }
 }
 
 .dark {
@@ -80,7 +87,32 @@ export default {
         justify-content: center;
 
         p {
-            width: 80%;
+            width: 85%;
+            font-size: 18px;
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 612px) {
+    .programming-txt {
+
+        p {
+            width: 85%;
+            font-size: 16px;
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .programming-txt {
+        p {
+            width: 90%;
+            font-size: 14px;
+
         }
 
     }

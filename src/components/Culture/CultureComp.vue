@@ -1,7 +1,7 @@
 <template>
     <div class="culture-comp">
         <div class="texts">
-            <h1 id="title" data-aos="fade-left">Culturas</h1>
+            <h1 id="title" data-aos="fade-left">Cultura</h1>
             <p id="text-1">
                 Apesar de muitas vezes ser confundido apenas com a ideia de monumentos e com
                 conceitos de patrimônio material, o patrimônio cultural é mais que isso, ele está ligado

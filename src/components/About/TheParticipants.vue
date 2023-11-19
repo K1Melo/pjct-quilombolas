@@ -26,12 +26,12 @@ export default {
 <style lang="less" scoped>
 .participants {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
 }
 
 .title-participants {
     width: 100%;
-    height: 10%;
+    // height: 10%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -46,8 +46,8 @@ export default {
 }
 
 .participant {
-    width: 300px;
-    height: 300px;
+    width: 15vw;
+    height: 15vw;
     background-color: aqua;
     border-radius: 50%;
 }

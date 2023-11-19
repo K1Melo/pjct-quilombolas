@@ -4,7 +4,8 @@
             <h2>Inovação</h2>
             <p>Tomando como referência projetos inovadores e modernos, tivemos como um principal objetivo a criação de
                 mostrar como podemos apresentar uma cultura de maneira diferente a sites que vemos comumente, utilizando
-                assim modelos 3Ds, diversas interações do usuário, bibliotecas como SwiperJS para carrosséis e a biblioteca
+                assim modelos 3Ds, diversas interações com o usuário, bibliotecas como SwiperJS para carrosséis e a
+                biblioteca
                 AOS para animações com a rolagem do site.</p>
         </div>
         <div class="cube-inovation">
@@ -98,6 +99,14 @@
         color: #000;
         width: 80%;
     }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
 }
 
 .dark {
@@ -134,6 +143,17 @@
         height: 200px;
         transform: translateZ(-200px);
     }
+
+    .txt-inovation {
+        h2 {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -156,6 +176,27 @@
         h2,
         p {
             width: 100%;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .txt-inovation {
+
+        h2 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 14px;
         }
     }
 }
@@ -186,4 +227,20 @@
         transform: translateZ(-150px);
     }
 }
+
+
+@media only screen and (max-width: 300px) {
+    .txt-inovation {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+
 </style>

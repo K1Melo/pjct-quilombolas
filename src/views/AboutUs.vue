@@ -5,9 +5,9 @@
         <PremisesComp></PremisesComp>
         <InovationComp></InovationComp>
         <CulturePremise></CulturePremise>
-        <!-- <ToolsComp></ToolsComp> -->
         <FeedbackComp></FeedbackComp>
-        <TheParticipants></TheParticipants>
+        <!-- <ToolsComp></ToolsComp> -->
+        <!-- <TheParticipants></TheParticipants> -->
     </div>
 </template>
 
@@ -18,9 +18,9 @@ import CreationComp from '@/components/About/CreationComp.vue';
 import PremisesComp from '@/components/About/PremisesComp.vue';
 import InovationComp from '@/components/About/InovationComp.vue';
 import CulturePremise from '@/components/About/CulturePremise.vue';
-// import ToolsComp from '@/components/About/ToolsComp.vue';
 import FeedbackComp from '@/components/About/FeedbackComp.vue';
-import TheParticipants from '@/components/About/TheParticipants.vue';
+// import ToolsComp from '@/components/About/ToolsComp.vue';
+// import TheParticipants from '@/components/About/TheParticipants.vue';
 
 export default {
     components: {
@@ -29,9 +29,9 @@ export default {
         PremisesComp,
         InovationComp,
         CulturePremise,
-        // ToolsComp,
         FeedbackComp,
-        TheParticipants
+        // ToolsComp,
+        // TheParticipants
     }
 }
 

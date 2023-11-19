@@ -409,7 +409,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 
-    background-color: #f0e7e78b;
+    background-color: #f0e7e7d6;
 
 }
 
@@ -422,7 +422,7 @@ nav a {
 
 .dark nav {
 
-    background-color: #2a272e73;
+    background-color: #2a292cca;
 
 }
 
@@ -482,6 +482,7 @@ nav a:active {
 #github:hover {
     transform: scale(1.3);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 #menu:active,

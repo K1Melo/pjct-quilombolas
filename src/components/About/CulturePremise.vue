@@ -5,8 +5,8 @@
         </div>
         <div class="culture-txt">
             <h2>Cultura</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quaerat pariatur neque architecto? Corrupti
-                aliquid error iste omnis quisquam reiciendis voluptas veniam totam sunt illo? Est tenetur culpa quos ullam.
+            <p>Não podemos deixar de citar o mais importante desse projeto, a cultura, o reconhecimento das origens do nosso
+                pais e que muitas vezes são esquecidas.
             </p>
         </div>
     </div>
@@ -46,6 +46,14 @@
         color: #000;
         width: 80%;
     }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
 }
 
 .dark {
@@ -57,6 +65,18 @@
 
         p {
             color: #fff;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .culture-txt {
+        h2 {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 18px;
         }
     }
 }
@@ -81,6 +101,39 @@
         h2,
         p {
             width: 100%;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .culture-txt {
+        h2 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .culture-txt {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 12px;
         }
     }
 }

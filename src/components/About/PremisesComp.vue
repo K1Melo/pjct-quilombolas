@@ -98,8 +98,8 @@ c99 0 110 9 147 115 18 50 46 118 63 153 16 34 28 71 25 81 -2 10 -27 40 -54
 <style lang="less" scoped>
 .premises {
     width: 100%;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    // padding-top: 20%;
+    padding-bottom: 10%;
     display: flex;
 }
 
@@ -122,12 +122,20 @@ c99 0 110 9 147 115 18 50 46 118 63 153 16 34 28 71 25 81 -2 10 -27 40 -54
     }
 }
 
+h2 {
+    color: #000000;
+}
+
 .dark {
     .inovation {
 
         svg {
             fill: #ffffff;
         }
+    }
+
+    h2 {
+        color: #ffffff;
     }
 
 }
@@ -153,6 +161,8 @@ c99 0 110 9 147 115 18 50 46 118 63 153 16 34 28 71 25 81 -2 10 -27 40 -54
     .premises {
         flex-direction: column;
         align-items: center;
+        padding-top: 2%;
+        padding-bottom: 20%;
     }
 
     .inovation {
@@ -163,12 +173,14 @@ c99 0 110 9 147 115 18 50 46 118 63 153 16 34 28 71 25 81 -2 10 -27 40 -54
         flex-direction: column;
     }
 }
+
 @media only screen and (max-width: 750px) {
     .inovation {
         svg {
             width: 70%;
         }
     }
+
     .culture {
         img {
             width: 70%;
@@ -182,12 +194,12 @@ c99 0 110 9 147 115 18 50 46 118 63 153 16 34 28 71 25 81 -2 10 -27 40 -54
             width: 80%;
         }
     }
+
     .culture {
         img {
             width: 80%;
         }
     }
-    
-}
 
+}
 </style>
