@@ -8,9 +8,9 @@
                 <h2>O que é ?</h2>
             </div>
             <div class="p-what">
-                <p>Originados da resistência africana contra a escravidão, escravizados fugitivos de suas fazendas
-                    buscaram liberdade nas áreas isoladas, onde formaram comunidades independentes, se organizando
-                    de acordo com suas próprias tradições culturais e sociais.</p>
+                <p>A arte de criar objetos, artesanato é a transformação da matéria-prima usando como instrumento principal
+                    suas mãos, a produção artesanal quilombola tem como principal objetivo a geração de fonte de renda, como
+                    propósitos ritualísticos, para usos e utensílios domésticos.</p>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
     justify-content: center;
     width: 50%;
     height: 100%;
-    background-image: url(https://img.freepik.com/fotos-premium/maos-trabalhando-na-roda-de-oleiro_44128-39.jpg);
+    background-image: url(../../assets/costura-mulher.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -90,11 +90,13 @@
     .get div h3 {
       color: #000000dc;
       font-size: 25px;
-      margin-bottom: .5%;
+      margin-bottom: .3%;
     }
 
     .get div p {
       color: #000;
+      font-size: 18px;
+
     }
 
     .get div {
@@ -111,9 +113,20 @@
 
     }
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1024px) {
       .get div {
-        width: 80%;
+        width: 90%;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .get div h3 {
+        font-size: 20px;
+        padding-bottom: .3%;
+      }
+
+      .get div p {
+        font-size: 15px;
       }
     }
   </style>

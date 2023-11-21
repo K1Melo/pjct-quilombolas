@@ -259,7 +259,14 @@
             <div class="options" id="optionFour" data-aos="fade-up">
                 <router-link to="/cultura" @click="goTo(0)">Cultura</router-link>
                 <router-link to="/cultura" @click="goTo(0.8)" class="subtitle">Movimentos Sociais</router-link>
+                <router-link to="/cultura" @click="goTo(1.6)" class="subtitle">Culinária</router-link>
                 <router-link to="/cultura" @click="goTo(3.1)" class="subtitle">Danças e Festividades</router-link>
+            </div>
+            <div class="options" id="optionFour" data-aos="fade-up">
+                <router-link to="/sobre" @click="goTo(0)">Sobre</router-link>
+                <router-link to="/sobre" @click="goTo(1)" class="subtitle">Motivações</router-link>
+                <router-link to="/sobre" @click="goTo(1.8)" class="subtitle">Premissas</router-link>
+                <router-link to="/sobre" @click="goTo(4.2)" class="subtitle">Feedback</router-link>
             </div>
         </nav>
     </footer>
@@ -386,7 +393,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     nav {
         flex-direction: column;
         align-items: center;

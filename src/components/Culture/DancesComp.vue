@@ -57,11 +57,11 @@ import "swiper/css/pagination";
                         <h2>Samba de Roda</h2>
                     </div>
                     <div class="text">
-                        <p>E não podemos falar de cultura quilombola sem falar sobre o jongo, essa dança chegou ao brasil
-                            por meio dos escravos africados de origem bantu, vindos do Congo e de Angola, diferente da
-                            capoeira o jongo não era uma dança proibida, os proprietários das fazendas permitiam que seus
-                            escravos dançassem jongo nos dias dos santos católicos e ele era dançado por um casal ao som dos
-                            sagrados tambores e a voz de outros escravos.</p>
+                        <p>O samba de roda nasceu na Bahia no início do século XVII, e acabou tendo mais destaque nas
+                            vertentes cariocas, foi formado pelas referencias dos ritmos tribais africanos que era muito
+                            diversificado pois na escravidão os
+                            senhores dos escravos acabavam misturando povos africanos de diferentes tribos o que deu origem
+                            a uma forma de expressão muito rica em contexto social.</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -73,11 +73,11 @@ import "swiper/css/pagination";
                         <h2>Tambor Crioula</h2>
                     </div>
                     <div class="text">
-                        <p>E não podemos falar de cultura quilombola sem falar sobre o jongo, essa dança chegou ao brasil
-                            por meio dos escravos africados de origem bantu, vindos do Congo e de Angola, diferente da
-                            capoeira o jongo não era uma dança proibida, os proprietários das fazendas permitiam que seus
-                            escravos dançassem jongo nos dias dos santos católicos e ele era dançado por um casal ao som dos
-                            sagrados tambores e a voz de outros escravos.</p>
+                        <p>Uma dança popular entre as comunidades quilombolas do Maranhão que mistura elementos africanos e
+                            indígenas em sua coreografia, a dança do tambor crioula. <br> É uma forma de expressão que envolve
+                            dança circular, canto e percussão de tambores, além de ser uma forte referência na resistência
+                            cultural africana, podemos associá-la a práticas lúdico-religiosa, a dança era praticada como
+                            divertimento ou devoção a São Benedito.</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -263,5 +263,4 @@ export default {
             }
         }
     }
-}
-</style>
+}</style>

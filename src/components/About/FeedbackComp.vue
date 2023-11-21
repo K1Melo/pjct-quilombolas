@@ -1,8 +1,8 @@
 <template>
     <div class="feedback">
         <div class="post">
-            <h2>Feedback</h2>
             <form method="post" @submit.prevent="postMessage" id="postMsg">
+                <h2>Feedback</h2>
                 <div class="input-name">
                     <input type="text" name="author" placeholder="Nome" v-model="posts.name" id="name" required
                         maxlength="20"> <br>
@@ -28,7 +28,10 @@
             </form>
         </div>
         <div class="get">
-            <!-- <h2>Comentários</h2> -->
+            <div class="juntar">
+                <h2>Comentários</h2>
+
+            </div>
         </div>
     </div>
 </template>
@@ -60,7 +63,7 @@ export default {
         },
     },
     mounted() {
-        const getClass = document.querySelector(".get");
+        const getClass = document.querySelector(".juntar");
         fetch('https://quilombolas-backend.onrender.com/')
             .then((res) => res.json())
             .then((data) => {
@@ -111,7 +114,7 @@ input:focus {
 }
 
 form {
-    height: 50%;
+    height: 70%;
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -167,8 +170,16 @@ h2 {
     justify-content: center;
     flex-direction: column;
 
-    h2 {
-        width: 70%;
+
+
+    .juntar {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 2%;
+        border-radius: 1%;
+        height: 60%;
+        border-top-right-radius: 20%;
+        background-color: #2E0F0F;
     }
 }
 
@@ -222,6 +233,11 @@ button:hover span {
 button:active {
     border: none;
     transform: scale(0.95);
+
+}
+
+button:active .svg-wrapper {
+    animation: fly-2 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes fly-1 {
@@ -231,6 +247,15 @@ button:active {
 
     to {
         transform: translateY(-0.2em);
+    }
+}
+@keyframes fly-2 {
+    100% {
+        transform: translateX(1em);
+    }
+
+    0% {
+        transform: translateX(0em);
     }
 }
 
@@ -246,13 +271,20 @@ button:active {
         height: 70vh;
         justify-content: start;
 
+        form {
+            height: 100%;
+        }
     }
 
     .get {
-        height: fit-content;
         padding-bottom: 15%;
-        // width: 100%;
+        width: 100%;
+        height: 50%;
 
+        .juntar {
+            padding-top: 10%;
+            padding-left: 5%;
+        }
     }
 }
 
@@ -260,6 +292,7 @@ button:active {
     .get {
 
         width: 100%;
+        height: 55%;
 
     }
 }

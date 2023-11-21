@@ -254,11 +254,11 @@
 
         </header>
         <nav v-show="showNav">
-            <router-link to="/" @click="goTop">Início</router-link>
-            <router-link to="/lugares" @click="goTop">Lugares</router-link>
-            <router-link to="/producao" @click="goTop">Produção</router-link>
-            <router-link to="/cultura" @click="goTop">Cultura</router-link>
-            <router-link to="/sobre" @click="goTop">Sobre</router-link>
+            <router-link to="/" @click="goTop" class="nav-link">Início</router-link>
+            <router-link to="/lugares" @click="goTop" class="nav-link">Lugares</router-link>
+            <router-link to="/producao" @click="goTop" class="nav-link">Produção</router-link>
+            <router-link to="/cultura" @click="goTop" class="nav-link">Cultura</router-link>
+            <router-link to="/sobre" @click="goTop" class="nav-link">Sobre</router-link>
         </nav>
     </div>
 </template>
@@ -325,7 +325,7 @@ header {
 }
 
 #menu,
- 
+
 
 .menu {
 
@@ -410,14 +410,6 @@ nav {
     justify-content: space-evenly;
 
     background-color: #f0e7e7d6;
-
-}
-
-nav a {
-
-    color: #2A3046;
-    text-decoration: none;
-
 }
 
 .dark nav {
@@ -426,11 +418,7 @@ nav a {
 
 }
 
-.dark nav a {
 
-    color: #C5B7B6;
-
-}
 
 @media only screen and (max-width: 800px) {
 
@@ -468,15 +456,35 @@ a {
     text-decoration: none;
 }
 
+.nav-link {
+    color: #2A3046;
+}
+
+.dark .nav-link {
+
+    color: #C5B7B6;
+
+}
+.router-link-active {
+    color: #000000;
+    font-weight: 600;
+}
+
+.dark .router-link-active {
+    color: #ffffff;
+}
+
 nav a:hover {
     transform: scale(1.2);
-    transition: 0.2s;
+    transition: all 1s;
 }
 
 nav a:active {
     transform: scale(1.0);
     transition: 0.2s;
 }
+
+
 
 #menu:hover,
 #github:hover {

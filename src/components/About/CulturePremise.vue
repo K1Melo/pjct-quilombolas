@@ -1,16 +1,31 @@
 <template>
     <div class="culture-premise">
         <div class="culture-map">
-            <img src="../../assets/brasil.png" alt="">
+            <canvas id="canvas3d"></canvas>
         </div>
         <div class="culture-txt">
             <h2>Cultura</h2>
             <p>Não podemos deixar de citar o mais importante desse projeto, a cultura, o reconhecimento das origens do nosso
-                pais e que muitas vezes são esquecidas.
+                pais e que muitas vezes são esquecidas e, no nosso caso, os Quilombolas, um povo que ao analisarmos as
+                formas e os meios de
+                vida que os habitantes apresentam percebemos, como as atividades e a cultura que eles apresentam tem
+                relação com a nossa cultura e práticas como danças, músicas e religiões.
             </p>
         </div>
     </div>
 </template>
+
+<script>
+import { Application } from '@splinetool/runtime';
+export default {
+    mounted() {
+        const canvas = document.getElementById('canvas3d');
+        const app = new Application(canvas);
+        app.load('https://prod.spline.design/w7Rslvvqr4BNvAtR/scene.splinecode');
+    }
+}
+
+</script>
 
 <style lang="less" scoped>
 .culture-premise {
