@@ -66,6 +66,15 @@ export default {
   user-select: none;
 
   animation: moveUpDown 2s ease-in-out infinite;
+
+  canvas {
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
 }
 
 

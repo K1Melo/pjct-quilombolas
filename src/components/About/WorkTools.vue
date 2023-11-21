@@ -20,6 +20,14 @@ import { EffectCards, Pagination } from 'swiper/modules';
             dynamicBullets: true,
         }" :grabCursor="true" :modules="[EffectCards, Pagination]" class="mySwiper" data-aos="fade-left">
             <swiper-slide>
+                <div class="text-tool">
+                    <p>Utilizamos ferramentas como VUEX e tal pra fazer tal coisa e tal parada Utilizamos ferramentas como
+                        VUEX e tal pra fazer tal coisa e tal parada Utilizamos ferramentas como VUEX e tal pra fazer tal
+                        coisa e tal parada Utilizamos ferramentas como VUEX e tal pra fazer tal coisa e tal parada
+                        Utilizamos ferramentas como VUEX e tal pra fazer tal coisa e tal parada Utilizamos ferramentas como
+                        VUEX e tal pra fazer tal coisa e tal parada Utilizamos ferramentas como VUEX e tal pra fazer tal
+                        coisa e tal parada Utilizamos ferramentas como VUEX e tal pra fazer tal coisa e tal parada</p>
+                </div>
                 <div class="name">
                     <h3>Vue JS</h3>
                     <img src="../../assets/vue-js-icon.webp" alt="Vue js">
@@ -57,7 +65,7 @@ import { EffectCards, Pagination } from 'swiper/modules';
             </swiper-slide>
             <swiper-slide>
                 <div class="name">
-                    <h3>Render</h3> 
+                    <h3>Render</h3>
                     <img src="../../assets/render.png" alt="Render">
                 </div>
             </swiper-slide>
@@ -90,6 +98,20 @@ export default {
     width: 100%;
 }
 
+.text-tool {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+}
+
 .title {
     width: 40%;
     height: 50vh;
@@ -104,6 +126,7 @@ export default {
         width: 100%;
         height: 25%;
         background-color: #100404d7;
+        transition: all 1s;
     }
 }
 
@@ -123,9 +146,11 @@ export default {
 .swiper-slide {
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
     transition: all 1s ease-in-out;
 
     .name {
