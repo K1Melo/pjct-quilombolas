@@ -3,7 +3,7 @@
         <h2 class="agricultura">Agricultura</h2>
         <h2 class="familiar">Familiar</h2>
         <div class="armando-img">
-            <img src="../../assets/seu-armando.svg" alt="">
+            <img src="../../assets/seu-armando.svg" alt="Homem arando terra">
         </div>
     </div>
 </template>

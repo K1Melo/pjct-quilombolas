@@ -3,7 +3,7 @@
         <div class="img-1">
             <img id="woman"
                 src="../../assets/retrato-de-mulher-africana-usando-acessorios-tradicionais-e-posando-PhotoRoom.png-PhotoRoom.png"
-                alt="">
+                alt="Mulher africana">
         </div>
         <div class="texts2">
             <div class="titulo2">
