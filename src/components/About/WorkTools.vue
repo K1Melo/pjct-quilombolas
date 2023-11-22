@@ -21,12 +21,9 @@ import { EffectCards, Pagination } from 'swiper/modules';
         }" :grabCursor="true" :modules="[EffectCards, Pagination]" class="mySwiper" data-aos="fade-left">
             <swiper-slide>
                 <div class="text-tool">
-                    <p>Utilizamos ferramentas como VUEX e tal pra fazer tal coisa e tal parada Utilizamos ferramentas como
-                        VUEX e tal pra fazer tal coisa e tal parada Utilizamos ferramentas como VUEX e tal pra fazer tal
-                        coisa e tal parada Utilizamos ferramentas como VUEX e tal pra fazer tal coisa e tal parada
-                        Utilizamos ferramentas como VUEX e tal pra fazer tal coisa e tal parada Utilizamos ferramentas como
-                        VUEX e tal pra fazer tal coisa e tal parada Utilizamos ferramentas como VUEX e tal pra fazer tal
-                        coisa e tal parada Utilizamos ferramentas como VUEX e tal pra fazer tal coisa e tal parada</p>
+                    <p>Utilizamos o framework vue js pela sua baixa curva de aprendizado, com ele suas ferramentas como por
+                        exemplo VUEX para gestão de estados e vue Router para as rotas, além do Vue cli para criação do
+                        projeto.</p>
                 </div>
                 <div class="name">
                     <h3>Vue JS</h3>
@@ -34,42 +31,68 @@ import { EffectCards, Pagination } from 'swiper/modules';
                 </div>
             </swiper-slide>
             <swiper-slide>
+                <div class="text-tool">
+                    <p>Utilizamos as linguagens de marcação html e css para criação e estilização do website.</p>
+                </div>
                 <div class="name">
                     <h3>HTML e CSS</h3>
                     <img src="../../assets/html&css.svg" alt="html e css" id="html">
                 </div>
             </swiper-slide>
             <swiper-slide>
+                <div class="text-tool">
+                    <p>Para partes com interações do usuário utilizamos a linguagem de programação javascript, além de
+                        configurações do framework.</p>
+                </div>
                 <div class="name">
                     <h3>JavaScript</h3>
                     <img src="../../assets/javascript.png" alt="JavaScript">
                 </div>
             </swiper-slide>
             <swiper-slide>
+                <div class="text-tool">
+                    <p>Utilizamos o interpretador nodejs para o backend da aplicação, com a biblioteca express e mongose
+                        para a criação da API rest .</p>
+                </div>
                 <div class="name">
                     <h3>Node.js</h3>
                     <img src="../../assets/node-js-icon.png" alt="Node.js">
                 </div>
             </swiper-slide>
             <swiper-slide>
+                <div class="text-tool">
+                    <p>Para edição e prototipagem do site utilizamos o editor gráfico figma.</p>
+                </div>
                 <div class="name">
                     <h3>Figma</h3>
                     <img src="../../assets/figma.png" alt="Figma">
                 </div>
             </swiper-slide>
             <swiper-slide>
+                <div class="text-tool">
+                    <p>Como plataforma de hospedagem do nosso front-end escolhemos a Vercel, por ser uma plataforma simples
+                        e rápida de se utilizar, com ligação direta ao GitHub do projeto.</p>
+                </div>
                 <div class="name">
                     <h3>Vercel</h3>
                     <img src="../../assets/vercel.png" alt="Vercel">
                 </div>
             </swiper-slide>
             <swiper-slide>
+                <div class="text-tool">
+                    <p>Agora o back-end do projeto foi hospedado na plataforma Render, pela sua maior velocidade e para
+                        alocação da API node na nuvem de forma gratuita.</p>
+                </div>
                 <div class="name">
                     <h3>Render</h3>
                     <img src="../../assets/render.png" alt="Render">
                 </div>
             </swiper-slide>
             <swiper-slide>
+                <div class="text-tool">
+                    <p>No nosso banco de dados escolhemos banco NoSQL (não relacional), MongoDB, com sua ferramenta MongoDB
+                        atlas, que permite a criação de um banco de dados na nuvem gratuitamente.</p>
+                </div>
                 <div class="name">
                     <h3>MongoDB Atlas</h3>
                     <img src="../../assets/mongoDb.png" alt="MongoDB">

@@ -1,7 +1,7 @@
 <template>
     <div class="culture-premise">
         <div class="culture-map">
-            <canvas id="canvas3d"></canvas>
+            <img src="../../assets/culture-premise-text.png" alt="">
         </div>
         <div class="culture-txt">
             <h2>Cultura</h2>
@@ -14,18 +14,6 @@
         </div>
     </div>
 </template>
-
-<script>
-import { Application } from '@splinetool/runtime';
-export default {
-    mounted() {
-        const canvas = document.getElementById('canvas3d');
-        const app = new Application(canvas);
-        app.load('https://prod.spline.design/w7Rslvvqr4BNvAtR/scene.splinecode');
-    }
-}
-
-</script>
 
 <style lang="less" scoped>
 .culture-premise {

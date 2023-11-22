@@ -7,8 +7,7 @@
         <CulturePremise></CulturePremise>
         <WorkTools></WorkTools>
         <FeedbackComp></FeedbackComp>
-        <!-- <ToolsComp></ToolsComp> -->
-        <!-- <TheParticipants></TheParticipants> -->
+        <TheParticipants></TheParticipants>
     </div>
 </template>
 
@@ -21,7 +20,7 @@ import InovationComp from '@/components/About/InovationComp.vue';
 import CulturePremise from '@/components/About/CulturePremise.vue';
 import WorkTools from '@/components/About/WorkTools.vue';
 import FeedbackComp from '@/components/About/FeedbackComp.vue';
-// import TheParticipants from '@/components/About/TheParticipants.vue';
+import TheParticipants from '@/components/About/TheParticipants.vue';
 
 export default {
     components: {
@@ -32,8 +31,7 @@ export default {
         CulturePremise,
         WorkTools,
         FeedbackComp,
-        // ToolsComp,
-        // TheParticipants
+        TheParticipants
     }
 }
 
