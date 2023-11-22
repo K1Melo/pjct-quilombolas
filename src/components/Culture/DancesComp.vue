@@ -74,7 +74,8 @@ import "swiper/css/pagination";
                     </div>
                     <div class="text">
                         <p>Uma dança popular entre as comunidades quilombolas do Maranhão que mistura elementos africanos e
-                            indígenas em sua coreografia, a dança do tambor crioula. <br> É uma forma de expressão que envolve
+                            indígenas em sua coreografia, a dança do tambor crioula. <br> É uma forma de expressão que
+                            envolve
                             dança circular, canto e percussão de tambores, além de ser uma forte referência na resistência
                             cultural africana, podemos associá-la a práticas lúdico-religiosa, a dança era praticada como
                             divertimento ou devoção a São Benedito.</p>
@@ -171,9 +172,11 @@ export default {
     }
 
     .text-dance {
-        padding: 2%;
+        padding: 10%;
+        padding-top: 5%;
         width: 100%;
         height: 50%;
+        justify-content: flex-start;
     }
 
     .text-dance {
@@ -192,7 +195,14 @@ export default {
 }
 
 @media screen and (max-width: 800px) {
+    .img-dance {
+        width: 100%;
+        height: 40%;
+    }
+
     .text-dance {
+        height: 60%;
+
         .title {
             h2 {
                 font-size: 35px;
@@ -208,6 +218,7 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
+
     .text-dance {
         .title {
             h2 {
@@ -263,4 +274,5 @@ export default {
             }
         }
     }
-}</style>
+}
+</style>
