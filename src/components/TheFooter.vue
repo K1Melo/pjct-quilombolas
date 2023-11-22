@@ -266,7 +266,9 @@
                 <router-link to="/sobre" @click="goTo(0)">Sobre</router-link>
                 <router-link to="/sobre" @click="goTo(1)" class="subtitle">Motivações</router-link>
                 <router-link to="/sobre" @click="goTo(1.8)" class="subtitle">Premissas</router-link>
-                <router-link to="/sobre" @click="goTo(4.2)" class="subtitle">Feedback</router-link>
+                <router-link to="/sobre" @click="goTo(4.2)" class="subtitle">Ferramentas</router-link>
+                <router-link to="/sobre" @click="goTo(5.2)" class="subtitle">Feedback</router-link>
+                <router-link to="/sobre" @click="goTo(6.2)" class="subtitle">Integrantes</router-link>
             </div>
         </nav>
     </footer>

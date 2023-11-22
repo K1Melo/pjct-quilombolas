@@ -108,7 +108,8 @@ export default {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    background-color: #000;
 }
 
 .choose-participant {
@@ -174,10 +175,11 @@ export default {
 }
 
 .participant-description {
-    width: 80%;
+    width: 90%;
     height: 100%;
     position: relative;
     overflow: hidden;
+    border-left: 1px solid rgb(255, 255, 255);
 }
 
 .participant {
@@ -186,7 +188,6 @@ export default {
     position: absolute;
     opacity: 0;
     transition: opacity 1.5s linear;
-    background-color: aqua;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,12 +197,12 @@ export default {
         display: flex;
         align-items: flex-end;
         height: 23%;
-        padding-left: 5%;
+        padding-left: 10%;
         font-size: 60px;
     }
 
     h3 {
-        padding-left: 5%;
+        padding-left: 10%;
     }
 }
 
@@ -241,12 +242,14 @@ export default {
     background-image: url(../../assets/background-lima.png);
 }
 #mizuno-description {
+    background-position: center right 25%;
+
     background-image: url(../../assets/background-mizuno.png);
 }
 #araujo-description {
     background-position: center right 45%;
 
-    background-image: url(https://i.imgur.com/ETBK3vs.jpg);
+    background-image: url(https://images3.alphacoders.com/606/606500.jpg);
 }
 #udiel-description {
     background-position: center right 45%;
@@ -274,17 +277,23 @@ export default {
 
     .participant-description {
         width: 100%;
-        height: 90%;
-        background-color: rgb(255, 0, 0);
+        // height: 90%;
+        border-left:none;
     }
 
     .participant {
         h2 {
             display: flex;
-            height: 25%;
+            height: 35%;
             padding-left: 5%;
             font-size: 55px;
         }
+        
+        h3 {
+            padding-left: 5%;
+
+        }
+
     }
 }
 
@@ -294,7 +303,7 @@ export default {
         height: 10%;
         width: 100%;
         left: 0;
-        top: 10%;
+        top: 5%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -308,7 +317,7 @@ export default {
 
     .participant {
         h2 {
-            height: 28%;
+            height: 30%;
             font-size: 46px;
         }
     }
@@ -320,7 +329,7 @@ export default {
         height: 10%;
         width: 100%;
         left: 0;
-        top: 10%;
+        top: 5%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -334,8 +343,8 @@ export default {
 
     .participant {
         h2 {
-            height: 30%;
-            font-size: 40px;
+            height: 24%;
+            font-size: 35px;
         }
     }
 }
