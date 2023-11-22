@@ -206,7 +206,7 @@ export default {
 }
 
 .participant-active {
-    z-index: 1;
+    z-index: 0;
     opacity: 1;
 }
 
