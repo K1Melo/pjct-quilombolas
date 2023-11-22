@@ -263,6 +263,7 @@
 svg {
     width: 100%;
     height: auto;
+    fill: #000;
 }
 
 .dark {
@@ -304,7 +305,6 @@ svg {
     svg {
         width: auto;
         height: 130%;
-        fill: #ffffff;
     }
 
     .title-about {
