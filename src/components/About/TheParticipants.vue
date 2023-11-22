@@ -10,12 +10,59 @@
         <div class="participant-description">
             <div class="participant participant-active" id="kaua-description">
                 <h2>Kauã Fernandes</h2>
-                <h3>Github: </h3>
+                <div class="github-participants">
+                    <h3>Github: </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"
+                        @click="openParticipantGitHub('https://github.com/K1Melo/')">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </div>
             </div>
-            <div class="participant" id="lima-description"></div>
-            <div class="participant" id="mizuno-description"></div>
-            <div class="participant" id="araujo-description"></div>
-            <div class="participant" id="udiel-description"></div>
+            <div class="participant" id="lima-description">
+                <h2>Mateus Lima</h2>
+                <div class="github-participants">
+                    <h3>Github: </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"
+                        @click="openParticipantGitHub('https://github.com/mateuslima0/')">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="participant" id="mizuno-description">
+                <h2>Matheus Mizuno</h2>
+                <div class="github-participants">
+                    <h3>Github: </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"
+                        @click="openParticipantGitHub('https://github.com/matmizuno/')">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="participant" id="araujo-description">
+                <h2>Matheus Araújo</h2>
+                <div class="github-participants">
+                    <h3>Github: </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"
+                        @click="openParticipantGitHub('https://github.com/mths0303s/')">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="participant" id="udiel-description">
+                <h2>Udiel Inácio</h2>
+                <div class="github-participants">
+                    <h3>Github: </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"
+                        @click="openParticipantGitHub('https://github.com/UdielOliveira/')">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -45,6 +92,9 @@ export default {
 
                 }
             })
+        },
+        openParticipantGitHub(url) {
+            window.open(url);
         }
     }
 }
@@ -128,7 +178,6 @@ export default {
     height: 100%;
     position: relative;
     overflow: hidden;
-    z-index: 0;
 }
 
 .participant {
@@ -136,11 +185,12 @@ export default {
     height: 100%;
     position: absolute;
     opacity: 0;
-    transition: opacity .8s linear;
+    transition: opacity 1.5s linear;
     background-color: aqua;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 
     h2 {
         display: flex;
@@ -156,10 +206,49 @@ export default {
 }
 
 .participant-active {
+    z-index: 1;
     opacity: 1;
 }
 
+.github-participants {
+    display: flex;
+
+    svg {
+        fill: #ffffff;
+        margin-left: 1%;
+        cursor: pointer;
+        transition: transform .2s linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(.9);
+
+        }
+    }
+
+}
+
+
 #kaua-description {
+    background-position: center right 45%;
+
+    background-image: url(https://i.imgur.com/ETBK3vs.jpg);
+}
+#lima-description {
+    background-image: url(../../assets/background-lima.png);
+}
+#mizuno-description {
+    background-image: url(../../assets/background-mizuno.png);
+}
+#araujo-description {
+    background-position: center right 45%;
+
+    background-image: url(https://i.imgur.com/ETBK3vs.jpg);
+}
+#udiel-description {
     background-position: center right 45%;
 
     background-image: url(https://i.imgur.com/ETBK3vs.jpg);
@@ -192,7 +281,7 @@ export default {
     .participant {
         h2 {
             display: flex;
-            height: 50%;
+            height: 25%;
             padding-left: 5%;
             font-size: 55px;
         }
@@ -219,8 +308,8 @@ export default {
 
     .participant {
         h2 {
-            height: 25%;
-            font-size: 50px;
+            height: 28%;
+            font-size: 46px;
         }
     }
 }
@@ -245,7 +334,7 @@ export default {
 
     .participant {
         h2 {
-            height: 24%;
+            height: 30%;
             font-size: 40px;
         }
     }
