@@ -254,7 +254,7 @@ export default {
 #udiel-description {
     background-position: center right 45%;
 
-    background-image: url(https://i.imgur.com/ETBK3vs.jpg);
+    background-image: url(../../assets/background-udiel.png);
 }
 
 @media only screen and (max-width: 1000px) {
