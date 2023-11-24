@@ -27,4 +27,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 Mateus Lima
 Matheus Araújo
 Matheus Mizuno
+Udiel Inacio
 
