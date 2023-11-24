@@ -2,10 +2,9 @@
     <div class="inovation-comp">
         <div class="txt-inovation" data-aos="fade-right" data-aos-duration="1500">
             <h2>Inovação</h2>
-            <p>Tomando como referência projetos inovadores e modernos, tivemos como um principal objetivo a criação de
-                mostrar como podemos apresentar uma cultura de maneira diferente a sites que vemos comumente, utilizando
-                assim modelos 3Ds, diversas interações com o usuário, bibliotecas como SwiperJS para carrosséis e a
-                biblioteca
+            <p>Tomando como referência projetos inovadores e modernos, tivemos como um principal objetivo mostrar como 
+                podemos apresentar uma cultura de maneira diferente a sites que vemos comumente, utilizando assim modelos 3Ds, 
+                diversas interações com o usuário, bibliotecas como SwiperJS para carrosséis e a biblioteca
                 AOS para animações com a rolagem do site.</p>
         </div>
         <div class="cube-inovation">
