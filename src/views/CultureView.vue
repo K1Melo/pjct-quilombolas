@@ -6,6 +6,7 @@
         <AlimentsCulinary></AlimentsCulinary>
         <DancesApresentation></DancesApresentation>
         <DancesComp></DancesComp>
+        <ReligionComp></ReligionComp>
     </div>
 </template>
 
@@ -16,6 +17,7 @@ import CulinaryComp from "@/components/Culture/CulinaryComp.vue";
 import AlimentsCulinary from "@/components/Culture/AlimentsCulinary.vue";
 import DancesApresentation from "@/components/Culture/DancesApresentation.vue";
 import DancesComp from "@/components/Culture/DancesComp.vue";
+import ReligionComp from "@/components/Culture/ReligionComp.vue";
 
 export default {
     components: {
@@ -24,7 +26,8 @@ export default {
         CulinaryComp,
         AlimentsCulinary,
         DancesApresentation,
-        DancesComp
+        DancesComp,
+        ReligionComp
     }
 }
 
