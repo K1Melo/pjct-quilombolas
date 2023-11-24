@@ -2,7 +2,7 @@
     <div class="what-is-artesanato">
         <div class="what-container">
         </div>
-        <div class="what-text">
+        <div class="what-text" data-aos="fade-left" data-aos-duration="1500">
 
             <div class="title-what">
                 <h2>O que é ?</h2>

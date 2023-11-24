@@ -1,6 +1,6 @@
 <template>
     <div class="dances-apresentation">
-        <h2>Danças e Festividades</h2>
+        <h2  data-aos="fade-in" data-aos-duration="1500">Danças e Religião</h2>
     </div>
 </template>
 

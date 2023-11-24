@@ -2,7 +2,7 @@
     <div class="premises">
         <div class="inovation">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000"
-                preserveAspectRatio="xMidYMid meet">
+                preserveAspectRatio="xMidYMid meet" data-aos="fade-in" data-aos-duration="1500">
 
                 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
                     <path d="M2370 5109 c-183 -21 -353 -70 -528 -154 -480 -230 -810 -652 -923
@@ -89,7 +89,8 @@ c99 0 110 9 147 115 18 50 46 118 63 153 16 34 28 71 25 81 -2 10 -27 40 -54
             <h2>Inovação</h2>
         </div>
         <div class="culture">
-            <img src="../../assets/cultura-premises.png" alt="">
+            <img src="../../assets/cultura-premises.png" alt="CPessoas ligadas entre si" data-aos="fade-in"
+                data-aos-duration="1500">
             <h2>Cultura</h2>
         </div>
     </div>

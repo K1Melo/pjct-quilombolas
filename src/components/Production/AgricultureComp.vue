@@ -1,7 +1,7 @@
 <template>
     <div class="agriculture-comp">
-        <h2 class="agricultura">Agricultura</h2>
-        <h2 class="familiar">Familiar</h2>
+        <h2 class="agricultura" data-aos="fade-in" data-aos-duration="1500">Agricultura</h2>
+        <h2 class="familiar" data-aos="fade-in" data-aos-duration="1500">Familiar</h2>
         <div class="armando-img">
             <img src="../../assets/seu-armando.svg" alt="Homem arando terra">
         </div>

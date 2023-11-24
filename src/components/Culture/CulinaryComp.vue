@@ -149,22 +149,22 @@
     }
 
     #cul {
-        font-size: 30px;
+        font-size: calc(26px + 1vw);
     }
 
     .textesculs {
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 
 @media screen and (max-width: 300px) {
 
     #cul {
-        font-size: 25px;
+        font-size: calc(22px + 1vw);
     }
 
     .textesculs {
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 </style>

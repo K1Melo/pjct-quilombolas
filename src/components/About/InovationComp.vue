@@ -1,6 +1,6 @@
 <template>
     <div class="inovation-comp">
-        <div class="txt-inovation">
+        <div class="txt-inovation" data-aos="fade-right" data-aos-duration="1500">
             <h2>Inovação</h2>
             <p>Tomando como referência projetos inovadores e modernos, tivemos como um principal objetivo a criação de
                 mostrar como podemos apresentar uma cultura de maneira diferente a sites que vemos comumente, utilizando

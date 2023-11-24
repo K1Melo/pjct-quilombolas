@@ -1,6 +1,6 @@
 <template>
     <div class="what-is-agriculture">
-        <div class="what-text">
+        <div class="what-text" data-aos="fade-right" data-aos-duration="1500">
 
             <div class="title-what">
                 <h2>O que é ?</h2>

@@ -6,10 +6,10 @@
                 alt="Mulher africana">
         </div>
         <div class="texts2">
-            <div class="titulo2">
+            <div class="titulo2" data-aos="fade-left" data-aos-duration="1500">
                 <h1 id="title2">Movimentos Sociais</h1>
             </div>
-            <p id="text-2">
+            <p id="text-2" data-aos="fade-left" data-aos-duration="1500">
                 Antes de começar a apresentar os patrimônios culturais dos quilombolas, é fundamental
                 destacar a relevância dos movimentos negros. Esses movimentos, que podem ser sucintamente descritos
                 como iniciativas de natureza social voltadas para a transformação da mentalidade da sociedade,
@@ -21,7 +21,7 @@
                 a interligação entre os movimentos negros, a luta por igualdade e a preservação das tradições
                 culturais dessas comunidades.
             </p>
-            <a href="https://www.brasilparalelo.com.br/artigos/black-lives-matter" target="_blank"><button
+            <a href="https://www.brasilparalelo.com.br/artigos/black-lives-matter" target="_blank"  data-aos="fade-left" data-aos-duration="1500"><button
                     class="learn-more">
                     <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>

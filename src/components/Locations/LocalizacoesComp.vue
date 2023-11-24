@@ -21,7 +21,7 @@ import { EffectCards, Pagination } from 'swiper/modules';
         <swiper :effect="'cards'" :pagination="{
             dynamicBullets: true,
         }" :grabCursor="true" :modules="[EffectCards, Pagination]" class="mySwiper" data-aos="fade-left">
-            <swiper-slide id="grotao" class="swiper-slide-active">
+            <swiper-slide id="grotao">
                 <div class="name">
                     <h3 class="state-card">Niterói - RJ</h3>
                     <h3>Quilombo do Grotão</h3>
@@ -100,9 +100,6 @@ export default {
     width: 30%;
 }
 
-.name {
-    display: none;
-}
 
 .swiper-slide {
     display: flex;
@@ -111,13 +108,6 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 1s ease-in-out;
-
-}
-
-.swiper-slide-active {
-    background-color: rgb(152, 150, 150) !important;
-    transition: all 1s ease-in-out;
-    opacity: 1;
 
     .name {
         width: 100%;
@@ -129,12 +119,24 @@ export default {
         border-top-left-radius: 10%;
         border-top-right-radius: 50%;
 
-        padding-left: 5%;
-        background-color: #100404e9;
+        padding-left: 2%;
 
         .state-card {
             color: rgb(179, 179, 179);
         }
+    }
+
+}
+
+.swiper-slide-active {
+    background-color: rgb(152, 150, 150) !important;
+    transition: all 1s ease-in-out;
+    opacity: 1;
+
+    .name {
+        background-color: #100404e9;
+        padding-left: 5%;
+
     }
 }
 

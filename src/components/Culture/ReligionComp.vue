@@ -1,8 +1,8 @@
 <template>
     <div class="religion">
-        <div class="card-religion">
+        <div class="card-religion"  data-aos="fade-up" data-aos-duration="1500">
             <div class="img-religion">
-                <img src="../../assets/background-mizuno.png" alt="">
+                <img src="../../assets/catolicismo.png" alt="">
             </div>
             <div class="name-religion">
                 <h2>Catolicismo</h2>
@@ -11,9 +11,9 @@
                     que praticavam o sincretismo com esse povo.</p>
             </div>
         </div>
-        <div class="card-religion" id="second-card">
+        <div class="card-religion" id="second-card"  data-aos="fade-down" data-aos-duration="1500">
             <div class="img-religion">
-                <img src="../../assets/background-mizuno.png" alt="">
+                <img src="../../assets/umbanda.svg" alt="">
             </div>
             <div class="name-religion">
                 <h2>Umbanda</h2>
@@ -22,9 +22,9 @@
                     de cantigas e poesias melódicas e por fim, orações e queima de ervas especiais.</p>
             </div>
         </div>
-        <div class="card-religion">
+        <div class="card-religion"  data-aos="fade-up" data-aos-duration="1500">
             <div class="img-religion">
-                <img src="../../assets/background-mizuno.png" alt="">
+                <img src="../../assets/candomble.svg" alt="">
             </div>
             <div class="name-religion">
                 <h2>Candomblé</h2>
@@ -70,7 +70,7 @@
     img {
         width: 15vw;
         height: 15vw;
-        border-radius: 50%;
+        //border-radius: 50%;
 
     }
 }
@@ -81,8 +81,8 @@
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     max-height: 20%;
-    padding: 10px 5%;
-    transition: all .3s linear;
+    padding: 5%;
+    transition: all .8s ease-out;
     overflow: hidden;
 
     h2 {
@@ -113,6 +113,18 @@
     }
 }
 
+@media only screen and (max-width: 1324px) {
+    .name-religion {
+        h2 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+}
 @media only screen and (max-width: 1024px) {
     .name-religion {
         h2 {

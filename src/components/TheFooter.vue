@@ -335,6 +335,7 @@ nav {
         margin-bottom: 10px;
         color: #ffffff;
         text-decoration: none;
+        font-size: 14px;
     }
 }
 

@@ -1,6 +1,6 @@
 <template>
     <div class="maps">
-        <div class="map">
+        <div class="map" data-aos="fade-in">
             <svg version="1.1" id="mapa-svg-sotreq" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 816 876"
                 style="enable-background:new 0 0 816 876;" xml:space="preserve">
@@ -212,7 +212,7 @@ s6,5.2,8.3,1C572.1,421.4,565.6,415.2,565.6,415.2z" />
             </svg>
         </div>
 
-        <div class="text-percentage">
+        <div class="text-percentage" data-aos="fade-left" data-aos-duration="1500">
             <div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index"
                 :id="estado.acronym">
                 <div>

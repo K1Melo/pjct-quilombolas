@@ -1,6 +1,6 @@
 <template>
     <div class="artesanato">
-        <h2>Artesanato</h2>
+        <h2 data-aos="fade-in" data-aos-duration="1500">Artesanato</h2>
     </div>
 </template>
 

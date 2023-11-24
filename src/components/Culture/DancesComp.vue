@@ -15,7 +15,7 @@ import "swiper/css/pagination";
             <SwiperSlide class="dance">
                 <div class="img-dance" id="capo">
                 </div>
-                <div class="text-dance">
+                <div class="text-dance"  data-aos="fade-left" data-aos-duration="1500">
                     <div class="title">
                         <h2 class="capoeira">Capoeira</h2>
                     </div>

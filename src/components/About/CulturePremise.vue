@@ -3,7 +3,7 @@
         <div class="culture-map">
             <img src="../../assets/culture-premise-text.png" alt="">
         </div>
-        <div class="culture-txt">
+        <div class="culture-txt"  data-aos="fade-left" data-aos-duration="1500">
             <h2>Cultura</h2>
             <p>Não podemos deixar de citar o mais importante desse projeto, a cultura, o reconhecimento das origens do nosso
                 pais e que muitas vezes são esquecidas e, no nosso caso, os Quilombolas, um povo que ao analisarmos as
@@ -22,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .culture-map {

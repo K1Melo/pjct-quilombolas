@@ -1,11 +1,11 @@
 <template>
     <div class="participants">
         <div class="choose-participant">
-            <div class="participant-img" id="kaua" @click="participantDiv('kaua')"></div>
-            <div class="participant-img" id="lima" @click="participantDiv('lima')"></div>
-            <div class="participant-img" id="mizuno" @click="participantDiv('mizuno')"></div>
-            <div class="participant-img" id="araujo" @click="participantDiv('araujo')"></div>
-            <div class="participant-img" id="udiel" @click="participantDiv('udiel')"></div>
+            <div class="participant-img" id="kaua" @click="participantDiv('kaua')" data-aos="fade-up" data-aos-duration="1500"></div>
+            <div class="participant-img" id="lima" @click="participantDiv('lima')" data-aos="fade-up" data-aos-duration="1500"></div>
+            <div class="participant-img" id="mizuno" @click="participantDiv('mizuno')" data-aos="fade-up" data-aos-duration="1500"></div>
+            <div class="participant-img" id="araujo" @click="participantDiv('araujo')" data-aos="fade-up" data-aos-duration="1500"></div>
+            <div class="participant-img" id="udiel" @click="participantDiv('udiel')" data-aos="fade-up" data-aos-duration="1500"></div>
         </div>
         <div class="participant-description">
             <div class="participant participant-active" id="kaua-description">

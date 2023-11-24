@@ -2,8 +2,8 @@
     <div class="about-comp">
         <div class="title-about">
             <div>
-                <h2>Projeto -</h2>
-                <h2>Quilombolas</h2>
+                <h2  data-aos="fade-in">Projeto -</h2>
+                <h2  data-aos="fade-in" data-aos-duration="3000">Quilombolas</h2>
             </div>
         </div>
         <div class="logo-about">
