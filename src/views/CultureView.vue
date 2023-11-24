@@ -4,6 +4,7 @@
         <SocialMovements></SocialMovements>
         <CulinaryComp></CulinaryComp>
         <AlimentsCulinary></AlimentsCulinary>
+        <DancesApresentation></DancesApresentation>
         <DancesComp></DancesComp>
     </div>
 </template>
@@ -13,6 +14,7 @@ import CultureComp from "../components/Culture/CultureComp.vue"
 import SocialMovements from "@/components/Culture/SocialMovements.vue";
 import CulinaryComp from "@/components/Culture/CulinaryComp.vue";
 import AlimentsCulinary from "@/components/Culture/AlimentsCulinary.vue";
+import DancesApresentation from "@/components/Culture/DancesApresentation.vue";
 import DancesComp from "@/components/Culture/DancesComp.vue";
 
 export default {
@@ -21,6 +23,7 @@ export default {
         SocialMovements,
         CulinaryComp,
         AlimentsCulinary,
+        DancesApresentation,
         DancesComp
     }
 }

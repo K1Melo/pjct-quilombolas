@@ -162,6 +162,12 @@ button:hover .button-text {
     color: #000000;
 }
 
+@media (max-height:600px) {
+    #text-2 {
+        font-size: 16px;
+    }
+}
+
 @media (max-width:1000px) {
     .social-moviments {
         flex-direction: column;

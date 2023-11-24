@@ -26,10 +26,7 @@ import "swiper/css/pagination";
                             que ele surgiu na angola e foi difundido no brasil no quilombo dos palmares, mas isso foi dado
                             como uma prática de risco para os donos das fazendas e acabou sendo considerada uma prática que
                             promovia a desordem, violência e a baderna, assim sendo proibido.
-                            A história da Capoeira Quilombola é uma história de resistência e perseverança. Ela é um
-                            testemunho da força e da resiliência dos escravos negros no Brasil, que lutaram para preservar
-                            sua cultura e identidade em face da opressão e da injustiça. A Capoeira Quilombola é uma parte
-                            importante da história do Brasil e um símbolo da luta pela liberdade e pela igualdade.</p>
+                            A história da Capoeira Quilombola é uma história de resistência e perseverança.</p>
                     </div>
                 </div>
             </SwiperSlide>
@@ -241,10 +238,6 @@ export default {
                 font-size: 24px;
 
             }
-
-            .capoeira {
-                font-size: 22px;
-            }
         }
 
         .text {
@@ -253,26 +246,8 @@ export default {
 
             }
 
-            .capoeira {
-                font-size: 11px;
-            }
         }
     }
 }
 
-@media screen and (max-width: 300px) {
-    .text-dance {
-        .title {
-            .capoeira {
-                font-size: 20px;
-            }
-        }
-
-        .text {
-            .capoeira {
-                font-size: 9px;
-            }
-        }
-    }
-}
 </style>
