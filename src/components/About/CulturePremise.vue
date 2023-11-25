@@ -5,10 +5,10 @@
         </div>
         <div class="culture-txt"  data-aos="fade-left" data-aos-duration="1500">
             <h2>Cultura</h2>
-            <p>Não podemos deixar de citar o mais importante desse projeto, a cultura, o reconhecimento das origens do nosso
-                pais e que muitas vezes são esquecidas e, no nosso caso, os Quilombolas, um povo que ao analisarmos as
+            <p>Não podemos deixar de citar o mais importante desse projeto, a cultura. O reconhecimento das origens do nosso
+                país que muitas vezes são esquecidas. No nosso caso, os Quilombolas, um povo que, ao analisarmos as
                 formas e os meios de
-                vida que os habitantes apresentam percebemos, como as atividades e a cultura que eles apresentam tem
+                vida que os habitantes apresentam, vemos como as atividades e a cultura que eles desenvolvem tem
                 relação com a nossa cultura e práticas como danças, músicas e religiões.
             </p>
         </div>

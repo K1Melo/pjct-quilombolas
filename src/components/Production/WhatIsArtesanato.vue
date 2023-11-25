@@ -8,8 +8,8 @@
                 <h2>O que é ?</h2>
             </div>
             <div class="p-what">
-                <p>A arte de criar objetos, artesanato é a transformação da matéria-prima usando como instrumento principal
-                    suas mãos, a produção artesanal quilombola tem como principal objetivo a geração de fonte de renda, como
+                <p>A arte de criar objetos, o artesanato, é a transformação da matéria-prima usando como instrumento principal
+                    suas mãos. A produção artesanal quilombola tem como principal objetivo a geração de fonte de renda, como
                     propósitos ritualísticos, para usos e utensílios domésticos.</p>
             </div>
         </div>
@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .what-container {

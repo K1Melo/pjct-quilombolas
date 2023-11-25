@@ -20,7 +20,8 @@
                 </div>
                 <div class="back">
                     <p>A tradição do artesanato com o capim dourado, o “ouro do cerrado”, foi passada pelos índios da etnia
-                        Xerente que no começo do século XX saíram caminhando pelo lado do Rio Araguaia e passaram pelo
+                        Xerente que no começo do século XX saíram caminhando pelo lado do Rio Araguaia, no qual passaram
+                        pelo
                         povoado quilombola Mumbuca e ensinaram alguns moradores a “costurar capim” com a seda de buriti.
                     </p>
                 </div>
@@ -33,8 +34,8 @@
                     <div class="space"></div>
                 </div>
                 <div class="back">
-                    <p>Uma herança afro-indígena dos territórios quilombolas, o manejo extrativista da piaçava na região é
-                        uma herança ancestral dos povos originários que habitavam esse território quando da chegada dos
+                    <p>O manejo extrativista da piaçava na região é uma herança ancestral dos
+                        povos originários que habitavam esse território antes chegada dos
                         colonizadores.</p>
                 </div>
             </div>
@@ -146,4 +147,5 @@ export default {
         bottom: 3%;
         font-size: 15px;
     }
-}</style>
+}
+</style>

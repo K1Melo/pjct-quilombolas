@@ -5,7 +5,7 @@
             <p id="text-1">
                 Apesar de muitas vezes ser confundido apenas com a ideia de monumentos e com
                 conceitos de patrimônio material, o patrimônio cultural é mais que isso, ele está ligado
-                à produção da identidade e da territorialidade, o patrimônio cultural está fundamentado
+                à produção da identidade e da territorialidade, ele está fundamentado
                 na referência de processos culturais.
             </p>
         </div>

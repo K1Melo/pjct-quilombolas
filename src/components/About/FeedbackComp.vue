@@ -60,6 +60,7 @@ export default {
             fetch('https://quilombolas-backend.onrender.com/', options)
             alert("Obrigado pelo comentario " + this.posts.name)
             document.getElementById("postMsg").reset();
+            window.location.reload();
         },
     },
     mounted() {

@@ -1,35 +1,36 @@
 <template>
     <div class="religion">
-        <div class="card-religion"  data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-religion" data-aos="fade-up" data-aos-duration="1500">
             <div class="img-religion">
                 <img src="../../assets/catolicismo.png" alt="">
             </div>
             <div class="name-religion">
                 <h2>Catolicismo</h2>
-                <p>Vertente do Cristianismo, no qual acredita que Jesus é o Salvador do mundo e pregam a salvação dos
-                    pecados a partir da crença em Jesus, eles tiveram acesso a essa religião por meio de seus proprieátios,
+                <p>Vertente do Cristianismo, no qual acreditam que Jesus é o Salvador do mundo e pregam a salvação dos
+                    pecados a partir da crença em Jesus. Eles tiveram acesso a essa religião por meio de seus proprieátios,
                     que praticavam o sincretismo com esse povo.</p>
             </div>
         </div>
-        <div class="card-religion" id="second-card"  data-aos="fade-down" data-aos-duration="1500">
+        <div class="card-religion" id="second-card" data-aos="fade-down" data-aos-duration="1500">
             <div class="img-religion">
                 <img src="../../assets/umbanda.svg" alt="">
             </div>
             <div class="name-religion">
                 <h2>Umbanda</h2>
-                <p>Os rituais umbandistas seguem uma linha que mostra a grande mistura de religiões que compõem esta, o
-                    início da gira umbandista é feito por meiode danças para os orixás, depois vem pontos cantados por meio
-                    de cantigas e poesias melódicas e por fim, orações e queima de ervas especiais.</p>
+                <p>Os rituais umbandistas seguem uma linha que mostra a grande mistura das religiões que a compõem. O
+                    início da gira umbandista é feito por meio de danças para os orixás, após isso, temos partes cantadas
+                    onde são utilizadas
+                    cantigas e poesias melódicas. Por fim, orações e queima de ervas especiais.</p>
             </div>
         </div>
-        <div class="card-religion"  data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-religion" data-aos="fade-up" data-aos-duration="1500">
             <div class="img-religion">
-                <img src="../../assets/candomble.svg" alt="">
+                <img src="../../assets/candomble.svg" alt="Orixá candomble">
             </div>
             <div class="name-religion">
                 <h2>Candomblé</h2>
-                <p>Religião Africana trazida para o Brasil na época da escravidão, com diversas celebrações ritualísticas
-                    feitas pela mãe e pai de santo, a maioria dos rituais seguem ritmos e danças com o som de tambor, onde
+                <p>Religião Africana trazida para o Brasil na época da escravidão, apresentando diversas celebrações ritualísticas
+                    feitas pela mãe e pai de santo. A maioria dos rituais seguem ritmos e danças com o som de tambor, onde
                     os filhos de santo ou participantes começam as invocações de seus orixás.</p>
             </div>
         </div>
@@ -125,6 +126,7 @@
     }
 
 }
+
 @media only screen and (max-width: 1024px) {
     .name-religion {
         h2 {

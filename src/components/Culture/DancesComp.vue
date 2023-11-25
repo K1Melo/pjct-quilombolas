@@ -15,7 +15,7 @@ import "swiper/css/pagination";
             <SwiperSlide class="dance">
                 <div class="img-dance" id="capo">
                 </div>
-                <div class="text-dance"  data-aos="fade-left" data-aos-duration="1500">
+                <div class="text-dance" data-aos="fade-left" data-aos-duration="1500">
                     <div class="title">
                         <h2 class="capoeira">Capoeira</h2>
                     </div>
@@ -23,9 +23,9 @@ import "swiper/css/pagination";
                         <p class="capoeira">Assim como foi dito antes sobre movimentos negros, uma arte marcial muito
                             importante para
                             diversos movimentos foi a capoeira, apesar de não se ter muita certeza de sua origem acreditasse
-                            que ele surgiu na angola e foi difundido no brasil no quilombo dos palmares, mas isso foi dado
-                            como uma prática de risco para os donos das fazendas e acabou sendo considerada uma prática que
-                            promovia a desordem, violência e a baderna, assim sendo proibido.
+                            que ela surgiu na Angola e foi difundida no Brasil no Quilombo dos Palmares, mas isso foi dado
+                            como uma prática de risco para os donos das fazendas e acabou sendo considerado promoção da
+                            desordem, violência e da baderna, assim sendo proibido. <br>
                             A história da Capoeira Quilombola é uma história de resistência e perseverança.</p>
                     </div>
                 </div>
@@ -55,9 +55,9 @@ import "swiper/css/pagination";
                     </div>
                     <div class="text">
                         <p>O samba de roda nasceu na Bahia no início do século XVII, e acabou tendo mais destaque nas
-                            vertentes cariocas, foi formado pelas referencias dos ritmos tribais africanos que era muito
-                            diversificado pois na escravidão os
-                            senhores dos escravos acabavam misturando povos africanos de diferentes tribos o que deu origem
+                            vertentes cariocas, foi formado pelas referências dos ritmos tribais africanos que era muito
+                            diversificada, pois na escravidão os
+                            senhores escravocratas acabavam misturando povos africanos de diferentes tribos, o que deu origem
                             a uma forma de expressão muito rica em contexto social.</p>
                     </div>
                 </div>
@@ -71,10 +71,10 @@ import "swiper/css/pagination";
                     </div>
                     <div class="text">
                         <p>Uma dança popular entre as comunidades quilombolas do Maranhão que mistura elementos africanos e
-                            indígenas em sua coreografia, a dança do tambor crioula. <br> É uma forma de expressão que
+                            indígenas em suas coreografias, a dança do tambor crioula. <br> É uma forma de expressão que
                             envolve
                             dança circular, canto e percussão de tambores, além de ser uma forte referência na resistência
-                            cultural africana, podemos associá-la a práticas lúdico-religiosa, a dança era praticada como
+                            cultural africana. Podendo ser associáda a práticas lúdico-religiosas, a dança era praticada como
                             divertimento ou devoção a São Benedito.</p>
                     </div>
                 </div>
@@ -249,5 +249,4 @@ export default {
         }
     }
 }
-
 </style>

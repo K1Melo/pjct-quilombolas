@@ -20,7 +20,7 @@
                     <div class="space"></div>
                 </div>
                 <div class="back">
-                    <p>Esse tubérculo chegou ao Brasil por meio dos navios portugueses que traziam pessoas escravizadas, e
+                    <p>Esse tubérculo chegou ao Brasil por meio dos navios portugueses que traziam escravizados, e
                         por fazer parte da culinária africana chegou ao Brasil e que por consequência se disseminou pelos
                         quilombos.</p>
                 </div>
@@ -33,7 +33,7 @@
                     <div class="space"></div>
                 </div>
                 <div class="back">
-                    <p>O cultivo do milho vem desde antes da chegada dos europeus, os indígenas tinham o cereal como
+                    <p>O cultivo do milho vem desde antes da chegada dos europeus. Os indígenas tinham o cereal como
                         principal ingrediente de sua dieta, mas com a chegada dos portugueses, o consumo aumentou e produtos
                         a base de milho foram incorporados aos hábitos alimentares dos brasileiros.</p>
                 </div>

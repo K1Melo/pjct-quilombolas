@@ -32,7 +32,7 @@ import { EffectCards, Pagination } from 'swiper/modules';
             </swiper-slide>
             <swiper-slide>
                 <div class="text-tool">
-                    <p>Utilizamos as linguagens de marcação html e css para criação e estilização do website.</p>
+                    <p>Utilizamos a linguagem de marcação html e a linguagem de estilização css para criação e estilização do website.</p>
                 </div>
                 <div class="name">
                     <h3>HTML e CSS</h3>
@@ -51,8 +51,8 @@ import { EffectCards, Pagination } from 'swiper/modules';
             </swiper-slide>
             <swiper-slide>
                 <div class="text-tool">
-                    <p>Utilizamos o interpretador nodejs para o backend da aplicação, com a biblioteca express e mongose
-                        para a criação da API rest .</p>
+                    <p>Utilizamos o interpretador nodejs para o backend da aplicação, com a biblioteca express e mongoose
+                        para a criação da API REST.</p>
                 </div>
                 <div class="name">
                     <h3>Node.js</h3>
@@ -80,8 +80,8 @@ import { EffectCards, Pagination } from 'swiper/modules';
             </swiper-slide>
             <swiper-slide>
                 <div class="text-tool">
-                    <p>Agora o back-end do projeto foi hospedado na plataforma Render, pela sua maior velocidade e para
-                        alocação da API node na nuvem de forma gratuita.</p>
+                    <p>O back-end do projeto foi hospedado na plataforma Render, pela sua maior velocidade e para
+                        alocação da API Node na nuvem de forma gratuita.</p>
                 </div>
                 <div class="name">
                     <h3>Render</h3>
@@ -198,6 +198,15 @@ export default {
             width: 50px;
         }
     }
+}
+
+.dark {
+    
+.swiper-slide {
+    .name {
+        background-color: #4c2626d7;
+    }
+}
 }
 
 .swiper-slide-active {

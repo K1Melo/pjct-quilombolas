@@ -3,11 +3,6 @@
         <div class="text3">
             <h1 id="cul" data-aos="fade-right">Culinária</h1>
             <div class="textesculs" data-aos="fade-right">
-                <p class="textcul">
-                    Muito mais que uma mera expressão gastronômica, um portal para a herança cultural, uma fusão de
-                    influências africanas, indígenas e europeias que nos levam a uma viagem através do tempo e das
-                    experiências das comunidades quilombolas.
-                </p>
                 <p id="donts">Os quilombolas costumam usar ingredientes locais e sazonais em suas preferências. Raízes
                     como a mandioca, inhame e batata-doce, bem como feijão, milho, frutas, peixes, aves e carnes de caça
                     são componentes fundamentais de suas receitas.<br>

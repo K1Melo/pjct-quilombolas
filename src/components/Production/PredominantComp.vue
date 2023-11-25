@@ -8,7 +8,7 @@
             </div>
             <div class="p-predominant">
                 <p>A arte de criar objetos por meio da transformação da matéria-prima e um sistema que permite não apenas
-                    uma alimentação balanceada e sustentável, como também o sustento dos habitantes, os principais meios de
+                    uma alimentação balanceada e sustentável, como também o sustento dos habitantes. Os principais meios de
                     produção de renda quilombola são agricultura e o artesanato.</p>
             </div>
         </div>
