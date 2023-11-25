@@ -1,4 +1,6 @@
 <template>
+    <div class="participants-comp">
+    </div>
     <div class="participants">
         <div class="choose-participant">
             <div class="participant-img" id="kaua" @click="participantDiv('kaua')" data-aos="fade-up" data-aos-duration="1500"></div>
@@ -102,6 +104,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
+.participants-comp {
+    width: 100%;
+}
 .participants {
     width: 100%;
     height: 100vh;
@@ -129,7 +135,7 @@ export default {
     height: calc(80px + 1vw);
     border-radius: 50%;
     cursor: pointer;
-    transition: all .2s linear;
+    transition: all .8s linear;
 
     background-size: cover;
     background-position: center;
