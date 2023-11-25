@@ -181,6 +181,10 @@ h2 {
         height: 60%;
         border-top-right-radius: 20%;
         background-color: #2E0F0F;
+
+        h2 {
+            color: #ffffff;
+        }
     }
 }
 
