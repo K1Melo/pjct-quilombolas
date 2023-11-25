@@ -9,7 +9,7 @@
               <h3>do <span class="brasil">Brasil</span></h3>
           </div>
           <div class="text">
-              <p>Entre na jornada onde adentramos nas suas origens, localizações principais, suas produções, e mais importante, sua cultura....</p>
+              <p>Entre na jornada onde adentramos suas origens, localizações principais, produções, e mais importante, sua cultura....</p>
           </div>
           <button class="down-button btn" @click="scrollBehavior">
             <p class="m-0">Saiba Mais</p>

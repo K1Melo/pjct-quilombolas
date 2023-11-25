@@ -35,9 +35,9 @@ import "./Swiper.css";
                         <h2>Quem são eles</h2>
                     </div>
                     <div class="text">
-                        <p>Quilombolas, são pessoas autodeclaradas e que têm identificação com a cultura e tradições com as
-                            comunidades de quilombos, além de relação territorial com as comunidades de quilombos,
-                            descendentes e remanescentes de escravizados fugitivos que formaram essas comunidades.</p>
+                        <p>Quilombolas, são pessoas autodeclaradas e que têm identificação com a cultura e tradições dessa
+                            comunidade, além da relação territorial com os quilombos,
+                            descendentes e remanescentes de escravizados que fizeram parte da formação dessas comunidades.</p>
                     </div>
                 </div>
             </SwiperSlide>

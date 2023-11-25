@@ -8,8 +8,8 @@
                 <input type="radio" name="accordion" id="first">
                 <label for="first">Infraestrutura</label>
                 <div class="content">
-                    <p>Como base para todos outros problemas,
-                        a insfraestrutura se entende como
+                    <p>Como base para todos os outros problemas,
+                        a insfraestrutura se entende como os
                         servios fundamentais para o desenvolvimento do povo
                         em questões fisicas de acessibilidade.</p>
                 </div>
@@ -18,7 +18,7 @@
                 <input type="radio" name="accordion" id="second">
                 <label for="second">Educação</label>
                 <div class="content">
-                    <p>Um dos principais desafios sociais enfrentados pelos
+                    <p>Um dos principais desafios sociais enfrentado pelos
                         quilombolas, já que a maioria das estruturas educacionais
                         apresenta falta de docentes qualificados para a formação
                         de uma boa grade curricular.</p>
@@ -28,9 +28,9 @@
                 <input type="radio" name="accordion" id="third">
                 <label for="third">Saúde</label>
                 <div class="content">
-                    <p>Assim como na educação, no contexto dos quilombolas é muito
+                    <p>Assim como na educação, quando falamos dos quilombolas é muito
                         importante falar da saúde, por vários fatores, tanto a sua localidade
-                        desprivilegiada, seus fatores raciais e aceso as estruturas que deviam
+                        desprivilegiada, quanto fatores raciais e aceso a estruturas que deviam
                         ter por direito.</p>
                 </div>
             </li>
@@ -38,11 +38,10 @@
                 <input type="radio" name="accordion" id="fourth">
                 <label for="fourth">Terras</label>
                 <div class="content">
-                    <p>Juntamente com os projetos governamentais, a pavimentação se torna
-                        um grande prejuiso para os quilombolas, já que ela muitas vezes força a
-                        saida dos moradores desses povos do seu lugar de origem, parecido com isso
-                        temos a demarcação de terras, que da mesma forma, tira moradores de suas terras
-                        de origem.</p>
+                    <p>Juntamente com os projetos governamentais, a pavimentação se torna um grande prejuízo para os
+                        quilombolas, já que ela muitas vezes força a saída dos moradores do seu lugar de origem. Relacionado
+                        a isso nós temos a demarcação de terras, que, da mesma forma, tira moradores de suas terras de
+                        origem.</p>
                 </div>
             </li>
         </ul>
@@ -429,5 +428,4 @@ export default {
         }
 
     }
-}
-</style>
+}</style>
