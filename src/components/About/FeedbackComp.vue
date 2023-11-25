@@ -49,18 +49,31 @@ export default {
     },
     methods: {
         postMessage() {
-            const options = {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(this.posts)
+            const submitPost = async () => {
+                const options = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(this.posts),
+                };
+
+                try {
+                    const response = await fetch('https://quilombolas-backend.onrender.com/', options);
+
+                    if (response.ok) {
+                        alert('Obrigado pelo comentário ' + this.posts.name);
+                        document.getElementById('postMsg').reset();
+                        window.location.reload();
+                    } else {
+                        console.error('Erro ao enviar o post:', response.statusText);
+                    }
+                } catch (error) {
+                    console.error('Erro durante a requisição:', error);
+                }
             };
 
-            fetch('https://quilombolas-backend.onrender.com/', options)
-            alert("Obrigado pelo comentario " + this.posts.name)
-            document.getElementById("postMsg").reset();
-            window.location.reload();
+            submitPost();
         },
     },
     mounted() {
@@ -254,6 +267,7 @@ button:active .svg-wrapper {
         transform: translateY(-0.2em);
     }
 }
+
 @keyframes fly-2 {
     100% {
         transform: translateX(1em);
