@@ -82,7 +82,7 @@ export default {
             .then((res) => res.json())
             .then((data) => {
                 data.reverse().forEach((element, index) => {
-                    if (index < 4) {
+                    if (index < 3) {
                         var div = getClass.appendChild(document.createElement('div'));
                         var htres = div.appendChild(document.createElement('h3'));
                         var p = div.appendChild(document.createElement('p'));
