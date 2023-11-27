@@ -4,16 +4,16 @@
             <h1 class="title_3">Dificuldades - Gerais</h1>
         </div>
         <div class="dificuldades">
-            <div class="one ball" @click="toFirst">
+            <div class="one ball" @click="toDifficultie('infrestrutura')">
                 <h2 class="dif_1 unselectable">Infra<br>estru<br>tura</h2>
             </div>
-            <div class="two ball" @click="toSecond">
+            <div class="two ball" @click="toDifficultie('educacao')">
                 <h2 class="dif_2 unselectable">Educa<br>ção</h2>
             </div>
-            <div class="three ball" @click="toThird">
+            <div class="three ball" @click="toDifficultie('saude')">
                 <h2 class="dif_1 unselectable">Saúde</h2>
             </div>
-            <div class="four ball" @click="toFourth">
+            <div class="four ball" @click="toDifficultie('terra')">
                 <h2 class="dif_2 unselectable">Terras</h2>
             </div>
         </div>
@@ -25,60 +25,16 @@
 export default {
     name: 'SlideItemThree',
     methods: {
-        toFirst() {
-            const firstAcord = document.getElementById("first");
-            const secondAcord = document.getElementById("second");
-            const thirdAcord = document.getElementById("third");
-            const fourthAcord = document.getElementById("fourth");
-            firstAcord.removeAttribute('checked');
-            secondAcord.removeAttribute('checked');
-            thirdAcord.removeAttribute('checked');
-            fourthAcord.removeAttribute('checked');
-            
+        toDifficultie(id) {
+            window.scroll({ top: window.innerHeight * 2, behavior: "smooth" });
 
-
-            firstAcord.setAttribute('checked', 'checked');
-            window.scroll({top: window.innerHeight*2, behavior: "smooth"});
-        },
-        toSecond() {
-            const firstAcord = document.getElementById("first");
-            const secondAcord = document.getElementById("second");
-            const thirdAcord = document.getElementById("third");
-            const fourthAcord = document.getElementById("fourth");
-            firstAcord.removeAttribute('checked');
-            secondAcord.removeAttribute('checked');
-            thirdAcord.removeAttribute('checked');
-            fourthAcord.removeAttribute('checked');
-            
-            secondAcord.setAttribute('checked', 'checked');
-            window.scroll({top: window.innerHeight*2, behavior: "smooth"});
-        },
-        toThird() {
-            const firstAcord = document.getElementById("first");
-            const secondAcord = document.getElementById("second");
-            const thirdAcord = document.getElementById("third");
-            const fourthAcord = document.getElementById("fourth");
-            firstAcord.removeAttribute('checked');
-            secondAcord.removeAttribute('checked');
-            thirdAcord.removeAttribute('checked');
-            fourthAcord.removeAttribute('checked');
-            
-            thirdAcord.setAttribute('checked', 'checked');
-            window.scroll({top: window.innerHeight*2, behavior: "smooth"});
-        },
-        toFourth() {
-            
-            const firstAcord = document.getElementById("first");
-            const secondAcord = document.getElementById("second");
-            const thirdAcord = document.getElementById("third");
-            const fourthAcord = document.getElementById("fourth");
-            firstAcord.removeAttribute('checked');
-            secondAcord.removeAttribute('checked');
-            thirdAcord.removeAttribute('checked');
-            fourthAcord.removeAttribute('checked');
-
-            fourthAcord.setAttribute('checked', 'checked');
-            window.scroll({top: window.innerHeight*2, behavior: "smooth"});
+            const faqs = document.querySelectorAll(".faq");
+            faqs.forEach(item => {
+                item.classList.remove("active")
+                if (item.id == id) {
+                    item.classList.add("active")
+                }
+            })
         }
     }
 }
@@ -324,5 +280,4 @@ export default {
         letter-spacing: 4px;
     }
 }
-
 </style>
