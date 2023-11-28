@@ -125,6 +125,70 @@ export default {
 # Map Componente
 
 ```
+<template>
+  <div class="map-comp">
+    <div class="map">
+      <!-- SVG do mapa -->
+      <svg version="1.1" id="mapa-svg-sotreq" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 816 876"
+        style="enable-background:new 0 0 816 876;" xml:space="preserve">
+        <!-- ... (conteúdo do SVG) ... -->
+      </svg>
+    </div>
+
+    <!-- Slider para exibir informações sobre estados -->
+    <div class="slider-map">
+      <div class="container-box">
+        <!-- Loop pelos estados -->
+        <div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index"
+          :id="estado.acronym">
+          <div class="title-map">
+            <h2>{{ index + 1 }}° {{ estado.name }}</h2>
+          </div>
+          <p>População: {{ estado.population }}</p>
+          <p>Porcentagem de quilombolas: </p>
+        </div>
+
+        <!-- Caixa para exibir a porcentagem em um círculo -->
+        <div class="box">
+          <div class="box-circle">
+            <svg>
+              <circle cx="70" cy="70"></circle>
+              <circle cx="70" cy="70" id="porcentageCircle"></circle>
+            </svg>
+            <div class="number">
+              <h2>{{ actualPorcentage }}%</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      actualPorcentage: 0,
+    };
+  },
+  methods: {
+    mostrarStado(id) {
+      // Método para exibir informações do estado selecionado
+    },
+  },
+  mounted() {
+    // Lógica executada quando o componente é montado
+  },
+};
+</script>
+
+<style lang="less" scoped>
+/* Estilos CSS usando Less para o componente Vue */
+
+/* ... (estilos específicos) ... */
+</style>
 
 ```
 
