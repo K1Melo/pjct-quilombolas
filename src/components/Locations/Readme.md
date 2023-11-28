@@ -778,6 +778,130 @@ circle {
 # Palmares Componente
 
 ```
+<!-- Componente para o Mapa Geográfico -->
+<template>
+  <div class="maps">
+    <!-- Elemento para renderizar o mapa SVG -->
+    <div class="map" data-aos="fade-in">
+      <svg version="1.1" id="mapa-svg-sotreq" xmlns="http://www.w3.org/2000/svg" ...>
+        <!-- Conteúdo do SVG -->
+      </svg>
+    </div>
+
+    <!-- Elemento para exibir informações sobre os estados -->
+    <div class="text-percentage" data-aos="fade-left" data-aos-duration="1500">
+      <!-- Loop pelos estados -->
+      <div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index" :id="estado.acronym">
+        <div>
+          <!-- Informações sobre o estado -->
+          <div class="title-map">
+            <h2>{{ index + 1 }}° {{ estado.name }}</h2>
+          </div>
+          <p>População: {{ estado.population }}</p>
+          <p id="percentage">Porcentagem de quilombolas: </p>
+        </div>
+      </div>
+
+      <!-- Caixa com o gráfico de porcentagem -->
+      <div class="box">
+        <div class="box-circle">
+          <svg>
+            <circle cx="70" cy="70"></circle>
+            <circle cx="70" cy="70" id="porcentageCircle"></circle>
+          </svg>
+          <div class="number">
+            <h2>{{ actualPorcentage }}%</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+// Lógica do componente para o Mapa Geográfico
+<script>
+export default {
+  data() {
+    return {
+      actualPorcentage: 0
+    }
+  },
+  methods: {
+    mostrarStado(id) {
+      // Lógica para exibir informações do estado selecionado
+    }
+  },
+  mounted() {
+    // Lógica para inicializar o componente quando montado
+  }
+}
+</script>
+/* Estilos para o Mapa Geográfico */
+<style lang="less" scoped>
+.maps {
+  /* Estilos para o container principal */
+}
+
+.map {
+  /* Estilos para a área do mapa SVG */
+}
+
+.text-percentage {
+  /* Estilos para a área de texto e porcentagem */
+}
+
+/* Outros estilos conforme necessário */
+</style>
+
+<!-- Componente para Palmares -->
+<template>
+  <div class="palmares">
+    <!-- Elemento para renderizar a imagem de Palmares usando SVG -->
+    <div class="zumbi" data-aos="fade-in" data-aos-duration="1500">
+      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 683.000000 1024.000000" ...>
+        <!-- Conteúdo do SVG -->
+      </svg>
+    </div>
+
+    <!-- Elemento para exibir informações sobre Palmares -->
+    <div class="text-zumbi" data-aos="fade-left" data-aos-duration="3000">
+      <div class="title-palmares">
+        <h2>Palmares</h2>
+      </div>
+      <div class="palmares-description">
+        <p>Descrição sobre Palmares...</p>
+      </div>
+    </div>
+
+    <!-- Elementos para os círculos animados -->
+    <div class="circulos">
+      <div class="circulo1"></div>
+      <div class="circulo3"></div>
+    </div>
+  </div>
+</template>
+
+/* Estilos para Palmares */
+<style lang="less" scoped>
+.palmares {
+  /* Estilos para o container principal de Palmares */
+}
+
+.zumbi {
+  /* Estilos para a área da imagem de Palmares */
+}
+
+.text-zumbi {
+  /* Estilos para a área de texto de Palmares */
+}
+
+.circulos {
+  /* Estilos para a área dos círculos animados */
+}
+
+/* Outros estilos conforme necessário */
+</style>
+
 
 ```
 
