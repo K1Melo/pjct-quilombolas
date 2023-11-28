@@ -34,10 +34,10 @@
                     <h3>Saúde</h3>
                 </div>
                 <div class="answer">
-                    <p>Um dos principais desafios sociais enfrentado pelos
-                        quilombolas, já que a maioria das estruturas educacionais
-                        apresenta falta de docentes qualificados para a formação
-                        de uma boa grade curricular.</p>
+                    <p>Assim como na educação, quando falamos dos quilombolas é muito
+                        importante falar da saúde, por vários fatores, tanto a sua localidade
+                        desprivilegiada, quanto fatores raciais e aceso a estruturas que deviam
+                        ter por direito.</p>
                 </div>
             </div>
 
