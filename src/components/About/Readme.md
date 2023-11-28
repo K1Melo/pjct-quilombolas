@@ -1,7 +1,135 @@
 # About Page
 
-## Escreva Aqui Lima
+## Creation Comp
+```
+<template>
+    <div class="creation">
+        <!-- Parte da imagem à esquerda -->
+        <div class="programming-img">
+            <img src="../../assets/programer.svg" alt="">
+        </div>
+        
+        <!-- Parte do texto à direita -->
+        <div class="programming-txt" data-aos="fade-left" data-aos-duration="1500">
+            <p>
+                <!-- Conteúdo do parágrafo -->
+                A iniciativa do Projeto Quilombolas surgiu na Etec de Carapicuíba pelo curso de Desenvolvimento de Sistemas,
+                onde o principal objetivo era dar a visibilidade dos povos originários do Brasil, os quais muitas vezes não
+                são lembrados na atualidade. <br>
+                Vimos nesse projeto a oportunidade de apresentar a cultura brasileira para jovens de maneira mais moderna, para isso
+                seguimos duas principais premissas:
+            </p>
+        </div>
+    </div>
+</template>
 
+<script>
+// Script do componente Vue.js
+export default {
+    // Nenhum dado ou método específico está sendo definido neste exemplo
+}
+</script>
+
+<style lang="less" scoped>
+/* Estilos do componente Vue.js */
+
+/* Estilos da seção 'creation' */
+.creation {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Estilos da parte da imagem à esquerda */
+.programming-img {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Estilos da imagem */
+    img {
+        width: 80%;
+    }
+}
+
+/* Estilos da parte do texto à direita */
+.programming-txt {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Estilos do parágrafo dentro do texto */
+    p {
+        font-size: 20px;
+        width: 80%;
+    }
+}
+
+/* Estilos para o modo escuro */
+.dark {
+    .programming-txt {
+        p {
+            color: #fff;
+        }
+    }
+}
+
+/* Estilos responsivos para larguras de tela específicas */
+@media only screen and (max-width: 912px) {
+    .creation {
+        flex-direction: column;
+    }
+
+    .programming-img {
+        height: 50%;
+        width: 100%;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    .programming-txt {
+        height: 50%;
+        width: 100%;
+        padding-top: 10%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        p {
+            width: 85%;
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 612px) {
+    .programming-txt {
+        p {
+            width: 85%;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .programming-txt {
+        p {
+            width: 90%;
+            font-size: 14px;
+        }
+    }
+}
+</style>
+```
 # Feedback Docs
 
 # Front 
