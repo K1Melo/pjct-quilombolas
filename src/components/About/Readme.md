@@ -1,5 +1,175 @@
 # About Page
 
+## Culture Premise
+```
+<template>
+    <!-- Componente principal -->
+    <div class="culture-premise">
+        <!-- Seção do mapa cultural -->
+        <div class="culture-map">
+            <!-- Imagem do mapa cultural -->
+            <img src="../../assets/culture-premise-text.png" alt="">
+        </div>
+        
+        <!-- Seção de texto cultural -->
+        <div class="culture-txt" data-aos="fade-left" data-aos-duration="1500">
+            <!-- Título -->
+            <h2>Cultura</h2>
+            <!-- Parágrafo explicativo sobre a cultura -->
+            <p>
+                <!-- Conteúdo do parágrafo -->
+                Não podemos deixar de citar o mais importante desse projeto, a cultura. O reconhecimento das origens do nosso
+                país que muitas vezes são esquecidas. No nosso caso, os Quilombolas, um povo que, ao analisarmos as
+                formas e os meios de
+                vida que os habitantes apresentam, vemos como as atividades e a cultura que eles desenvolvem tem
+                relação com a nossa cultura e práticas como danças, músicas e religiões.
+            </p>
+        </div>
+    </div>
+</template>
+
+<style lang="less" scoped>
+/* Estilos do componente Vue.js */
+
+/* Estilos da seção principal 'culture-premise' */
+.culture-premise {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Estilos da seção do mapa cultural 'culture-map' */
+.culture-map {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Estilos da imagem dentro da seção 'culture-map' */
+    img {
+        width: 50%;
+    }
+}
+
+/* Estilos da seção de texto cultural 'culture-txt' */
+.culture-txt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    /* Estilos para os elementos 'h2' e 'p' dentro da seção 'culture-txt' */
+    h2, p {
+        color: #000;
+        width: 80%;
+    }
+
+    /* Estilos específicos para o título 'h2' */
+    h2 {
+        font-size: 50px;
+    }
+
+    /* Estilos específicos para o parágrafo 'p' */
+    p {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para o modo escuro */
+.dark {
+    .culture-txt {
+        /* Estilos para o texto dentro da seção 'culture-txt' no modo escuro */
+        h2 {
+            color: #ffffffde;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+}
+
+/* Estilos responsivos para larguras de tela específicas */
+@media only screen and (max-width: 1000px) {
+    .culture-txt {
+        /* Ajuste de tamanho de fonte para telas menores */
+        h2 {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .culture-premise {
+        /* Reorganização da disposição dos elementos para telas menores */
+        flex-direction: column-reverse;
+        height: 80vh;
+    }
+
+    .culture-map {
+        /* Ajuste de altura e largura para telas menores */
+        height: 50%;
+        width: 100%;
+    }
+
+    .culture-txt {
+        /* Ajuste de altura e largura para telas menores */
+        height: 50%;
+        width: 95%;
+
+        /* Ajuste de largura para elementos 'h2' e 'p' dentro da seção 'culture-txt' */
+        h2, p {
+            width: 100%;
+        }
+
+        /* Ajuste de tamanho de fonte para telas menores */
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .culture-txt {
+        /* Ajuste de tamanho de fonte adicional para telas ainda menores */
+        h2 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .culture-txt {
+        /* Ajuste de tamanho de fonte adicional para telas ainda menores */
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
+</style>
+
+```
 ## About Comp
 ```
 <template>
