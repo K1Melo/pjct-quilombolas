@@ -530,7 +530,7 @@ circle:nth-child(2) {
     }
 
     svg {
-        width: 50vh;
+        width: 45vh;
     }
 
     // Text
@@ -595,6 +595,34 @@ circle:nth-child(2) {
     .number {
         h2 {
             font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .swiper-slide {
+        .title-map {
+            h2 {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+
+        #percentage {
+            margin-bottom: 10px;
+        }
+    }
+
+    
+    #RN,
+    #RS,
+    #MS {
+        h2 {
+            font-size: 25px;
         }
     }
 }
