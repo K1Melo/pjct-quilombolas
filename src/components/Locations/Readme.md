@@ -402,6 +402,173 @@ export default {
 # Maps Componente
 
 ```
+<template>
+    <div class="maps">
+        <!-- Mapa SVG -->
+        <div class="map" data-aos="fade-in">
+            <svg version="1.1" id="mapa-svg-sotreq" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 816 876"
+                style="enable-background:new 0 0 816 876;" xml:space="preserve">
+            </svg>
+        </div>
+
+        <!-- Texto e porcentagem -->
+        <div class="text-percentage" data-aos="fade-left" data-aos-duration="1500">
+            <!-- Loop pelos estados -->
+            <div v-for="(estado, index) in $store.state.estados" class="swiper-slide" :key="estado.index"
+                :id="estado.acronym">
+                <div>
+                    <div class="title-map">
+                        <h2>{{ index + 1 }}° {{ estado.name }}</h2>
+                    </div>
+                    <p>População: {{ estado.population }}</p>
+                    <p id="percentage">Porcentagem de quilombolas: </p>
+                </div>
+            </div>
+
+            <!-- Caixa para exibir a porcentagem em um círculo -->
+            <div class="box">
+                <div class="box-circle">
+                    <svg>
+                        <circle cx="70" cy="70"></circle>
+                        <circle cx="70" cy="70" id="porcentageCircle"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>{{ actualPorcentage }}%</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            actualPorcentage: 0
+        };
+    },
+    methods: {
+        mostrarStado(id) {
+            // Método para exibir informações do estado selecionado
+        }
+    },
+    mounted() {
+        // Lógica executada quando o componente é montado
+    }
+}
+</script>
+
+<style lang="less" scoped>
+/* Estilos CSS usando Less para o componente Vue */
+
+.maps {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+// Estilos para o Mapa
+
+.map {
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+svg {
+    width: 70vh;
+}
+
+.mapa-svg-estados {
+    // Estilos para o mapa do estado
+}
+
+.dark .mapa-svg-estados {
+    // Estilos para o mapa do estado no modo escuro
+}
+
+.mapa-svg-estados:hover {
+    // Estilos quando o mapa do estado é hover
+}
+
+.dark .mapa-svg-estados:hover {
+    // Estilos quando o mapa do estado é hover no modo escuro
+}
+
+.mapa-svg-estados-active {
+    // Estilos quando o mapa do estado está ativo
+}
+
+.dark {
+    // Estilos para o modo escuro
+}
+
+// Estilos para o Texto
+
+.text-percentage {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    // Estilos para os slides do Swiper
+}
+
+#RN,
+#RS,
+#MS {
+    // Estilos específicos para alguns estados
+}
+
+.dark {
+    // Estilos para o modo escuro
+}
+
+.swiper-slide-active {
+    // Estilos quando o slide está ativo
+}
+
+.box {
+    // Estilos para a caixa que contém o círculo da porcentagem
+}
+
+.box-circle {
+    // Estilos para o círculo da porcentagem
+}
+
+circle {
+    // Estilos para os círculos
+}
+
+.number {
+    // Estilos para o número da porcentagem
+}
+
+.dark {
+    // Estilos para o modo escuro
+}
+
+@media screen and (max-width: 912px) {
+    // Estilos específicos para telas menores que 912px
+}
+
+@media screen and (max-width: 300px) {
+    // Estilos específicos para telas menores que 300px
+}
+</style>
 
 ```
 
