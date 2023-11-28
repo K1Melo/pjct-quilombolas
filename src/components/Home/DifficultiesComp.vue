@@ -10,10 +10,10 @@
                     <h3>Infraestrutura</h3>
                 </div>
                 <div class="answer">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit dolore, eius beatae
-                        explicabo commodi tempore nam corporis! Nemo tempora laudantium illum fugiat quae temporibus
-                        mollitia, repellendus perspiciatis. Rerum quis optio architecto ipsa natus reprehenderit
-                        voluptatibus dignissimos, esse similique vel neque corrupti unde. </p>
+                    <p>Como base para todos os outros problemas,
+                        a insfraestrutura se entende como os
+                        servios fundamentais para o desenvolvimento do povo
+                        em questões fisicas de acessibilidade.</p>
                 </div>
             </div>
 
@@ -22,10 +22,10 @@
                     <h3>Educação</h3>
                 </div>
                 <div class="answer">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit dolore, eius beatae
-                        explicabo commodi tempore nam corporis! Nemo tempora laudantium illum fugiat quae temporibus
-                        mollitia, repellendus perspiciatis. Rerum quis optio architecto ipsa natus reprehenderit
-                        voluptatibus dignissimos, esse similique vel neque corrupti unde. </p>
+                    <p>Um dos principais desafios sociais enfrentado pelos
+                        quilombolas, já que a maioria das estruturas educacionais
+                        apresenta falta de docentes qualificados para a formação
+                        de uma boa grade curricular.</p>
                 </div>
             </div>
 
@@ -34,10 +34,10 @@
                     <h3>Saúde</h3>
                 </div>
                 <div class="answer">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit dolore, eius beatae
-                        explicabo commodi tempore nam corporis! Nemo tempora laudantium illum fugiat quae temporibus
-                        mollitia, repellendus perspiciatis. Rerum quis optio architecto ipsa natus reprehenderit
-                        voluptatibus dignissimos, esse similique vel neque corrupti unde. </p>
+                    <p>Um dos principais desafios sociais enfrentado pelos
+                        quilombolas, já que a maioria das estruturas educacionais
+                        apresenta falta de docentes qualificados para a formação
+                        de uma boa grade curricular.</p>
                 </div>
             </div>
 
@@ -46,10 +46,10 @@
                     <h3>Terras</h3>
                 </div>
                 <div class="answer">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit dolore, eius beatae
-                        explicabo commodi tempore nam corporis! Nemo tempora laudantium illum fugiat quae temporibus
-                        mollitia, repellendus perspiciatis. Rerum quis optio architecto ipsa natus reprehenderit
-                        voluptatibus dignissimos, esse similique vel neque corrupti unde. </p>
+                    <p>Juntamente com os projetos governamentais, a pavimentação se torna um grande prejuízo para os
+                        quilombolas, já que ela muitas vezes força a saída dos moradores do seu lugar de origem. Relacionado
+                        a isso nós temos a demarcação de terras, que, da mesma forma, tira moradores de suas terras de
+                        origem.</p>
                 </div>
             </div>
 
