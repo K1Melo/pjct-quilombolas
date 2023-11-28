@@ -1276,9 +1276,7 @@ fetch('https://quilombolas-backend.onrender.com/')
     .then((res) => res.json())
     .then((data) => {
         // O método 'reverse' inverte a ordem dos elementos no array 'data'
-        data.reverse().forEach((element, index) => {
-            // Para os primeiros 4 elementos do array 'data'
-            if (index < 4) {
+        data.reverse().forEach((element) => {
                 // Cria um novo elemento 'div' e o anexa ao elemento com a classe 'juntar'
                 var div = getClass.appendChild(document.createElement('div'));
                 // Cria um novo elemento 'h3' e o anexa ao elemento 'div'
@@ -1290,7 +1288,7 @@ fetch('https://quilombolas-backend.onrender.com/')
                 p.appendChild(document.createTextNode(element.feedback))
                 // Adiciona um nó de texto com o conteúdo do nome seguido por ':' ao elemento 'htres'
                 htres.appendChild(document.createTextNode(element.name + ":"))
-            }
+            
         });
     });
 
