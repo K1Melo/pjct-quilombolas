@@ -1,5 +1,69 @@
 # About Page
 
+## The Participants
+```
+<template>
+    <div class="participants-comp">
+    </div>
+    <div class="participants">
+        <div class="choose-participant">
+            <div class="participant-img" id="kaua" @click="participantDiv('kaua')" data-aos="fade-up" data-aos-duration="1500"></div>
+            <div class="participant-img" id="lima" @click="participantDiv('lima')" data-aos="fade-up" data-aos-duration="1500"></div>
+            <div class="participant-img" id="mizuno" @click="participantDiv('mizuno')" data-aos="fade-up" data-aos-duration="1500"></div>
+            <div class="participant-img" id="araujo" @click="participantDiv('araujo')" data-aos="fade-up" data-aos-duration="1500"></div>
+            <div class="participant-img" id="udiel" @click="participantDiv('udiel')" data-aos="fade-up" data-aos-duration="1500"></div>
+        </div>
+        <div class="participant-description">
+            <div class="participant participant-active" id="kaua-description">
+                <h2>Kauã Fernandes</h2>
+                <div class="github-participants">
+                    <h3>Github: </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"
+                        @click="openParticipantGitHub('https://github.com/K1Melo/')">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Repeat similar structure for other participants -->
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    methods: {
+        // Switches participant descriptions based on the clicked participant image
+        participantDiv(id) {
+            const buttons = document.querySelectorAll(".participant-img");
+            const descriptions = document.querySelectorAll(".participant");
+
+            buttons.forEach((participant) => {
+                if (participant.id == id) {
+                    let descriptionId = participant.id + "-description";
+
+                    descriptions.forEach((description) => {
+                        description.classList.remove("participant-active");
+                        if (description.id == descriptionId) {
+                            description.classList.add("participant-active");
+                        }
+                    });
+                }
+            });
+        },
+        // Opens the GitHub page of the participant in a new tab
+        openParticipantGitHub(url) {
+            window.open(url);
+        }
+    }
+}
+</script>
+
+<style lang="less" scoped>
+/* Styles for your components */
+</style>
+
+```
 ## Premises Comp
 ```
 <template>
