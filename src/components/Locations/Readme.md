@@ -73,6 +73,52 @@ export default {
 # Locations Componente
 
 ```
+<template>
+  <!-- Componente principal -->
+  <div class="locationComp" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000">
+    <!-- Globo 3D -->
+    <div class="globe" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000">
+      <canvas id="canvas3d"></canvas>
+    </div>
+    <!-- Título -->
+    <div class="title-location" data-aos="fade-up-left" data-aos-duration="1500">
+      <h2>LUGARES</h2>
+    </div>
+    <!-- Subtítulo -->
+    <div class="subtitle">
+      <p class="quilombo">PALMARES</p>
+      <p class="state">- ALAGOAS</p>
+    </div>
+    <!-- Ícone para rolar para baixo -->
+    <i style="z-index: 1;" class="material-icons" @click="scrollBehavior">expand_more</i>
+  </div>
+</template>
+
+<script>
+// Importando a classe Application do pacote '@splinetool/runtime'
+import { Application } from '@splinetool/runtime';
+
+export default {
+  methods: {
+    // Função para rolar suavemente para baixo quando o ícone é clicado
+    scrollBehavior() {
+      window.scroll({ top: window.innerHeight, behavior: "smooth" });
+    }
+  },
+  mounted() {
+    // Inicializando o aplicativo Spline 3D no elemento canvas
+    const canvas = document.getElementById('canvas3d');
+    const app = new Application(canvas);
+    // Carregando o cenário Spline 3D
+    app.load('https://prod.spline.design/w7Rslvvqr4BNvAtR/scene.splinecode');
+  }
+}
+</script>
+  
+<style lang="less" scoped>
+/* Estilos do componente */
+/* ... */
+</style>
 
 ```
 
