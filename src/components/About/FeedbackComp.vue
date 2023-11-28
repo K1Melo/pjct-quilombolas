@@ -82,7 +82,7 @@ export default {
             .then((res) => res.json())
             .then((data) => {
                 data.reverse().forEach((element, index) => {
-                    if (index < 3) {
+                    if (index < 5) {
                         var div = getClass.appendChild(document.createElement('div'));
                         var htres = div.appendChild(document.createElement('h3'));
                         var p = div.appendChild(document.createElement('p'));
@@ -185,7 +185,6 @@ h2 {
     flex-direction: column;
 
 
-
     .juntar {
         padding-top: 5%;
         padding-bottom: 5%;
@@ -194,7 +193,7 @@ h2 {
         height: 60%;
         border-top-right-radius: 20%;
         background-color: #2E0F0F;
-
+        overflow: auto;
         h2 {
             color: #ffffff;
         }
