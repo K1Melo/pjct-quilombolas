@@ -299,13 +299,13 @@
 
         .title-palmares {
             h2 {
-                font-size: 4em;
+                font-size: 3.5em;
             }
         }
 
         .palmares-description {
             width: 90%;
-            font-size: 23px;
+            font-size: 15px;
         }
     }
 
