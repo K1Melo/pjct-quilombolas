@@ -1,5 +1,148 @@
 # About Page
 
+## About Comp
+```
+<template>
+    <!-- Componente principal -->
+    <div class="about-comp">
+        <!-- Seção de título -->
+        <div class="title-about">
+            <div>
+                <!-- Título do projeto animado -->
+                <h2 data-aos="fade-in">Projeto -</h2>
+                <!-- Título principal do projeto animado com duração específica -->
+                <h2 data-aos="fade-in" data-aos-duration="3000">Quilombolas</h2>
+            </div>
+        </div>
+
+        <!-- Seção do logotipo -->
+        <div class="logo-about">
+            <!-- Logotipo em formato SVG -->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.000000 1024.000000"
+                preserveAspectRatio="xMidYMid meet">
+                <metadata>
+                    Created by potrace 1.16, written by Peter Selinger 2001-2019
+                </metadata>
+                <!-- Caminho SVG (dados omitidos) -->
+                <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)" stroke="none">
+                    <path "...dados SVG..."/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</template>
+
+<style lang="less" scoped>
+/* Estilos do componente Vue.js */
+
+/* Estilos da seção principal 'about-comp' */
+.about-comp {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos da seção de título 'title-about' */
+.title-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    /* Estilos do título 'h2' dentro da seção 'title-about' */
+    h2 {
+        text-align: center;
+        font-size: calc(4.5em + 1vw);
+        color: #000;
+    }
+}
+
+/* Estilos da seção do logotipo 'logo-about' */
+.logo-about {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos do elemento 'svg' dentro da seção 'logo-about' */
+svg {
+    width: 100%;
+    height: auto;
+    fill: #000;
+}
+
+/* Estilos para o modo escuro */
+.dark {
+    svg {
+        fill: #ffffff;
+    }
+
+    .title-about h2 {
+        color: #ffffff;
+    }
+}
+
+/* Estilos responsivos para larguras de tela específicas */
+@media only screen and (max-width: 1000px) {
+    .title-about {
+        /* Ajuste de tamanho de fonte para telas menores */
+        h2 {
+            font-size: calc(3em + 1vw);
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-comp {
+        /* Reorganização da disposição dos elementos para telas menores */
+        flex-direction: column-reverse;
+    }
+
+    .title-about {
+        /* Ajuste de tamanho e altura para telas menores */
+        width: 100%;
+        height: 50%;
+    }
+
+    .logo-about {
+        /* Ajuste da altura e alinhamento para telas menores */
+        align-items: flex-start;
+        width: 100%;
+        height: 50%;
+    }
+
+    svg {
+        /* Ajuste de largura e altura para telas menores */
+        width: auto;
+        height: 130%;
+    }
+
+    .title-about {
+        /* Ajuste de tamanho de fonte para telas menores */
+        h2 {
+            font-size: calc(2.8em + 1vw);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title-about {
+        /* Ajuste de tamanho de fonte adicional para telas ainda menores */
+        h2 {
+            font-size: calc(2.5em + 1vw);
+        }
+    }
+}
+</style>
+
+```
+
 ## Creation Comp
 ```
 <template>
