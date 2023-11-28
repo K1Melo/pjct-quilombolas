@@ -7,7 +7,8 @@
             <div class="text">
                 <p>Comunidades quilombolas se espalharam ao longo da história devido à resistência dos africanos
                     escravizados durante o período da escravidão no Brasil. Eles fugiam das plantações em busca de
-                    liberdade, estabelecendo-se em áreas remotas e de difícil acesso, criando os quilombos. Algumas
+                    liberdade, estabelecendo-se em áreas remotas e de difícil acesso por todo territótio brasileiro, criando
+                    os quilombos. Algumas
                     comunidades quilombolas notáveis incluem o Quilombo dos Palmares em Alagoas, o Quilombo do Jambuaçu no
                     Maranhão e o Quilombo do Cascalho em Minas Gerais. Essas comunidades desenvolveram sua cultura própria,
                     preservando tradições africanas. Em 1988, a Constituição do Brasil reconheceu a importância das
