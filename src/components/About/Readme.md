@@ -1,5 +1,159 @@
 # About Page
 
+## Premises Comp
+```
+<template>
+    <!-- Componente principal -->
+    <div class="premises">
+        <!-- Seção de Inovação -->
+        <div class="inovation">
+            <!-- Ícone de Inovação (SVG) -->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet" data-aos="fade-in" data-aos-duration="1500">
+                <!--... (conteúdo do SVG) ...-->
+            </svg>
+            <!-- Título "Inovação" -->
+            <h2>Inovação</h2>
+        </div>
+
+        <!-- Seção de Cultura -->
+        <div class="culture">
+            <!-- Imagem de Cultura -->
+            <img src="../../assets/cultura-premises.png" alt="Pessoas ligadas entre si" data-aos="fade-in"
+                data-aos-duration="1500">
+            <!-- Título "Cultura" -->
+            <h2>Cultura</h2>
+        </div>
+    </div>
+</template>
+
+<style lang="less" scoped>
+/* Estilos do componente Vue.js */
+
+/* Estilos para a seção principal 'premises' */
+.premises {
+    width: 100%;
+    padding-bottom: 10%;
+    display: flex;
+}
+
+/* Estilos para a seção 'inovation' */
+.inovation {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* Estilos para o ícone SVG de inovação */
+    svg {
+        width: 50%;
+        fill: #000000;
+        margin-bottom: 2%;
+    }
+
+    /* Estilos para o título 'Inovação' */
+    h2 {
+        font-size: 50px;
+    }
+}
+
+/* Estilos específicos para o título 'h2' */
+h2 {
+    color: #000000;
+}
+
+/* Estilos para o modo escuro */
+.dark {
+    .inovation {
+        /* Ajuste de cor para o ícone SVG no modo escuro */
+        svg {
+            fill: #ffffff;
+        }
+    }
+
+    /* Ajuste de cor para o título 'h2' no modo escuro */
+    h2 {
+        color: #ffffff;
+    }
+}
+
+/* Estilos para a seção 'culture' */
+.culture {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    /* Estilos para a imagem de cultura */
+    img {
+        width: 50%;
+    }
+
+    /* Estilos para o título 'Cultura' */
+    h2 {
+        font-size: 50px;
+    }
+}
+
+/* Estilos responsivos para larguras de tela específicas */
+@media only screen and (max-width: 912px) {
+    .premises {
+        /* Reorganização da disposição dos elementos para telas menores */
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 20%;
+    }
+
+    .inovation {
+        /* Ajuste de margem inferior para a seção 'inovation' em telas menores */
+        margin-bottom: 10%;
+    }
+
+    .culture {
+        /* Reorganização da disposição dos elementos para telas menores */
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .inovation {
+        /* Ajuste de tamanho para o ícone SVG em telas menores */
+        svg {
+            width: 70%;
+        }
+    }
+
+    .culture {
+        /* Ajuste de tamanho para a imagem de cultura em telas menores */
+        img {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .inovation {
+        /* Ajuste de tamanho para o ícone SVG em telas ainda menores */
+        svg {
+            width: 80%;
+        }
+    }
+
+    .culture {
+        /* Ajuste de tamanho para a imagem de cultura em telas ainda menores */
+        img {
+            width: 80%;
+        }
+    }
+}
+</style>
+
+```
 ## Inovation Comp
 ```
 <template>
