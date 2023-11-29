@@ -78,8 +78,8 @@
                 <p>Se desenvolveu na região da capitania de pernambuco, mais precisamente na região onde atualmente está
                     localizado o estado de alagoas.
                 </p>
-                <p>Ficou conhecido como maior quilombo que existiu na história da colonizaçao do brasil pelos portugueses,
-                    além de maior quilombo de toda a América Latina e, no auge, concentrou a população de cerca de 20 mil
+                <p>Ficou conhecido como maior quilombo que existiu na história da colonização do brasil pelos portugueses,
+                    além de maior quilombo de toda a América Latina, em seu auge, concentrou uma população de cerca de 20 mil
                     pessoas.</p>
             </div>
         </div>

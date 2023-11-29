@@ -21,7 +21,7 @@ import { EffectCards, Pagination } from 'swiper/modules';
         <swiper :effect="'cards'" :pagination="{
             dynamicBullets: true,
         }" :grabCursor="true" :modules="[EffectCards, Pagination]" class="mySwiper" data-aos="fade-left">
-            <swiper-slide id="grotao">
+            <swiper-slide id="grotao" class="swiper-slide-active">
                 <div class="name">
                     <h3 class="state-card">Niterói - RJ</h3>
                     <h3>Quilombo do Grotão</h3>
