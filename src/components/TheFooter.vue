@@ -224,7 +224,7 @@
                     <h2 class="m-0" style="font-size: 20px;">Quilombolas</h2>
                 </div>
                 <div class="github-button"  data-aos="fade-up" data-aos-duration="900">
-                    <button class="btn btn-outline-secondary">Git Hub <svg id="github" @click="openGitHub"
+                    <button class="btn btn-outline-secondary" @click="openGitHub">Git Hub <svg id="github" @click="openGitHub"
                             style="transform: scale(0.8); fill: #ffffff;" xmlns="http://www.w3.org/2000/svg" width="30"
                             height="30" viewBox="0 0 16 16">
                             <path

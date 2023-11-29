@@ -617,7 +617,7 @@ circle:nth-child(2) {
         }
     }
 
-    
+
     #RN,
     #RS,
     #MS {
