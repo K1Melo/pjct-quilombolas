@@ -255,7 +255,7 @@ export default {
 #araujo-description {
     background-position: center right 45%;
 
-    background-image: url(https://images3.alphacoders.com/606/606500.jpg);
+    background-image: url(../../assets/background-araujo.jpg);
 }
 #udiel-description {
     background-position: center right 45%;

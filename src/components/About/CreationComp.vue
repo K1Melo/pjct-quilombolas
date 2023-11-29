@@ -5,7 +5,7 @@
         </div>
         <div class="programming-txt"  data-aos="fade-left" data-aos-duration="1500">
             <p>A iniciativa do Projeto Quilombolas surgiu na Etec de Carapicuiba pelo curso de Desenvolvimento de Sistemas,
-                onde o principal objetivo era dar a visibilidade dos povos originários do Brasil, os quais muitas vezes não
+                onde o principal objetivo era dar visibilidade aos povos originários do Brasil, os quais muitas vezes não
                 são lembrados na atualidade. <br>
                 Vimos nesse projeto a oportunidade de apresentar a cultura brasileira para jovens de maneira mais moderna, para isso
                 seguimos duas principais premissas:

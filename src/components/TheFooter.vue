@@ -260,7 +260,7 @@
                 <router-link to="/cultura" @click="goTo(0)">Cultura</router-link>
                 <router-link to="/cultura" @click="goTo(0.8)" class="subtitle">Movimentos Sociais</router-link>
                 <router-link to="/cultura" @click="goTo(1.6)" class="subtitle">Culinária</router-link>
-                <router-link to="/cultura" @click="goTo(3.1)" class="subtitle">Danças e Festividades</router-link>
+                <router-link to="/cultura" @click="goTo(3.1)" class="subtitle">Danças e Religião</router-link>
             </div>
             <div class="options" id="optionFour" data-aos="fade-up">
                 <router-link to="/sobre" @click="goTo(0)">Sobre</router-link>
