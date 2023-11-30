@@ -127,6 +127,14 @@
 
 }
 
+@media only screen and (max-height: 700px) {
+    .name-religion {
+        p {
+            font-size: 10px;
+        }
+    }
+
+}
 @media only screen and (max-width: 1024px) {
     .name-religion {
         h2 {
