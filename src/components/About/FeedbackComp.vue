@@ -81,15 +81,15 @@ export default {
         fetch('https://quilombolas-backend.onrender.com/')
             .then((res) => res.json())
             .then((data) => {
-                data.reverse().forEach((element, index) => {
-                    if (index < 5) {
+                data.reverse().forEach((element) => {
+                    // if (index < 5) {
                         var div = getClass.appendChild(document.createElement('div'));
                         var htres = div.appendChild(document.createElement('h3'));
                         var p = div.appendChild(document.createElement('p'));
 
                         p.appendChild(document.createTextNode(element.feedback))
                         htres.appendChild(document.createTextNode(element.name + ":"))
-                    }
+                    // }
                 });
 
             }
@@ -191,7 +191,7 @@ h2 {
         padding-left: 2%;
         border-radius: 1%;
         height: 60%;
-        border-top-right-radius: 20%;
+        // border-top-right-radius: 20%;
         background-color: #2E0F0F;
         overflow: auto;
         h2 {
@@ -281,12 +281,12 @@ button:active .svg-wrapper {
 @media only screen and (max-width: 1000px) {
     .feedback {
         flex-direction: column;
-        height: fit-content;
+        height: 180vh;
     }
 
     .post {
         padding-top: 15%;
-        height: 70vh;
+        height: 70%;
         justify-content: start;
 
         form {
@@ -295,23 +295,23 @@ button:active .svg-wrapper {
     }
 
     .get {
-        padding-bottom: 15%;
+        // padding-bottom: 15%;
         width: 100%;
         height: 50%;
 
-        .juntar {
-            padding-top: 10%;
-            padding-left: 5%;
-        }
+        // .juntar {
+        //     padding-top: 10%;
+        //     padding-left: 5%;
+        // }
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .get {
+    // .get {
 
-        width: 100%;
-        height: 55%;
+    //     width: 100%;
+    //     height: 55%;
 
-    }
+    // }
 }
 </style>
