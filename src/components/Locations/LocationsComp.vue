@@ -3,7 +3,7 @@
     <div class="globe" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000">
       <canvas id="canvas3d"></canvas>
     </div>
-    <div class="title-location" data-aos="fade-up-left" data-aos-duration="1500">
+    <div class="title-location">
       <h2>LUGARES</h2>
     </div>
     <div class="subtitle">
