@@ -9,7 +9,7 @@
                 </div>
                 <div class="input-feedback">
                     <input type="text" name="feedback" placeholder="Comentarios" v-model="posts.feedback" id="feedback"
-                        required maxlength="50">
+                        required maxlength="100">
                     <br>
                 </div>
                 <button type="submit" class="btn">
