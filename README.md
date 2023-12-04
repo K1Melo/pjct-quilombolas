@@ -19,23 +19,9 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### Integrantes: 
-Mateus Lima
-Matheus Araújo
-Matheus Mizuno
-Udiel Inacio
-
-
-
-
-
 <div align="center" id="inicio">
     
-# Povos Originários Do Brasil - Quimlombolas
+# Povos Originários Do Brasil - Quilombolas
 <img src="https://github.com/UdielOliveira/CursoJavaScript/assets/113556350/331b60b5-3267-41bc-93cf-86f338e252cb"/><br>
 </div>
 
